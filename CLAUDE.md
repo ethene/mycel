@@ -12,6 +12,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Building the Project
 ```bash
+# IMPORTANT: Requires Java 17
+export JAVA_HOME=$(/usr/libexec/java_home -v17)
 ./gradlew build
 ```
 
@@ -33,8 +35,14 @@ MAILBOX_INTEGRATION_TESTS=true ./gradlew mailbox-integration-tests:test
 
 ### Building Android APK
 ```bash
+# IMPORTANT: Requires Java 17
+export JAVA_HOME=$(/usr/libexec/java_home -v17)
+
 # Debug build
 ./gradlew :briar-android:assembleDebug
+
+# Official debug build (takes ~1m 52s)
+./gradlew clean assembleOfficialDebug
 
 # Release build (requires signing configuration)
 ./gradlew :briar-android:assembleRelease
@@ -211,9 +219,12 @@ Comprehensive documentation is available in the `docs/` folder:
 
 ### Testing Protocol:
 ```bash
+# IMPORTANT: Set Java 17 first
+export JAVA_HOME=$(/usr/libexec/java_home -v17)
+
 # After each phase
 ./gradlew clean build test
-./gradlew :briar-android:assembleDebug
+./gradlew clean assembleOfficialDebug  # Takes ~1m 52s
 # Manual verification of core functionality
 ```
 
