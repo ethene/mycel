@@ -286,3 +286,74 @@ git log --oneline -5
 ```
 
 **Critical Rule**: NEVER commit without successful testing. Each commit must represent a working, tested state of the application.
+
+## Task Master Project Management
+
+### Task Master Integration for Mycel Rebranding
+**IMPORTANT**: Task Master is configured to manage the 7-phase Mycel rebranding process. Use Task Master commands to track progress, manage dependencies, and ensure systematic completion of each phase.
+
+### Key Task Master Commands for Rebranding
+
+```bash
+# View all rebranding tasks
+task-master list
+
+# Get next recommended task
+task-master next
+
+# Show detailed task information
+task-master show <id>
+
+# Start working on a task
+task-master set-status --id=<id> --status=in-progress
+
+# Complete a task
+task-master set-status --id=<id> --status=done
+
+# Update task notes during implementation
+task-master update-subtask --id=<id> --prompt="implementation notes"
+```
+
+### Task Structure for Mycel Rebranding
+
+**Phase Tasks (1-7)**: Sequential rebranding phases with dependencies
+- Task 1: Phase 1 - Update String Resources (HIGH priority)
+- Task 2: Phase 2 - Update Application ID (HIGH priority, depends on 1)
+- Task 3: Phase 3 - Rename Infrastructure Packages (HIGH priority, depends on 2)
+- Task 4: Phase 4 - Rename Application Packages (HIGH priority, depends on 3)
+- Task 5: Phase 5 - Update Configuration (MEDIUM priority, depends on 4)
+- Task 6: Phase 6 - Replace Visual Assets (MEDIUM priority, depends on 5)
+- Task 7: Phase 7 - Update Documentation (LOW priority, depends on 6)
+
+**Support Tasks**:
+- Task 8: Setup Testing Infrastructure (MEDIUM priority, no dependencies)
+- Task 9: Create Mycel Visual Assets (MEDIUM priority, no dependencies)
+- Task 10: Final Integration Testing (LOW priority, depends on 7)
+
+### Task Master Workflow Policy
+
+1. **Sequential Phase Completion**: Complete phases 1-7 in order, respecting dependencies
+2. **Testing Before Completion**: Run `./test-phase.sh` before marking any phase as done
+3. **Progress Documentation**: Use `update-subtask` to log implementation details
+4. **Git Integration**: Commit with `[PHASE-X]` format after completing each phase
+5. **Progress Tracking**: Update `REBRANDING-PROGRESS.md` alongside Task Master
+
+### Task Master Configuration
+
+- **Project**: Mycel Rebranding
+- **PRD Location**: `.taskmaster/docs/mycel-rebranding.prd`
+- **Tasks File**: `.taskmaster/tasks/tasks.json`
+- **Total Tasks**: 10 (7 phases + 3 support tasks)
+
+### Integration with Git Workflow
+
+After completing each Task Master task:
+1. Verify with `./test-phase.sh`
+2. Mark task done: `task-master set-status --id=X --status=done`
+3. Commit changes: `git commit -m "[PHASE-X] Description..."`
+4. Update progress: Edit `REBRANDING-PROGRESS.md`
+5. Push to GitHub: `git push origin main`
+
+## Task Master AI Instructions
+**Import Task Master's development workflow commands and guidelines, treat as if import is in the main CLAUDE.md file.**
+@./.taskmaster/CLAUDE.md
