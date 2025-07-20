@@ -217,7 +217,12 @@ Comprehensive documentation is available in the `docs/` folder:
 # Manual verification of core functionality
 ```
 
-**Current Phase**: Ready to begin Phase 1 (String Resources Only)
+**Current Phase**: Phase 1 COMPLETED ✅ | Ready for Phase 2 (Application ID)
+
+### Phase Completion Status:
+- ✅ **Phase 1**: String Resources (Completed 2025-07-20, commit: be340451)
+- ⏳ **Phase 2**: Application ID (Ready to start)
+- 🔒 **Phase 3-7**: Pending completion of previous phases
 
 Refer to `docs/INCREMENTAL-REBRANDING-PLAN.md` for detailed step-by-step instructions.
 
@@ -353,6 +358,102 @@ After completing each Task Master task:
 3. Commit changes: `git commit -m "[PHASE-X] Description..."`
 4. Update progress: Edit `REBRANDING-PROGRESS.md`
 5. Push to GitHub: `git push origin main`
+
+## Rebranding Phase Implementation Guide
+
+### 📁 **Files to Update for Each Phase**
+
+#### **Phase 1: String Resources** ✅ COMPLETED
+**Files Updated**:
+- `briar-android/src/main/res/values/strings.xml` - Main strings file
+- `briar-android/src/main/res/values-*/strings.xml` - All localized versions (47 files)
+- `briar-android/src/debug/res/values/strings.xml` - Debug strings
+- `briar-android/src/screenshotDebug/res/values/strings.xml` - Screenshot strings
+
+#### **Phase 2: Application ID** (Current Phase)
+**Files to Update**:
+- `briar-android/build.gradle` - applicationId, versionName, versionCode
+- `briar-android/src/debug/res/values/strings.xml` - Package references
+- Any test configurations referencing the package ID
+
+#### **Phase 3: Infrastructure Packages (Bramble)**
+**Files to Update**:
+- All Java files in `bramble-*` modules - Package declarations and imports
+- `bramble-*/src/main/AndroidManifest.xml` - Package references
+- Build files referencing bramble packages
+- Test files with bramble imports
+
+#### **Phase 4: Application Packages (Briar)**
+**Files to Update**:
+- All Java files in `briar-*` modules - Package declarations and imports
+- `briar-android/src/main/AndroidManifest.xml` - Main package and component names
+- Build files referencing briar packages
+- Test files with briar imports
+
+#### **Phase 5: Configuration**
+**Files to Update**:
+- `briar-android/src/main/AndroidManifest.xml` - Deep link schemes
+- Theme and style names in `res/values/styles.xml`
+- Layout XML files with briar-specific names
+- Configuration constants in code
+
+#### **Phase 6: Visual Assets**
+**Files to Update/Replace**:
+- `briar-android/src/main/res/mipmap-*/ic_launcher*.png` - App icons
+- `briar-android/src/main/res/drawable*/` - In-app graphics
+- Splash screen resources
+- Color schemes in `res/values/colors.xml`
+
+#### **Phase 7: Documentation**
+**Files to Update**:
+- `README.md` - Project description
+- All files in `docs/` - Update references
+- Build script comments
+- API documentation
+
+### 📋 **Documentation to Update After Each Phase**
+
+1. **CLAUDE.md** - Update current phase status
+2. **REBRANDING-PROGRESS.md** - Mark phase complete, add details
+3. **Task Master** - Update task status via commands
+4. **Git Commit** - Use [PHASE-X] format with test results
+
+### 🔧 **Task Master Commands Workflow**
+
+```bash
+# Before starting a phase
+task-master next                                    # Check next task
+task-master show <id>                              # View task details
+task-master set-status --id=<id> --status=in-progress
+
+# During implementation
+task-master update-subtask --id=<id> --prompt="notes about progress"
+
+# After completing a phase
+./test-phase.sh                                    # Run tests
+task-master set-status --id=<id> --status=done    # Mark complete
+git add . && git commit -m "[PHASE-X] ..."        # Commit with proper format
+# Update REBRANDING-PROGRESS.md manually
+# Update CLAUDE.md phase status manually
+git push origin main                               # Push to GitHub
+```
+
+### 📚 **Key Documentation Locations**
+
+**Rebranding Plans**:
+- `docs/INCREMENTAL-REBRANDING-PLAN.md` - Primary implementation guide
+- `docs/VERIFIED-REBRANDING-PLAN.md` - Detailed file locations reference
+- `docs/13-rebranding-strategy.md` - Overall strategy
+- `docs/16-configuration-files.md` - Config file details
+
+**Progress Tracking**:
+- `REBRANDING-PROGRESS.md` - Manual progress tracking
+- `.taskmaster/tasks/tasks.json` - Task Master task data
+- Git history with [PHASE-X] commits
+
+**Build & Test**:
+- `test-phase.sh` - Phase testing script
+- `CLAUDE.md` - This file, main reference
 
 ## Task Master AI Instructions
 **Import Task Master's development workflow commands and guidelines, treat as if import is in the main CLAUDE.md file.**

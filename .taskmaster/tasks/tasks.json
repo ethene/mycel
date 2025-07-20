@@ -5,25 +5,29 @@
         "id": "1",
         "title": "Phase 1: Update String Resources from Briar to Mycel",
         "description": "Change all user-facing text from 'Briar' to 'Mycel' in all string resource files",
-        "status": "pending",
+        "status": "done",
         "priority": "high",
         "dependencies": [],
         "details": "Update briar-android/src/main/res/values/strings.xml and all 45+ localized string files in values-* directories. Change app_name from 'Briar' to 'Mycel' and update any user-visible strings containing 'Briar'.",
         "testStrategy": "Run ./gradlew test && ./gradlew :briar-android:assembleDebug to ensure UI displays 'Mycel' throughout application with no user-visible 'Briar' references.",
-        "subtasks": []
+        "subtasks": [],
+        "completedAt": "2025-07-20",
+        "notes": "Successfully updated 51 string resource files. All 'Briar' references replaced with 'Mycel'. Committed with hash be340451."
       },
       {
         "id": "2",
         "title": "Phase 2: Update Android Application ID",
         "description": "Change Android application package ID to com.quantumresearch.mycel",
-        "status": "pending",
+        "status": "done",
         "priority": "high",
         "dependencies": [
           "1"
         ],
         "details": "Update applicationId in briar-android/build.gradle to 'com.quantumresearch.mycel', reset version name to '1.0.0' and version code to 1. Update any references to old package ID.",
         "testStrategy": "Verify APK installs as separate application from Briar and package name verification passes using aapt dump badging.",
-        "subtasks": []
+        "subtasks": [],
+        "completedAt": "2025-07-20",
+        "notes": "Successfully completed Phase 2: Updated Android application ID from 'org.briarproject.briar.android' to 'com.quantumresearch.mycel', reset version to 1.0.0 and version code to 1. Updated debug and screenshot variant package references. APK builds successfully with new package ID."
       },
       {
         "id": "3",

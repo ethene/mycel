@@ -1,0 +1,11 @@
+# Task ID: 2
+# Title: Phase 2: Update Android Application ID
+# Status: pending
+# Dependencies: 1 (Not found)
+# Priority: high
+# Description: Change Android application package ID to com.quantumresearch.mycel
+# Details:
+Update applicationId in briar-android/build.gradle to 'com.quantumresearch.mycel', reset version name to '1.0.0' and version code to 1. Update any references to old package ID.
+
+# Test Strategy:
+Verify APK installs as separate application from Briar and package name verification passes using aapt dump badging.
