@@ -1,6 +1,6 @@
 package org.briarproject.briar.android.account;
 
-import org.briarproject.briar.R;
+import com.quantumresearch.mycel.R;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;

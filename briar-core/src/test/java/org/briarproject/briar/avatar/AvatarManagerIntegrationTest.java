@@ -1,13 +1,13 @@
-package org.briarproject.briar.avatar;
+package com.quantumresearch.mycel.app.avatar;
 
-import org.briarproject.bramble.test.TestDatabaseConfigModule;
-import org.briarproject.briar.api.attachment.Attachment;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
-import org.briarproject.briar.api.attachment.AttachmentReader;
-import org.briarproject.briar.api.avatar.AvatarManager;
-import org.briarproject.briar.test.BriarIntegrationTest;
-import org.briarproject.briar.test.BriarIntegrationTestComponent;
-import org.briarproject.briar.test.DaggerBriarIntegrationTestComponent;
+import com.quantumresearch.mycel.infrastructure.test.TestDatabaseConfigModule;
+import com.quantumresearch.mycel.app.api.attachment.Attachment;
+import com.quantumresearch.mycel.app.api.attachment.AttachmentHeader;
+import com.quantumresearch.mycel.app.api.attachment.AttachmentReader;
+import com.quantumresearch.mycel.app.api.avatar.AvatarManager;
+import com.quantumresearch.mycel.app.test.BriarIntegrationTest;
+import com.quantumresearch.mycel.app.test.BriarIntegrationTestComponent;
+import com.quantumresearch.mycel.app.test.DaggerBriarIntegrationTestComponent;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -15,10 +15,10 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 
-import static org.briarproject.bramble.test.TestUtils.getRandomBytes;
-import static org.briarproject.bramble.util.IoUtils.copyAndClose;
-import static org.briarproject.bramble.util.StringUtils.getRandomString;
-import static org.briarproject.briar.api.attachment.MediaConstants.MAX_CONTENT_TYPE_BYTES;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getRandomBytes;
+import static com.quantumresearch.mycel.infrastructure.util.IoUtils.copyAndClose;
+import static com.quantumresearch.mycel.infrastructure.util.StringUtils.getRandomString;
+import static com.quantumresearch.mycel.app.api.attachment.MediaConstants.MAX_CONTENT_TYPE_BYTES;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;

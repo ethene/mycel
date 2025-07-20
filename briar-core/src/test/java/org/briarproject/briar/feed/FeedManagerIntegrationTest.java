@@ -1,15 +1,15 @@
-package org.briarproject.briar.feed;
+package com.quantumresearch.mycel.app.feed;
 
-import org.briarproject.bramble.api.identity.Identity;
-import org.briarproject.bramble.api.identity.IdentityManager;
-import org.briarproject.bramble.api.lifecycle.LifecycleManager;
-import org.briarproject.bramble.test.BrambleTestCase;
-import org.briarproject.bramble.test.TestDatabaseConfigModule;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.blog.BlogManager;
-import org.briarproject.briar.api.blog.BlogPostHeader;
-import org.briarproject.briar.api.feed.Feed;
-import org.briarproject.briar.api.feed.FeedManager;
+import com.quantumresearch.mycel.infrastructure.api.identity.Identity;
+import com.quantumresearch.mycel.infrastructure.api.identity.IdentityManager;
+import com.quantumresearch.mycel.infrastructure.api.lifecycle.LifecycleManager;
+import com.quantumresearch.mycel.infrastructure.test.BrambleTestCase;
+import com.quantumresearch.mycel.infrastructure.test.TestDatabaseConfigModule;
+import com.quantumresearch.mycel.app.api.blog.Blog;
+import com.quantumresearch.mycel.app.api.blog.BlogManager;
+import com.quantumresearch.mycel.app.api.blog.BlogPostHeader;
+import com.quantumresearch.mycel.app.api.feed.Feed;
+import com.quantumresearch.mycel.app.api.feed.FeedManager;
 import org.briarproject.nullsafety.NullSafety;
 import org.junit.After;
 import org.junit.Before;
@@ -21,9 +21,9 @@ import java.util.Collection;
 
 import javax.annotation.Nullable;
 
-import static org.briarproject.bramble.test.TestUtils.deleteTestDirectory;
-import static org.briarproject.bramble.test.TestUtils.getSecretKey;
-import static org.briarproject.bramble.test.TestUtils.getTestDirectory;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.deleteTestDirectory;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getSecretKey;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getTestDirectory;
 import static org.briarproject.nullsafety.NullSafety.requireNonNull;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

@@ -1,23 +1,23 @@
-package org.briarproject.briar.introduction;
+package com.quantumresearch.mycel.app.introduction;
 
-import org.briarproject.bramble.api.FormatException;
-import org.briarproject.bramble.api.client.ClientHelper;
-import org.briarproject.bramble.api.data.BdfList;
-import org.briarproject.bramble.api.identity.Author;
-import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.bramble.api.sync.Message;
-import org.briarproject.bramble.api.sync.MessageFactory;
-import org.briarproject.bramble.test.BrambleMockTestCase;
+import com.quantumresearch.mycel.infrastructure.api.FormatException;
+import com.quantumresearch.mycel.infrastructure.api.client.ClientHelper;
+import com.quantumresearch.mycel.infrastructure.api.data.BdfList;
+import com.quantumresearch.mycel.infrastructure.api.identity.Author;
+import com.quantumresearch.mycel.infrastructure.api.sync.GroupId;
+import com.quantumresearch.mycel.infrastructure.api.sync.Message;
+import com.quantumresearch.mycel.infrastructure.api.sync.MessageFactory;
+import com.quantumresearch.mycel.infrastructure.test.BrambleMockTestCase;
 import org.jmock.Expectations;
 import org.junit.Test;
 
-import static org.briarproject.bramble.api.sync.SyncConstants.MAX_MESSAGE_BODY_LENGTH;
-import static org.briarproject.bramble.test.TestUtils.getAuthor;
-import static org.briarproject.bramble.test.TestUtils.getMessage;
-import static org.briarproject.bramble.test.TestUtils.getRandomId;
-import static org.briarproject.bramble.util.StringUtils.getRandomString;
-import static org.briarproject.briar.api.introduction.IntroductionConstants.MAX_INTRODUCTION_TEXT_LENGTH;
-import static org.briarproject.briar.introduction.MessageType.REQUEST;
+import static com.quantumresearch.mycel.infrastructure.api.sync.SyncConstants.MAX_MESSAGE_BODY_LENGTH;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getAuthor;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getMessage;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getRandomId;
+import static com.quantumresearch.mycel.infrastructure.util.StringUtils.getRandomString;
+import static com.quantumresearch.mycel.app.api.introduction.IntroductionConstants.MAX_INTRODUCTION_TEXT_LENGTH;
+import static com.quantumresearch.mycel.app.introduction.MessageType.REQUEST;
 
 public class MessageEncoderTest extends BrambleMockTestCase {
 

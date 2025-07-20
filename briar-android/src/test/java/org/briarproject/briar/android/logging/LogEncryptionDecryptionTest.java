@@ -1,6 +1,6 @@
 package org.briarproject.briar.android.logging;
 
-import org.briarproject.bramble.test.BrambleMockTestCase;
+import com.quantumresearch.mycel.infrastructure.test.BrambleMockTestCase;
 import org.junit.ClassRule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
@@ -15,8 +15,8 @@ import static java.util.logging.Level.FINE;
 import static java.util.logging.Level.INFO;
 import static java.util.logging.Level.SEVERE;
 import static java.util.logging.Level.WARNING;
-import static org.briarproject.bramble.util.StringUtils.getRandomString;
-import static org.briarproject.briar.android.logging.BriefLogFormatter.formatLog;
+import static com.quantumresearch.mycel.infrastructure.util.StringUtils.getRandomString;
+import static com.quantumresearch.mycel.app.android.logging.BriefLogFormatter.formatLog;
 import static org.junit.Assert.assertEquals;
 
 public class LogEncryptionDecryptionTest extends BrambleMockTestCase {

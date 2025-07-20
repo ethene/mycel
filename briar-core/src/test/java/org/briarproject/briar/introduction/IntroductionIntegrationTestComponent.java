@@ -1,24 +1,24 @@
-package org.briarproject.briar.introduction;
+package com.quantumresearch.mycel.app.introduction;
 
-import org.briarproject.bramble.BrambleCoreModule;
-import org.briarproject.bramble.mailbox.ModularMailboxModule;
-import org.briarproject.bramble.test.BrambleCoreIntegrationTestModule;
-import org.briarproject.bramble.test.TestDnsModule;
-import org.briarproject.bramble.test.TestPluginConfigModule;
-import org.briarproject.bramble.test.TestSocksModule;
-import org.briarproject.briar.attachment.AttachmentModule;
-import org.briarproject.briar.autodelete.AutoDeleteModule;
-import org.briarproject.briar.avatar.AvatarModule;
-import org.briarproject.briar.blog.BlogModule;
-import org.briarproject.briar.client.BriarClientModule;
-import org.briarproject.briar.conversation.ConversationModule;
-import org.briarproject.briar.forum.ForumModule;
-import org.briarproject.briar.identity.IdentityModule;
-import org.briarproject.briar.messaging.MessagingModule;
-import org.briarproject.briar.privategroup.PrivateGroupModule;
-import org.briarproject.briar.privategroup.invitation.GroupInvitationModule;
-import org.briarproject.briar.sharing.SharingModule;
-import org.briarproject.briar.test.BriarIntegrationTestComponent;
+import com.quantumresearch.mycel.infrastructure.BrambleCoreModule;
+import com.quantumresearch.mycel.infrastructure.mailbox.ModularMailboxModule;
+import com.quantumresearch.mycel.infrastructure.test.BrambleCoreIntegrationTestModule;
+import com.quantumresearch.mycel.infrastructure.test.TestDnsModule;
+import com.quantumresearch.mycel.infrastructure.test.TestPluginConfigModule;
+import com.quantumresearch.mycel.infrastructure.test.TestSocksModule;
+import com.quantumresearch.mycel.app.attachment.AttachmentModule;
+import com.quantumresearch.mycel.app.autodelete.AutoDeleteModule;
+import com.quantumresearch.mycel.app.avatar.AvatarModule;
+import com.quantumresearch.mycel.app.blog.BlogModule;
+import com.quantumresearch.mycel.app.client.BriarClientModule;
+import com.quantumresearch.mycel.app.conversation.ConversationModule;
+import com.quantumresearch.mycel.app.forum.ForumModule;
+import com.quantumresearch.mycel.app.identity.IdentityModule;
+import com.quantumresearch.mycel.app.messaging.MessagingModule;
+import com.quantumresearch.mycel.app.privategroup.PrivateGroupModule;
+import com.quantumresearch.mycel.app.privategroup.invitation.GroupInvitationModule;
+import com.quantumresearch.mycel.app.sharing.SharingModule;
+import com.quantumresearch.mycel.app.test.BriarIntegrationTestComponent;
 
 import javax.inject.Singleton;
 

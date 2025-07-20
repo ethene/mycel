@@ -3,8 +3,8 @@ package org.briarproject.briar.android.util;
 import android.content.Context;
 import android.content.res.Resources;
 
-import org.briarproject.bramble.test.BrambleMockTestCase;
-import org.briarproject.briar.R;
+import com.quantumresearch.mycel.infrastructure.test.BrambleMockTestCase;
+import com.quantumresearch.mycel.R;
 import org.jmock.Expectations;
 import org.jmock.imposters.ByteBuddyClassImposteriser;
 import org.junit.Test;
@@ -13,7 +13,7 @@ import static java.util.concurrent.TimeUnit.DAYS;
 import static java.util.concurrent.TimeUnit.HOURS;
 import static java.util.concurrent.TimeUnit.MINUTES;
 import static java.util.concurrent.TimeUnit.SECONDS;
-import static org.briarproject.briar.android.util.UiUtils.formatDuration;
+import static com.quantumresearch.mycel.app.android.util.UiUtils.formatDuration;
 
 public class UiUtilsFormatDurationTest extends BrambleMockTestCase {
 

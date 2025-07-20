@@ -1,8 +1,8 @@
 package org.briarproject.briar.android.logging;
 
-import org.briarproject.bramble.BrambleCoreModule;
-import org.briarproject.bramble.system.ClockModule;
-import org.briarproject.bramble.test.TestSecureRandomModule;
+import com.quantumresearch.mycel.infrastructure.BrambleCoreModule;
+import com.quantumresearch.mycel.infrastructure.system.ClockModule;
+import com.quantumresearch.mycel.infrastructure.test.TestSecureRandomModule;
 
 import java.security.SecureRandom;
 

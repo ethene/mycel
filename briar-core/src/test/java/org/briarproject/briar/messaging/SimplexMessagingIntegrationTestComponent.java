@@ -1,22 +1,22 @@
-package org.briarproject.briar.messaging;
+package com.quantumresearch.mycel.app.messaging;
 
-import org.briarproject.bramble.BrambleCoreIntegrationTestEagerSingletons;
-import org.briarproject.bramble.BrambleCoreModule;
-import org.briarproject.bramble.api.connection.ConnectionManager;
-import org.briarproject.bramble.api.contact.ContactManager;
-import org.briarproject.bramble.api.event.EventBus;
-import org.briarproject.bramble.api.identity.IdentityManager;
-import org.briarproject.bramble.api.lifecycle.LifecycleManager;
-import org.briarproject.bramble.mailbox.ModularMailboxModule;
-import org.briarproject.bramble.test.BrambleCoreIntegrationTestModule;
-import org.briarproject.bramble.test.TestDnsModule;
-import org.briarproject.bramble.test.TestPluginConfigModule;
-import org.briarproject.bramble.test.TestSocksModule;
-import org.briarproject.briar.api.messaging.MessagingManager;
-import org.briarproject.briar.api.messaging.PrivateMessageFactory;
-import org.briarproject.briar.autodelete.AutoDeleteModule;
-import org.briarproject.briar.client.BriarClientModule;
-import org.briarproject.briar.conversation.ConversationModule;
+import com.quantumresearch.mycel.infrastructure.BrambleCoreIntegrationTestEagerSingletons;
+import com.quantumresearch.mycel.infrastructure.BrambleCoreModule;
+import com.quantumresearch.mycel.infrastructure.api.connection.ConnectionManager;
+import com.quantumresearch.mycel.infrastructure.api.contact.ContactManager;
+import com.quantumresearch.mycel.infrastructure.api.event.EventBus;
+import com.quantumresearch.mycel.infrastructure.api.identity.IdentityManager;
+import com.quantumresearch.mycel.infrastructure.api.lifecycle.LifecycleManager;
+import com.quantumresearch.mycel.infrastructure.mailbox.ModularMailboxModule;
+import com.quantumresearch.mycel.infrastructure.test.BrambleCoreIntegrationTestModule;
+import com.quantumresearch.mycel.infrastructure.test.TestDnsModule;
+import com.quantumresearch.mycel.infrastructure.test.TestPluginConfigModule;
+import com.quantumresearch.mycel.infrastructure.test.TestSocksModule;
+import com.quantumresearch.mycel.app.api.messaging.MessagingManager;
+import com.quantumresearch.mycel.app.api.messaging.PrivateMessageFactory;
+import com.quantumresearch.mycel.app.autodelete.AutoDeleteModule;
+import com.quantumresearch.mycel.app.client.BriarClientModule;
+import com.quantumresearch.mycel.app.conversation.ConversationModule;
 
 import javax.inject.Singleton;
 

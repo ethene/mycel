@@ -1,19 +1,19 @@
-package org.briarproject.briar.feed;
+package com.quantumresearch.mycel.app.feed;
 
-import org.briarproject.bramble.api.identity.LocalAuthor;
-import org.briarproject.bramble.api.sync.ClientId;
-import org.briarproject.bramble.test.BrambleTestCase;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.feed.Feed;
-import org.briarproject.briar.api.feed.RssProperties;
+import com.quantumresearch.mycel.infrastructure.api.identity.LocalAuthor;
+import com.quantumresearch.mycel.infrastructure.api.sync.ClientId;
+import com.quantumresearch.mycel.infrastructure.test.BrambleTestCase;
+import com.quantumresearch.mycel.app.api.blog.Blog;
+import com.quantumresearch.mycel.app.api.feed.Feed;
+import com.quantumresearch.mycel.app.api.feed.RssProperties;
 import org.junit.Test;
 
 import java.util.Random;
 
 import static java.util.Arrays.asList;
-import static org.briarproject.bramble.test.TestUtils.getClientId;
-import static org.briarproject.bramble.test.TestUtils.getGroup;
-import static org.briarproject.bramble.test.TestUtils.getLocalAuthor;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getClientId;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getGroup;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getLocalAuthor;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;

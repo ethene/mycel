@@ -1,12 +1,12 @@
-package org.briarproject.briar.test;
+package com.quantumresearch.mycel.app.test;
 
-import org.briarproject.bramble.api.event.Event;
-import org.briarproject.bramble.api.event.EventListener;
+import com.quantumresearch.mycel.infrastructure.api.event.Event;
+import com.quantumresearch.mycel.infrastructure.api.event.EventListener;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.concurrent.atomic.AtomicReference;
 
-import static org.briarproject.briar.test.BriarIntegrationTest.waitForEvents;
+import static com.quantumresearch.mycel.app.test.BriarIntegrationTest.waitForEvents;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 

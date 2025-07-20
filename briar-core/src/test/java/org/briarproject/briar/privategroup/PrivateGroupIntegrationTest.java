@@ -1,22 +1,22 @@
-package org.briarproject.briar.privategroup;
+package com.quantumresearch.mycel.app.privategroup;
 
-import org.briarproject.bramble.api.contact.Contact;
-import org.briarproject.bramble.api.contact.ContactId;
-import org.briarproject.bramble.api.db.DbException;
-import org.briarproject.bramble.api.identity.AuthorId;
-import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.bramble.test.TestDatabaseConfigModule;
-import org.briarproject.briar.api.privategroup.GroupMember;
-import org.briarproject.briar.api.privategroup.GroupMessage;
-import org.briarproject.briar.api.privategroup.GroupMessageHeader;
-import org.briarproject.briar.api.privategroup.JoinMessageHeader;
-import org.briarproject.briar.api.privategroup.PrivateGroup;
-import org.briarproject.briar.api.privategroup.PrivateGroupManager;
-import org.briarproject.briar.api.privategroup.invitation.GroupInvitationManager;
-import org.briarproject.briar.test.BriarIntegrationTest;
-import org.briarproject.briar.test.BriarIntegrationTestComponent;
-import org.briarproject.briar.test.DaggerBriarIntegrationTestComponent;
+import com.quantumresearch.mycel.infrastructure.api.contact.Contact;
+import com.quantumresearch.mycel.infrastructure.api.contact.ContactId;
+import com.quantumresearch.mycel.infrastructure.api.db.DbException;
+import com.quantumresearch.mycel.infrastructure.api.identity.AuthorId;
+import com.quantumresearch.mycel.infrastructure.api.sync.GroupId;
+import com.quantumresearch.mycel.infrastructure.api.sync.MessageId;
+import com.quantumresearch.mycel.infrastructure.test.TestDatabaseConfigModule;
+import com.quantumresearch.mycel.app.api.privategroup.GroupMember;
+import com.quantumresearch.mycel.app.api.privategroup.GroupMessage;
+import com.quantumresearch.mycel.app.api.privategroup.GroupMessageHeader;
+import com.quantumresearch.mycel.app.api.privategroup.JoinMessageHeader;
+import com.quantumresearch.mycel.app.api.privategroup.PrivateGroup;
+import com.quantumresearch.mycel.app.api.privategroup.PrivateGroupManager;
+import com.quantumresearch.mycel.app.api.privategroup.invitation.GroupInvitationManager;
+import com.quantumresearch.mycel.app.test.BriarIntegrationTest;
+import com.quantumresearch.mycel.app.test.BriarIntegrationTestComponent;
+import com.quantumresearch.mycel.app.test.DaggerBriarIntegrationTestComponent;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -24,11 +24,11 @@ import java.util.Collection;
 
 import javax.annotation.Nullable;
 
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.api.identity.AuthorInfo.Status.OURSELVES;
-import static org.briarproject.briar.api.privategroup.Visibility.INVISIBLE;
-import static org.briarproject.briar.api.privategroup.Visibility.REVEALED_BY_CONTACT;
-import static org.briarproject.briar.api.privategroup.Visibility.REVEALED_BY_US;
+import static com.quantumresearch.mycel.app.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.quantumresearch.mycel.app.api.identity.AuthorInfo.Status.OURSELVES;
+import static com.quantumresearch.mycel.app.api.privategroup.Visibility.INVISIBLE;
+import static com.quantumresearch.mycel.app.api.privategroup.Visibility.REVEALED_BY_CONTACT;
+import static com.quantumresearch.mycel.app.api.privategroup.Visibility.REVEALED_BY_US;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;

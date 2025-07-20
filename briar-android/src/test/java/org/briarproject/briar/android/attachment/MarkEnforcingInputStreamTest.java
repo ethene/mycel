@@ -2,7 +2,7 @@ package org.briarproject.briar.android.attachment;
 
 import com.bumptech.glide.util.MarkEnforcingInputStream;
 
-import org.briarproject.bramble.test.BrambleTestCase;
+import com.quantumresearch.mycel.infrastructure.test.BrambleTestCase;
 import org.junit.Test;
 
 import java.io.BufferedInputStream;

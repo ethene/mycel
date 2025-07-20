@@ -1,15 +1,15 @@
-package org.briarproject.briar.sharing;
+package com.quantumresearch.mycel.app.sharing;
 
-import org.briarproject.bramble.api.db.DbException;
-import org.briarproject.briar.api.conversation.ConversationManager.ConversationClient;
-import org.briarproject.briar.api.conversation.event.ConversationMessageReceivedEvent;
-import org.briarproject.briar.api.forum.Forum;
-import org.briarproject.briar.api.forum.ForumManager;
-import org.briarproject.briar.api.forum.event.ForumInvitationResponseReceivedEvent;
-import org.briarproject.briar.api.sharing.InvitationResponse;
-import org.briarproject.briar.api.sharing.Shareable;
-import org.briarproject.briar.api.sharing.SharingManager;
-import org.briarproject.briar.test.BriarIntegrationTestComponent;
+import com.quantumresearch.mycel.infrastructure.api.db.DbException;
+import com.quantumresearch.mycel.app.api.conversation.ConversationManager.ConversationClient;
+import com.quantumresearch.mycel.app.api.conversation.event.ConversationMessageReceivedEvent;
+import com.quantumresearch.mycel.app.api.forum.Forum;
+import com.quantumresearch.mycel.app.api.forum.ForumManager;
+import com.quantumresearch.mycel.app.api.forum.event.ForumInvitationResponseReceivedEvent;
+import com.quantumresearch.mycel.app.api.sharing.InvitationResponse;
+import com.quantumresearch.mycel.app.api.sharing.Shareable;
+import com.quantumresearch.mycel.app.api.sharing.SharingManager;
+import com.quantumresearch.mycel.app.test.BriarIntegrationTestComponent;
 import org.junit.Before;
 
 import java.util.Collection;

@@ -1,30 +1,30 @@
-package org.briarproject.briar.feed;
+package com.quantumresearch.mycel.app.feed;
 
 import com.rometools.rome.feed.synd.SyndFeed;
 
-import org.briarproject.bramble.api.WeakSingletonProvider;
-import org.briarproject.bramble.api.client.ClientHelper;
-import org.briarproject.bramble.api.client.ContactGroupFactory;
-import org.briarproject.bramble.api.data.BdfDictionary;
-import org.briarproject.bramble.api.data.BdfEntry;
-import org.briarproject.bramble.api.data.BdfList;
-import org.briarproject.bramble.api.db.DatabaseComponent;
-import org.briarproject.bramble.api.db.Transaction;
-import org.briarproject.bramble.api.identity.LocalAuthor;
-import org.briarproject.bramble.api.sync.Group;
-import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.bramble.api.sync.Message;
-import org.briarproject.bramble.api.system.Clock;
-import org.briarproject.bramble.api.system.TaskScheduler;
-import org.briarproject.bramble.test.BrambleMockTestCase;
-import org.briarproject.bramble.test.DbExpectations;
-import org.briarproject.bramble.test.ImmediateExecutor;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.blog.BlogManager;
-import org.briarproject.briar.api.blog.BlogPost;
-import org.briarproject.briar.api.blog.BlogPostFactory;
-import org.briarproject.briar.api.feed.Feed;
-import org.briarproject.briar.api.feed.RssProperties;
+import com.quantumresearch.mycel.infrastructure.api.WeakSingletonProvider;
+import com.quantumresearch.mycel.infrastructure.api.client.ClientHelper;
+import com.quantumresearch.mycel.infrastructure.api.client.ContactGroupFactory;
+import com.quantumresearch.mycel.infrastructure.api.data.BdfDictionary;
+import com.quantumresearch.mycel.infrastructure.api.data.BdfEntry;
+import com.quantumresearch.mycel.infrastructure.api.data.BdfList;
+import com.quantumresearch.mycel.infrastructure.api.db.DatabaseComponent;
+import com.quantumresearch.mycel.infrastructure.api.db.Transaction;
+import com.quantumresearch.mycel.infrastructure.api.identity.LocalAuthor;
+import com.quantumresearch.mycel.infrastructure.api.sync.Group;
+import com.quantumresearch.mycel.infrastructure.api.sync.GroupId;
+import com.quantumresearch.mycel.infrastructure.api.sync.Message;
+import com.quantumresearch.mycel.infrastructure.api.system.Clock;
+import com.quantumresearch.mycel.infrastructure.api.system.TaskScheduler;
+import com.quantumresearch.mycel.infrastructure.test.BrambleMockTestCase;
+import com.quantumresearch.mycel.infrastructure.test.DbExpectations;
+import com.quantumresearch.mycel.infrastructure.test.ImmediateExecutor;
+import com.quantumresearch.mycel.app.api.blog.Blog;
+import com.quantumresearch.mycel.app.api.blog.BlogManager;
+import com.quantumresearch.mycel.app.api.blog.BlogPost;
+import com.quantumresearch.mycel.app.api.blog.BlogPostFactory;
+import com.quantumresearch.mycel.app.api.feed.Feed;
+import com.quantumresearch.mycel.app.api.feed.RssProperties;
 import org.jmock.Expectations;
 import org.junit.Test;
 
@@ -41,13 +41,13 @@ import okhttp3.mockwebserver.MockWebServer;
 
 import static java.util.Collections.singletonList;
 import static okhttp3.mockwebserver.SocketPolicy.DISCONNECT_DURING_RESPONSE_BODY;
-import static org.briarproject.bramble.test.TestUtils.getGroup;
-import static org.briarproject.bramble.test.TestUtils.getLocalAuthor;
-import static org.briarproject.bramble.test.TestUtils.getMessage;
-import static org.briarproject.bramble.util.StringUtils.UTF_8;
-import static org.briarproject.briar.api.feed.FeedConstants.KEY_FEEDS;
-import static org.briarproject.briar.api.feed.FeedManager.CLIENT_ID;
-import static org.briarproject.briar.api.feed.FeedManager.MAJOR_VERSION;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getGroup;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getLocalAuthor;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getMessage;
+import static com.quantumresearch.mycel.infrastructure.util.StringUtils.UTF_8;
+import static com.quantumresearch.mycel.app.api.feed.FeedConstants.KEY_FEEDS;
+import static com.quantumresearch.mycel.app.api.feed.FeedManager.CLIENT_ID;
+import static com.quantumresearch.mycel.app.api.feed.FeedManager.MAJOR_VERSION;
 import static org.hamcrest.Matchers.nullValue;
 
 public class FeedManagerImplTest extends BrambleMockTestCase {

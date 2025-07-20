@@ -1,26 +1,26 @@
-package org.briarproject.briar.sharing;
+package com.quantumresearch.mycel.app.sharing;
 
-import org.briarproject.bramble.api.contact.Contact;
-import org.briarproject.bramble.api.db.DbException;
-import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.autodelete.event.ConversationMessagesDeletedEvent;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.client.BaseGroup;
-import org.briarproject.briar.api.conversation.event.ConversationMessageReceivedEvent;
-import org.briarproject.briar.api.forum.Forum;
-import org.briarproject.briar.api.sharing.InvitationResponse;
-import org.briarproject.briar.api.sharing.Shareable;
-import org.briarproject.briar.api.sharing.SharingInvitationItem;
-import org.briarproject.briar.api.sharing.SharingManager;
-import org.briarproject.briar.autodelete.AbstractAutoDeleteTest;
+import com.quantumresearch.mycel.infrastructure.api.contact.Contact;
+import com.quantumresearch.mycel.infrastructure.api.db.DbException;
+import com.quantumresearch.mycel.infrastructure.api.sync.MessageId;
+import com.quantumresearch.mycel.app.api.autodelete.event.ConversationMessagesDeletedEvent;
+import com.quantumresearch.mycel.app.api.blog.Blog;
+import com.quantumresearch.mycel.app.api.client.BaseGroup;
+import com.quantumresearch.mycel.app.api.conversation.event.ConversationMessageReceivedEvent;
+import com.quantumresearch.mycel.app.api.forum.Forum;
+import com.quantumresearch.mycel.app.api.sharing.InvitationResponse;
+import com.quantumresearch.mycel.app.api.sharing.Shareable;
+import com.quantumresearch.mycel.app.api.sharing.SharingInvitationItem;
+import com.quantumresearch.mycel.app.api.sharing.SharingManager;
+import com.quantumresearch.mycel.app.autodelete.AbstractAutoDeleteTest;
 import org.junit.Test;
 
 import java.util.Collection;
 
-import static org.briarproject.bramble.api.cleanup.CleanupManager.BATCH_DELAY_MS;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
-import static org.briarproject.briar.api.sharing.SharingManager.SharingStatus.SHAREABLE;
-import static org.briarproject.briar.test.TestEventListener.assertEvent;
+import static com.quantumresearch.mycel.infrastructure.api.cleanup.CleanupManager.BATCH_DELAY_MS;
+import static com.quantumresearch.mycel.app.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
+import static com.quantumresearch.mycel.app.api.sharing.SharingManager.SharingStatus.SHAREABLE;
+import static com.quantumresearch.mycel.app.test.TestEventListener.assertEvent;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotEquals;

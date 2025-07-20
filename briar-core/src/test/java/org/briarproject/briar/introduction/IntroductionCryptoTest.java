@@ -1,16 +1,16 @@
-package org.briarproject.briar.introduction;
+package com.quantumresearch.mycel.app.introduction;
 
-import org.briarproject.bramble.api.client.ClientHelper;
-import org.briarproject.bramble.api.crypto.CryptoComponent;
-import org.briarproject.bramble.api.identity.Author;
-import org.briarproject.bramble.test.BrambleMockTestCase;
-import org.briarproject.briar.api.client.SessionId;
+import com.quantumresearch.mycel.infrastructure.api.client.ClientHelper;
+import com.quantumresearch.mycel.infrastructure.api.crypto.CryptoComponent;
+import com.quantumresearch.mycel.infrastructure.api.identity.Author;
+import com.quantumresearch.mycel.infrastructure.test.BrambleMockTestCase;
+import com.quantumresearch.mycel.app.api.client.SessionId;
 import org.jmock.Expectations;
 import org.junit.Test;
 
-import static org.briarproject.bramble.test.TestUtils.getAuthor;
-import static org.briarproject.bramble.test.TestUtils.getRandomId;
-import static org.briarproject.briar.api.introduction.IntroductionConstants.LABEL_SESSION_ID;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getAuthor;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getRandomId;
+import static com.quantumresearch.mycel.app.api.introduction.IntroductionConstants.LABEL_SESSION_ID;
 import static org.junit.Assert.assertEquals;
 
 public class IntroductionCryptoTest extends BrambleMockTestCase {

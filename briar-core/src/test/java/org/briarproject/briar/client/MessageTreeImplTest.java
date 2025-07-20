@@ -1,8 +1,8 @@
-package org.briarproject.briar.client;
+package com.quantumresearch.mycel.app.client;
 
-import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.bramble.test.TestUtils;
-import org.briarproject.briar.api.client.MessageTree;
+import com.quantumresearch.mycel.infrastructure.api.sync.MessageId;
+import com.quantumresearch.mycel.infrastructure.test.TestUtils;
+import com.quantumresearch.mycel.app.api.client.MessageTree;
 import org.briarproject.nullsafety.NotNullByDefault;
 import org.junit.Test;
 

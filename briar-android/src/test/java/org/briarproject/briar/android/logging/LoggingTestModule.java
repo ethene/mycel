@@ -1,7 +1,7 @@
 package org.briarproject.briar.android.logging;
 
-import org.briarproject.bramble.api.crypto.PublicKey;
-import org.briarproject.bramble.api.reporting.DevConfig;
+import com.quantumresearch.mycel.infrastructure.api.crypto.PublicKey;
+import com.quantumresearch.mycel.infrastructure.api.reporting.DevConfig;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.io.File;

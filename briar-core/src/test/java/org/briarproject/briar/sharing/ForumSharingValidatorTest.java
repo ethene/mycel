@@ -1,23 +1,23 @@
-package org.briarproject.briar.sharing;
+package com.quantumresearch.mycel.app.sharing;
 
-import org.briarproject.bramble.api.FormatException;
-import org.briarproject.bramble.api.client.BdfMessageContext;
-import org.briarproject.bramble.api.data.BdfList;
-import org.briarproject.briar.api.forum.Forum;
+import com.quantumresearch.mycel.infrastructure.api.FormatException;
+import com.quantumresearch.mycel.infrastructure.api.client.BdfMessageContext;
+import com.quantumresearch.mycel.infrastructure.api.data.BdfList;
+import com.quantumresearch.mycel.app.api.forum.Forum;
 import org.jmock.Expectations;
 import org.junit.Test;
 
 import javax.annotation.Nullable;
 
-import static org.briarproject.bramble.test.TestUtils.getRandomBytes;
-import static org.briarproject.bramble.util.StringUtils.getRandomString;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MAX_AUTO_DELETE_TIMER_MS;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.api.forum.ForumConstants.FORUM_SALT_LENGTH;
-import static org.briarproject.briar.api.forum.ForumConstants.MAX_FORUM_NAME_LENGTH;
-import static org.briarproject.briar.api.sharing.SharingConstants.MAX_INVITATION_TEXT_LENGTH;
-import static org.briarproject.briar.sharing.MessageType.INVITE;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getRandomBytes;
+import static com.quantumresearch.mycel.infrastructure.util.StringUtils.getRandomString;
+import static com.quantumresearch.mycel.app.api.autodelete.AutoDeleteConstants.MAX_AUTO_DELETE_TIMER_MS;
+import static com.quantumresearch.mycel.app.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
+import static com.quantumresearch.mycel.app.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.quantumresearch.mycel.app.api.forum.ForumConstants.FORUM_SALT_LENGTH;
+import static com.quantumresearch.mycel.app.api.forum.ForumConstants.MAX_FORUM_NAME_LENGTH;
+import static com.quantumresearch.mycel.app.api.sharing.SharingConstants.MAX_INVITATION_TEXT_LENGTH;
+import static com.quantumresearch.mycel.app.sharing.MessageType.INVITE;
 import static org.junit.Assert.fail;
 
 public class ForumSharingValidatorTest extends SharingValidatorTest {

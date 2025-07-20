@@ -1,18 +1,18 @@
-package org.briarproject.briar.messaging;
+package com.quantumresearch.mycel.app.messaging;
 
-import org.briarproject.bramble.BrambleCoreIntegrationTestEagerSingletons;
-import org.briarproject.bramble.BrambleCoreModule;
-import org.briarproject.bramble.mailbox.ModularMailboxModule;
-import org.briarproject.bramble.test.BrambleCoreIntegrationTestModule;
-import org.briarproject.bramble.test.TestDnsModule;
-import org.briarproject.bramble.test.TestPluginConfigModule;
-import org.briarproject.bramble.test.TestSocksModule;
-import org.briarproject.briar.autodelete.AutoDeleteModule;
-import org.briarproject.briar.avatar.AvatarModule;
-import org.briarproject.briar.client.BriarClientModule;
-import org.briarproject.briar.conversation.ConversationModule;
-import org.briarproject.briar.forum.ForumModule;
-import org.briarproject.briar.identity.IdentityModule;
+import com.quantumresearch.mycel.infrastructure.BrambleCoreIntegrationTestEagerSingletons;
+import com.quantumresearch.mycel.infrastructure.BrambleCoreModule;
+import com.quantumresearch.mycel.infrastructure.mailbox.ModularMailboxModule;
+import com.quantumresearch.mycel.infrastructure.test.BrambleCoreIntegrationTestModule;
+import com.quantumresearch.mycel.infrastructure.test.TestDnsModule;
+import com.quantumresearch.mycel.infrastructure.test.TestPluginConfigModule;
+import com.quantumresearch.mycel.infrastructure.test.TestSocksModule;
+import com.quantumresearch.mycel.app.autodelete.AutoDeleteModule;
+import com.quantumresearch.mycel.app.avatar.AvatarModule;
+import com.quantumresearch.mycel.app.client.BriarClientModule;
+import com.quantumresearch.mycel.app.conversation.ConversationModule;
+import com.quantumresearch.mycel.app.forum.ForumModule;
+import com.quantumresearch.mycel.app.identity.IdentityModule;
 
 import javax.inject.Singleton;
 

@@ -1,20 +1,20 @@
-package org.briarproject.briar.feed;
+package com.quantumresearch.mycel.app.feed;
 
-import org.briarproject.bramble.BrambleCoreIntegrationTestEagerSingletons;
-import org.briarproject.bramble.BrambleCoreModule;
-import org.briarproject.bramble.api.identity.IdentityManager;
-import org.briarproject.bramble.api.lifecycle.LifecycleManager;
-import org.briarproject.bramble.mailbox.ModularMailboxModule;
-import org.briarproject.bramble.test.BrambleCoreIntegrationTestModule;
-import org.briarproject.bramble.test.TestDnsModule;
-import org.briarproject.bramble.test.TestPluginConfigModule;
-import org.briarproject.bramble.test.TestSocksModule;
-import org.briarproject.briar.api.blog.BlogManager;
-import org.briarproject.briar.api.feed.FeedManager;
-import org.briarproject.briar.avatar.AvatarModule;
-import org.briarproject.briar.blog.BlogModule;
-import org.briarproject.briar.client.BriarClientModule;
-import org.briarproject.briar.identity.IdentityModule;
+import com.quantumresearch.mycel.infrastructure.BrambleCoreIntegrationTestEagerSingletons;
+import com.quantumresearch.mycel.infrastructure.BrambleCoreModule;
+import com.quantumresearch.mycel.infrastructure.api.identity.IdentityManager;
+import com.quantumresearch.mycel.infrastructure.api.lifecycle.LifecycleManager;
+import com.quantumresearch.mycel.infrastructure.mailbox.ModularMailboxModule;
+import com.quantumresearch.mycel.infrastructure.test.BrambleCoreIntegrationTestModule;
+import com.quantumresearch.mycel.infrastructure.test.TestDnsModule;
+import com.quantumresearch.mycel.infrastructure.test.TestPluginConfigModule;
+import com.quantumresearch.mycel.infrastructure.test.TestSocksModule;
+import com.quantumresearch.mycel.app.api.blog.BlogManager;
+import com.quantumresearch.mycel.app.api.feed.FeedManager;
+import com.quantumresearch.mycel.app.avatar.AvatarModule;
+import com.quantumresearch.mycel.app.blog.BlogModule;
+import com.quantumresearch.mycel.app.client.BriarClientModule;
+import com.quantumresearch.mycel.app.identity.IdentityModule;
 
 import javax.inject.Singleton;
 

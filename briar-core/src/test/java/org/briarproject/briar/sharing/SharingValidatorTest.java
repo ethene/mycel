@@ -1,14 +1,14 @@
-package org.briarproject.briar.sharing;
+package com.quantumresearch.mycel.app.sharing;
 
-import org.briarproject.bramble.api.FormatException;
-import org.briarproject.bramble.api.UniqueId;
-import org.briarproject.bramble.api.client.BdfMessageContext;
-import org.briarproject.bramble.api.data.BdfDictionary;
-import org.briarproject.bramble.api.data.BdfList;
-import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.bramble.test.ValidatorTestCase;
-import org.briarproject.briar.api.blog.BlogFactory;
-import org.briarproject.briar.api.forum.ForumFactory;
+import com.quantumresearch.mycel.infrastructure.api.FormatException;
+import com.quantumresearch.mycel.infrastructure.api.UniqueId;
+import com.quantumresearch.mycel.infrastructure.api.client.BdfMessageContext;
+import com.quantumresearch.mycel.infrastructure.api.data.BdfDictionary;
+import com.quantumresearch.mycel.infrastructure.api.data.BdfList;
+import com.quantumresearch.mycel.infrastructure.api.sync.MessageId;
+import com.quantumresearch.mycel.infrastructure.test.ValidatorTestCase;
+import com.quantumresearch.mycel.app.api.blog.BlogFactory;
+import com.quantumresearch.mycel.app.api.forum.ForumFactory;
 import org.jmock.Expectations;
 import org.junit.Test;
 
@@ -18,16 +18,16 @@ import javax.annotation.Nullable;
 
 import static java.util.Collections.emptyList;
 import static java.util.Collections.singletonList;
-import static org.briarproject.bramble.test.TestUtils.getRandomBytes;
-import static org.briarproject.bramble.test.TestUtils.getRandomId;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MAX_AUTO_DELETE_TIMER_MS;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.sharing.MessageType.ABORT;
-import static org.briarproject.briar.sharing.MessageType.ACCEPT;
-import static org.briarproject.briar.sharing.MessageType.DECLINE;
-import static org.briarproject.briar.sharing.MessageType.INVITE;
-import static org.briarproject.briar.sharing.MessageType.LEAVE;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getRandomBytes;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getRandomId;
+import static com.quantumresearch.mycel.app.api.autodelete.AutoDeleteConstants.MAX_AUTO_DELETE_TIMER_MS;
+import static com.quantumresearch.mycel.app.api.autodelete.AutoDeleteConstants.MIN_AUTO_DELETE_TIMER_MS;
+import static com.quantumresearch.mycel.app.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.quantumresearch.mycel.app.sharing.MessageType.ABORT;
+import static com.quantumresearch.mycel.app.sharing.MessageType.ACCEPT;
+import static com.quantumresearch.mycel.app.sharing.MessageType.DECLINE;
+import static com.quantumresearch.mycel.app.sharing.MessageType.INVITE;
+import static com.quantumresearch.mycel.app.sharing.MessageType.LEAVE;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 

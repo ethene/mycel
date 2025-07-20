@@ -2,7 +2,7 @@ package org.briarproject.briar.android.account;
 
 import android.view.Gravity;
 
-import org.briarproject.briar.R;
+import com.quantumresearch.mycel.R;
 import org.briarproject.briar.android.BriarUiTestComponent;
 import org.briarproject.briar.android.UiTest;
 import org.briarproject.briar.android.login.StartupActivity;

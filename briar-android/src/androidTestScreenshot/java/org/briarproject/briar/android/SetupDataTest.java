@@ -4,7 +4,7 @@ import android.content.Context;
 
 import org.briarproject.bramble.api.contact.Contact;
 import org.briarproject.bramble.api.db.DbException;
-import org.briarproject.briar.R;
+import com.quantumresearch.mycel.R;
 import org.briarproject.briar.android.account.SetupActivity;
 import org.junit.Rule;
 import org.junit.Test;

@@ -3,7 +3,7 @@ package org.briarproject.briar.android.settings;
 import android.content.Intent;
 import android.view.Gravity;
 
-import org.briarproject.briar.R;
+import com.quantumresearch.mycel.R;
 import org.briarproject.briar.android.BriarUiTestComponent;
 import org.briarproject.briar.android.ScreenshotTest;
 import org.briarproject.briar.android.navdrawer.NavDrawerActivity;

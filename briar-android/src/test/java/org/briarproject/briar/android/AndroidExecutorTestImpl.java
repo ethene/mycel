@@ -1,6 +1,6 @@
 package org.briarproject.briar.android;
 
-import org.briarproject.bramble.api.system.AndroidExecutor;
+import com.quantumresearch.mycel.infrastructure.api.system.AndroidExecutor;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executor;

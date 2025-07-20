@@ -1,23 +1,23 @@
-package org.briarproject.briar.client;
+package com.quantumresearch.mycel.app.client;
 
-import org.briarproject.bramble.api.client.ClientHelper;
-import org.briarproject.bramble.api.data.BdfDictionary;
-import org.briarproject.bramble.api.data.BdfEntry;
-import org.briarproject.bramble.api.db.DatabaseComponent;
-import org.briarproject.bramble.api.db.Transaction;
-import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.bramble.api.system.Clock;
-import org.briarproject.bramble.test.BrambleMockTestCase;
-import org.briarproject.bramble.test.TestUtils;
-import org.briarproject.briar.api.client.MessageTracker;
+import com.quantumresearch.mycel.infrastructure.api.client.ClientHelper;
+import com.quantumresearch.mycel.infrastructure.api.data.BdfDictionary;
+import com.quantumresearch.mycel.infrastructure.api.data.BdfEntry;
+import com.quantumresearch.mycel.infrastructure.api.db.DatabaseComponent;
+import com.quantumresearch.mycel.infrastructure.api.db.Transaction;
+import com.quantumresearch.mycel.infrastructure.api.sync.GroupId;
+import com.quantumresearch.mycel.infrastructure.api.sync.MessageId;
+import com.quantumresearch.mycel.infrastructure.api.system.Clock;
+import com.quantumresearch.mycel.infrastructure.test.BrambleMockTestCase;
+import com.quantumresearch.mycel.infrastructure.test.TestUtils;
+import com.quantumresearch.mycel.app.api.client.MessageTracker;
 import org.jmock.Expectations;
 import org.junit.Test;
 
-import static org.briarproject.briar.client.MessageTrackerConstants.GROUP_KEY_LATEST_MSG;
-import static org.briarproject.briar.client.MessageTrackerConstants.GROUP_KEY_MSG_COUNT;
-import static org.briarproject.briar.client.MessageTrackerConstants.GROUP_KEY_STORED_MESSAGE_ID;
-import static org.briarproject.briar.client.MessageTrackerConstants.GROUP_KEY_UNREAD_COUNT;
+import static com.quantumresearch.mycel.app.client.MessageTrackerConstants.GROUP_KEY_LATEST_MSG;
+import static com.quantumresearch.mycel.app.client.MessageTrackerConstants.GROUP_KEY_MSG_COUNT;
+import static com.quantumresearch.mycel.app.client.MessageTrackerConstants.GROUP_KEY_STORED_MESSAGE_ID;
+import static com.quantumresearch.mycel.app.client.MessageTrackerConstants.GROUP_KEY_UNREAD_COUNT;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 

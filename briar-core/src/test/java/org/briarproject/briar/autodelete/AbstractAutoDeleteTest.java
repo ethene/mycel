@@ -1,21 +1,21 @@
-package org.briarproject.briar.autodelete;
+package com.quantumresearch.mycel.app.autodelete;
 
-import org.briarproject.bramble.api.contact.Contact;
-import org.briarproject.bramble.api.contact.ContactId;
-import org.briarproject.bramble.api.db.DatabaseComponent;
-import org.briarproject.bramble.api.db.DbException;
-import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.bramble.system.TimeTravelModule;
-import org.briarproject.bramble.test.TestDatabaseConfigModule;
-import org.briarproject.briar.api.autodelete.AutoDeleteManager;
-import org.briarproject.briar.api.client.MessageTracker.GroupCount;
-import org.briarproject.briar.api.conversation.ConversationManager;
-import org.briarproject.briar.api.conversation.ConversationManager.ConversationClient;
-import org.briarproject.briar.api.conversation.ConversationMessageHeader;
-import org.briarproject.briar.test.BriarIntegrationTest;
-import org.briarproject.briar.test.BriarIntegrationTestComponent;
-import org.briarproject.briar.test.DaggerBriarIntegrationTestComponent;
+import com.quantumresearch.mycel.infrastructure.api.contact.Contact;
+import com.quantumresearch.mycel.infrastructure.api.contact.ContactId;
+import com.quantumresearch.mycel.infrastructure.api.db.DatabaseComponent;
+import com.quantumresearch.mycel.infrastructure.api.db.DbException;
+import com.quantumresearch.mycel.infrastructure.api.sync.GroupId;
+import com.quantumresearch.mycel.infrastructure.api.sync.MessageId;
+import com.quantumresearch.mycel.infrastructure.system.TimeTravelModule;
+import com.quantumresearch.mycel.infrastructure.test.TestDatabaseConfigModule;
+import com.quantumresearch.mycel.app.api.autodelete.AutoDeleteManager;
+import com.quantumresearch.mycel.app.api.client.MessageTracker.GroupCount;
+import com.quantumresearch.mycel.app.api.conversation.ConversationManager;
+import com.quantumresearch.mycel.app.api.conversation.ConversationManager.ConversationClient;
+import com.quantumresearch.mycel.app.api.conversation.ConversationMessageHeader;
+import com.quantumresearch.mycel.app.test.BriarIntegrationTest;
+import com.quantumresearch.mycel.app.test.BriarIntegrationTestComponent;
+import com.quantumresearch.mycel.app.test.DaggerBriarIntegrationTestComponent;
 import org.junit.Before;
 
 import java.util.ArrayList;
@@ -23,7 +23,7 @@ import java.util.Collection;
 import java.util.List;
 
 import static java.util.Collections.sort;
-import static org.briarproject.bramble.api.cleanup.CleanupManager.BATCH_DELAY_MS;
+import static com.quantumresearch.mycel.infrastructure.api.cleanup.CleanupManager.BATCH_DELAY_MS;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 

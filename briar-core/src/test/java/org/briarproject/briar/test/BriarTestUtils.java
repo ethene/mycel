@@ -1,23 +1,23 @@
-package org.briarproject.briar.test;
+package com.quantumresearch.mycel.app.test;
 
-import org.briarproject.bramble.api.crypto.CryptoComponent;
-import org.briarproject.bramble.api.crypto.KeyPair;
-import org.briarproject.bramble.api.db.DbException;
-import org.briarproject.bramble.api.identity.Author;
-import org.briarproject.bramble.api.identity.AuthorFactory;
-import org.briarproject.bramble.api.identity.LocalAuthor;
-import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.bramble.util.Base32;
-import org.briarproject.briar.api.client.MessageTracker;
-import org.briarproject.briar.api.client.MessageTracker.GroupCount;
+import com.quantumresearch.mycel.infrastructure.api.crypto.CryptoComponent;
+import com.quantumresearch.mycel.infrastructure.api.crypto.KeyPair;
+import com.quantumresearch.mycel.infrastructure.api.db.DbException;
+import com.quantumresearch.mycel.infrastructure.api.identity.Author;
+import com.quantumresearch.mycel.infrastructure.api.identity.AuthorFactory;
+import com.quantumresearch.mycel.infrastructure.api.identity.LocalAuthor;
+import com.quantumresearch.mycel.infrastructure.api.sync.GroupId;
+import com.quantumresearch.mycel.infrastructure.util.Base32;
+import com.quantumresearch.mycel.app.api.client.MessageTracker;
+import com.quantumresearch.mycel.app.api.client.MessageTracker.GroupCount;
 
 import java.util.Locale;
 
 import static java.lang.System.arraycopy;
-import static org.briarproject.bramble.api.contact.HandshakeLinkConstants.FORMAT_VERSION;
-import static org.briarproject.bramble.api.contact.HandshakeLinkConstants.RAW_LINK_BYTES;
-import static org.briarproject.bramble.api.identity.AuthorConstants.MAX_AUTHOR_NAME_LENGTH;
-import static org.briarproject.bramble.util.StringUtils.getRandomString;
+import static com.quantumresearch.mycel.infrastructure.api.contact.HandshakeLinkConstants.FORMAT_VERSION;
+import static com.quantumresearch.mycel.infrastructure.api.contact.HandshakeLinkConstants.RAW_LINK_BYTES;
+import static com.quantumresearch.mycel.infrastructure.api.identity.AuthorConstants.MAX_AUTHOR_NAME_LENGTH;
+import static com.quantumresearch.mycel.infrastructure.util.StringUtils.getRandomString;
 import static org.junit.Assert.assertEquals;
 
 public class BriarTestUtils {

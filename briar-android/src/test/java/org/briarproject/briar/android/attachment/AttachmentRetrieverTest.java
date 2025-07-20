@@ -1,15 +1,15 @@
 package org.briarproject.briar.android.attachment;
 
-import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.bramble.test.BrambleMockTestCase;
-import org.briarproject.bramble.test.ImmediateExecutor;
-import org.briarproject.briar.android.attachment.media.ImageHelper;
-import org.briarproject.briar.android.attachment.media.ImageSizeCalculator;
-import org.briarproject.briar.android.attachment.media.Size;
-import org.briarproject.briar.api.attachment.Attachment;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
-import org.briarproject.briar.api.attachment.AttachmentReader;
+import com.quantumresearch.mycel.infrastructure.api.sync.GroupId;
+import com.quantumresearch.mycel.infrastructure.api.sync.MessageId;
+import com.quantumresearch.mycel.infrastructure.test.BrambleMockTestCase;
+import com.quantumresearch.mycel.infrastructure.test.ImmediateExecutor;
+import com.quantumresearch.mycel.app.android.attachment.media.ImageHelper;
+import com.quantumresearch.mycel.app.android.attachment.media.ImageSizeCalculator;
+import com.quantumresearch.mycel.app.android.attachment.media.Size;
+import com.quantumresearch.mycel.app.api.attachment.Attachment;
+import com.quantumresearch.mycel.app.api.attachment.AttachmentHeader;
+import com.quantumresearch.mycel.app.api.attachment.AttachmentReader;
 import org.jmock.Expectations;
 import org.jmock.imposters.ByteBuddyClassImposteriser;
 import org.junit.Test;
@@ -18,10 +18,10 @@ import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.util.concurrent.Executor;
 
-import static org.briarproject.bramble.test.TestUtils.getRandomBytes;
-import static org.briarproject.bramble.test.TestUtils.getRandomId;
-import static org.briarproject.briar.android.attachment.AttachmentItem.State.AVAILABLE;
-import static org.briarproject.briar.android.attachment.AttachmentItem.State.ERROR;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getRandomBytes;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getRandomId;
+import static com.quantumresearch.mycel.app.android.attachment.AttachmentItem.State.AVAILABLE;
+import static com.quantumresearch.mycel.app.android.attachment.AttachmentItem.State.ERROR;
 import static org.junit.Assert.assertEquals;
 
 public class AttachmentRetrieverTest extends BrambleMockTestCase {

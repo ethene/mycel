@@ -1,15 +1,15 @@
-package org.briarproject.briar.forum;
+package com.quantumresearch.mycel.app.forum;
 
-import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.bramble.test.TestDatabaseConfigModule;
-import org.briarproject.briar.api.forum.Forum;
-import org.briarproject.briar.api.forum.ForumManager;
-import org.briarproject.briar.api.forum.ForumPost;
-import org.briarproject.briar.api.forum.ForumPostHeader;
-import org.briarproject.briar.api.forum.ForumSharingManager;
-import org.briarproject.briar.test.BriarIntegrationTest;
-import org.briarproject.briar.test.BriarIntegrationTestComponent;
-import org.briarproject.briar.test.DaggerBriarIntegrationTestComponent;
+import com.quantumresearch.mycel.infrastructure.api.sync.GroupId;
+import com.quantumresearch.mycel.infrastructure.test.TestDatabaseConfigModule;
+import com.quantumresearch.mycel.app.api.forum.Forum;
+import com.quantumresearch.mycel.app.api.forum.ForumManager;
+import com.quantumresearch.mycel.app.api.forum.ForumPost;
+import com.quantumresearch.mycel.app.api.forum.ForumPostHeader;
+import com.quantumresearch.mycel.app.api.forum.ForumSharingManager;
+import com.quantumresearch.mycel.app.test.BriarIntegrationTest;
+import com.quantumresearch.mycel.app.test.BriarIntegrationTestComponent;
+import com.quantumresearch.mycel.app.test.DaggerBriarIntegrationTestComponent;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -17,7 +17,7 @@ import java.util.Collection;
 
 import javax.annotation.Nullable;
 
-import static org.briarproject.briar.test.BriarTestUtils.assertGroupCount;
+import static com.quantumresearch.mycel.app.test.BriarTestUtils.assertGroupCount;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;

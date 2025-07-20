@@ -1,6 +1,6 @@
-package org.briarproject.briar.attachment;
+package com.quantumresearch.mycel.app.attachment;
 
-import org.briarproject.bramble.test.BrambleTestCase;
+import com.quantumresearch.mycel.infrastructure.test.BrambleTestCase;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Random;
 
-import static org.briarproject.bramble.test.TestUtils.getRandomBytes;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getRandomBytes;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

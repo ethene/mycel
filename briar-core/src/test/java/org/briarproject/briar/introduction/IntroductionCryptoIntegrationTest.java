@@ -1,28 +1,28 @@
-package org.briarproject.briar.introduction;
+package com.quantumresearch.mycel.app.introduction;
 
-import org.briarproject.bramble.api.client.ClientHelper;
-import org.briarproject.bramble.api.crypto.CryptoComponent;
-import org.briarproject.bramble.api.crypto.KeyPair;
-import org.briarproject.bramble.api.crypto.SecretKey;
-import org.briarproject.bramble.api.identity.Author;
-import org.briarproject.bramble.api.identity.AuthorFactory;
-import org.briarproject.bramble.api.identity.LocalAuthor;
-import org.briarproject.bramble.api.plugin.TransportId;
-import org.briarproject.bramble.api.properties.TransportProperties;
-import org.briarproject.bramble.test.BrambleTestCase;
-import org.briarproject.briar.api.client.SessionId;
+import com.quantumresearch.mycel.infrastructure.api.client.ClientHelper;
+import com.quantumresearch.mycel.infrastructure.api.crypto.CryptoComponent;
+import com.quantumresearch.mycel.infrastructure.api.crypto.KeyPair;
+import com.quantumresearch.mycel.infrastructure.api.crypto.SecretKey;
+import com.quantumresearch.mycel.infrastructure.api.identity.Author;
+import com.quantumresearch.mycel.infrastructure.api.identity.AuthorFactory;
+import com.quantumresearch.mycel.infrastructure.api.identity.LocalAuthor;
+import com.quantumresearch.mycel.infrastructure.api.plugin.TransportId;
+import com.quantumresearch.mycel.infrastructure.api.properties.TransportProperties;
+import com.quantumresearch.mycel.infrastructure.test.BrambleTestCase;
+import com.quantumresearch.mycel.app.api.client.SessionId;
 import org.junit.Test;
 
 import java.util.Map;
 
 import javax.inject.Inject;
 
-import static org.briarproject.bramble.test.TestUtils.getSecretKey;
-import static org.briarproject.bramble.test.TestUtils.getTransportPropertiesMap;
-import static org.briarproject.briar.introduction.IntroduceeSession.Local;
-import static org.briarproject.briar.introduction.IntroduceeSession.Remote;
-import static org.briarproject.briar.test.BriarTestUtils.getRealAuthor;
-import static org.briarproject.briar.test.BriarTestUtils.getRealLocalAuthor;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getSecretKey;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getTransportPropertiesMap;
+import static com.quantumresearch.mycel.app.introduction.IntroduceeSession.Local;
+import static com.quantumresearch.mycel.app.introduction.IntroduceeSession.Remote;
+import static com.quantumresearch.mycel.app.test.BriarTestUtils.getRealAuthor;
+import static com.quantumresearch.mycel.app.test.BriarTestUtils.getRealLocalAuthor;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

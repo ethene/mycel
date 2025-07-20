@@ -1,22 +1,22 @@
-package org.briarproject.briar.privategroup.invitation;
+package com.quantumresearch.mycel.app.privategroup.invitation;
 
-import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.briar.api.client.ProtocolStateException;
+import com.quantumresearch.mycel.infrastructure.api.sync.MessageId;
+import com.quantumresearch.mycel.app.api.client.ProtocolStateException;
 import org.jmock.Expectations;
 import org.junit.Test;
 
-import static org.briarproject.bramble.api.sync.Group.Visibility.INVISIBLE;
-import static org.briarproject.bramble.api.sync.Group.Visibility.SHARED;
-import static org.briarproject.bramble.api.sync.Group.Visibility.VISIBLE;
-import static org.briarproject.bramble.test.TestUtils.getRandomId;
-import static org.briarproject.briar.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
-import static org.briarproject.briar.privategroup.invitation.PeerState.AWAIT_MEMBER;
-import static org.briarproject.briar.privategroup.invitation.PeerState.BOTH_JOINED;
-import static org.briarproject.briar.privategroup.invitation.PeerState.ERROR;
-import static org.briarproject.briar.privategroup.invitation.PeerState.LOCAL_JOINED;
-import static org.briarproject.briar.privategroup.invitation.PeerState.LOCAL_LEFT;
-import static org.briarproject.briar.privategroup.invitation.PeerState.NEITHER_JOINED;
-import static org.briarproject.briar.privategroup.invitation.PeerState.START;
+import static com.quantumresearch.mycel.infrastructure.api.sync.Group.Visibility.INVISIBLE;
+import static com.quantumresearch.mycel.infrastructure.api.sync.Group.Visibility.SHARED;
+import static com.quantumresearch.mycel.infrastructure.api.sync.Group.Visibility.VISIBLE;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getRandomId;
+import static com.quantumresearch.mycel.app.api.autodelete.AutoDeleteConstants.NO_AUTO_DELETE_TIMER;
+import static com.quantumresearch.mycel.app.privategroup.invitation.PeerState.AWAIT_MEMBER;
+import static com.quantumresearch.mycel.app.privategroup.invitation.PeerState.BOTH_JOINED;
+import static com.quantumresearch.mycel.app.privategroup.invitation.PeerState.ERROR;
+import static com.quantumresearch.mycel.app.privategroup.invitation.PeerState.LOCAL_JOINED;
+import static com.quantumresearch.mycel.app.privategroup.invitation.PeerState.LOCAL_LEFT;
+import static com.quantumresearch.mycel.app.privategroup.invitation.PeerState.NEITHER_JOINED;
+import static com.quantumresearch.mycel.app.privategroup.invitation.PeerState.START;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;

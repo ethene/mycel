@@ -1,29 +1,29 @@
-package org.briarproject.briar.attachment;
+package com.quantumresearch.mycel.app.attachment;
 
-import org.briarproject.bramble.api.client.ClientHelper;
-import org.briarproject.bramble.api.data.BdfDictionary;
-import org.briarproject.bramble.api.data.BdfEntry;
-import org.briarproject.bramble.api.db.DatabaseComponent;
-import org.briarproject.bramble.api.db.NoSuchMessageException;
-import org.briarproject.bramble.api.db.Transaction;
-import org.briarproject.bramble.api.db.TransactionManager;
-import org.briarproject.bramble.api.sync.GroupId;
-import org.briarproject.bramble.api.sync.Message;
-import org.briarproject.bramble.test.BrambleMockTestCase;
-import org.briarproject.bramble.test.DbExpectations;
-import org.briarproject.briar.api.attachment.Attachment;
-import org.briarproject.briar.api.attachment.AttachmentHeader;
+import com.quantumresearch.mycel.infrastructure.api.client.ClientHelper;
+import com.quantumresearch.mycel.infrastructure.api.data.BdfDictionary;
+import com.quantumresearch.mycel.infrastructure.api.data.BdfEntry;
+import com.quantumresearch.mycel.infrastructure.api.db.DatabaseComponent;
+import com.quantumresearch.mycel.infrastructure.api.db.NoSuchMessageException;
+import com.quantumresearch.mycel.infrastructure.api.db.Transaction;
+import com.quantumresearch.mycel.infrastructure.api.db.TransactionManager;
+import com.quantumresearch.mycel.infrastructure.api.sync.GroupId;
+import com.quantumresearch.mycel.infrastructure.api.sync.Message;
+import com.quantumresearch.mycel.infrastructure.test.BrambleMockTestCase;
+import com.quantumresearch.mycel.infrastructure.test.DbExpectations;
+import com.quantumresearch.mycel.app.api.attachment.Attachment;
+import com.quantumresearch.mycel.app.api.attachment.AttachmentHeader;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 
 import static java.lang.System.arraycopy;
-import static org.briarproject.bramble.test.TestUtils.getMessage;
-import static org.briarproject.bramble.test.TestUtils.getRandomId;
-import static org.briarproject.bramble.util.IoUtils.copyAndClose;
-import static org.briarproject.briar.api.attachment.MediaConstants.MSG_KEY_CONTENT_TYPE;
-import static org.briarproject.briar.api.attachment.MediaConstants.MSG_KEY_DESCRIPTOR_LENGTH;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getMessage;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getRandomId;
+import static com.quantumresearch.mycel.infrastructure.util.IoUtils.copyAndClose;
+import static com.quantumresearch.mycel.app.api.attachment.MediaConstants.MSG_KEY_CONTENT_TYPE;
+import static com.quantumresearch.mycel.app.api.attachment.MediaConstants.MSG_KEY_DESCRIPTOR_LENGTH;
 import static org.junit.Assert.assertArrayEquals;
 
 public class AttachmentReaderImplTest extends BrambleMockTestCase {

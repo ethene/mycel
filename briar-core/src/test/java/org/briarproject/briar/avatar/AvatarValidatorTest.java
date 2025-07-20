@@ -1,33 +1,33 @@
-package org.briarproject.briar.avatar;
+package com.quantumresearch.mycel.app.avatar;
 
-import org.briarproject.bramble.api.data.BdfDictionary;
-import org.briarproject.bramble.api.data.BdfEntry;
-import org.briarproject.bramble.api.data.BdfList;
-import org.briarproject.bramble.api.data.BdfReader;
-import org.briarproject.bramble.api.data.BdfReaderFactory;
-import org.briarproject.bramble.api.data.MetadataEncoder;
-import org.briarproject.bramble.api.db.Metadata;
-import org.briarproject.bramble.api.sync.Group;
-import org.briarproject.bramble.api.sync.InvalidMessageException;
-import org.briarproject.bramble.api.sync.Message;
-import org.briarproject.bramble.api.sync.MessageContext;
-import org.briarproject.bramble.api.system.Clock;
-import org.briarproject.bramble.test.BrambleMockTestCase;
+import com.quantumresearch.mycel.infrastructure.api.data.BdfDictionary;
+import com.quantumresearch.mycel.infrastructure.api.data.BdfEntry;
+import com.quantumresearch.mycel.infrastructure.api.data.BdfList;
+import com.quantumresearch.mycel.infrastructure.api.data.BdfReader;
+import com.quantumresearch.mycel.infrastructure.api.data.BdfReaderFactory;
+import com.quantumresearch.mycel.infrastructure.api.data.MetadataEncoder;
+import com.quantumresearch.mycel.infrastructure.api.db.Metadata;
+import com.quantumresearch.mycel.infrastructure.api.sync.Group;
+import com.quantumresearch.mycel.infrastructure.api.sync.InvalidMessageException;
+import com.quantumresearch.mycel.infrastructure.api.sync.Message;
+import com.quantumresearch.mycel.infrastructure.api.sync.MessageContext;
+import com.quantumresearch.mycel.infrastructure.api.system.Clock;
+import com.quantumresearch.mycel.infrastructure.test.BrambleMockTestCase;
 import org.jmock.Expectations;
 import org.junit.Test;
 
 import java.io.InputStream;
 
-import static org.briarproject.bramble.api.transport.TransportConstants.MAX_CLOCK_DIFFERENCE;
-import static org.briarproject.bramble.test.TestUtils.getClientId;
-import static org.briarproject.bramble.test.TestUtils.getGroup;
-import static org.briarproject.bramble.test.TestUtils.getMessage;
-import static org.briarproject.bramble.util.StringUtils.getRandomString;
-import static org.briarproject.briar.api.attachment.MediaConstants.MAX_CONTENT_TYPE_BYTES;
-import static org.briarproject.briar.api.attachment.MediaConstants.MSG_KEY_CONTENT_TYPE;
-import static org.briarproject.briar.api.attachment.MediaConstants.MSG_KEY_DESCRIPTOR_LENGTH;
-import static org.briarproject.briar.avatar.AvatarConstants.MSG_KEY_VERSION;
-import static org.briarproject.briar.avatar.AvatarConstants.MSG_TYPE_UPDATE;
+import static com.quantumresearch.mycel.infrastructure.api.transport.TransportConstants.MAX_CLOCK_DIFFERENCE;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getClientId;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getGroup;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getMessage;
+import static com.quantumresearch.mycel.infrastructure.util.StringUtils.getRandomString;
+import static com.quantumresearch.mycel.app.api.attachment.MediaConstants.MAX_CONTENT_TYPE_BYTES;
+import static com.quantumresearch.mycel.app.api.attachment.MediaConstants.MSG_KEY_CONTENT_TYPE;
+import static com.quantumresearch.mycel.app.api.attachment.MediaConstants.MSG_KEY_DESCRIPTOR_LENGTH;
+import static com.quantumresearch.mycel.app.avatar.AvatarConstants.MSG_KEY_VERSION;
+import static com.quantumresearch.mycel.app.avatar.AvatarConstants.MSG_TYPE_UPDATE;
 import static org.junit.Assert.assertEquals;
 
 public class AvatarValidatorTest extends BrambleMockTestCase {

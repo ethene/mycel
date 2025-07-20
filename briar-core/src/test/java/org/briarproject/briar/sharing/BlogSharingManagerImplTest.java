@@ -1,28 +1,28 @@
-package org.briarproject.briar.sharing;
+package com.quantumresearch.mycel.app.sharing;
 
-import org.briarproject.bramble.api.client.ClientHelper;
-import org.briarproject.bramble.api.client.ContactGroupFactory;
-import org.briarproject.bramble.api.contact.Contact;
-import org.briarproject.bramble.api.contact.ContactId;
-import org.briarproject.bramble.api.data.BdfDictionary;
-import org.briarproject.bramble.api.data.MetadataParser;
-import org.briarproject.bramble.api.db.DatabaseComponent;
-import org.briarproject.bramble.api.db.DbException;
-import org.briarproject.bramble.api.db.Metadata;
-import org.briarproject.bramble.api.db.Transaction;
-import org.briarproject.bramble.api.identity.Author;
-import org.briarproject.bramble.api.identity.IdentityManager;
-import org.briarproject.bramble.api.identity.LocalAuthor;
-import org.briarproject.bramble.api.sync.Group;
-import org.briarproject.bramble.api.sync.Message;
-import org.briarproject.bramble.api.sync.MessageId;
-import org.briarproject.bramble.api.versioning.ClientVersioningManager;
-import org.briarproject.bramble.test.BrambleMockTestCase;
-import org.briarproject.briar.api.blog.Blog;
-import org.briarproject.briar.api.blog.BlogInvitationResponse;
-import org.briarproject.briar.api.blog.BlogManager;
-import org.briarproject.briar.api.client.MessageTracker;
-import org.briarproject.briar.api.client.SessionId;
+import com.quantumresearch.mycel.infrastructure.api.client.ClientHelper;
+import com.quantumresearch.mycel.infrastructure.api.client.ContactGroupFactory;
+import com.quantumresearch.mycel.infrastructure.api.contact.Contact;
+import com.quantumresearch.mycel.infrastructure.api.contact.ContactId;
+import com.quantumresearch.mycel.infrastructure.api.data.BdfDictionary;
+import com.quantumresearch.mycel.infrastructure.api.data.MetadataParser;
+import com.quantumresearch.mycel.infrastructure.api.db.DatabaseComponent;
+import com.quantumresearch.mycel.infrastructure.api.db.DbException;
+import com.quantumresearch.mycel.infrastructure.api.db.Metadata;
+import com.quantumresearch.mycel.infrastructure.api.db.Transaction;
+import com.quantumresearch.mycel.infrastructure.api.identity.Author;
+import com.quantumresearch.mycel.infrastructure.api.identity.IdentityManager;
+import com.quantumresearch.mycel.infrastructure.api.identity.LocalAuthor;
+import com.quantumresearch.mycel.infrastructure.api.sync.Group;
+import com.quantumresearch.mycel.infrastructure.api.sync.Message;
+import com.quantumresearch.mycel.infrastructure.api.sync.MessageId;
+import com.quantumresearch.mycel.infrastructure.api.versioning.ClientVersioningManager;
+import com.quantumresearch.mycel.infrastructure.test.BrambleMockTestCase;
+import com.quantumresearch.mycel.app.api.blog.Blog;
+import com.quantumresearch.mycel.app.api.blog.BlogInvitationResponse;
+import com.quantumresearch.mycel.app.api.blog.BlogManager;
+import com.quantumresearch.mycel.app.api.client.MessageTracker;
+import com.quantumresearch.mycel.app.api.client.SessionId;
 import org.jmock.Expectations;
 import org.junit.Test;
 
@@ -31,15 +31,15 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.briarproject.bramble.api.sync.Group.Visibility.SHARED;
-import static org.briarproject.bramble.test.TestUtils.getAuthor;
-import static org.briarproject.bramble.test.TestUtils.getContact;
-import static org.briarproject.bramble.test.TestUtils.getGroup;
-import static org.briarproject.bramble.test.TestUtils.getLocalAuthor;
-import static org.briarproject.bramble.test.TestUtils.getMessage;
-import static org.briarproject.bramble.test.TestUtils.getRandomId;
-import static org.briarproject.briar.api.blog.BlogSharingManager.CLIENT_ID;
-import static org.briarproject.briar.api.blog.BlogSharingManager.MAJOR_VERSION;
+import static com.quantumresearch.mycel.infrastructure.api.sync.Group.Visibility.SHARED;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getAuthor;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getContact;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getGroup;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getLocalAuthor;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getMessage;
+import static com.quantumresearch.mycel.infrastructure.test.TestUtils.getRandomId;
+import static com.quantumresearch.mycel.app.api.blog.BlogSharingManager.CLIENT_ID;
+import static com.quantumresearch.mycel.app.api.blog.BlogSharingManager.MAJOR_VERSION;
 
 public class BlogSharingManagerImplTest extends BrambleMockTestCase {
 
