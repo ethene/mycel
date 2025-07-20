@@ -1,0 +1,75 @@
+# Mycel Project - Git Ignore File
+# Generated for Quantum Research Pty Ltd
+
+# Gradle files
+.gradle/
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# Gradle cache directories (IMPORTANT - these contain large files)
+caches/
+daemon/
+native/
+wrapper/dists/
+kotlin-profile/
+android/
+jdks/
+.tmp/
+
+# Android
+*.apk
+*.aab
+*.ap_
+*.dex
+local.properties
+android.lock
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+
+# Runtime
+*.tmp
+*.temp
+
+# Security
+keystore.properties
+*.jks
+*.keystore
+
+# Test results
+/test-results/
+/androidTest-results/
+
+# Generated files
+/gen/
+/out/
+bin/
+*/bin/
+
+# Build outputs
+*/build/
+**/build/
+
+# Git cleanup files (from migration)
+git-status-before-cleanup.txt
+git-log-before-cleanup.txt
+git-branches-before-cleanup.txt
