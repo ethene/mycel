@@ -73,3 +73,29 @@ bin/
 git-status-before-cleanup.txt
 git-log-before-cleanup.txt
 git-branches-before-cleanup.txt
+
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dev-debug.log
+# Dependency directories
+node_modules/
+# Environment variables
+.env
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# OS specific
+
+# Task Master (keep configuration and docs, ignore some generated files)
+!.taskmaster/
+!.taskmaster/docs/
+!.taskmaster/tasks/
+!.taskmaster/config.json
+.taskmaster/reports/ 

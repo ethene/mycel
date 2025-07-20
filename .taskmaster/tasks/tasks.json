@@ -1,0 +1,137 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": "1",
+        "title": "Phase 1: Update String Resources from Briar to Mycel",
+        "description": "Change all user-facing text from 'Briar' to 'Mycel' in all string resource files",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [],
+        "details": "Update briar-android/src/main/res/values/strings.xml and all 45+ localized string files in values-* directories. Change app_name from 'Briar' to 'Mycel' and update any user-visible strings containing 'Briar'.",
+        "testStrategy": "Run ./gradlew test && ./gradlew :briar-android:assembleDebug to ensure UI displays 'Mycel' throughout application with no user-visible 'Briar' references.",
+        "subtasks": []
+      },
+      {
+        "id": "2",
+        "title": "Phase 2: Update Android Application ID",
+        "description": "Change Android application package ID to com.quantumresearch.mycel",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          "1"
+        ],
+        "details": "Update applicationId in briar-android/build.gradle to 'com.quantumresearch.mycel', reset version name to '1.0.0' and version code to 1. Update any references to old package ID.",
+        "testStrategy": "Verify APK installs as separate application from Briar and package name verification passes using aapt dump badging.",
+        "subtasks": []
+      },
+      {
+        "id": "3",
+        "title": "Phase 3: Rename Infrastructure Packages (Bramble Layer)",
+        "description": "Rename all org.briarproject.bramble.* packages to com.quantumresearch.mycel.infrastructure.*",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          "2"
+        ],
+        "details": "Systematically rename all bramble packages, update import statements across codebase, update package declarations in all affected files, and update build configurations and manifests.",
+        "testStrategy": "Ensure all modules compile without package resolution errors and tests pass with new package structure.",
+        "subtasks": []
+      },
+      {
+        "id": "4",
+        "title": "Phase 4: Rename Application Packages (Briar Layer)",
+        "description": "Rename all org.briarproject.briar.* packages to com.quantumresearch.mycel.app.*",
+        "status": "pending",
+        "priority": "high",
+        "dependencies": [
+          "3"
+        ],
+        "details": "Rename all briar packages, update import statements and package declarations, update Android manifest package references, and update service and component registrations.",
+        "testStrategy": "Verify complete application compiles and runs with all features functional using new package structure.",
+        "subtasks": []
+      },
+      {
+        "id": "5",
+        "title": "Phase 5: Update Configuration and Deep Links",
+        "description": "Update configuration files and change deep link scheme from briar:// to mycel://",
+        "status": "pending",
+        "priority": "medium",
+        "dependencies": [
+          "4"
+        ],
+        "details": "Change deep link scheme, update intent filters in Android manifest, update any hardcoded URLs or schemes, and update theme and style names.",
+        "testStrategy": "Test deep links work with mycel:// scheme and external app integration works correctly.",
+        "subtasks": []
+      },
+      {
+        "id": "6",
+        "title": "Phase 6: Replace Visual Assets with Mycel Branding",
+        "description": "Replace all Briar visual elements with Mycel branding assets",
+        "status": "pending",
+        "priority": "medium",
+        "dependencies": [
+          "5"
+        ],
+        "details": "Replace app launcher icons (ic_launcher*.png), update splash screen graphics, replace in-app logos and branding images, update color schemes and themes, and replace any Briar-branded graphics.",
+        "testStrategy": "Verify app displays Mycel branding throughout with visual consistency across all screens and no Briar visual elements remain.",
+        "subtasks": []
+      },
+      {
+        "id": "7",
+        "title": "Phase 7: Update Documentation and External References",
+        "description": "Complete rebranding with documentation updates and metadata changes",
+        "status": "pending",
+        "priority": "low",
+        "dependencies": [
+          "6"
+        ],
+        "details": "Update README.md with Mycel information, update all documentation files, update build script comments and metadata, and update any external reference documentation.",
+        "testStrategy": "Verify all documentation reflects Mycel branding and build metadata is properly configured for public release.",
+        "subtasks": []
+      },
+      {
+        "id": "8",
+        "title": "Setup Testing Infrastructure",
+        "description": "Create automated testing pipeline for rebranding phases",
+        "status": "pending",
+        "priority": "medium",
+        "dependencies": [],
+        "details": "Enhance test-phase.sh script, create verification scripts for each phase, and set up git commit validation.",
+        "testStrategy": "Test automation scripts catch regressions and verification processes work correctly for each phase.",
+        "subtasks": []
+      },
+      {
+        "id": "9",
+        "title": "Create Mycel Visual Assets",
+        "description": "Design and create new visual assets for Mycel branding",
+        "status": "pending",
+        "priority": "medium",
+        "dependencies": [],
+        "details": "Design Mycel logo, create app icons in all required sizes and densities, design splash screen, and create any additional branding graphics needed.",
+        "testStrategy": "Visual assets meet Android design guidelines and display correctly across all device densities.",
+        "subtasks": []
+      },
+      {
+        "id": "10",
+        "title": "Final Integration Testing and Release Preparation",
+        "description": "Complete end-to-end testing and prepare for release",
+        "status": "pending",
+        "priority": "low",
+        "dependencies": [
+          "7"
+        ],
+        "details": "Perform comprehensive testing of all functionality, verify GPL-3.0 license compliance, test installation and upgrade scenarios, and prepare release artifacts.",
+        "testStrategy": "All features work correctly, no Briar references remain, and application is ready for public distribution.",
+        "subtasks": []
+      }
+    ],
+    "metadata": {
+      "projectName": "Mycel Rebranding",
+      "totalTasks": 10,
+      "sourceFile": ".taskmaster/docs/mycel-rebranding.prd",
+      "generatedAt": "2025-07-20",
+      "version": "1.0.0"
+    }
+  }
+}
