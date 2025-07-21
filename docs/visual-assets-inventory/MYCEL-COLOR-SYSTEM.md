@@ -260,3 +260,11 @@
 ```
 
 This color system provides the complete foundation for Mycel's visual identity - a thoughtful, accessible palette that balances minimalist principles with organic warmth and technical precision.
+
+## 🔗 **Related Documentation**
+
+- **Typography System**: See `MYCEL-TYPOGRAPHY-SYSTEM.md` for complete font and text styling information
+- **Implementation Guide**: See `PHASE-6-EXECUTION-PLAN.md` for step-by-step rebranding instructions
+- **Visual Assets Analysis**: See `COMPREHENSIVE-VISUAL-ASSETS-ANALYSIS.md` for complete asset inventory
+
+**Typography Integration**: Mycel uses Android system fonts (primarily Roboto) with Material Design 3 typography standards. The brand identity is expressed through this color system and visual layout rather than custom typography, maintaining accessibility and cross-platform consistency.

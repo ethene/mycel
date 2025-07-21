@@ -12,6 +12,12 @@ This folder contains a comprehensive inventory and analysis of all visual assets
 - **Asset descriptions** with current design analysis
 - **Mycel requirements** for replacement assets
 
+### 📝 **MYCEL-TYPOGRAPHY-SYSTEM.md**
+- **Complete font analysis** for Mycel visual branding
+- **Typography hierarchy** and text sizing system
+- **Material Design 3 integration** and accessibility features
+- **No custom fonts** - uses Android system fonts (Roboto)
+
 ### 🎯 **APP-ICONS-DETAILED.md**  
 - **App launcher icons** specifications (10 files)
 - **Vector graphics** analysis and requirements
