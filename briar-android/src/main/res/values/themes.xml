@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-	<style name="BriarTheme" parent="Theme.Material3.DayNight">
+	<style name="MycelTheme" parent="Theme.Material3.DayNight">
 		<item name="colorPrimary">@color/md_theme_primary</item>
 		<item name="colorOnPrimary">@color/md_theme_onPrimary</item>
 		<item name="colorPrimaryContainer">@color/md_theme_primary</item>
@@ -31,13 +31,13 @@
 		<item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
 	</style>
 
-	<style name="BriarTheme.NoActionBar" parent="BriarTheme">
+	<style name="MycelTheme.NoActionBar" parent="MycelTheme">
 		<item name="windowActionBar">false</item>
 		<item name="windowNoTitle">true</item>
 		<item name="toolbarStyle">@style/BriarToolbar</item>
 	</style>
 
-	<style name="BriarTheme.ActionBarOverlay" parent="BriarTheme.NoActionBar">
+	<style name="MycelTheme.ActionBarOverlay" parent="MycelTheme.NoActionBar">
 		<item name="android:windowActionBarOverlay">true</item>
 	</style>
 
@@ -50,9 +50,9 @@
 
 	<style name="BriarDialogTheme" parent="Theme.Material3.DayNight.Dialog">
 		<item name="colorPrimary">@color/briar_primary</item>
-		<item name="buttonBarPositiveButtonStyle">@style/BriarButtonFlat.Positive</item>
-		<item name="buttonBarNeutralButtonStyle">@style/BriarButtonFlat.Neutral</item>
-		<item name="buttonBarNegativeButtonStyle">@style/BriarButtonFlat.Negative</item>
+		<item name="buttonBarPositiveButtonStyle">@style/MycelButtonFlat.Positive</item>
+		<item name="buttonBarNeutralButtonStyle">@style/MycelButtonFlat.Neutral</item>
+		<item name="buttonBarNegativeButtonStyle">@style/MycelButtonFlat.Negative</item>
 		<item name="android:textColorLink">@color/briar_text_link</item>
 		<item name="android:windowBackground">@color/window_background</item>
 		<item name="android:windowAnimationStyle">@style/DialogAnimation</item>
@@ -76,9 +76,9 @@
 
 	<!-- Uses neutral colors for the buttons -->
 	<style name="BriarDialogTheme.Neutral" parent="BriarDialogTheme">
-		<item name="buttonBarPositiveButtonStyle">@style/BriarButtonFlat.Neutral</item>
-		<item name="buttonBarNeutralButtonStyle">@style/BriarButtonFlat.Neutral</item>
-		<item name="buttonBarNegativeButtonStyle">@style/BriarButtonFlat.Neutral</item>
+		<item name="buttonBarPositiveButtonStyle">@style/MycelButtonFlat.Neutral</item>
+		<item name="buttonBarNeutralButtonStyle">@style/MycelButtonFlat.Neutral</item>
+		<item name="buttonBarNegativeButtonStyle">@style/MycelButtonFlat.Neutral</item>
 	</style>
 
 	<style name="DialogAnimation" parent="@android:style/Animation.Dialog">

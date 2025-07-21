@@ -47,7 +47,7 @@
 		</attr>
 	</declare-styleable>
 
-	<declare-styleable name="BriarButton">
+	<declare-styleable name="MycelButton">
 		<attr name="text" format="string" />
 		<attr name="buttonStyle" format="reference" />
 	</declare-styleable>

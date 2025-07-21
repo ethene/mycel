@@ -53,13 +53,13 @@ class PendingContactFactoryImpl implements PendingContactFactory {
 		byte[] raw = new byte[RAW_LINK_BYTES];
 		raw[0] = FORMAT_VERSION;
 		arraycopy(encoded, 0, raw, 1, encoded.length);
-		return "briar://" + Base32.encode(raw).toLowerCase(Locale.US);
+		return "mycel://" + Base32.encode(raw).toLowerCase(Locale.US);
 	}
 
 	private PublicKey parseHandshakeLink(String link) throws FormatException {
 		Matcher matcher = LINK_REGEX.matcher(link);
 		if (!matcher.find()) throw new FormatException();
-		// Discard 'briar://' and anything before or after the link
+		// Discard 'mycel://' and anything before or after the link
 		link = matcher.group(2);
 		byte[] raw = Base32.decode(link, false);
 		if (raw.length != RAW_LINK_BYTES) throw new AssertionError();

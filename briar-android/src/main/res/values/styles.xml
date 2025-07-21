@@ -17,7 +17,7 @@
 		<item name="android:colorBackground">@color/window_background</item>
 	</style>
 
-	<style name="BriarButton" parent="Widget.Material3.Button">
+	<style name="MycelButton" parent="Widget.Material3.Button">
 		<item name="android:layout_width">match_parent</item>
 		<item name="android:layout_height">wrap_content</item>
 		<item name="android:textSize">@dimen/text_size_medium</item>
@@ -26,32 +26,32 @@
 		<item name="cornerRadius">6dp</item>
 	</style>
 
-	<style name="BriarButtonFlat" parent="Widget.Material3.Button.TextButton">
+	<style name="MycelButtonFlat" parent="Widget.Material3.Button.TextButton">
 		<item name="android:textSize">@dimen/text_size_medium</item>
 	</style>
 
-	<style name="BriarButtonFlat.Negative" parent="BriarButtonFlat">
-		<item name="android:textColor">@color/briar_button_text_negative</item>
-		<item name="iconTint">@color/briar_button_text_negative</item>
+	<style name="MycelButtonFlat.Negative" parent="MycelButtonFlat">
+		<item name="android:textColor">@color/mycel_button_text_negative</item>
+		<item name="iconTint">@color/mycel_button_text_negative</item>
 	</style>
 
-	<style name="BriarButtonFlat.Positive" parent="BriarButtonFlat">
-		<item name="android:textColor">@color/briar_button_text_positive</item>
-		<item name="iconTint">@color/briar_button_text_positive</item>
+	<style name="MycelButtonFlat.Positive" parent="MycelButtonFlat">
+		<item name="android:textColor">@color/mycel_button_text_positive</item>
+		<item name="iconTint">@color/mycel_button_text_positive</item>
 	</style>
 
-	<style name="BriarButtonFlat.Neutral" parent="BriarButtonFlat">
-		<item name="android:textColor">@color/briar_button_text_neutral</item>
-		<item name="iconTint">@color/briar_button_text_neutral</item>
+	<style name="MycelButtonFlat.Neutral" parent="MycelButtonFlat">
+		<item name="android:textColor">@color/mycel_button_text_neutral</item>
+		<item name="iconTint">@color/mycel_button_text_neutral</item>
 	</style>
 
-	<style name="BriarButtonFlat.Positive.Tiny" parent="BriarButtonFlat.Positive">
+	<style name="MycelButtonFlat.Positive.Tiny" parent="MycelButtonFlat.Positive">
 		<item name="android:textSize">@dimen/text_size_tiny</item>
 		<item name="android:padding">@dimen/margin_medium</item>
 		<item name="android:minWidth">@dimen/button_size</item>
 	</style>
 
-	<style name="BriarButtonOutline" parent="Widget.Material3.Button.OutlinedButton">
+	<style name="MycelButtonOutline" parent="Widget.Material3.Button.OutlinedButton">
 		<item name="android:layout_width">match_parent</item>
 		<item name="android:layout_height">wrap_content</item>
 		<item name="android:textSize">@dimen/text_size_medium</item>
@@ -61,16 +61,16 @@
 		<item name="cornerRadius">6dp</item>
 	</style>
 
-	<style name="BriarButtonOutline.Negative" parent="BriarButtonOutline">
-		<item name="android:textColor">@color/briar_button_text_negative</item>
+	<style name="MycelButtonOutline.Negative" parent="MycelButtonOutline">
+		<item name="android:textColor">@color/mycel_button_text_negative</item>
 	</style>
 
-	<style name="BriarButtonOutline.Positive" parent="BriarButtonOutline">
-		<item name="android:textColor">@color/briar_button_text_positive</item>
+	<style name="MycelButtonOutline.Positive" parent="MycelButtonOutline">
+		<item name="android:textColor">@color/mycel_button_text_positive</item>
 	</style>
 
-	<style name="BriarButtonOutline.Neutral" parent="BriarButtonOutline">
-		<item name="android:textColor">@color/briar_button_text_neutral</item>
+	<style name="MycelButtonOutline.Neutral" parent="MycelButtonOutline">
+		<item name="android:textColor">@color/mycel_button_text_neutral</item>
 	</style>
 
 	<style name="Divider">

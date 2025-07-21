@@ -11,7 +11,7 @@ public interface HandshakeLinkConstants {
 
 	/**
 	 * The length of a base32-encoded handshake link in bytes, excluding the
-	 * 'briar://' prefix.
+	 * 'mycel://' prefix.
 	 */
 	int BASE32_LINK_BYTES = 53;
 
@@ -22,10 +22,10 @@ public interface HandshakeLinkConstants {
 
 	/**
 	 * Regular expression for matching handshake links, including or excluding
-	 * the 'briar://' prefix.
+	 * the 'mycel://' prefix.
 	 */
 	Pattern LINK_REGEX =
-			Pattern.compile("(briar://)?([a-z2-7]{" + BASE32_LINK_BYTES + "})");
+			Pattern.compile("(mycel://)?([a-z2-7]{" + BASE32_LINK_BYTES + "})");
 
 	/**
 	 * Label for hashing handshake public keys to calculate their identifiers.

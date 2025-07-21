@@ -73,13 +73,13 @@
 			app:layout_constraintTop_toBottomOf="@+id/statusMessageView"
 			tools:text="@string/mailbox_status_connected_info" />
 
-		<org.briarproject.briar.android.view.BriarButton
+		<org.briarproject.briar.android.view.MycelButton
 			android:id="@+id/checkButton"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_marginHorizontal="16dp"
 			android:layout_marginTop="16dp"
-			app:buttonStyle="@style/BriarButtonOutline.Neutral"
+			app:buttonStyle="@style/MycelButtonOutline.Neutral"
 			app:layout_constraintBottom_toTopOf="@+id/wizardButton"
 			app:layout_constraintEnd_toEndOf="parent"
 			app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +88,7 @@
 
 		<Button
 			android:id="@+id/wizardButton"
-			style="@style/BriarButtonOutline.Neutral"
+			style="@style/MycelButtonOutline.Neutral"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_marginHorizontal="16dp"
@@ -104,7 +104,7 @@
 
 		<Button
 			android:id="@+id/unlinkButton"
-			style="@style/BriarButtonOutline.Negative"
+			style="@style/MycelButtonOutline.Negative"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_margin="16dp"

@@ -92,7 +92,7 @@
 
 	<Button
 		android:id="@+id/declineButton"
-		style="@style/BriarButtonFlat.Negative"
+		style="@style/MycelButtonFlat.Negative"
 		android:layout_width="0dp"
 		android:layout_height="wrap_content"
 		android:text="@string/close"
@@ -104,7 +104,7 @@
 
 	<Button
 		android:id="@+id/acceptButton"
-		style="@style/BriarButtonFlat.Positive"
+		style="@style/MycelButtonFlat.Positive"
 		android:layout_width="0dp"
 		android:layout_height="wrap_content"
 		android:text="@string/send_report"

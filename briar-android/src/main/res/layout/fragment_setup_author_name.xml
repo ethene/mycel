@@ -70,7 +70,7 @@
 
 		<Button
 			android:id="@+id/info_button"
-			style="@style/BriarButtonFlat.Positive"
+			style="@style/MycelButtonFlat.Positive"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:text="@string/more_info"
@@ -82,7 +82,7 @@
 
 		<Button
 			android:id="@+id/next"
-			style="@style/BriarButton"
+			style="@style/MycelButton"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:enabled="false"
