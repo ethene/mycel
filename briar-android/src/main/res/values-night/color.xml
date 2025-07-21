@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<color name="briar_primary">@color/briar_night_800</color>
-	<color name="briar_accent">@color/briar_lime_600</color>
+	<!-- ====================================== -->
+	<!-- MYCEL DARK THEME COLORS               -->
+	<!-- ====================================== -->
+	
+	<!-- MYCEL DARK THEME OVERRIDES -->
+	<color name="mycel_primary_dark">@color/mycel_green</color>      <!-- Prefer green in dark mode -->
+	<color name="mycel_accent_dark">@color/mycel_coral</color>       <!-- Coral accent for warmth -->
+	
+	<!-- LEGACY BRIAR REDIRECTS (Dark Theme) -->
+	<color name="briar_primary">@color/mycel_primary_dark</color>    <!-- Green primary for dark -->
+	<color name="briar_accent">@color/mycel_accent_dark</color>      <!-- Coral accent for dark -->
 
 	<color name="preference_category_background">@color/briar_night_950</color>
 
@@ -13,11 +22,11 @@
 	<color name="notice_out">@color/briar_blue_800</color>
 	<color name="msg_stroke">@color/msg_stroke_dark</color>
 
-	<color name="window_background">@color/briar_night_950</color>
+	<color name="window_background">@color/mycel_bg_dark</color>
 	<color name="card_background">@color/briar_night_800</color>
 	<color name="item_background_highlight">@color/briar_night_700</color>
 
-	<color name="mycel_button_text_neutral">@color/briar_blue_400</color>
+	<color name="mycel_button_text_neutral">@color/mycel_accent</color>
 	<color name="mycel_button_text_disabled">#23cccccc</color>
 
 	<color name="thread_indicator">@color/briar_night_700</color>
@@ -25,18 +34,20 @@
 
 	<color name="divider">@android:color/black</color>
 
-	<color name="il_border">#64748B</color>
-	<color name="il_background">#334155</color>
-	<color name="il_lime">@color/briar_lime_400_new</color>
-	<color name="il_orange">@color/briar_orange_400</color>
-	<color name="il_red">@color/briar_red_500_new</color>
+	<!-- MYCEL DARK THEME ILLUSTRATIONS -->
+	<color name="il_border">@color/mycel_ui_muted</color>
+	<color name="il_background">@color/briar_night_800</color>
+	<color name="il_lime">@color/mycel_secondary</color>
+	<color name="il_orange">@color/mycel_coral</color>
+	<color name="il_red">@color/mycel_error</color>
 
-	<color name="md_theme_tertiary">@color/briar_blue_400_new</color>
-	<color name="md_theme_onTertiary">@color/briar_blue_900</color>
-	<color name="md_theme_tertiaryContainer">@color/briar_blue_800_new</color>
-	<color name="md_theme_onTertiaryContainer">@color/briar_blue_300</color>
-	<color name="md_theme_onBackground">#E0E4D2</color>
-	<color name="md_theme_onSurface">#E0E4D2</color>
-	<color name="md_theme_surfaceDim">@color/briar_night_700_new</color>
-	<color name="md_theme_error">@color/briar_red_400</color>
+	<!-- MATERIAL DESIGN 3 DARK THEME -->
+	<color name="md_theme_tertiary">@color/mycel_secondary</color>
+	<color name="md_theme_onTertiary">@color/mycel_text_main</color>
+	<color name="md_theme_tertiaryContainer">@color/mycel_green_dark</color>
+	<color name="md_theme_onTertiaryContainer">@color/mycel_text_invert</color>
+	<color name="md_theme_onBackground">@color/mycel_text_invert</color>
+	<color name="md_theme_onSurface">@color/mycel_text_invert</color>
+	<color name="md_theme_surfaceDim">@color/mycel_ui_muted</color>
+	<color name="md_theme_error">@color/mycel_error</color>
 </resources>

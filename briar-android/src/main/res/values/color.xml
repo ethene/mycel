@@ -1,19 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+	<!-- ====================================== -->
+	<!-- MYCEL COLOR SYSTEM v1.0               -->
+	<!-- Clean minimalist palette with         -->
+	<!-- earth-tech aesthetic                  -->
+	<!-- ====================================== -->
+	
+	<!-- MYCEL CORE NEUTRALS -->
+	<color name="mycel_bg_light">#F5F4F1</color>          <!-- Warm off-white background -->
+	<color name="mycel_bg_dark">#1D1D1B</color>           <!-- Soft black background -->
+	<color name="mycel_text_main">#000000</color>         <!-- Pure black text -->
+	<color name="mycel_text_invert">#FFFFFF</color>       <!-- Pure white text -->
+	<color name="mycel_ui_border">#D7D6D3</color>         <!-- Light borders -->
+	<color name="mycel_ui_muted">#848482</color>          <!-- Secondary text -->
+
+	<!-- MYCEL SPORE BLUE (Primary Accent) -->
+	<color name="mycel_blue">#A3BEEA</color>              <!-- Primary interaction color -->
+	<color name="mycel_blue_soft">#DCE7F7</color>         <!-- Hover backgrounds -->
+	<color name="mycel_blue_dark">#5D7EB0</color>         <!-- Active/pressed states -->
+
+	<!-- MYCEL SIGNAL MOSS (Balancing Green) -->
+	<color name="mycel_green">#A8C8B3</color>             <!-- Success/secondary actions -->
+	<color name="mycel_green_soft">#DDEEE4</color>        <!-- Success backgrounds -->
+	<color name="mycel_green_dark">#59866F</color>        <!-- Active success states -->
+
+	<!-- MYCEL SPORESET CORAL (Warm Accent) -->
+	<color name="mycel_coral">#E8A6A1</color>             <!-- Alerts/errors -->
+	<color name="mycel_coral_soft">#F8DDDB</color>        <!-- Error backgrounds -->
+	<color name="mycel_coral_dark">#B36965</color>        <!-- Active error states -->
+
+	<!-- MYCEL LAVENDER ETHER (Optional) -->
+	<color name="mycel_lavender">#CAB6E0</color>          <!-- Tertiary accent -->
+	<color name="mycel_lavender_soft">#E9E2F4</color>     <!-- Optional backgrounds -->
+
+	<!-- MYCEL BRAND COLORS (Main References) -->
+	<color name="mycel_primary">@color/mycel_blue</color>         <!-- Primary brand color -->
+	<color name="mycel_secondary">@color/mycel_green</color>      <!-- Secondary brand color -->
+	<color name="mycel_accent">@color/mycel_blue</color>          <!-- Accent color -->
+	<color name="mycel_success">@color/mycel_green</color>        <!-- Success color -->
+	<color name="mycel_error">@color/mycel_coral</color>          <!-- Error color -->
+	<color name="mycel_warning">@color/mycel_coral</color>        <!-- Warning color -->
+
+	<!-- ====================================== -->
+	<!-- LEGACY BRIAR COLORS                   -->
+	<!-- (Updated to reference Mycel colors)   -->
+	<!-- ====================================== -->
+
 	<color name="briar_lime_950">#283E0F</color>
 	<color name="briar_lime_600">#67a60f</color>
 	<color name="briar_lime_600_new">#65A30D</color>
-	<color name="briar_lime_500">#82C91E</color>
-	<color name="briar_lime_400">#82c91e</color>
-	<color name="briar_lime_400_new">#A3E635</color>
+	<color name="briar_lime_500">@color/mycel_primary</color>      <!-- Redirected to Mycel blue -->
+	<color name="briar_lime_400">@color/mycel_secondary</color>    <!-- Redirected to Mycel green -->
+	<color name="briar_lime_400_new">@color/mycel_secondary</color>
 
 	<color name="briar_blue_900">#184080</color>
 	<color name="briar_blue_800">#134a81</color>
 	<color name="briar_blue_800_new">#1649A0</color>
 	<color name="briar_blue_600">#1b69b6</color>
 	<color name="briar_blue_600_new">#196FDE</color>
-	<color name="briar_blue_400">#418cd8</color>
-	<color name="briar_blue_400_new">#52ADF9</color>
+	<color name="briar_blue_400">@color/mycel_accent</color>       <!-- Redirected to Mycel blue -->
+	<color name="briar_blue_400_new">@color/mycel_accent</color>
 	<color name="briar_blue_300">#8BCAFD</color>
 	<color name="briar_blue_100">#DDEDFE</color>
 
@@ -23,9 +69,9 @@
 	<color name="briar_orange_500_new">#F59E0B</color>
 
 	<color name="briar_red_400">#f87171</color>
-	<color name="briar_red_500">#db3b21</color>
-	<color name="briar_red_500_new">#EF4444</color>
-	<color name="briar_red_600">#DC2626</color>
+	<color name="briar_red_500">@color/mycel_error</color>         <!-- Redirected to Mycel coral -->
+	<color name="briar_red_500_new">@color/mycel_error</color>
+	<color name="briar_red_600">@color/mycel_error</color>
 
 	<color name="briar_night_950">#0e171f</color>
 	<color name="briar_night_800">#212d3b</color>
@@ -44,12 +90,12 @@
 	<color name="briar_gray_200_new">#E5E7EB</color>
 	<color name="briar_gray_100">#f2f2f2</color>
 
-	<color name="briar_brand_blue">@color/briar_night_700</color>
-	<color name="briar_brand_green">@color/briar_lime_400</color>
+	<color name="briar_brand_blue">@color/mycel_primary</color>     <!-- Redirected to Mycel blue -->
+	<color name="briar_brand_green">@color/mycel_secondary</color> <!-- Redirected to Mycel green -->
 
-	<color name="briar_primary">@color/briar_brand_blue</color>
-	<color name="briar_primary_dark">@color/briar_night_950</color>
-	<color name="briar_accent">@color/briar_brand_blue</color>
+	<color name="briar_primary">@color/mycel_primary</color>        <!-- Redirected to Mycel blue -->
+	<color name="briar_primary_dark">@color/mycel_bg_dark</color>   <!-- Redirected to Mycel dark bg -->
+	<color name="briar_accent">@color/mycel_accent</color>          <!-- Redirected to Mycel blue -->
 
 	<color name="window_background">@color/briar_gray_100</color>
 	<color name="card_background">@color/cardview_light_background</color>
@@ -72,11 +118,11 @@
 	<color name="msg_status_bubble_foreground">@android:color/white</color>
 	<color name="msg_selected_background">@color/briar_accent</color>
 
-	<color name="il_border">#9CA3AF</color>
-	<color name="il_background">#E5E7EB</color>
-	<color name="il_lime">@color/briar_lime_600_new</color>
-	<color name="il_orange">@color/briar_orange_500_new</color>
-	<color name="il_red">@color/briar_red_600</color>
+	<color name="il_border">@color/mycel_ui_border</color>
+	<color name="il_background">@color/mycel_ui_border</color>
+	<color name="il_lime">@color/mycel_secondary</color>        <!-- Green accent for illustrations -->
+	<color name="il_orange">@color/mycel_coral</color>          <!-- Coral for orange elements -->
+	<color name="il_red">@color/mycel_error</color>             <!-- Error color -->
 
 	<!-- text colors -->
 	<color name="briar_text_link">@color/briar_blue_400</color>
@@ -88,9 +134,9 @@
 
 	<color name="preference_category_background">@color/window_background</color>
 
-	<color name="mycel_button_text_positive">@color/briar_blue_400</color>
-	<color name="mycel_button_text_neutral">@color/briar_night_500</color>
-	<color name="mycel_button_text_negative">@color/briar_red_500</color>
+	<color name="mycel_button_text_positive">@color/mycel_accent</color>
+	<color name="mycel_button_text_neutral">@color/mycel_ui_muted</color>
+	<color name="mycel_button_text_negative">@color/mycel_error</color>
 	<color name="mycel_button_text_disabled">#28000000</color>
 
 	<color name="thread_indicator">@color/briar_gray_500</color>
@@ -101,19 +147,20 @@
 
 
 
-	<color name="md_theme_primary">@color/briar_lime_500</color>
-	<color name="md_theme_onPrimary">@color/briar_lime_950</color>
-	<color name="md_theme_primaryContainer">@color/briar_night_700</color>
-	<color name="md_theme_onPrimaryContainer">@android:color/white</color>
-	<color name="md_theme_inversePrimary">#98DA27</color>
-	<color name="md_theme_secondary">@color/briar_night_700</color>
-	<color name="md_theme_onSecondary">@android:color/white</color>
-	<color name="md_theme_tertiaryContainer">@color/briar_blue_100</color>
-	<color name="md_theme_onTertiaryContainer">@color/briar_blue_600_new</color>
-	<color name="md_theme_tertiary">@color/briar_blue_600_new</color>
-	<color name="md_theme_onTertiary">@android:color/white</color>
-	<color name="md_theme_onBackground">#191D12</color>
-	<color name="md_theme_onSurface">#191D12</color>
-	<color name="md_theme_surfaceDim">@color/briar_gray_200_new</color>
-	<color name="md_theme_error">@color/briar_red_600</color>
+	<!-- MATERIAL DESIGN 3 THEME (Updated for Mycel) -->
+	<color name="md_theme_primary">@color/mycel_primary</color>
+	<color name="md_theme_onPrimary">@color/mycel_text_invert</color>
+	<color name="md_theme_primaryContainer">@color/mycel_blue_soft</color>
+	<color name="md_theme_onPrimaryContainer">@color/mycel_text_main</color>
+	<color name="md_theme_inversePrimary">@color/mycel_blue_dark</color>
+	<color name="md_theme_secondary">@color/mycel_secondary</color>
+	<color name="md_theme_onSecondary">@color/mycel_text_main</color>
+	<color name="md_theme_tertiaryContainer">@color/mycel_green_soft</color>
+	<color name="md_theme_onTertiaryContainer">@color/mycel_green_dark</color>
+	<color name="md_theme_tertiary">@color/mycel_green</color>
+	<color name="md_theme_onTertiary">@color/mycel_text_main</color>
+	<color name="md_theme_onBackground">@color/mycel_text_main</color>
+	<color name="md_theme_onSurface">@color/mycel_text_main</color>
+	<color name="md_theme_surfaceDim">@color/mycel_ui_border</color>
+	<color name="md_theme_error">@color/mycel_error</color>
 </resources>
