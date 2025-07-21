@@ -34,9 +34,9 @@
 	<color name="mycel_lavender_soft">#E9E2F4</color>     <!-- Optional backgrounds -->
 
 	<!-- MYCEL BRAND COLORS (Main References) -->
-	<color name="mycel_primary">@color/mycel_blue</color>         <!-- Primary brand color -->
-	<color name="mycel_secondary">@color/mycel_green</color>      <!-- Secondary brand color -->
-	<color name="mycel_accent">@color/mycel_blue</color>          <!-- Accent color -->
+	<color name="mycel_primary">@color/mycel_blue</color>         <!-- Primary CTA/status -->
+	<color name="mycel_secondary">@color/mycel_green</color>      <!-- Secondary info/status -->
+	<color name="mycel_accent">@color/mycel_green</color>         <!-- Accent - green for contrast -->
 	<color name="mycel_success">@color/mycel_green</color>        <!-- Success color -->
 	<color name="mycel_error">@color/mycel_coral</color>          <!-- Error color -->
 	<color name="mycel_warning">@color/mycel_coral</color>        <!-- Warning color -->
