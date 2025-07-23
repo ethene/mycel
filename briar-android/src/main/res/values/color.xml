@@ -46,56 +46,63 @@
 	<!-- (Updated to reference Mycel colors)   -->
 	<!-- ====================================== -->
 
-	<color name="briar_lime_950">#283E0F</color>
-	<color name="briar_lime_600">#67a60f</color>
-	<color name="briar_lime_600_new">#65A30D</color>
-	<color name="briar_lime_500">@color/mycel_primary</color>      <!-- Redirected to Mycel blue -->
-	<color name="briar_lime_400">@color/mycel_secondary</color>    <!-- Redirected to Mycel green -->
+	<!-- LEGACY GREEN COLORS (mapped to Mycel green family) -->
+	<color name="briar_lime_950">@color/mycel_green_dark</color>     <!-- Dark green #59866F -->
+	<color name="briar_lime_600">@color/mycel_green</color>          <!-- Base green #A8C8B3 -->
+	<color name="briar_lime_600_new">@color/mycel_green</color>
+	<color name="briar_lime_500">@color/mycel_primary</color>         <!-- Primary brand color -->
+	<color name="briar_lime_400">@color/mycel_secondary</color>       <!-- Secondary color -->
 	<color name="briar_lime_400_new">@color/mycel_secondary</color>
 
-	<color name="briar_blue_900">#184080</color>
-	<color name="briar_blue_800">#134a81</color>
-	<color name="briar_blue_800_new">#1649A0</color>
-	<color name="briar_blue_600">#1b69b6</color>
-	<color name="briar_blue_600_new">#196FDE</color>
-	<color name="briar_blue_400">@color/mycel_accent</color>       <!-- Redirected to Mycel blue -->
+	<!-- LEGACY BLUE COLORS (mapped to Mycel blue family) -->
+	<color name="briar_blue_900">@color/mycel_blue_dark</color>      <!-- Dark blue #5D7EB0 -->
+	<color name="briar_blue_800">@color/mycel_blue_dark</color>      <!-- Dark blue #5D7EB0 -->
+	<color name="briar_blue_800_new">@color/mycel_blue_dark</color>
+	<color name="briar_blue_600">@color/mycel_primary</color>        <!-- Primary blue #A3BEEA -->
+	<color name="briar_blue_600_new">@color/mycel_primary</color>
+	<color name="briar_blue_400">@color/mycel_accent</color>         <!-- Accent color mapped -->
 	<color name="briar_blue_400_new">@color/mycel_accent</color>
-	<color name="briar_blue_300">#8BCAFD</color>
-	<color name="briar_blue_100">#DDEDFE</color>
+	<color name="briar_blue_300">@color/mycel_blue_soft</color>      <!-- Light blue #DCE7F7 -->
+	<color name="briar_blue_100">@color/mycel_blue_soft</color>      <!-- Light blue #DCE7F7 -->
 
-	<color name="briar_orange_200">#fed69f</color>
-	<color name="briar_orange_400">#FBBF24</color>
-	<color name="briar_orange_500">#fc9403</color>
-	<color name="briar_orange_500_new">#F59E0B</color>
+	<!-- LEGACY ORANGE COLORS (mapped to Mycel coral family) -->
+	<color name="briar_orange_200">@color/mycel_coral_soft</color>     <!-- Light coral #F8DDDB -->
+	<color name="briar_orange_400">@color/mycel_coral</color>          <!-- Base coral #E8A6A1 -->
+	<color name="briar_orange_500">@color/mycel_warning</color>        <!-- Warning coral #E8A6A1 -->
+	<color name="briar_orange_500_new">@color/mycel_warning</color>
 
-	<color name="briar_red_400">#f87171</color>
-	<color name="briar_red_500">@color/mycel_error</color>         <!-- Redirected to Mycel coral -->
+	<!-- LEGACY RED COLORS (mapped to Mycel coral family) -->
+	<color name="briar_red_400">@color/mycel_coral</color>           <!-- Error coral #E8A6A1 -->
+	<color name="briar_red_500">@color/mycel_error</color>            <!-- Error coral #E8A6A1 -->
 	<color name="briar_red_500_new">@color/mycel_error</color>
 	<color name="briar_red_600">@color/mycel_error</color>
 
-	<color name="briar_night_950">#0e171f</color>
-	<color name="briar_night_800">#212d3b</color>
-	<color name="briar_night_700">#2e3d4f</color>
-	<color name="briar_night_700_new">#334155</color>
-	<color name="briar_night_600">#475569</color>
-	<color name="briar_night_500">#435b77</color>
-	<color name="briar_night_100">#F1F5F9</color>
-	<color name="briar_night_50">#ebf3fa</color>
+	<!-- LEGACY NIGHT COLORS (mapped to Mycel neutrals) -->
+	<color name="briar_night_950">@color/mycel_bg_dark</color>         <!-- Dark bg #1D1D1B -->
+	<color name="briar_night_800">@color/mycel_bg_dark</color>         <!-- Dark bg #1D1D1B -->
+	<color name="briar_night_700">@color/mycel_ui_muted</color>        <!-- Muted text #848482 -->
+	<color name="briar_night_700_new">@color/mycel_ui_muted</color>
+	<color name="briar_night_600">@color/mycel_ui_muted</color>        <!-- Muted text #848482 -->
+	<color name="briar_night_500">@color/mycel_ui_muted</color>        <!-- Muted text #848482 -->
+	<color name="briar_night_100">@color/mycel_bg_light</color>        <!-- Light bg #F5F4F1 -->
+	<color name="briar_night_50">@color/mycel_bg_light</color>         <!-- Light bg #F5F4F1 -->
 
-	<color name="briar_gray_900">#2e2e2e</color>
-	<color name="briar_gray_700">#374151</color>
-	<color name="briar_gray_500">#a7a7a7</color>
-	<color name="briar_gray_300">#cccccc</color>
-	<color name="briar_gray_200">#dfdfdf</color>
-	<color name="briar_gray_200_new">#E5E7EB</color>
-	<color name="briar_gray_100">#f2f2f2</color>
+	<!-- LEGACY GRAY COLORS (mapped to Mycel neutrals) -->
+	<color name="briar_gray_900">@color/mycel_text_main</color>       <!-- Main text #000000 -->
+	<color name="briar_gray_700">@color/mycel_ui_muted</color>        <!-- Muted text #848482 -->
+	<color name="briar_gray_500">@color/mycel_ui_muted</color>        <!-- Muted text #848482 -->
+	<color name="briar_gray_300">@color/mycel_ui_border</color>       <!-- Light border #D7D6D3 -->
+	<color name="briar_gray_200">@color/mycel_ui_border</color>       <!-- Light border #D7D6D3 -->
+	<color name="briar_gray_200_new">@color/mycel_ui_border</color>
+	<color name="briar_gray_100">@color/mycel_bg_light</color>        <!-- Light bg #F5F4F1 -->
 
-	<color name="briar_brand_blue">@color/mycel_primary</color>     <!-- Redirected to Mycel blue -->
-	<color name="briar_brand_green">@color/mycel_secondary</color> <!-- Redirected to Mycel green -->
+	<!-- LEGACY BRAND COLORS (now using Mycel brand) -->
+	<color name="briar_brand_blue">@color/mycel_primary</color>        <!-- Primary blue #A3BEEA -->
+	<color name="briar_brand_green">@color/mycel_secondary</color>     <!-- Secondary green #A8C8B3 -->
 
-	<color name="briar_primary">@color/mycel_primary</color>        <!-- Redirected to Mycel blue -->
-	<color name="briar_primary_dark">@color/mycel_bg_dark</color>   <!-- Redirected to Mycel dark bg -->
-	<color name="briar_accent">@color/mycel_accent</color>          <!-- Redirected to Mycel blue -->
+	<color name="briar_primary">@color/mycel_primary</color>         <!-- Main brand color -->
+	<color name="briar_primary_dark">@color/mycel_bg_dark</color>     <!-- Dark background -->
+	<color name="briar_accent">@color/mycel_accent</color>           <!-- Accent color -->
 
 	<color name="window_background">@color/briar_gray_100</color>
 	<color name="card_background">@color/cardview_light_background</color>
@@ -125,7 +132,7 @@
 	<color name="il_red">@color/mycel_error</color>             <!-- Error color -->
 
 	<!-- text colors -->
-	<color name="briar_text_link">@color/briar_blue_400</color>
+	<color name="briar_text_link">@color/mycel_accent</color>
 	<color name="briar_text_link_inverse">@android:color/white</color>
 	<color name="briar_text_primary">#df000000</color>
 	<color name="briar_text_primary_inverse">@android:color/white</color>
