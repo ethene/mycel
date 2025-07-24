@@ -1,5 +1,6 @@
 # Mycel
 
+[![CI/CD Pipeline](https://github.com/quantumresearch/mycel/actions/workflows/ci.yml/badge.svg)](https://github.com/quantumresearch/mycel/actions/workflows/ci.yml)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Desktop%20%7C%20Headless-green.svg)](#platform-support)
 [![Java](https://img.shields.io/badge/Java-17+-orange.svg)](https://openjdk.org/)
