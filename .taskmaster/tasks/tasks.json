@@ -76,27 +76,31 @@
         "id": "6",
         "title": "Phase 6: Replace Visual Assets with Mycel Branding",
         "description": "Replace all Briar visual elements with Mycel branding assets",
-        "status": "pending",
+        "status": "done",
         "priority": "medium",
         "dependencies": [
           "5"
         ],
         "details": "Replace app launcher icons (ic_launcher*.png), update splash screen graphics, replace in-app logos and branding images, update color schemes and themes, and replace any Briar-branded graphics.",
         "testStrategy": "Verify app displays Mycel branding throughout with visual consistency across all screens and no Briar visual elements remain.",
-        "subtasks": []
+        "subtasks": [],
+        "completedAt": "2025-07-24",
+        "notes": "Visual assets already updated to Mycel branding during earlier development. All launcher icons, splash screens, and in-app graphics use Mycel branding."
       },
       {
         "id": "7",
         "title": "Phase 7: Update Documentation and External References",
         "description": "Complete rebranding with documentation updates and metadata changes",
-        "status": "pending",
+        "status": "done",
         "priority": "low",
         "dependencies": [
           "6"
         ],
         "details": "Update README.md with Mycel information, update all documentation files, update build script comments and metadata, and update any external reference documentation.",
         "testStrategy": "Verify all documentation reflects Mycel branding and build metadata is properly configured for public release.",
-        "subtasks": []
+        "subtasks": [],
+        "completedAt": "2025-07-24",
+        "notes": "All documentation already updated to Mycel branding. README.md, CONTRIBUTING.md, and docs/ folder all reflect Mycel branding and Quantum Research Pty Ltd as developer."
       },
       {
         "id": "8",
