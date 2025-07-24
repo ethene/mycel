@@ -1,6 +1,6 @@
 # Mycel
 
-[![CI/CD Pipeline](https://github.com/quantumresearch/mycel/actions/workflows/ci.yml/badge.svg)](https://github.com/quantumresearch/mycel/actions/workflows/ci.yml)
+[![CI/CD Pipeline](https://github.com/ethene/mycel/actions/workflows/ci.yml/badge.svg)](https://github.com/ethene/mycel/actions/workflows/ci.yml)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Desktop%20%7C%20Headless-green.svg)](#platform-support)
 [![Java](https://img.shields.io/badge/Java-17+-orange.svg)](https://openjdk.org/)
@@ -85,7 +85,7 @@
 #### Option 1: Direct APK Download (Recommended)
 ```bash
 # Download latest release APK
-curl -L -o mycel.apk https://github.com/quantumresearch/mycel/releases/latest/download/mycel-android.apk
+curl -L -o mycel.apk https://github.com/ethene/mycel/releases/latest/download/mycel-android.apk
 
 # Install APK (requires adb or manual installation)
 adb install mycel.apk
@@ -99,7 +99,7 @@ See [Building from Source](#building-from-source) section below.
 #### Option 1: Download JAR
 ```bash
 # Download headless JAR
-curl -L -o mycel.jar https://github.com/quantumresearch/mycel/releases/latest/download/mycel-headless.jar
+curl -L -o mycel.jar https://github.com/ethene/mycel/releases/latest/download/mycel-headless.jar
 
 # Run Mycel
 java -jar mycel.jar
@@ -244,7 +244,7 @@ Mycel uses a **two-layer architecture** that separates transport concerns from a
 
 ```bash
 # Clone repository
-git clone https://github.com/quantumresearch/mycel.git
+git clone https://github.com/ethene/mycel.git
 cd mycel
 
 # Build all modules
@@ -362,7 +362,7 @@ We welcome contributions from the community! 🎉
 
 ### 🐛 **Reporting Issues**
 
-Found a bug? Have a feature request? Please [open an issue](https://github.com/quantumresearch/mycel/issues) with:
+Found a bug? Have a feature request? Please [open an issue](https://github.com/ethene/mycel/issues) with:
 
 - Clear description of the problem/request
 - Steps to reproduce (for bugs)
@@ -411,7 +411,7 @@ export ANDROID_HOME=/path/to/android-sdk
 ### 📚 **Getting Help**
 
 - **Documentation**: Check the [docs/](docs/) folder
-- **Issues**: Search [existing issues](https://github.com/quantumresearch/mycel/issues)
+- **Issues**: Search [existing issues](https://github.com/ethene/mycel/issues)
 - **Community**: Join our discussions (see [Community](#community))
 
 ---
@@ -421,8 +421,8 @@ export ANDROID_HOME=/path/to/android-sdk
 ### 💬 **Connect with Us**
 
 - **Website**: [https://qntrs.com](https://qntrs.com)
-- **GitHub**: [https://github.com/quantumresearch/mycel](https://github.com/quantumresearch/mycel)
-- **Issues**: [Bug Reports & Feature Requests](https://github.com/quantumresearch/mycel/issues)
+- **GitHub**: [https://github.com/ethene/mycel](https://github.com/ethene/mycel)
+- **Issues**: [Bug Reports & Feature Requests](https://github.com/ethene/mycel/issues)
 
 ### 🤝 **Support the Project**
 
