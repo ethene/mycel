@@ -4,7 +4,7 @@ import com.quantumresearch.mycel.app.attachment.AttachmentModule;
 import com.quantumresearch.mycel.app.autodelete.AutoDeleteModule;
 import com.quantumresearch.mycel.app.avatar.AvatarModule;
 import com.quantumresearch.mycel.app.blog.BlogModule;
-import com.quantumresearch.mycel.app.client.BriarClientModule;
+import com.quantumresearch.mycel.app.client.MycelClientModule;
 import com.quantumresearch.mycel.app.conversation.ConversationModule;
 import com.quantumresearch.mycel.app.feed.FeedModule;
 import com.quantumresearch.mycel.app.forum.ForumModule;
@@ -23,7 +23,7 @@ import dagger.Module;
 		AutoDeleteModule.class,
 		AvatarModule.class,
 		BlogModule.class,
-		BriarClientModule.class,
+		MycelClientModule.class,
 		ConversationModule.class,
 		FeedModule.class,
 		ForumModule.class,
@@ -35,5 +35,5 @@ import dagger.Module;
 		SharingModule.class,
 		TestModule.class
 })
-public class BriarCoreModule {
+public class MycelCoreModule {
 }

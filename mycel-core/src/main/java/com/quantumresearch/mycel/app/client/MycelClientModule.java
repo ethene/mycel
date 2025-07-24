@@ -6,7 +6,7 @@ import dagger.Module;
 import dagger.Provides;
 
 @Module
-public class BriarClientModule {
+public class MycelClientModule {
 
 	@Provides
 	MessageTracker provideMessageTracker(MessageTrackerImpl messageTracker) {

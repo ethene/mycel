@@ -47,7 +47,7 @@
 		tools:targetApi="31" />
 
 	<application
-		android:name="com.quantumresearch.mycel.app.android.BriarApplicationImpl"
+		android:name="com.quantumresearch.mycel.app.android.MycelApplicationImpl"
 		android:allowBackup="false"
 		android:dataExtractionRules="@xml/backup_extraction_rules"
 		android:fullBackupContent="@xml/backup_rules"
@@ -88,7 +88,7 @@
 			android:finishOnTaskLaunch="true"
 			android:label="@string/crash_report_title"
 			android:launchMode="singleInstance"
-			android:process=":briar_error_handler"
+			android:process=":mycel_error_handler"
 			android:theme="@style/MycelTheme.NoActionBar"
 			android:windowSoftInputMode="adjustResize|stateHidden" />
 
@@ -383,7 +383,7 @@
 			android:finishOnTaskLaunch="true"
 			android:label="@string/startup_failed_activity_title"
 			android:launchMode="singleInstance"
-			android:process=":briar_startup_failure"
+			android:process=":mycel_startup_failure"
 			android:windowSoftInputMode="adjustResize|stateHidden" />
 
 		<activity

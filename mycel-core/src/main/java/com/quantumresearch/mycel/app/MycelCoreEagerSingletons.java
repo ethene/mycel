@@ -13,7 +13,7 @@ import com.quantumresearch.mycel.app.privategroup.PrivateGroupModule;
 import com.quantumresearch.mycel.app.privategroup.invitation.GroupInvitationModule;
 import com.quantumresearch.mycel.app.sharing.SharingModule;
 
-public interface BriarCoreEagerSingletons {
+public interface MycelCoreEagerSingletons {
 
 	void inject(AutoDeleteModule.EagerSingletons init);
 
@@ -41,7 +41,7 @@ public interface BriarCoreEagerSingletons {
 
 	class Helper {
 
-		public static void injectEagerSingletons(BriarCoreEagerSingletons c) {
+		public static void injectEagerSingletons(MycelCoreEagerSingletons c) {
 			c.inject(new AutoDeleteModule.EagerSingletons());
 			c.inject(new AvatarModule.EagerSingletons());
 			c.inject(new BlogModule.EagerSingletons());
