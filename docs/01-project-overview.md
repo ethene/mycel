@@ -58,13 +58,13 @@ Mycel is a decentralized messaging application designed for secure, peer-to-peer
 ### Layered Design
 ```
 ┌─────────────────────────────────────┐
-│           Android UI                │  ← briar-android
+│           Android UI                │  ← mycel-android
 ├─────────────────────────────────────┤
-│        Application Logic            │  ← briar-core/api
+│        Application Logic            │  ← mycel-core/api
 ├─────────────────────────────────────┤
-│      Infrastructure Layer          │  ← bramble-core/api
+│      Infrastructure Layer          │  ← spore-core/api
 ├─────────────────────────────────────┤
-│       Transport Plugins             │  ← bramble-android/java
+│       Transport Plugins             │  ← spore-android/java
 └─────────────────────────────────────┘
 ```
 

@@ -16,8 +16,6 @@ This folder contains comprehensive documentation for the **Mycel** messaging app
 - [04-build-system.md](04-build-system.md) - Gradle build system documentation
 
 ### 📁 Code Analysis
-- [05-bramble-layer.md](05-bramble-layer.md) - Infrastructure layer (networking, crypto, sync)
-- [06-briar-layer.md](06-briar-layer.md) - Application layer (messaging, forums, blogs)
 - [07-android-layer.md](07-android-layer.md) - UI and platform integration
 - [08-database-schema.md](08-database-schema.md) - Database structure and schemas
 
@@ -27,11 +25,10 @@ This folder contains comprehensive documentation for the **Mycel** messaging app
 - [11-crypto-security.md](11-crypto-security.md) - Cryptographic implementation details
 - [12-sync-protocol.md](12-sync-protocol.md) - Message synchronization protocol
 
-### 📁 Rebranding Guide
-- [13-rebranding-strategy.md](13-rebranding-strategy.md) - Complete rebranding roadmap
-- [14-naming-conventions.md](14-naming-conventions.md) - Naming patterns and conventions
-- [15-ui-elements.md](15-ui-elements.md) - UI components and themes to modify
+### 📁 Rebranding Implementation
+- **[INCREMENTAL-REBRANDING-PLAN.md](INCREMENTAL-REBRANDING-PLAN.md)** - **PRIMARY GUIDE** - Current rebranding implementation
 - [16-configuration-files.md](16-configuration-files.md) - Config files requiring updates
+- [GIT-INITIALIZATION-GUIDE.md](GIT-INITIALIZATION-GUIDE.md) - Git repository setup guide
 
 ### 📁 Development
 - [17-development-setup.md](17-development-setup.md) - Getting started with development
@@ -41,12 +38,17 @@ This folder contains comprehensive documentation for the **Mycel** messaging app
 
 ## Quick Reference
 
-### Key Modules
-- **bramble-*** - Infrastructure (networking, crypto, sync)
-- **briar-*** - Application logic (messaging, forums, blogs)
-- **-android** - Android-specific implementations
-- **-api** - Interface definitions
-- **-core** - Core implementations
+### Key Modules (Current Structure)
+- **spore-*** - Infrastructure layer (networking, crypto, sync)
+  - `spore-api` - Infrastructure APIs
+  - `spore-core` - Core infrastructure implementation
+  - `spore-android` - Android-specific infrastructure
+  - `spore-java` - Java/desktop infrastructure
+- **mycel-*** - Application layer (messaging, forums, blogs)
+  - `mycel-api` - Application APIs
+  - `mycel-core` - Core application logic
+  - `mycel-android` - Android UI application
+  - `mycel-headless` - REST API service
 
 ### Important Files
 - `settings.gradle` - Module configuration
@@ -60,6 +62,15 @@ This folder contains comprehensive documentation for the **Mycel** messaging app
 - `src/test` - Unit tests
 - `src/androidTest` - Android integration tests
 
+## Archive Folder
+
+The `archive/` folder contains documentation that was relevant during the Briar-to-Mycel rebranding process but is now outdated. This includes:
+- Original rebranding strategy documents
+- Briar-specific technical implementation details with old package names
+- Completed planning documents
+
+The archive folder is excluded from git commits to keep the repository focused on current development.
+
 ---
 
-*This documentation is designed to provide complete understanding for rebranding and customizing the Briar messaging application.*
+*This documentation supports the ongoing development of Mycel by Quantum Research Pty Ltd.*

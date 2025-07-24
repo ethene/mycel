@@ -20,7 +20,7 @@ com.quantumresearch.mycel.app.*       (application - was org.briarproject.briar.
 
 #### **API Layer (spore-api)**
 ```java
-// BEFORE: bramble-api
+// BEFORE: spore-api
 org.briarproject.bramble.api.crypto.CryptoComponent
 org.briarproject.bramble.api.sync.SyncManager
 org.briarproject.bramble.api.transport.TransportManager
@@ -39,7 +39,7 @@ com.quantumresearch.mycel.spore.api.db.DatabaseComponent
 
 #### **Core Implementation (spore-core)**
 ```java
-// BEFORE: bramble-core
+// BEFORE: spore-core
 org.briarproject.bramble.sync.SyncManagerImpl
 org.briarproject.bramble.transport.TransportManagerImpl
 org.briarproject.bramble.crypto.CryptoComponentImpl
@@ -60,7 +60,7 @@ com.quantumresearch.mycel.spore.db.DatabaseComponentImpl
 
 **Android Spore (spore-android)**
 ```java
-// BEFORE: bramble-android
+// BEFORE: spore-android
 org.briarproject.bramble.android.AndroidComponent
 org.briarproject.bramble.android.BrambleAndroidModule
 org.briarproject.bramble.plugin.bluetooth.AndroidBluetoothPlugin
@@ -77,7 +77,7 @@ com.quantumresearch.mycel.spore.plugin.wifi.WifiPlugin
 
 **Java Spore (spore-java)**
 ```java
-// BEFORE: bramble-java
+// BEFORE: spore-java
 org.briarproject.bramble.java.JavaComponent
 org.briarproject.bramble.java.BrambleJavaModule
 org.briarproject.bramble.plugin.tor.JavaTorPlugin
@@ -98,7 +98,7 @@ com.quantumresearch.mycel.spore.plugin.tcp.TcpPlugin
 
 #### **API Layer (mycel-api)**
 ```java
-// BEFORE: briar-api
+// BEFORE: mycel-api
 org.briarproject.briar.api.messaging.MessagingManager
 org.briarproject.briar.api.forum.ForumManager
 org.briarproject.briar.api.blog.BlogManager
@@ -117,7 +117,7 @@ com.quantumresearch.mycel.app.api.introduction.IntroductionManager
 
 #### **Core Implementation (mycel-core)**
 ```java
-// BEFORE: briar-core
+// BEFORE: mycel-core
 org.briarproject.briar.messaging.MessagingManagerImpl
 org.briarproject.briar.forum.ForumManagerImpl
 org.briarproject.briar.blog.BlogManagerImpl
@@ -136,7 +136,7 @@ com.quantumresearch.mycel.app.introduction.IntroductionManagerImpl
 
 #### **Android Application (mycel-android)**
 ```java
-// BEFORE: briar-android
+// BEFORE: mycel-android
 org.briarproject.briar.android.BriarApplication
 org.briarproject.briar.android.AndroidComponent
 org.briarproject.briar.android.BriarAndroidModule
@@ -153,7 +153,7 @@ com.quantumresearch.mycel.app.android.controller.MycelController
 
 #### **REST API (mycel-headless)**
 ```java
-// BEFORE: briar-headless
+// BEFORE: mycel-headless
 org.briarproject.briar.headless.BriarHeadlessApp
 org.briarproject.briar.headless.BriarHeadlessModule
 org.briarproject.briar.headless.rest.BriarRestApiController

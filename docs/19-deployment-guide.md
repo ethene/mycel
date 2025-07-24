@@ -10,7 +10,7 @@ This document provides comprehensive guidance for deploying and distributing the
 
 #### Production Build Setup
 
-**File**: `briar-android/build.gradle`
+**File**: `mycel-android/build.gradle`
 
 ```gradle
 android {
@@ -67,7 +67,7 @@ keytool -genkey -v -keystore mycel-release.keystore \
 keytool -list -v -keystore mycel-release.keystore
 ```
 
-**Signing Configuration** (`briar-android/build.gradle`):
+**Signing Configuration** (`mycel-android/build.gradle`):
 ```gradle
 android {
     signingConfigs {
@@ -107,10 +107,10 @@ KEY_PASSWORD=your_key_password
 ./gradlew clean
 
 # Generate release APK
-./gradlew :briar-android:assembleRelease
+./gradlew :mycel-android:assembleRelease
 
 # Generate AAB (Android App Bundle) for Play Store
-./gradlew :briar-android:bundleRelease
+./gradlew :mycel-android:bundleRelease
 
 # Verify APK signature
 apksigner verify --verbose mycel-release.apk
@@ -185,7 +185,7 @@ Builds:
   - versionName: '1.0.0'
     versionCode: 1
     commit: v1.0.0
-    subdir: briar-android
+    subdir: mycel-android
     gradle:
       - official
 ```
@@ -251,7 +251,7 @@ sha256sum mycel-release.apk
 
 #### JAR Generation
 
-**Headless Application** (`briar-headless/build.gradle`):
+**Headless Application** (`mycel-headless/build.gradle`):
 ```gradle
 jar {
     manifest {
@@ -281,13 +281,13 @@ jar {
 **Build Commands**:
 ```bash
 # Generate fat JAR
-./gradlew :briar-headless:jar
+./gradlew :mycel-headless:jar
 
 # Verify JAR contents
-jar tf build/libs/briar-headless-1.0.0.jar | head -10
+jar tf build/libs/mycel-headless-1.0.0.jar | head -10
 
 # Test JAR execution
-java -jar build/libs/briar-headless-1.0.0.jar --help
+java -jar build/libs/mycel-headless-1.0.0.jar --help
 ```
 
 #### Native Packaging
@@ -305,7 +305,7 @@ jlink --module-path $JAVA_HOME/jmods \
 # Package with custom JRE
 jpackage --input build/libs \
          --name Mycel \
-         --main-jar briar-headless-1.0.0.jar \
+         --main-jar mycel-headless-1.0.0.jar \
          --runtime-image mycel-jre \
          --type app-image
 ```
@@ -333,7 +333,7 @@ appimagetool AppDir/ Mycel-1.0.0-x86_64.AppImage
 # Create app bundle
 jpackage --input build/libs \
          --name Mycel \
-         --main-jar briar-headless-1.0.0.jar \
+         --main-jar mycel-headless-1.0.0.jar \
          --type dmg \
          --app-version 1.0.0 \
          --vendor "Quantum Research Pty Ltd"
@@ -344,7 +344,7 @@ jpackage --input build/libs \
 # Create Windows installer
 jpackage --input build/libs \
          --name Mycel \
-         --main-jar briar-headless-1.0.0.jar \
+         --main-jar mycel-headless-1.0.0.jar \
          --type msi \
          --app-version 1.0.0 \
          --vendor "Quantum Research Pty Ltd" \
@@ -686,7 +686,7 @@ jobs:
         echo ${{ secrets.KEYSTORE_BASE64 }} | base64 -d > keystore.jks
     
     - name: Build release APK
-      run: ./gradlew :briar-android:assembleRelease
+      run: ./gradlew :mycel-android:assembleRelease
       env:
         KEYSTORE_FILE: keystore.jks
         KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
@@ -697,7 +697,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: mycel-android
-        path: briar-android/build/outputs/apk/release/mycel-release.apk
+        path: mycel-android/build/outputs/apk/release/mycel-release.apk
 
   build-desktop:
     runs-on: ${{ matrix.os }}
@@ -715,7 +715,7 @@ jobs:
         distribution: 'temurin'
     
     - name: Build JAR
-      run: ./gradlew :briar-headless:jar
+      run: ./gradlew :mycel-headless:jar
     
     - name: Package for distribution
       run: |

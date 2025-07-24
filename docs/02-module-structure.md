@@ -2,33 +2,33 @@
 
 ## Module Hierarchy Overview
 
-The Briar project is organized into a layered architecture with clear separation of concerns:
+The Mycel project is organized into a layered architecture with clear separation of concerns:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
 │                    Application Layer                    │
 ├─────────────────────────────────────────────────────────┤
-│  briar-android     │  briar-headless  │                 │
+│  mycel-android     │  mycel-headless  │                 │
 │  (Android UI)      │  (REST API/CLI)  │                 │
 ├─────────────────────────────────────────────────────────┤
-│               briar-core + briar-api                    │
+│               mycel-core + mycel-api                    │
 │         (Messaging, Forums, Blogs, Groups)             │
 ├─────────────────────────────────────────────────────────┤
-│                Infrastructure Layer                     │
+│                 Spore Layer (Infrastructure)            │
 ├─────────────────────────────────────────────────────────┤
-│  bramble-android   │  bramble-java    │                 │
+│  spore-android     │  spore-java      │                 │
 │  (Android impl)    │  (Desktop impl)  │                 │
 ├─────────────────────────────────────────────────────────┤
-│              bramble-core + bramble-api                 │
+│              spore-core + spore-api                     │
 │       (Networking, Crypto, Database, Sync)             │
 └─────────────────────────────────────────────────────────┘
 ```
 
 ## Detailed Module Analysis
 
-### Foundation Layer (Bramble)
+### Spore Layer (Infrastructure)
 
-#### bramble-api
+#### spore-api
 - **Type**: Java Library (Java 8)
 - **Purpose**: Core API definitions and interfaces
 - **Size**: Minimal - interface definitions only
@@ -46,7 +46,7 @@ The Briar project is organized into a layered architecture with clear separation
   - Exports test artifacts for downstream modules
   - Animal Sniffer ensures Java 8 compatibility
 
-#### bramble-core
+#### spore-core
 - **Type**: Java Library (Java 8)
 - **Purpose**: Core infrastructure implementation
 - **Key Components**:
@@ -57,7 +57,7 @@ The Briar project is organized into a layered architecture with clear separation
   - Transport abstraction layer
   - Onion routing integration
 - **Major Dependencies**:
-  - `bramble-api` (implements interfaces)
+  - `spore-api` (implements interfaces)
   - `org.bouncycastle:bcprov-jdk15to18:1.71`
   - `net.i2p.crypto:eddsa:0.2.0`
   - `org.whispersystems:curve25519-java:0.5.0`
@@ -66,7 +66,7 @@ The Briar project is organized into a layered architecture with clear separation
   - `org.briarproject:onionwrapper-core:0.1.3`
 - **Security Focus**: Implements all cryptographic primitives and secure protocols
 
-#### bramble-android
+#### spore-android
 - **Type**: Android Library
 - **Purpose**: Android-specific Bramble implementation
 - **Android Config**:
@@ -79,13 +79,13 @@ The Briar project is organized into a layered architecture with clear separation
   - Battery optimization handling
   - Android networking adaptations
 - **Dependencies**:
-  - `bramble-api` and `bramble-core`
+  - `spore-api` and `spore-core`
   - `org.briarproject:onionwrapper-android:0.1.3`
   - `org.briarproject:tor-android:0.4.8.14`
   - `org.briarproject:lyrebird-android:0.5.0-3`
   - `org.briarproject:dont-kill-me-lib:0.2.8`
 
-#### bramble-java
+#### spore-java
 - **Type**: Java Library (Java 8)
 - **Purpose**: Desktop/server Bramble implementation
 - **Key Components**:
@@ -94,7 +94,7 @@ The Briar project is organized into a layered architecture with clear separation
   - Serial communication (JSSC)
   - Native library access (JNA)
 - **Dependencies**:
-  - `bramble-core` (builds upon core)
+  - `spore-core` (builds upon core)
   - `net.java.dev.jna:jna:5.13.0`
   - `net.java.dev.jna:jna-platform:5.13.0`
   - `org.briarproject:onionwrapper-java:0.1.3`
@@ -104,7 +104,7 @@ The Briar project is organized into a layered architecture with clear separation
 
 ### Application Layer (Briar)
 
-#### briar-api
+#### mycel-api
 - **Type**: Java Library (Java 8)
 - **Purpose**: High-level application API definitions
 - **Key Components**:
@@ -112,10 +112,10 @@ The Briar project is organized into a layered architecture with clear separation
   - Forum and blog interfaces
   - Group management interfaces
   - Sharing and introduction interfaces
-- **Dependencies**: Only `bramble-api` (minimal)
+- **Dependencies**: Only `spore-api` (minimal)
 - **Design**: Pure interface definitions for application features
 
-#### briar-core
+#### mycel-core
 - **Type**: Java Library (Java 8)
 - **Purpose**: Application feature implementations
 - **Key Components**:
@@ -126,13 +126,13 @@ The Briar project is organized into a layered architecture with clear separation
   - Content sharing protocols
   - Contact introduction system
 - **Major Dependencies**:
-  - `briar-api` and `bramble-core`
+  - `mycel-api` and `spore-core`
   - `com.rometools:rome:1.18.0` (RSS processing)
   - `org.jsoup:jsoup:1.15.3` (HTML parsing)
   - `com.squareup.okhttp3:okhttp:4.12.0`
   - `org.jdom:jdom2:2.0.6.1` (XML processing)
 
-#### briar-android
+#### mycel-android
 - **Type**: Android Application
 - **Purpose**: Main Android user interface
 - **Android Config**:
@@ -154,7 +154,7 @@ The Briar project is organized into a layered architecture with clear separation
   - Screenshot testing with Fastlane
   - Test orchestrator for reliable testing
 
-#### briar-headless
+#### mycel-headless
 - **Type**: Java Application with Kotlin
 - **Purpose**: Command-line and REST API server
 - **Key Components**:
@@ -185,14 +185,14 @@ The Briar project is organized into a layered architecture with clear separation
 ## Module Dependencies Graph
 
 ```
-bramble-api
+spore-api
     ↓
-bramble-core ──┬─→ bramble-android
-    ↓          └─→ bramble-java
-briar-api
+spore-core ──┬─→ spore-android
+    ↓          └─→ spore-java
+mycel-api
     ↓
-briar-core ────┬─→ briar-android
-    ↓          └─→ briar-headless
+mycel-core ────┬─→ mycel-android
+    ↓          └─→ mycel-headless
 mailbox-integration-tests
 ```
 
@@ -221,18 +221,18 @@ mailbox-integration-tests
 ## Rebranding Implications
 
 ### High Impact Modules (Require Extensive Changes)
-- **briar-android**: All UI strings, themes, icons, package names
-- **briar-headless**: API documentation, CLI commands
+- **mycel-android**: All UI strings, themes, icons, package names
+- **mycel-headless**: API documentation, CLI commands
 - Application IDs and package names throughout
 
 ### Medium Impact Modules (Moderate Changes)
-- **briar-core**: Configuration strings, default values
-- **bramble-android**: Android-specific configurations
+- **mycel-core**: Configuration strings, default values
+- **spore-android**: Android-specific configurations
 
 ### Low Impact Modules (Minimal Changes)
-- **bramble-api/core**: Core protocols remain unchanged
-- **briar-api**: Interface definitions usually unchanged
-- **bramble-java**: Desktop implementations rarely need changes
+- **spore-api/core**: Core protocols remain unchanged
+- **mycel-api**: Interface definitions usually unchanged
+- **spore-java**: Desktop implementations rarely need changes
 
 ### Files Requiring Updates
 - `build.gradle` files (application IDs, version names)

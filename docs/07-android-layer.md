@@ -22,7 +22,7 @@ The Android layer provides the primary user interface and platform-specific inte
 
 ### Module Structure
 
-**Main Module**: `briar-android/`
+**Main Module**: `mycel-android/`
 - **Package**: `org.briarproject.briar.android.*`
 - **Target**: Android API 21-34 (Android 5.0 - Android 14)
 - **Architecture**: MVVM with LiveData and ViewModels
@@ -108,7 +108,7 @@ public class MainActivity extends BriarActivity {
 
 ## Core UI Components
 
-### Location: `briar-android/src/main/java/org/briarproject/briar/android/`
+### Location: `mycel-android/src/main/java/org/briarproject/briar/android/`
 
 ### Main Navigation (`navdrawer/`)
 
@@ -414,7 +414,7 @@ public class ForumActivity extends BriarActivity {
 
 ### Themes and Styles
 
-**Location**: `briar-android/src/main/res/values/`
+**Location**: `mycel-android/src/main/res/values/`
 
 **styles.xml**:
 ```xml

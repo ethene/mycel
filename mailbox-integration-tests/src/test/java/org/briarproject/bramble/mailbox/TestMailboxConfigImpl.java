@@ -1,4 +1,4 @@
-package org.briarproject.bramble.mailbox;
+package com.quantumresearch.mycel.spore.mailbox;
 
 import org.briarproject.nullsafety.NotNullByDefault;
 

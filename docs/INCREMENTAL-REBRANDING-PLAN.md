@@ -28,7 +28,7 @@ Based on the requirement for smaller, testable steps, this plan prioritizes text
 **Goal:** Change "Briar" → "Mycel" in string resources without touching code
 
 #### **1.1 Primary String File**
-**File:** `briar-android/src/main/res/values/strings.xml`
+**File:** `mycel-android/src/main/res/values/strings.xml`
 ```xml
 <!-- BEFORE -->
 <string name="app_name" translatable="false">Briar</string>
@@ -48,10 +48,10 @@ Based on the requirement for smaller, testable steps, this plan prioritizes text
 **Automated approach using find/replace:**
 ```bash
 # Find all string files
-find briar-android/src/main/res/values-*/strings.xml
+find mycel-android/src/main/res/values-*/strings.xml
 
 # Replace "Briar" with "Mycel" in all files
-sed -i 's/Briar/Mycel/g' briar-android/src/main/res/values-*/strings.xml
+sed -i 's/Briar/Mycel/g' mycel-android/src/main/res/values-*/strings.xml
 ```
 
 #### **1.3 Testing Phase 1**
@@ -60,13 +60,13 @@ sed -i 's/Briar/Mycel/g' briar-android/src/main/res/values-*/strings.xml
 ./gradlew clean
 
 # Build and verify no compilation errors
-./gradlew :briar-android:assembleDebug
+./gradlew :mycel-android:assembleDebug
 
 # Run unit tests
 ./gradlew test
 
 # Install and manually test app launches
-adb install briar-android/build/outputs/apk/debug/briar-android-debug.apk
+adb install mycel-android/build/outputs/apk/debug/mycel-android-debug.apk
 ```
 
 #### **1.4 Documentation Update**
@@ -88,7 +88,7 @@ adb install briar-android/build/outputs/apk/debug/briar-android-debug.apk
 **Goal:** Change package identifier without touching Java package names yet
 
 #### **2.1 Application ID Changes**
-**File:** `briar-android/build.gradle`
+**File:** `mycel-android/build.gradle`
 ```gradle
 // BEFORE
 applicationId "org.briarproject.briar.android"
@@ -103,7 +103,7 @@ applicationId "com.quantumresearch.mycel"
 - [ ] Line 30: Reset versionName to "1.0.0"
 
 #### **2.2 Debug Package Reference**
-**File:** `briar-android/src/debug/res/values/strings.xml`
+**File:** `mycel-android/src/debug/res/values/strings.xml`
 ```xml
 <!-- BEFORE -->
 <string name="app_package" translatable="false">org.briarproject.briar.android.debug</string>
@@ -116,15 +116,15 @@ applicationId "com.quantumresearch.mycel"
 ```bash
 # Clean build with new app ID
 ./gradlew clean
-./gradlew :briar-android:assembleDebug
+./gradlew :mycel-android:assembleDebug
 
 # Verify new package name in APK
-aapt dump badging briar-android/build/outputs/apk/debug/*.apk | grep package
+aapt dump badging mycel-android/build/outputs/apk/debug/*.apk | grep package
 
 # Should show: package: name='com.quantumresearch.mycel'
 
 # Test installation (will be new app, not update)
-adb install briar-android/build/outputs/apk/debug/*.apk
+adb install mycel-android/build/outputs/apk/debug/*.apk
 ```
 
 #### **2.4 Documentation Update**
@@ -147,10 +147,10 @@ adb install briar-android/build/outputs/apk/debug/*.apk
 
 #### **3.1 Bramble Module Renaming**
 **Order of operations:**
-1. `bramble-api` (foundation)
-2. `bramble-core` (depends on api)  
-3. `bramble-android` (depends on core)
-4. `bramble-java` (depends on core)
+1. `spore-api` (foundation)
+2. `spore-core` (depends on api)  
+3. `spore-android` (depends on core)
+4. `spore-java` (depends on core)
 
 #### **3.2 Package Renaming Strategy**
 **Use IDE refactoring tools (recommended):**
@@ -165,15 +165,15 @@ adb install briar-android/build/outputs/apk/debug/*.apk
 **Manual approach (if needed):**
 ```bash
 # Create new directory structure
-mkdir -p bramble-api/src/main/java/com/quantumresearch/mycel/infrastructure
-mkdir -p bramble-core/src/main/java/com/quantumresearch/mycel/infrastructure
+mkdir -p spore-api/src/main/java/com/quantumresearch/mycel/infrastructure
+mkdir -p spore-core/src/main/java/com/quantumresearch/mycel/infrastructure
 
 # Move files and update package declarations
 # (This is complex - IDE refactoring strongly recommended)
 ```
 
 #### **3.3 AndroidManifest Update**
-**File:** `bramble-android/src/main/AndroidManifest.xml`
+**File:** `spore-android/src/main/AndroidManifest.xml`
 ```xml
 <!-- BEFORE -->
 package="org.briarproject.bramble"
@@ -185,16 +185,16 @@ package="com.quantumresearch.mycel.infrastructure"
 #### **3.4 Testing Phase 3**
 ```bash
 # Incremental testing after each module
-./gradlew :bramble-api:build
-./gradlew :bramble-core:build
-./gradlew :bramble-android:build
-./gradlew :bramble-java:build
+./gradlew :spore-api:build
+./gradlew :spore-core:build
+./gradlew :spore-android:build
+./gradlew :spore-java:build
 
 # Full project build
 ./gradlew build
 
 # Run bramble-specific tests
-./gradlew :bramble-core:test
+./gradlew :spore-core:test
 ```
 
 **✅ Phase 3 Success Criteria:**
@@ -213,17 +213,17 @@ package="com.quantumresearch.mycel.infrastructure"
 
 #### **4.1 Briar Module Renaming**
 **Order of operations:**
-1. `briar-api` (foundation)
-2. `briar-core` (depends on api + bramble)
-3. `briar-android` (depends on core)
-4. `briar-headless` (depends on core)
+1. `mycel-api` (foundation)
+2. `mycel-core` (depends on api + bramble)
+3. `mycel-android` (depends on core)
+4. `mycel-headless` (depends on core)
 
 #### **4.2 Package Renaming**
 **Same IDE refactoring approach as Phase 3:**
 - `org.briarproject.briar.*` → `com.quantumresearch.mycel.app.*`
 
 #### **4.3 AndroidManifest Update**
-**File:** `briar-android/src/main/AndroidManifest.xml`
+**File:** `mycel-android/src/main/AndroidManifest.xml`
 ```xml
 <!-- BEFORE -->
 package="org.briarproject.briar"
@@ -233,7 +233,7 @@ package="com.quantumresearch.mycel"
 ```
 
 #### **4.4 Test Runner Update**
-**File:** `briar-android/build.gradle`
+**File:** `mycel-android/build.gradle`
 ```gradle
 // BEFORE
 testInstrumentationRunner 'org.briarproject.briar.android.BriarTestRunner'
@@ -245,18 +245,18 @@ testInstrumentationRunner 'com.quantumresearch.mycel.android.MycelTestRunner'
 #### **4.5 Testing Phase 4**
 ```bash
 # Test each module incrementally
-./gradlew :briar-api:build
-./gradlew :briar-core:build  
-./gradlew :briar-android:build
-./gradlew :briar-headless:build
+./gradlew :mycel-api:build
+./gradlew :mycel-core:build  
+./gradlew :mycel-android:build
+./gradlew :mycel-headless:build
 
 # Full build and test
 ./gradlew build
 ./gradlew test
 
 # Android APK test
-./gradlew :briar-android:assembleDebug
-adb install -r briar-android/build/outputs/apk/debug/*.apk
+./gradlew :mycel-android:assembleDebug
+adb install -r mycel-android/build/outputs/apk/debug/*.apk
 ```
 
 **✅ Phase 4 Success Criteria:**
@@ -277,23 +277,23 @@ adb install -r briar-android/build/outputs/apk/debug/*.apk
 **Files containing `briar://` (19 files confirmed):**
 
 **Priority files:**
-- `bramble-api/src/main/java/org/briarproject/bramble/api/contact/HandshakeLinkConstants.java`
-- `bramble-core/src/main/java/org/briarproject/bramble/contact/PendingContactFactoryImpl.java`
-- `briar-android/src/main/java/org/briarproject/briar/android/navdrawer/IntentRouter.java`
+- `spore-api/src/main/java/org/briarproject/bramble/api/contact/HandshakeLinkConstants.java`
+- `spore-core/src/main/java/org/briarproject/bramble/contact/PendingContactFactoryImpl.java`
+- `mycel-android/src/main/java/org/briarproject/briar/android/navdrawer/IntentRouter.java`
 
 **Change:** `briar://` → `mycel://`
 
 #### **5.2 Layout and Theme Names**
 **Files:**
-- `briar-android/src/main/res/layout/briar_button.xml` → `mycel_button.xml`
-- `briar-android/src/main/res/layout/briar_recycler_view.xml` → `mycel_recycler_view.xml`
+- `mycel-android/src/main/res/layout/briar_button.xml` → `mycel_button.xml`
+- `mycel-android/src/main/res/layout/briar_recycler_view.xml` → `mycel_recycler_view.xml`
 - Update all references to these layouts in code
 
 **Themes:** `BriarTheme` → `MycelTheme` in:
-- `briar-android/src/main/res/values/themes.xml`
+- `mycel-android/src/main/res/values/themes.xml`
 
 #### **5.3 Custom JAR Dependencies**
-**Check files in `bramble-java/libs/`:**
+**Check files in `spore-java/libs/`:**
 - `bluecove-2.1.1-SNAPSHOT-briar.jar`
 - `jssc-0.9-briar.jar`
 
@@ -303,7 +303,7 @@ adb install -r briar-android/build/outputs/apk/debug/*.apk
 ```bash
 # Build and test deep link functionality
 ./gradlew build
-./gradlew :briar-android:assembleDebug
+./gradlew :mycel-android:assembleDebug
 
 # Test deep links work
 adb shell am start -W -a android.intent.action.VIEW -d "mycel://[test-link]" com.quantumresearch.mycel
@@ -330,18 +330,18 @@ adb shell am start -W -a android.intent.action.VIEW -d "mycel://[test-link]" com
 - Play Store assets
 
 #### **6.2 Logo Assets**
-**Replace in `briar-android/artwork/`:**
+**Replace in `mycel-android/artwork/`:**
 - `logo_circle.svg` → `mycel_logo_circle.svg`
 - `logo_horizontal_white.svg` → `mycel_logo_horizontal_white.svg`
 - All 8+ logo variants
 
 #### **6.3 Color Scheme (Optional)**
 **Consider updating brand colors in:**
-- `briar-android/src/main/res/values/colors.xml`
+- `mycel-android/src/main/res/values/colors.xml`
 - Dark theme variants
 
 #### **6.4 App Store Metadata**
-**Update `briar-android/fastlane/metadata/android/`:**
+**Update `mycel-android/fastlane/metadata/android/`:**
 - Update all language directories (25+)
 - Replace descriptions, titles, screenshots
 
@@ -349,10 +349,10 @@ adb shell am start -W -a android.intent.action.VIEW -d "mycel://[test-link]" com
 ```bash
 # Final comprehensive testing
 ./gradlew clean build test
-./gradlew :briar-android:assembleDebug
+./gradlew :mycel-android:assembleDebug
 
 # Visual verification
-adb install briar-android/build/outputs/apk/debug/*.apk
+adb install mycel-android/build/outputs/apk/debug/*.apk
 # Verify icons, splash screen, navigation header
 ```
 
@@ -401,8 +401,8 @@ adb install briar-android/build/outputs/apk/debug/*.apk
 ./gradlew test
 
 # 4. Android specific
-./gradlew :briar-android:assembleDebug
-./gradlew :briar-android:testDebugUnitTest
+./gradlew :mycel-android:assembleDebug
+./gradlew :mycel-android:testDebugUnitTest
 
 # 5. Manual verification
 adb install -r [apk-file]

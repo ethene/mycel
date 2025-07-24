@@ -1,13 +1,13 @@
-package org.briarproject.bramble.mailbox;
+package com.quantumresearch.mycel.spore.mailbox;
 
-import org.briarproject.bramble.api.contact.ContactId;
-import org.briarproject.bramble.api.contact.ContactManager;
-import org.briarproject.bramble.api.crypto.SecretKey;
-import org.briarproject.bramble.api.db.DbException;
-import org.briarproject.bramble.api.identity.Author;
-import org.briarproject.bramble.api.identity.AuthorFactory;
-import org.briarproject.bramble.api.identity.LocalAuthor;
-import org.briarproject.bramble.api.mailbox.MailboxProperties;
+import com.quantumresearch.mycel.spore.api.contact.ContactId;
+import com.quantumresearch.mycel.spore.api.contact.ContactManager;
+import com.quantumresearch.mycel.spore.api.crypto.SecretKey;
+import com.quantumresearch.mycel.spore.api.db.DbException;
+import com.quantumresearch.mycel.spore.api.identity.Author;
+import com.quantumresearch.mycel.spore.api.identity.AuthorFactory;
+import com.quantumresearch.mycel.spore.api.identity.LocalAuthor;
+import com.quantumresearch.mycel.spore.api.mailbox.MailboxProperties;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -15,8 +15,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import static org.briarproject.bramble.mailbox.MailboxIntegrationTestUtils.retryUntilSuccessOrTimeout;
-import static org.briarproject.bramble.test.TestUtils.getSecretKey;
+import static com.quantumresearch.mycel.spore.mailbox.MailboxIntegrationTestUtils.retryUntilSuccessOrTimeout;
+import static com.quantumresearch.mycel.spore.test.TestUtils.getSecretKey;
 import static org.junit.Assert.assertEquals;
 
 public class OwnMailboxContactListWorkerIntegrationTest

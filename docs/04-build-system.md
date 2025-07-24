@@ -89,13 +89,13 @@ ext {
 ### Module Hierarchy
 
 ```
-bramble-api (foundation)
+spore-api (foundation)
     ↓
-bramble-core → bramble-android, bramble-java
+spore-core → spore-android, spore-java
     ↓
-briar-api
+mycel-api
     ↓
-briar-core → briar-android, briar-headless
+mycel-core → mycel-android, mycel-headless
     ↓
 mailbox-integration-tests (conditional)
 ```
@@ -106,14 +106,14 @@ mailbox-integration-tests (conditional)
 
 ```gradle
 // Core modules
-include ':bramble-api'
-include ':bramble-core'
-include ':bramble-android'
-include ':bramble-java'
-include ':briar-api'
-include ':briar-core'
-include ':briar-android'
-include ':briar-headless'
+include ':spore-api'
+include ':spore-core'
+include ':spore-android'
+include ':spore-java'
+include ':mycel-api'
+include ':mycel-core'
+include ':mycel-android'
+include ':mycel-headless'
 
 // Conditional mailbox modules
 if (ext.has("briar.mailbox_integration_tests") && 
@@ -122,8 +122,8 @@ if (ext.has("briar.mailbox_integration_tests") &&
     include ':mailbox-integration-tests'
     include(":mailbox-core")
     include(":mailbox-lib")
-    project(":mailbox-core").projectDir = file("briar-mailbox/mailbox-core")
-    project(":mailbox-lib").projectDir = file("briar-mailbox/mailbox-lib")
+    project(":mailbox-core").projectDir = file("mycel-mailbox/mailbox-core")
+    project(":mailbox-lib").projectDir = file("mycel-mailbox/mailbox-lib")
 }
 ```
 
@@ -131,7 +131,7 @@ if (ext.has("briar.mailbox_integration_tests") &&
 
 ### Main Android Application
 
-**File**: `briar-android/build.gradle`
+**File**: `mycel-android/build.gradle`
 
 ```gradle
 apply plugin: 'com.android.application'
@@ -203,7 +203,7 @@ android {
 
 ### ProGuard Configuration
 
-**File**: `briar-android/proguard-rules.txt`
+**File**: `mycel-android/proguard-rules.txt`
 
 ```proguard
 # Keep classes with main methods
@@ -251,11 +251,11 @@ tasks.withType(JavaCompile) {
 
 ### Bramble Java Module
 
-**File**: `bramble-java/build.gradle`
+**File**: `spore-java/build.gradle`
 
 ```gradle
 dependencies {
-    implementation project(':bramble-core')
+    implementation project(':spore-core')
     
     // Native library access
     implementation 'net.java.dev.jna:jna:5.13.0'
@@ -282,7 +282,7 @@ test {
 
 ### Kotlin Integration
 
-**File**: `briar-headless/build.gradle`
+**File**: `mycel-headless/build.gradle`
 
 ```gradle
 apply plugin: 'application'
@@ -292,8 +292,8 @@ mainClassName = 'org.briarproject.briar.headless.Main'
 
 dependencies {
     // All core modules
-    implementation project(':briar-core')
-    implementation project(':bramble-java')
+    implementation project(':mycel-core')
+    implementation project(':spore-java')
     
     // Kotlin runtime
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
@@ -422,7 +422,7 @@ def getStdout = { command, defaultValue ->
 
 ### Translation Management
 
-**File**: `briar-android/build.gradle`
+**File**: `mycel-android/build.gradle`
 
 ```gradle
 // Custom task for translation verification
@@ -477,15 +477,15 @@ org.gradle.jvmargs=-Xmx2g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryEr
 ./gradlew clean build
 
 # Android APK build
-./gradlew :briar-android:assembleDebug
-./gradlew :briar-android:assembleRelease
+./gradlew :mycel-android:assembleDebug
+./gradlew :mycel-android:assembleRelease
 
 # Run all tests
 ./gradlew test
 ./gradlew connectedAndroidTest
 
 # Headless JAR build
-./gradlew :briar-headless:jar
+./gradlew :mycel-headless:jar
 
 # Dependency verification
 ./gradlew check
@@ -495,7 +495,7 @@ org.gradle.jvmargs=-Xmx2g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryEr
 
 ### Build Configuration Changes
 
-1. **Application ID**: Update in `briar-android/build.gradle`
+1. **Application ID**: Update in `mycel-android/build.gradle`
 2. **Version Reset**: Start fresh version numbering for Mycel
 3. **Signing Configuration**: New signing keys for Quantum Research
 4. **Package Names**: Update throughout all modules
@@ -503,7 +503,7 @@ org.gradle.jvmargs=-Xmx2g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryEr
 ### Mycel Build Updates Required
 
 ```gradle
-// briar-android/build.gradle
+// mycel-android/build.gradle
 android {
     defaultConfig {
         applicationId "com.quantumresearch.mycel"  // NEW

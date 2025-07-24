@@ -42,13 +42,14 @@ buildscript {
 		// upgrading this let's us run into https://github.com/gradle/gradle/issues/20330
 		classpath 'com.android.tools.build:gradle:7.2.2'
 		classpath 'ru.vyarus:gradle-animalsniffer-plugin:1.7.0'
-		classpath files('libs/gradle-witness.jar')
+		// Witness plugin replaced with Gradle native dependency verification
+		// classpath files('libs/gradle-witness.jar')
 		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 	}
 }
 
-if ((project.hasProperty("briar.mailbox_integration_tests")
-	&& project.property("briar.mailbox_integration_tests") == "true")
+if ((project.hasProperty("mycel.mailbox_integration_tests")
+	&& project.property("mycel.mailbox_integration_tests") == "true")
 	|| System.env.MAILBOX_INTEGRATION_TESTS) {
 	configure([project(':mailbox-core'), project(':mailbox-lib')]) {
 		apply from: "../gradle/variables.gradle"

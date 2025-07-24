@@ -43,7 +43,7 @@ NONCE_BYTES = 24;                // XSalsa20 nonce length
 
 ### Key Generation
 
-**Location**: `bramble-core/src/main/java/org/briarproject/bramble/crypto/`
+**Location**: `spore-core/src/main/java/org/briarproject/bramble/crypto/`
 
 **Secure Random Generation**:
 ```java
@@ -230,7 +230,7 @@ public boolean isAlice(PublicKey theirHandshakePublicKey,
 
 ### Scrypt Key Derivation
 
-**Location**: `bramble-core/src/main/java/org/briarproject/bramble/crypto/ScryptKdf.java`
+**Location**: `spore-core/src/main/java/org/briarproject/bramble/crypto/ScryptKdf.java`
 
 **Adaptive Cost Parameters**:
 ```java
@@ -272,7 +272,7 @@ private static final long TARGET_MS = 1000;    // 1 second target time
 
 ### Hardware Key Strengthening
 
-**Location**: `bramble-android/src/main/java/org/briarproject/bramble/keyagreement/KeyStrengthenerImpl.java`
+**Location**: `spore-android/src/main/java/org/briarproject/bramble/keyagreement/KeyStrengthenerImpl.java`
 
 **Android Keystore Integration**:
 ```java

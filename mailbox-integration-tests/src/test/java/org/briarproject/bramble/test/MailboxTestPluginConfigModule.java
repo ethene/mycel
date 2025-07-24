@@ -1,12 +1,12 @@
-package org.briarproject.bramble.test;
+package com.quantumresearch.mycel.spore.test;
 
-import org.briarproject.bramble.api.plugin.PluginCallback;
-import org.briarproject.bramble.api.plugin.PluginConfig;
-import org.briarproject.bramble.api.plugin.TransportId;
-import org.briarproject.bramble.api.plugin.duplex.DuplexPluginFactory;
-import org.briarproject.bramble.api.plugin.simplex.SimplexPlugin;
-import org.briarproject.bramble.api.plugin.simplex.SimplexPluginFactory;
-import org.briarproject.bramble.plugin.file.MailboxPluginFactory;
+import com.quantumresearch.mycel.spore.api.plugin.PluginCallback;
+import com.quantumresearch.mycel.spore.api.plugin.PluginConfig;
+import com.quantumresearch.mycel.spore.api.plugin.TransportId;
+import com.quantumresearch.mycel.spore.api.plugin.duplex.DuplexPluginFactory;
+import com.quantumresearch.mycel.spore.api.plugin.simplex.SimplexPlugin;
+import com.quantumresearch.mycel.spore.api.plugin.simplex.SimplexPluginFactory;
+import com.quantumresearch.mycel.spore.plugin.file.MailboxPluginFactory;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.Collection;
@@ -21,7 +21,7 @@ import dagger.Provides;
 import static java.util.Arrays.asList;
 import static java.util.Collections.emptyMap;
 import static java.util.Collections.singletonList;
-import static org.briarproject.bramble.test.TestPluginConfigModule.SIMPLEX_TRANSPORT_ID;
+import static com.quantumresearch.mycel.spore.test.TestPluginConfigModule.SIMPLEX_TRANSPORT_ID;
 
 @Module
 public class MailboxTestPluginConfigModule {

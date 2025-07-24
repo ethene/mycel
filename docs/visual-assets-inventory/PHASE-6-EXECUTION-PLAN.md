@@ -44,7 +44,7 @@ Option 3 - Keep Green/Update Palette:
 ```
 
 ### **1.2 Update Main Color Definitions** ✅
-**File:** `briar-android/src/main/res/values/color.xml` [COMPLETED]
+**File:** `mycel-android/src/main/res/values/color.xml` [COMPLETED]
 
 **Action:** Replace these key color definitions:
 ```xml
@@ -76,7 +76,7 @@ Option 3 - Keep Green/Update Palette:
 ```
 
 ### **1.3 Update Dark Theme Colors** ✅
-**File:** `briar-android/src/main/res/values-night/color.xml` [COMPLETED]
+**File:** `mycel-android/src/main/res/values-night/color.xml` [COMPLETED]
 
 **Action:** Update corresponding dark theme variants:
 ```xml
@@ -90,7 +90,7 @@ Option 3 - Keep Green/Update Palette:
 ### **1.4 Test Color Changes** ✅
 ```bash
 # Build and test
-./gradlew :briar-android:assembleDebug
+./gradlew :mycel-android:assembleDebug
 # Install APK and verify app still functions with new colors
 ```
 
@@ -114,7 +114,7 @@ Option 3 - Keep Green/Update Palette:
 3. Maintain 235dp × 310dp overall dimensions
 
 ### **2.2 Update Splash Screen File**
-**File:** `briar-android/src/main/res/drawable/splash_screen.xml`
+**File:** `mycel-android/src/main/res/drawable/splash_screen.xml`
 
 **Action:** Replace lines 40-70 (BRIAR text paths) with new MYCEL paths:
 ```xml
@@ -135,12 +135,12 @@ android:fillColor="#95d220"  →  android:fillColor="@color/mycel_secondary"
 ```
 
 ### **2.3 Update Night Theme Splash Screen**
-**File:** `briar-android/src/main/res/drawable-night/splash_screen.xml`
+**File:** `mycel-android/src/main/res/drawable-night/splash_screen.xml`
 **Action:** Apply same changes to dark theme version.
 
 ### **2.4 Test Splash Screen** ✅
 ```bash
-./gradlew :briar-android:assembleDebug
+./gradlew :mycel-android:assembleDebug
 # Install and verify splash screen shows "MYCEL" text
 ```
 
@@ -167,7 +167,7 @@ android:fillColor="#95d220"  →  android:fillColor="@color/mycel_secondary"
 3. Replace entire `ic_launcher_foreground.xml` content
 
 ### **3.2 Update Vector Foreground**
-**File:** `briar-android/src/main/res/drawable/ic_launcher_foreground.xml`
+**File:** `mycel-android/src/main/res/drawable/ic_launcher_foreground.xml`
 
 **Action:** Update colors or replace entire design:
 ```xml
@@ -202,7 +202,7 @@ Create PNG versions in all required sizes:
 
 ### **3.4 Test App Icons**
 ```bash
-./gradlew :briar-android:assembleDebug
+./gradlew :mycel-android:assembleDebug
 # Install APK and check launcher icon in app drawer
 ```
 
@@ -212,7 +212,7 @@ Create PNG versions in all required sizes:
 **⏱️ Time: 90-120 minutes | 🔥 Priority: HIGH**
 
 ### **4.1 Identify Critical Notification Icon**
-**File:** `briar-android/src/main/res/drawable-anydpi-v24/notification_ongoing.xml`
+**File:** `mycel-android/src/main/res/drawable-anydpi-v24/notification_ongoing.xml`
 
 **This file contains embedded Briar logo and needs complete redesign.**
 
@@ -250,7 +250,7 @@ Create PNG versions in all required sizes:
 
 ### **4.4 Test Notifications**
 ```bash
-./gradlew :briar-android:assembleDebug
+./gradlew :mycel-android:assembleDebug
 # Test app and trigger notifications to verify icons appear correctly
 ```
 
@@ -260,7 +260,7 @@ Create PNG versions in all required sizes:
 **⏱️ Time: 60-90 minutes | 🔥 Priority: MEDIUM**
 
 ### **5.1 Critical Illustration - App Sharing**
-**File:** `briar-android/src/main/res/drawable/il_share_app.xml`
+**File:** `mycel-android/src/main/res/drawable/il_share_app.xml`
 
 **This contains embedded Briar logo (lines 65-88) that users will see.**
 
@@ -325,7 +325,7 @@ Find: #A3E635    Replace: @color/mycel_secondary
 ### **7.1 Complete Build Test**
 ```bash
 ./gradlew clean
-./gradlew :briar-android:assembleDebug  
+./gradlew :mycel-android:assembleDebug  
 ./gradlew test  # Run unit tests
 ```
 
@@ -365,7 +365,7 @@ Complete visual identity transformation:
 - Style references: Updated theme names and attributes
 
 Testing:
-- ✅ Build: ./gradlew :briar-android:assembleDebug
+- ✅ Build: ./gradlew :mycel-android:assembleDebug
 - ✅ APK: Installs and displays Mycel branding correctly
 - ✅ Icons: All launcher and notification icons working
 - ✅ Splash: MYCEL branding displays on startup

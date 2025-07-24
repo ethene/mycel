@@ -17,9 +17,9 @@ User A                    Bramble Layer                 Transport Layer         
 
 ## Detailed Message Workflow
 
-### 1. Message Creation (briar-android)
+### 1. Message Creation (mycel-android)
 
-**Location**: `briar-android/src/main/java/org/briarproject/briar/android/conversation/`
+**Location**: `mycel-android/src/main/java/org/briarproject/briar/android/conversation/`
 
 **Files**:
 - `ConversationActivity.java` - Main chat interface
@@ -32,9 +32,9 @@ User A                    Bramble Layer                 Transport Layer         
 3. Message validated and packaged
 4. Passed to Briar messaging layer
 
-### 2. Briar Message Processing (briar-core)
+### 2. Briar Message Processing (mycel-core)
 
-**Location**: `briar-core/src/main/java/org/briarproject/briar/messaging/`
+**Location**: `mycel-core/src/main/java/org/briarproject/briar/messaging/`
 
 **Key Classes**:
 - `MessagingManager` - High-level messaging operations
@@ -47,9 +47,9 @@ User A                    Bramble Layer                 Transport Layer         
 3. Metadata added (timestamp, message ID)
 4. Passed to Bramble sync layer
 
-### 3. Bramble Sync Protocol (bramble-core)
+### 3. Bramble Sync Protocol (spore-core)
 
-**Location**: `bramble-core/src/main/java/org/briarproject/bramble/sync/`
+**Location**: `spore-core/src/main/java/org/briarproject/bramble/sync/`
 
 **Key Classes**:
 - `SyncSession` - Manages sync between contacts
@@ -62,9 +62,9 @@ User A                    Bramble Layer                 Transport Layer         
 3. Message queued for transmission
 4. Transport layer notified
 
-### 4. Transport Layer Selection (bramble-core)
+### 4. Transport Layer Selection (spore-core)
 
-**Location**: `bramble-core/src/main/java/org/briarproject/bramble/plugin/`
+**Location**: `spore-core/src/main/java/org/briarproject/bramble/plugin/`
 
 **Key Classes**:
 - `PluginManager` - Manages available transports
@@ -91,8 +91,8 @@ User A                    Bramble Layer                 Transport Layer         
 
 **Transport-Specific Handling**:
 
-#### Tor Transport (bramble-android)
-**Location**: `bramble-android/src/main/java/org/briarproject/bramble/plugin/tor/`
+#### Tor Transport (spore-android)
+**Location**: `spore-android/src/main/java/org/briarproject/bramble/plugin/tor/`
 
 **Process**:
 1. Establish Tor connection
@@ -100,8 +100,8 @@ User A                    Bramble Layer                 Transport Layer         
 3. Encrypt message with transport keys
 4. Transmit over Tor network
 
-#### Bluetooth Transport (bramble-android)
-**Location**: `bramble-android/src/main/java/org/briarproject/bramble/plugin/bluetooth/`
+#### Bluetooth Transport (spore-android)
+**Location**: `spore-android/src/main/java/org/briarproject/bramble/plugin/bluetooth/`
 
 **Process**:
 1. Discover nearby Bluetooth devices
@@ -109,8 +109,8 @@ User A                    Bramble Layer                 Transport Layer         
 3. Exchange messages directly
 4. No internet required
 
-#### LAN Transport (bramble-core)
-**Location**: `bramble-core/src/main/java/org/briarproject/bramble/plugin/tcp/`
+#### LAN Transport (spore-core)
+**Location**: `spore-core/src/main/java/org/briarproject/bramble/plugin/tcp/`
 
 **Process**:
 1. Discover contacts on local network
@@ -129,7 +129,7 @@ User A                    Bramble Layer                 Transport Layer         
 
 ### Message Storage Schema
 
-**Location**: `bramble-core/src/main/java/org/briarproject/bramble/db/`
+**Location**: `spore-core/src/main/java/org/briarproject/bramble/db/`
 
 **Key Tables**:
 - `messages` - Message content and metadata
@@ -165,7 +165,7 @@ User A                    Bramble Layer                 Transport Layer         
 
 ### Key Management
 
-**Location**: `bramble-core/src/main/java/org/briarproject/bramble/crypto/`
+**Location**: `spore-core/src/main/java/org/briarproject/bramble/crypto/`
 
 **Key Classes**:
 - `CryptoComponent` - Main crypto interface
@@ -182,7 +182,7 @@ User A                    Bramble Layer                 Transport Layer         
 
 ### Message Events
 
-**Location**: `bramble-api/src/main/java/org/briarproject/bramble/api/event/`
+**Location**: `spore-api/src/main/java/org/briarproject/bramble/api/event/`
 
 **Key Events**:
 - `MessageAddedEvent` - New message received
@@ -200,7 +200,7 @@ User A                    Bramble Layer                 Transport Layer         
 
 ### Message Settings
 
-**Location**: `briar-android/src/main/java/org/briarproject/briar/android/settings/`
+**Location**: `mycel-android/src/main/java/org/briarproject/briar/android/settings/`
 
 **Configurable Options**:
 - Message retention policy
@@ -227,7 +227,7 @@ User A                    Bramble Layer                 Transport Layer         
 
 ### Mailbox Integration
 
-**Location**: `briar-mailbox/` (optional module)
+**Location**: `mycel-mailbox/` (optional module)
 
 **Process**:
 1. Messages uploaded to mailbox server when direct connection fails
@@ -277,7 +277,7 @@ User A                    Bramble Layer                 Transport Layer         
 
 ### Components Requiring Updates
 
-1. **UI Layer** (`briar-android/`)
+1. **UI Layer** (`mycel-android/`)
    - Message bubble designs
    - Conversation layouts
    - Notification templates

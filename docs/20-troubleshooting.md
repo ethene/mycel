@@ -250,7 +250,7 @@ rm -rf ~/.local/share/briar/db*
 **Solutions**:
 ```java
 // Check migration scripts
-// Location: bramble-core/src/main/resources/db/migration/
+// Location: spore-core/src/main/resources/db/migration/
 
 // Force recreation (data loss)
 public void resetDatabase() throws DbException {

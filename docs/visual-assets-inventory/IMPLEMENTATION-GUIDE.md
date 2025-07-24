@@ -41,7 +41,7 @@ After each asset type replacement:
 
 #### Files to Replace:
 ```
-briar-android/src/main/res/
+mycel-android/src/main/res/
 ├── mipmap-mdpi/
 │   ├── ic_launcher.png → Replace with mycel_launcher_mdpi.png
 │   └── ic_launcher_round.png → Replace with mycel_launcher_round_mdpi.png
@@ -64,15 +64,15 @@ briar-android/src/main/res/
 #### Implementation Commands:
 ```bash
 # Copy new app icons (example - adjust paths as needed)
-cp docs/visual-assets-inventory/mycel-assets/app-icons/mycel_launcher_*.png briar-android/src/main/res/mipmap-*/ic_launcher.png
+cp docs/visual-assets-inventory/mycel-assets/app-icons/mycel_launcher_*.png mycel-android/src/main/res/mipmap-*/ic_launcher.png
 
 # Update vector foreground
-cp docs/visual-assets-inventory/mycel-assets/app-icons/ic_launcher_foreground.xml briar-android/src/main/res/drawable/
+cp docs/visual-assets-inventory/mycel-assets/app-icons/ic_launcher_foreground.xml mycel-android/src/main/res/drawable/
 ```
 
 #### Update Background Color (if needed):
 ```xml
-<!-- briar-android/src/main/res/values/ic_launcher_background.xml -->
+<!-- mycel-android/src/main/res/values/ic_launcher_background.xml -->
 <color>#[NEW_MYCEL_BACKGROUND_COLOR]</color>
 ```
 
@@ -80,7 +80,7 @@ cp docs/visual-assets-inventory/mycel-assets/app-icons/ic_launcher_foreground.xm
 
 #### File to Update:
 ```
-briar-android/src/main/res/drawable/splash_screen.xml
+mycel-android/src/main/res/drawable/splash_screen.xml
 ```
 
 #### Critical Requirements:
@@ -101,7 +101,7 @@ briar-android/src/main/res/drawable/splash_screen.xml
 
 #### Primary File to Update:
 ```
-briar-android/src/main/res/values/color.xml
+mycel-android/src/main/res/values/color.xml
 ```
 
 #### Implementation Strategy:
@@ -130,7 +130,7 @@ briar-android/src/main/res/values/color.xml
 
 #### Dark Theme Colors:
 ```
-briar-android/src/main/res/values-night/color.xml
+mycel-android/src/main/res/values-night/color.xml
 ```
 Update dark mode variants of new Mycel colors.
 
@@ -141,13 +141,13 @@ Update dark mode variants of new Mycel colors.
 # Replace all notification PNG files
 for density in mdpi hdpi xhdpi xxhdpi; do
     for icon in blog contact_added forum hotspot lock mailbox ongoing private_group private_message signout; do
-        # Replace: briar-android/src/main/res/drawable-${density}/notification_${icon}.png
+        # Replace: mycel-android/src/main/res/drawable-${density}/notification_${icon}.png
         # With: docs/visual-assets-inventory/mycel-assets/notification-icons/notification_${icon}_${density}.png
     done
 done
 
 # Replace vector notification icons  
-# briar-android/src/main/res/drawable-anydpi-v24/notification_*.xml
+# mycel-android/src/main/res/drawable-anydpi-v24/notification_*.xml
 ```
 
 ### 5. UI Illustrations Update
@@ -169,7 +169,7 @@ done
 1. **Build Test:**
 ```bash
 export JAVA_HOME=$(/usr/libexec/java_home -v17)
-./gradlew :briar-android:assembleOfficialDebug
+./gradlew :mycel-android:assembleOfficialDebug
 ```
 
 2. **Visual Verification:**
@@ -221,9 +221,9 @@ If issues occur during implementation:
 
 1. **Restore Original Assets:**
 ```bash
-git checkout HEAD -- briar-android/src/main/res/mipmap-*/
-git checkout HEAD -- briar-android/src/main/res/drawable/ic_launcher_foreground.xml
-git checkout HEAD -- briar-android/src/main/res/drawable/splash_screen.xml
+git checkout HEAD -- mycel-android/src/main/res/mipmap-*/
+git checkout HEAD -- mycel-android/src/main/res/drawable/ic_launcher_foreground.xml
+git checkout HEAD -- mycel-android/src/main/res/drawable/splash_screen.xml
 ```
 
 2. **Selective Rollback:**
@@ -246,7 +246,7 @@ Updated visual identity from Briar to Mycel:
 - Brand consistency: Updated color references throughout
 
 Testing:
-- ✅ Build: ./gradlew :briar-android:assembleOfficialDebug
+- ✅ Build: ./gradlew :mycel-android:assembleOfficialDebug
 - ✅ APK: Installs and displays Mycel branding correctly
 - ✅ Icons: All launcher and notification icons working
 - ✅ Splash: MYCEL branding displays on startup

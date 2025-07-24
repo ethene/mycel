@@ -1,39 +1,67 @@
-# Briar
-Briar is a messaging app designed for activists, journalists, and anyone else who needs a safe, easy and robust way to communicate.
+# Mycel
 
-Unlike traditional messaging apps, Briar doesn't rely on a central server - messages are synchronized directly between the users' devices. 
+Mycel is a decentralized messaging app developed by **Quantum Research Pty Ltd** for secure peer-to-peer communication without central servers.
 
-If the Internet's down, Briar can sync via Bluetooth or Wi-Fi, keeping information flowing in a crisis. If the Internet's up, Briar can sync via the Tor network, protecting users and their relationships from surveillance.
+Unlike traditional messaging apps, Mycel doesn't rely on a central server - messages are synchronized directly between the users' devices.
 
-## Download Briar
+If the Internet's down, Mycel can sync via Bluetooth or Wi-Fi, keeping information flowing in a crisis. If the Internet's up, Mycel can sync via the Tor network, protecting users and their relationships from surveillance.
 
-[<img src="https://briarproject.org//img/fdroid_badge.png"  width="240">](https://briarproject.org/fdroid)
-[<img src="https://briarproject.org/img/google_play_badge_web_generic.png"  width="240">](https://play.google.com/store/apps/details?id=org.briarproject.briar.android)
+## Features
 
-You can also [download the APK file](https://briarproject.org/apk) directly from
-our site.
+- **Decentralized**: No central servers required
+- **Multiple transports**: Tor, Bluetooth, Wi-Fi
+- **End-to-end encryption**: All communications are encrypted
+- **Offline messaging**: Works without internet connectivity
+- **Cross-platform**: Android, Desktop, and Headless versions
+- **Privacy-focused**: No tracking or data collection
 
-## Useful links
-[Project website](https://briarproject.org/)
+## Building from Source
 
-[Source code](https://code.briarproject.org/briar/briar/tree/master)
+### Requirements
+- Java 17
+- Android SDK (for Android builds)
+- Gradle 7.6.1 (included via wrapper)
 
-[User manual](https://briarproject.org/manual/)
+### Build Commands
+```bash
+# Build all modules
+./gradlew build
 
-[Wiki](https://code.briarproject.org/briar/briar/-/wikis/home)
+# Build Android APK
+./gradlew :mycel-android:assembleDebug
 
-[Privacy policy](https://briarproject.org/privacy)
+# Run tests
+./gradlew test
 
-## Reproducible builds
+# Run headless version
+./gradlew :mycel-headless:run
+```
 
-We provide [docker images](https://code.briarproject.org/briar/briar-reproducer#briar-reproducer)
-to ease the task of verifying that the published APK binaries
-include nothing but our publicly available source code.
+## Project Structure
 
-You can either use those images or use them as a blueprint to build your own environment
-for reproduction.
+- **Spore Layer** (Infrastructure): Core networking, crypto, and sync
+  - `spore-api`: Transport and sync APIs
+  - `spore-core`: Networking, crypto, and sync implementation
+  - `spore-android`: Android-specific transport implementations
+  - `spore-java`: Java/desktop transport implementations
 
-## Donate
+- **Mycel Layer** (Application): High-level messaging features
+  - `mycel-api`: Messaging APIs
+  - `mycel-core`: Application features implementation
+  - `mycel-android`: Android UI and platform integration
+  - `mycel-headless`: REST API for headless operation
 
-[![Donate using Liberapay](https://briarproject.org/img/liberapay.svg)](https://liberapay.com/Briar/donate)   
-Bitcoin and BCH: 1NZCKkUCtJV2U2Y9hDb9uq8S7ksFCFGR6K
+## Development
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for development guidelines and project structure details.
+
+For detailed documentation, see the [docs/](docs/) folder.
+
+## License
+
+Licensed under the GNU General Public License v3.0. See [LICENSE.txt](LICENSE.txt) for details.
+
+## Developer
+
+**Quantum Research Pty Ltd**  
+https://qntrs.com

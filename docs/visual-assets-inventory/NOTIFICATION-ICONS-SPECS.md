@@ -207,7 +207,7 @@ For each Mycel notification icon:
 
 #### Files to Update:
 ```
-briar-android/src/main/res/
+mycel-android/src/main/res/
 ├── drawable-mdpi/notification_*.png
 ├── drawable-hdpi/notification_*.png  
 ├── drawable-xhdpi/notification_*.png

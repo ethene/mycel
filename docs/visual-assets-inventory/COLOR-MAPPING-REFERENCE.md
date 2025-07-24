@@ -123,9 +123,9 @@ Replace all `briar_*` color names with `mycel_*` equivalents while maintaining t
 Update all style files to use new `mycel_*` color names:
 
 **Files to update:**
-- `briar-android/src/main/res/values/styles.xml`
-- `briar-android/src/main/res/values/themes.xml`
-- `briar-android/src/main/res/values-night/color.xml`
+- `mycel-android/src/main/res/values/styles.xml`
+- `mycel-android/src/main/res/values/themes.xml`
+- `mycel-android/src/main/res/values-night/color.xml`
 
 ### **Step 3: Update String Names**
 Rename briar-specific string keys:

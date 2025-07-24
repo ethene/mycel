@@ -1,6 +1,6 @@
 # Task ID: 2
 # Title: Phase 2: Update Android Application ID
-# Status: pending
+# Status: done
 # Dependencies: 1 (Not found)
 # Priority: high
 # Description: Change Android application package ID to com.quantumresearch.mycel

@@ -1,10 +1,10 @@
-package org.briarproject.bramble.test;
+package com.quantumresearch.mycel.spore.test;
 
-import org.briarproject.bramble.api.plugin.PluginCallback;
-import org.briarproject.bramble.api.plugin.TorConstants;
-import org.briarproject.bramble.api.plugin.TransportId;
-import org.briarproject.bramble.api.plugin.duplex.DuplexPlugin;
-import org.briarproject.bramble.api.plugin.duplex.DuplexPluginFactory;
+import com.quantumresearch.mycel.spore.api.plugin.PluginCallback;
+import com.quantumresearch.mycel.spore.api.plugin.TorConstants;
+import com.quantumresearch.mycel.spore.api.plugin.TransportId;
+import com.quantumresearch.mycel.spore.api.plugin.duplex.DuplexPlugin;
+import com.quantumresearch.mycel.spore.api.plugin.duplex.DuplexPluginFactory;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import javax.annotation.Nullable;

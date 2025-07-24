@@ -288,7 +288,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 git commit -m "[PHASE-1] Update string resources from Briar to Mycel
 
 Changed app_name and user-facing strings in:
-- briar-android/src/main/res/values/strings.xml:4,8
+- mycel-android/src/main/res/values/strings.xml:4,8
 - All 45+ localized string files
 
 Testing:
@@ -308,11 +308,11 @@ Co-Authored-By: Claude <noreply@anthropic.com>"
 git commit -m "[PHASE-2] Update Android application ID to com.quantumresearch.mycel
 
 Changed application ID and version info in:
-- briar-android/build.gradle:31,29,30
-- briar-android/src/debug/res/values/strings.xml:109
+- mycel-android/build.gradle:31,29,30
+- mycel-android/src/debug/res/values/strings.xml:109
 
 Testing:
-- ✅ Build: ./gradlew :briar-android:assembleDebug
+- ✅ Build: ./gradlew :mycel-android:assembleDebug
 - ✅ APK: Shows package name 'com.quantumresearch.mycel'
 - ✅ Install: Installs as separate app from Briar
 
@@ -356,7 +356,7 @@ fi
 
 # Android APK
 echo "4. Building Android APK..."
-if ./gradlew :briar-android:assembleDebug; then
+if ./gradlew :mycel-android:assembleDebug; then
     echo "✅ APK build successful"
 else
     echo "❌ APK build failed"
@@ -365,7 +365,7 @@ fi
 
 # Verify package name (Phase 2+)
 echo "5. Verifying package name..."
-APK_FILE=$(find briar-android/build/outputs/apk/debug -name "*.apk" | head -1)
+APK_FILE=$(find mycel-android/build/outputs/apk/debug -name "*.apk" | head -1)
 if [ -f "$APK_FILE" ]; then
     PACKAGE=$(aapt dump badging "$APK_FILE" | grep "package:" | head -1)
     echo "Package info: $PACKAGE"

@@ -6,10 +6,10 @@ apply plugin: 'idea'
 apply from: '../dagger.gradle'
 
 dependencies {
-	testImplementation project(':bramble-api')
-	testImplementation project(path: ':bramble-api', configuration: 'testOutput')
-	testImplementation project(':bramble-core')
-	testImplementation project(path: ':bramble-core', configuration: 'testOutput')
+	testImplementation project(':spore-api')
+	testImplementation project(path: ':spore-api', configuration: 'testOutput')
+	testImplementation project(':spore-core')
+	testImplementation project(path: ':spore-core', configuration: 'testOutput')
 	testImplementation project(':mailbox-core')
 	testImplementation project(':mailbox-lib')
 

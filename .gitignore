@@ -98,4 +98,10 @@ node_modules/
 !.taskmaster/docs/
 !.taskmaster/tasks/
 !.taskmaster/config.json
-.taskmaster/reports/ 
+.taskmaster/reports/
+
+# Utility scripts
+check-rebranding.sh 
+
+# Archive documentation (outdated Briar/Bramble references)
+docs/archive/

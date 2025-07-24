@@ -1,21 +1,21 @@
-package org.briarproject.bramble.mailbox;
+package com.quantumresearch.mycel.spore.mailbox;
 
-import org.briarproject.bramble.BrambleCoreIntegrationTestEagerSingletons;
-import org.briarproject.bramble.BrambleCoreModule;
-import org.briarproject.bramble.api.contact.ContactManager;
-import org.briarproject.bramble.api.db.DatabaseComponent;
-import org.briarproject.bramble.api.identity.AuthorFactory;
-import org.briarproject.bramble.api.lifecycle.LifecycleManager;
-import org.briarproject.bramble.api.mailbox.MailboxManager;
-import org.briarproject.bramble.api.mailbox.MailboxSettingsManager;
-import org.briarproject.bramble.api.mailbox.MailboxUpdateManager;
-import org.briarproject.bramble.api.properties.TransportPropertyManager;
-import org.briarproject.bramble.api.system.Clock;
-import org.briarproject.bramble.test.BrambleCoreIntegrationTestModule;
-import org.briarproject.bramble.test.BrambleIntegrationTestComponent;
-import org.briarproject.bramble.test.MailboxTestPluginConfigModule;
-import org.briarproject.bramble.test.TestDnsModule;
-import org.briarproject.bramble.test.TestSocksModule;
+import com.quantumresearch.mycel.spore.BrambleCoreIntegrationTestEagerSingletons;
+import com.quantumresearch.mycel.spore.BrambleCoreModule;
+import com.quantumresearch.mycel.spore.api.contact.ContactManager;
+import com.quantumresearch.mycel.spore.api.db.DatabaseComponent;
+import com.quantumresearch.mycel.spore.api.identity.AuthorFactory;
+import com.quantumresearch.mycel.spore.api.lifecycle.LifecycleManager;
+import com.quantumresearch.mycel.spore.api.mailbox.MailboxManager;
+import com.quantumresearch.mycel.spore.api.mailbox.MailboxSettingsManager;
+import com.quantumresearch.mycel.spore.api.mailbox.MailboxUpdateManager;
+import com.quantumresearch.mycel.spore.api.properties.TransportPropertyManager;
+import com.quantumresearch.mycel.spore.api.system.Clock;
+import com.quantumresearch.mycel.spore.test.BrambleCoreIntegrationTestModule;
+import com.quantumresearch.mycel.spore.test.BrambleIntegrationTestComponent;
+import com.quantumresearch.mycel.spore.test.MailboxTestPluginConfigModule;
+import com.quantumresearch.mycel.spore.test.TestDnsModule;
+import com.quantumresearch.mycel.spore.test.TestSocksModule;
 
 import javax.inject.Singleton;
 

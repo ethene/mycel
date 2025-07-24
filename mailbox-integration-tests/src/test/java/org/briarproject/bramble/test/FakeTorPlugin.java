@@ -1,17 +1,17 @@
-package org.briarproject.bramble.test;
+package com.quantumresearch.mycel.spore.test;
 
-import org.briarproject.bramble.api.Pair;
-import org.briarproject.bramble.api.data.BdfList;
-import org.briarproject.bramble.api.keyagreement.KeyAgreementListener;
-import org.briarproject.bramble.api.plugin.ConnectionHandler;
-import org.briarproject.bramble.api.plugin.PluginCallback;
-import org.briarproject.bramble.api.plugin.TorConstants;
-import org.briarproject.bramble.api.plugin.TransportId;
-import org.briarproject.bramble.api.plugin.duplex.DuplexPlugin;
-import org.briarproject.bramble.api.plugin.duplex.DuplexTransportConnection;
-import org.briarproject.bramble.api.properties.TransportProperties;
-import org.briarproject.bramble.api.rendezvous.KeyMaterialSource;
-import org.briarproject.bramble.api.rendezvous.RendezvousEndpoint;
+import com.quantumresearch.mycel.spore.api.Pair;
+import com.quantumresearch.mycel.spore.api.data.BdfList;
+import com.quantumresearch.mycel.spore.api.keyagreement.KeyAgreementListener;
+import com.quantumresearch.mycel.spore.api.plugin.ConnectionHandler;
+import com.quantumresearch.mycel.spore.api.plugin.PluginCallback;
+import com.quantumresearch.mycel.spore.api.plugin.TorConstants;
+import com.quantumresearch.mycel.spore.api.plugin.TransportId;
+import com.quantumresearch.mycel.spore.api.plugin.duplex.DuplexPlugin;
+import com.quantumresearch.mycel.spore.api.plugin.duplex.DuplexTransportConnection;
+import com.quantumresearch.mycel.spore.api.properties.TransportProperties;
+import com.quantumresearch.mycel.spore.api.rendezvous.KeyMaterialSource;
+import com.quantumresearch.mycel.spore.api.rendezvous.RendezvousEndpoint;
 import org.briarproject.nullsafety.NotNullByDefault;
 
 import java.util.Collection;
@@ -20,8 +20,8 @@ import java.util.logging.Logger;
 import javax.annotation.Nullable;
 
 import static java.util.logging.Logger.getLogger;
-import static org.briarproject.bramble.api.plugin.Plugin.State.ACTIVE;
-import static org.briarproject.bramble.api.plugin.Plugin.State.INACTIVE;
+import static com.quantumresearch.mycel.spore.api.plugin.Plugin.State.ACTIVE;
+import static com.quantumresearch.mycel.spore.api.plugin.Plugin.State.INACTIVE;
 
 @NotNullByDefault
 public class FakeTorPlugin implements DuplexPlugin {

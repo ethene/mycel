@@ -1,11 +1,11 @@
-package org.briarproject.bramble.mailbox;
+package com.quantumresearch.mycel.spore.mailbox;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.function.IntSupplier;
 
 import static java.lang.System.currentTimeMillis;
-import static org.briarproject.bramble.mailbox.AbstractMailboxIntegrationTest.URL_BASE;
-import static org.briarproject.bramble.mailbox.MailboxTestUtils.createHttpClientProvider;
+import static com.quantumresearch.mycel.spore.mailbox.AbstractMailboxIntegrationTest.URL_BASE;
+import static com.quantumresearch.mycel.spore.mailbox.MailboxTestUtils.createHttpClientProvider;
 import static org.junit.Assert.fail;
 
 class MailboxIntegrationTestUtils {

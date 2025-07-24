@@ -284,7 +284,7 @@ public class ForumManagerImplTest {
 
 ### Android Testing
 
-#### Location: `briar-android/src/test/` (Unit) and `briar-android/src/androidTest/` (Instrumented)
+#### Location: `mycel-android/src/test/` (Unit) and `mycel-android/src/androidTest/` (Instrumented)
 
 #### 1. ViewModel Unit Tests
 
@@ -768,10 +768,10 @@ jobs:
       run: ./gradlew test
     
     - name: Run Android lint
-      run: ./gradlew :briar-android:lint
+      run: ./gradlew :mycel-android:lint
     
     - name: Build debug APK
-      run: ./gradlew :briar-android:assembleDebug
+      run: ./gradlew :mycel-android:assembleDebug
     
     - name: Upload test reports
       uses: actions/upload-artifact@v3

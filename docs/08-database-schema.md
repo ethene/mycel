@@ -7,13 +7,13 @@ The Briar/Mycel database uses a sophisticated JDBC-based architecture designed f
 ## Database Backends
 
 ### Primary Backend: H2 Database
-- **Location**: `bramble-core/src/main/java/org/briarproject/bramble/db/h2/`
+- **Location**: `spore-core/src/main/java/org/briarproject/bramble/db/h2/`
 - **Encryption**: AES cipher with split files (`CIPHER=AES`)
 - **Version**: H2 1.4.192 (legacy version for Java compatibility)
 - **Features**: Multi-threaded, file-based storage
 
 ### Alternative Backend: HyperSQL Database  
-- **Location**: `bramble-core/src/main/java/org/briarproject/bramble/db/hsql/`
+- **Location**: `spore-core/src/main/java/org/briarproject/bramble/db/hsql/`
 - **Encryption**: LOB encryption (`encrypt_lobs=true;crypt_type=AES`)
 - **Features**: Standards-compliant SQL, compact shutdown
 

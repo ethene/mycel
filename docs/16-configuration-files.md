@@ -8,7 +8,7 @@ This document catalogs all configuration files that require updates during rebra
 
 ### 1. Android Application Manifest
 
-**File**: `briar-android/src/main/AndroidManifest.xml`
+**File**: `mycel-android/src/main/AndroidManifest.xml`
 
 **Changes Required**:
 ```xml
@@ -57,7 +57,7 @@ This document catalogs all configuration files that require updates during rebra
 
 ### 2. Primary Build Configuration
 
-**File**: `briar-android/build.gradle`
+**File**: `mycel-android/build.gradle`
 
 **Critical Changes**:
 ```gradle
@@ -116,14 +116,14 @@ dependencies {
 **Potential Changes**:
 ```gradle
 // Module inclusions (names may change)
-include ':infrastructure-api'      // Was bramble-api
-include ':infrastructure-core'     // Was bramble-core
-include ':infrastructure-android'  // Was bramble-android
-include ':infrastructure-java'     // Was bramble-java
-include ':app-api'                 // Was briar-api
-include ':app-core'                // Was briar-core
-include ':app-android'             // Was briar-android
-include ':app-headless'            // Was briar-headless
+include ':infrastructure-api'      // Was spore-api
+include ':infrastructure-core'     // Was spore-core
+include ':infrastructure-android'  // Was spore-android
+include ':infrastructure-java'     // Was spore-java
+include ':app-api'                 // Was mycel-api
+include ':app-core'                // Was mycel-core
+include ':app-android'             // Was mycel-android
+include ':app-headless'            // Was mycel-headless
 
 // Mailbox modules (conditional)
 if (ext.has("newbrand.mailbox_integration_tests") && 
@@ -141,7 +141,7 @@ if (ext.has("newbrand.mailbox_integration_tests") &&
 
 ### 4. Primary String Resources
 
-**File**: `briar-android/src/main/res/values/strings.xml`
+**File**: `mycel-android/src/main/res/values/strings.xml`
 
 **Key Changes**:
 ```xml
@@ -179,7 +179,7 @@ if (ext.has("newbrand.mailbox_integration_tests") &&
 
 ### 5. Color and Theme Resources
 
-**File**: `briar-android/src/main/res/values/colors.xml`
+**File**: `mycel-android/src/main/res/values/colors.xml`
 
 **Brand Color Updates**:
 ```xml
@@ -201,7 +201,7 @@ if (ext.has("newbrand.mailbox_integration_tests") &&
 </resources>
 ```
 
-**File**: `briar-android/src/main/res/values/styles.xml`
+**File**: `mycel-android/src/main/res/values/styles.xml`
 
 **Theme Updates**:
 ```xml
@@ -223,7 +223,7 @@ if (ext.has("newbrand.mailbox_integration_tests") &&
 
 ### 6. Network Security Configuration
 
-**File**: `briar-android/src/main/res/xml/network_security_config.xml`
+**File**: `mycel-android/src/main/res/xml/network_security_config.xml`
 
 **Potential Updates**:
 ```xml
@@ -308,7 +308,7 @@ NEWBRAND_KEY_PASSWORD=new_key_password
 
 ### 9. ProGuard Configuration
 
-**File**: `briar-android/proguard-rules.txt`
+**File**: `mycel-android/proguard-rules.txt`
 
 **Package Name Updates**:
 ```proguard
@@ -390,7 +390,7 @@ newbrand-*.keystore  # New signing keys
 
 ### 12. Fastlane Configuration
 
-**File**: `briar-android/fastlane/Appfile`
+**File**: `mycel-android/fastlane/Appfile`
 
 **Updates**:
 ```ruby
@@ -405,7 +405,7 @@ for_platform :android do
 end
 ```
 
-**File**: `briar-android/fastlane/Fastfile`
+**File**: `mycel-android/fastlane/Fastfile`
 
 **Updates**:
 ```ruby
@@ -435,7 +435,7 @@ end
 
 ### 13. Database Configuration
 
-**Location**: `bramble-core/src/main/java/org/briarproject/bramble/db/`
+**Location**: `spore-core/src/main/java/org/briarproject/bramble/db/`
 
 **Files with potential configuration**:
 - Database schema version constants
@@ -510,7 +510,7 @@ public static final int MAX_PORT = 7999;
 
 **Android Test Configuration**:
 ```xml
-<!-- briar-android/src/androidTest/res/values/strings.xml -->
+<!-- mycel-android/src/androidTest/res/values/strings.xml -->
 <resources>
     <string name="test_app_name">NewBrand Test</string>
     <string name="test_package_name">com.newbrand.messenger.test</string>
@@ -532,7 +532,7 @@ public class BrandTestRunner extends AndroidJUnitRunner {
 **Files to Update**:
 - `README.md` - Main project documentation
 - `CONTRIBUTING.md` - Contribution guidelines
-- `briar-headless/README.md` - Headless version docs
+- `mycel-headless/README.md` - Headless version docs
 - `docs/*.md` - All documentation files
 
 **Key Updates**:
@@ -544,10 +544,10 @@ public class BrandTestRunner extends AndroidJUnitRunner {
 ## Configuration Summary by Priority
 
 ### 🔴 Critical (Must Change for App to Function)
-1. `briar-android/src/main/AndroidManifest.xml`
-2. `briar-android/build.gradle` (applicationId)
+1. `mycel-android/src/main/AndroidManifest.xml`
+2. `mycel-android/build.gradle` (applicationId)
 3. All Java package declarations
-4. `briar-android/src/main/res/values/strings.xml` (app_name)
+4. `mycel-android/src/main/res/values/strings.xml` (app_name)
 
 ### 🟡 High (User-Visible Changes)
 1. All string resource files (30+ languages)

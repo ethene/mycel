@@ -1,0 +1,40 @@
+package com.quantumresearch.mycel.spore.plugin.tcp;
+
+import com.quantumresearch.mycel.spore.api.plugin.Plugin;
+import com.quantumresearch.mycel.spore.api.plugin.duplex.AbstractDuplexTransportConnection;
+import com.quantumresearch.mycel.spore.util.IoUtils;
+import org.briarproject.nullsafety.NotNullByDefault;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.Socket;
+
+import javax.annotation.concurrent.ThreadSafe;
+
+@ThreadSafe
+@NotNullByDefault
+class TcpTransportConnection extends AbstractDuplexTransportConnection {
+
+	private final Socket socket;
+
+	TcpTransportConnection(Plugin plugin, Socket socket) {
+		super(plugin);
+		this.socket = socket;
+	}
+
+	@Override
+	protected InputStream getInputStream() throws IOException {
+		return IoUtils.getInputStream(socket);
+	}
+
+	@Override
+	protected OutputStream getOutputStream() throws IOException {
+		return IoUtils.getOutputStream(socket);
+	}
+
+	@Override
+	protected void closeConnection(boolean exception) throws IOException {
+		socket.close();
+	}
+}

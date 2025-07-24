@@ -22,7 +22,7 @@ The Briar/Mycel sync protocol is responsible for maintaining consistency of mess
 
 ### Core Components
 
-**Location**: `bramble-core/src/main/java/org/briarproject/bramble/sync/`
+**Location**: `spore-core/src/main/java/org/briarproject/bramble/sync/`
 
 #### Sync Session Management
 

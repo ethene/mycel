@@ -1,4 +1,4 @@
-package org.briarproject.bramble.mailbox;
+package com.quantumresearch.mycel.spore.mailbox;
 
 import org.briarproject.nullsafety.NotNullByDefault;
 
@@ -7,7 +7,7 @@ import java.util.function.IntSupplier;
 import dagger.Module;
 import dagger.Provides;
 
-import static org.briarproject.bramble.mailbox.AbstractMailboxIntegrationTest.URL_BASE;
+import static com.quantumresearch.mycel.spore.mailbox.AbstractMailboxIntegrationTest.URL_BASE;
 
 @Module
 @NotNullByDefault

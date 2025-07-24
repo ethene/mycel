@@ -8,7 +8,7 @@ Briar's transport system is a pluggable architecture that allows communication o
 
 ### Plugin Interface Design
 
-**Location**: `bramble-api/src/main/java/org/briarproject/bramble/api/plugin/`
+**Location**: `spore-api/src/main/java/org/briarproject/bramble/api/plugin/`
 
 **Core Interfaces**:
 - `Plugin` - Base transport plugin interface
@@ -18,7 +18,7 @@ Briar's transport system is a pluggable architecture that allows communication o
 
 ### Transport Plugin Manager
 
-**Location**: `bramble-core/src/main/java/org/briarproject/bramble/plugin/`
+**Location**: `spore-core/src/main/java/org/briarproject/bramble/plugin/`
 
 **Key Classes**:
 - `PluginManager` - Manages all transport plugins
@@ -32,7 +32,7 @@ Briar's transport system is a pluggable architecture that allows communication o
 **Purpose**: Anonymous internet communication through Tor network
 
 #### Android Implementation
-**Location**: `bramble-android/src/main/java/org/briarproject/bramble/plugin/tor/`
+**Location**: `spore-android/src/main/java/org/briarproject/bramble/plugin/tor/`
 
 **Key Classes**:
 - `AndroidTorPlugin` - Main Tor plugin for Android
@@ -61,7 +61,7 @@ PROP_CIRCUIT_TIMEOUT = "circuitTimeout"
 5. Route all traffic through 3-hop circuits
 
 #### Desktop Implementation  
-**Location**: `bramble-java/src/main/java/org/briarproject/bramble/plugin/tor/`
+**Location**: `spore-java/src/main/java/org/briarproject/bramble/plugin/tor/`
 
 **Differences from Android**:
 - Uses system Tor or bundled Tor binary
@@ -73,7 +73,7 @@ PROP_CIRCUIT_TIMEOUT = "circuitTimeout"
 **Purpose**: Direct device-to-device communication without internet
 
 #### Android Implementation
-**Location**: `bramble-android/src/main/java/org/briarproject/bramble/plugin/bluetooth/`
+**Location**: `spore-android/src/main/java/org/briarproject/bramble/plugin/bluetooth/`
 
 **Key Classes**:
 - `AndroidBluetoothPlugin` - Main Bluetooth plugin
@@ -103,7 +103,7 @@ PROP_CONNECTION_TIMEOUT = "connectionTimeout"
 5. Begin message synchronization
 
 #### Desktop Implementation
-**Location**: `bramble-java/src/main/java/org/briarproject/bramble/plugin/bluetooth/`
+**Location**: `spore-java/src/main/java/org/briarproject/bramble/plugin/bluetooth/`
 
 **Dependencies**:
 - BlueCove Bluetooth stack (custom build)
@@ -118,7 +118,7 @@ PROP_CONNECTION_TIMEOUT = "connectionTimeout"
 
 **Purpose**: Fast local network communication
 
-**Location**: `bramble-core/src/main/java/org/briarproject/bramble/plugin/tcp/`
+**Location**: `spore-core/src/main/java/org/briarproject/bramble/plugin/tcp/`
 
 **Key Classes**:
 - `LanTcpPlugin` - Main LAN plugin
@@ -151,7 +151,7 @@ PROP_LAN_ADDRESS = "lanAddress"
 
 **Purpose**: Communication over dial-up modems and serial connections
 
-**Location**: `bramble-java/src/main/java/org/briarproject/bramble/plugin/modem/`
+**Location**: `spore-java/src/main/java/org/briarproject/bramble/plugin/modem/`
 
 **Key Classes**:
 - `ModemPlugin` - Main modem plugin
@@ -171,7 +171,7 @@ PROP_LAN_ADDRESS = "lanAddress"
 
 ### Transport Priority System
 
-**Location**: `bramble-core/src/main/java/org/briarproject/bramble/plugin/`
+**Location**: `spore-core/src/main/java/org/briarproject/bramble/plugin/`
 
 **Priority Order** (configurable):
 1. **LAN TCP** - Fastest, local network
@@ -205,7 +205,7 @@ if (lanAvailable && localNetwork) {
 
 ### Property Management
 
-**Location**: `bramble-core/src/main/java/org/briarproject/bramble/api/plugin/`
+**Location**: `spore-core/src/main/java/org/briarproject/bramble/api/plugin/`
 
 **Key Classes**:
 - `TransportPropertyManager` - Manages transport settings
@@ -277,7 +277,7 @@ Each transport implements its own encryption layer:
 
 ### Plugin Factory Registration
 
-**Location**: `bramble-core/src/main/java/org/briarproject/bramble/plugin/`
+**Location**: `spore-core/src/main/java/org/briarproject/bramble/plugin/`
 
 **Dagger Module**: `PluginModule`
 

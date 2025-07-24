@@ -1,4 +1,4 @@
-package org.briarproject.bramble.test;
+package com.quantumresearch.mycel.spore.test;
 
 import org.briarproject.nullsafety.NotNullByDefault;
 

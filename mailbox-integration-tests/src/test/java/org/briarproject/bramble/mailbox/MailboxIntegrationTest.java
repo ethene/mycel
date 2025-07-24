@@ -1,8 +1,8 @@
-package org.briarproject.bramble.mailbox;
+package com.quantumresearch.mycel.spore.mailbox;
 
-import org.briarproject.bramble.api.contact.ContactId;
-import org.briarproject.bramble.api.mailbox.MailboxProperties;
-import org.briarproject.bramble.mailbox.MailboxApi.MailboxFile;
+import com.quantumresearch.mycel.spore.api.contact.ContactId;
+import com.quantumresearch.mycel.spore.api.mailbox.MailboxProperties;
+import com.quantumresearch.mycel.spore.mailbox.MailboxApi.MailboxFile;
 import org.junit.Test;
 
 import java.util.Collection;
@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 import static java.util.logging.Logger.getLogger;
-import static org.briarproject.bramble.mailbox.MailboxIntegrationTestUtils.retryUntilSuccessOrTimeout;
+import static com.quantumresearch.mycel.spore.mailbox.MailboxIntegrationTestUtils.retryUntilSuccessOrTimeout;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 

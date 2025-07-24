@@ -4,15 +4,15 @@
 
 ```
 mycel/
-├── 📁 bramble-api/          # Core protocol API definitions
-├── 📁 bramble-core/         # Core protocol implementation  
-├── 📁 bramble-android/      # Android-specific protocol layer
-├── 📁 bramble-java/         # Desktop-specific protocol layer
-├── 📁 briar-api/           # Application-level API definitions
-├── 📁 briar-core/          # Application logic implementation
-├── 📁 briar-android/       # ⭐ Main Android application
-├── 📁 briar-headless/      # Headless/server version
-├── 📁 briar-mailbox/       # Mailbox server functionality
+├── 📁 spore-api/          # Core protocol API definitions
+├── 📁 spore-core/         # Core protocol implementation  
+├── 📁 spore-android/      # Android-specific protocol layer
+├── 📁 spore-java/         # Desktop-specific protocol layer
+├── 📁 mycel-api/           # Application-level API definitions
+├── 📁 mycel-core/          # Application logic implementation
+├── 📁 mycel-android/       # ⭐ Main Android application
+├── 📁 mycel-headless/      # Headless/server version
+├── 📁 mycel-mailbox/       # Mailbox server functionality
 ├── 📁 mailbox-integration-tests/ # Mailbox integration tests
 ├── 📁 patches/             # Source code patches
 ├── 📁 libs/                # Custom JAR libraries
@@ -33,12 +33,12 @@ mycel/
 
 ## Critical Modules for Rebranding
 
-### 🔴 briar-android/ (HIGHEST PRIORITY)
+### 🔴 mycel-android/ (HIGHEST PRIORITY)
 
 The main Android application containing all user-facing elements:
 
 ```
-briar-android/
+mycel-android/
 ├── 📁 artwork/ ⭐ CRITICAL BRANDING ASSETS
 │   ├── logo_circle.svg                    # Main logo
 │   ├── logo_horizontal_white.svg          # Horizontal logo variant
@@ -121,12 +121,12 @@ briar-android/
 └── 📄 proguard-rules.txt           # Code obfuscation rules
 ```
 
-### 🟡 bramble-android/ (MEDIUM PRIORITY)
+### 🟡 spore-android/ (MEDIUM PRIORITY)
 
 Android-specific protocol implementation:
 
 ```
-bramble-android/
+spore-android/
 ├── 📁 src/main/
 │   ├── 📁 java/org/briarproject/bramble/ ⭐ PACKAGE STRUCTURE
 │   │   ├── 📁 android/              # Android adaptations
@@ -137,12 +137,12 @@ bramble-android/
 └── 📄 build.gradle                  # Build configuration
 ```
 
-### 🟡 briar-headless/ (MEDIUM PRIORITY)
+### 🟡 mycel-headless/ (MEDIUM PRIORITY)
 
 Headless/server version:
 
 ```
-briar-headless/
+mycel-headless/
 ├── 📁 src/main/
 │   ├── 📁 java/org/briarproject/briar/headless/ ⭐ PACKAGE STRUCTURE
 │   │   ├── 📁 rest/                 # REST API endpoints
@@ -156,12 +156,12 @@ briar-headless/
 
 ## Core Protocol Modules (Lower Priority)
 
-### 🟢 bramble-api/ & bramble-core/
+### 🟢 spore-api/ & spore-core/
 
 Protocol layer interface definitions and implementations:
 
 ```
-bramble-api/
+spore-api/
 └── src/main/java/org/briarproject/bramble/api/ ⭐ PACKAGE STRUCTURE
     ├── 📁 contact/                  # Contact management APIs
     ├── 📁 crypto/                   # Cryptographic APIs
@@ -171,7 +171,7 @@ bramble-api/
     ├── 📁 sync/                     # Synchronization APIs
     └── [other core APIs]
 
-bramble-core/
+spore-core/
 └── src/main/java/org/briarproject/bramble/ ⭐ PACKAGE STRUCTURE
     ├── 📁 crypto/                   # Crypto implementations
     ├── 📁 db/                       # Database implementations
@@ -180,12 +180,12 @@ bramble-core/
     └── [other implementations]
 ```
 
-### 🟢 briar-api/ & briar-core/
+### 🟢 mycel-api/ & mycel-core/
 
 Application layer definitions and implementations:
 
 ```
-briar-api/
+mycel-api/
 └── src/main/java/org/briarproject/briar/api/ ⭐ PACKAGE STRUCTURE
     ├── 📁 blog/                     # Blog APIs
     ├── 📁 forum/                    # Forum APIs
@@ -193,7 +193,7 @@ briar-api/
     ├── 📁 privategroup/             # Private group APIs
     └── [other app APIs]
 
-briar-core/
+mycel-core/
 └── src/main/java/org/briarproject/briar/ ⭐ PACKAGE STRUCTURE
     ├── 📁 blog/                     # Blog implementations
     ├── 📁 forum/                    # Forum implementations

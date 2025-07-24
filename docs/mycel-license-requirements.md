@@ -68,7 +68,7 @@ Must provide source code access:
 
 ### 4. Third-Party License Compliance
 Preserve existing third-party license files:
-- `briar-android/src/main/java/info/guardianproject/LICENSE.txt` (LGPL v2.1)
+- `mycel-android/src/main/java/info/guardianproject/LICENSE.txt` (LGPL v2.1)
 - Apache License 2.0 headers in third-party files
 - All dependency licenses
 

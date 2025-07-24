@@ -149,7 +149,7 @@ android.useAndroidX=true
 android.enableJetifier=true
 ```
 
-#### Kotlin (for briar-headless)
+#### Kotlin (for mycel-headless)
 
 **Installation** (if not using IDE):
 ```bash
@@ -204,7 +204,7 @@ brew install kotlin
 
 **Setup for Java/Kotlin Development**:
 - Ultimate Edition recommended for full Android support
-- Community Edition sufficient for bramble-core/briar-core work
+- Community Edition sufficient for spore-core/mycel-core work
 
 #### Visual Studio Code
 
@@ -242,7 +242,7 @@ git submodule update --init --recursive
 ./gradlew clean build
 
 # Android debug build
-./gradlew :briar-android:assembleDebug
+./gradlew :mycel-android:assembleDebug
 
 # Run tests
 ./gradlew test
@@ -267,7 +267,7 @@ git submodule update --init --recursive
 adb devices
 
 # Install debug APK
-./gradlew :briar-android:installDebug
+./gradlew :mycel-android:installDebug
 
 # View logs
 adb logcat | grep Briar
@@ -434,8 +434,8 @@ public class TestDatabaseConfig {
 ./gradlew test
 
 # Run specific module tests
-./gradlew :bramble-core:test
-./gradlew :briar-core:test
+./gradlew :spore-core:test
+./gradlew :mycel-core:test
 
 # Run with detailed output
 ./gradlew test --info
@@ -488,7 +488,7 @@ pre-commit install
 ./gradlew pmdMain
 
 # Android Lint
-./gradlew :briar-android:lint
+./gradlew :mycel-android:lint
 ```
 
 ### Debugging Setup
@@ -514,10 +514,10 @@ if (BuildConfig.DEBUG) {
 **JVM Debug Arguments**:
 ```bash
 # Remote debugging
-java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -jar briar-headless.jar
+java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -jar mycel-headless.jar
 
 # Memory debugging
-java -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp/briar-heap.hprof -jar briar-headless.jar
+java -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp/briar-heap.hprof -jar mycel-headless.jar
 ```
 
 ## Troubleshooting Common Setup Issues

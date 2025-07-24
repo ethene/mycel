@@ -23,8 +23,8 @@ export JAVA_HOME=$(/usr/libexec/java_home -v17)
 ./gradlew test
 
 # Run tests for specific module
-./gradlew :briar-core:test
-./gradlew :bramble-core:test
+./gradlew :mycel-core:test
+./gradlew :spore-core:test
 
 # Run Android instrumentation tests (requires device/emulator)
 ./gradlew connectedAndroidTest
@@ -39,18 +39,18 @@ MAILBOX_INTEGRATION_TESTS=true ./gradlew mailbox-integration-tests:test
 export JAVA_HOME=$(/usr/libexec/java_home -v17)
 
 # Debug build
-./gradlew :briar-android:assembleDebug
+./gradlew :mycel-android:assembleDebug
 
 # Official debug build (takes ~1m 52s)
 ./gradlew clean assembleOfficialDebug
 
 # Release build (requires signing configuration)
-./gradlew :briar-android:assembleRelease
+./gradlew :mycel-android:assembleRelease
 ```
 
 ### Running the Headless REST API
 ```bash
-./gradlew :briar-headless:run
+./gradlew :mycel-headless:run
 ```
 
 ### Code Quality
@@ -71,16 +71,16 @@ export JAVA_HOME=$(/usr/libexec/java_home -v17)
 ### Module Structure
 
 **Bramble Layer (Infrastructure):**
-- `bramble-api`: Core transport and sync APIs
-- `bramble-core`: Networking, crypto, and sync implementation  
-- `bramble-android`: Android-specific transport implementations
-- `bramble-java`: Java/desktop transport implementations
+- `spore-api`: Core transport and sync APIs
+- `spore-core`: Networking, crypto, and sync implementation  
+- `spore-android`: Android-specific transport implementations
+- `spore-java`: Java/desktop transport implementations
 
 **Briar Layer (Application Logic):**
-- `briar-api`: High-level messaging APIs
-- `briar-core`: Application features (messaging, forums, blogs)
-- `briar-android`: Android UI and platform integration
-- `briar-headless`: REST API for headless operation
+- `mycel-api`: High-level messaging APIs
+- `mycel-core`: Application features (messaging, forums, blogs)
+- `mycel-android`: Android UI and platform integration
+- `mycel-headless`: REST API for headless operation
 
 ### Key Design Patterns
 
@@ -151,8 +151,8 @@ export JAVA_HOME=$(/usr/libexec/java_home -v17)
 4. Add configuration in `TransportPropertyManager`
 
 ### Adding New Message Types
-1. Define in `briar-api` messaging package
-2. Implement validation in `briar-core`
+1. Define in `mycel-api` messaging package
+2. Implement validation in `mycel-core`
 3. Add database schema changes if needed
 4. Create UI components for display/editing
 5. Add comprehensive test coverage
@@ -196,7 +196,7 @@ Comprehensive documentation is available in the `docs/` folder:
 2. **Package Names**: All `org.briarproject.briar.*` → `com.quantumresearch.mycel.app.*`
 3. **App Name**: "Briar" → "Mycel" in all string resources (30+ languages)
 4. **Visual Assets**: Replace all Briar logos with Mycel branding
-5. **URLs**: Update to Quantum Research domains (e.g., https://quantumresearch.com.au)
+5. **URLs**: Update to Quantum Research domains (e.g., https://qntrs.com)
 6. **Build Configuration**: Update applicationId, signing certificates, store accounts
 
 **PRIMARY REBRANDING PLAN**: `docs/INCREMENTAL-REBRANDING-PLAN.md` contains the step-by-step implementation approach. Additional reference documentation is available in `docs/13-rebranding-strategy.md` and `docs/16-configuration-files.md`.
@@ -380,14 +380,14 @@ After completing each Task Master task:
 
 #### **Phase 1: String Resources** ✅ COMPLETED
 **Files Updated**:
-- `briar-android/src/main/res/values/strings.xml` - Main strings file
-- `briar-android/src/main/res/values-*/strings.xml` - All localized versions (47 files)
+- `mycel-android/src/main/res/values/strings.xml` - Main strings file
+- `mycel-android/src/main/res/values-*/strings.xml` - All localized versions (47 files)
 
 #### **Phase 2: Application ID** ✅ COMPLETED
 **Files Updated**:
-- `briar-android/build.gradle` - applicationId, versionName, versionCode
-- `briar-android/src/debug/res/values/strings.xml` - Debug package references
-- `briar-android/src/screenshotDebug/res/values/strings.xml` - Screenshot package references
+- `mycel-android/build.gradle` - applicationId, versionName, versionCode
+- `mycel-android/src/debug/res/values/strings.xml` - Debug package references
+- `mycel-android/src/screenshotDebug/res/values/strings.xml` - Screenshot package references
 
 #### **Phase 3: Infrastructure Packages (Bramble)**
 **Files to Update**:
@@ -399,21 +399,21 @@ After completing each Task Master task:
 #### **Phase 4: Application Packages (Briar)**
 **Files to Update**:
 - All Java files in `briar-*` modules - Package declarations and imports
-- `briar-android/src/main/AndroidManifest.xml` - Main package and component names
+- `mycel-android/src/main/AndroidManifest.xml` - Main package and component names
 - Build files referencing briar packages
 - Test files with briar imports
 
 #### **Phase 5: Configuration**
 **Files to Update**:
-- `briar-android/src/main/AndroidManifest.xml` - Deep link schemes
+- `mycel-android/src/main/AndroidManifest.xml` - Deep link schemes
 - Theme and style names in `res/values/styles.xml`
 - Layout XML files with briar-specific names
 - Configuration constants in code
 
 #### **Phase 6: Visual Assets**
 **Files to Update/Replace**:
-- `briar-android/src/main/res/mipmap-*/ic_launcher*.png` - App icons
-- `briar-android/src/main/res/drawable*/` - In-app graphics
+- `mycel-android/src/main/res/mipmap-*/ic_launcher*.png` - App icons
+- `mycel-android/src/main/res/drawable*/` - In-app graphics
 - Splash screen resources
 - Color schemes in `res/values/colors.xml`
 

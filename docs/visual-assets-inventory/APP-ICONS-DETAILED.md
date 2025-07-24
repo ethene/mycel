@@ -106,19 +106,19 @@ Once Mycel assets are ready:
 
 1. **Replace PNG Files:**
    ```
-   briar-android/src/main/res/mipmap-mdpi/ic_launcher.png
-   briar-android/src/main/res/mipmap-mdpi/ic_launcher_round.png
+   mycel-android/src/main/res/mipmap-mdpi/ic_launcher.png
+   mycel-android/src/main/res/mipmap-mdpi/ic_launcher_round.png
    [... and all other densities]
    ```
 
 2. **Update Vector Foreground:**
    ```
-   briar-android/src/main/res/drawable/ic_launcher_foreground.xml
+   mycel-android/src/main/res/drawable/ic_launcher_foreground.xml
    ```
 
 3. **Update Background (if changed):**
    ```
-   briar-android/src/main/res/values/ic_launcher_background.xml
+   mycel-android/src/main/res/values/ic_launcher_background.xml
    ```
 
 ### Design Inspiration Notes

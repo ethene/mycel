@@ -5,7 +5,7 @@ This document catalogs all visual elements that need to be replaced during the B
 ## 1. PRIMARY APP ICONS & LAUNCHER ASSETS
 
 ### App Launcher Icons (HIGH PRIORITY)
-**Location:** `briar-android/src/main/res/mipmap-*/`
+**Location:** `mycel-android/src/main/res/mipmap-*/`
 **Files to Replace:**
 - `ic_launcher.png` (5 densities: mdpi, hdpi, xhdpi, xxhdpi, xxxhdpi)
 - `ic_launcher_round.png` (5 densities: mdpi, hdpi, xhdpi, xxhdpi, xxxhdpi)
@@ -14,19 +14,19 @@ This document catalogs all visual elements that need to be replaced during the B
 **Description:** The main app icon visible on Android home screens and app drawers. Critical for brand recognition.
 
 ### Vector App Icon Foreground
-**Location:** `briar-android/src/main/res/drawable/ic_launcher_foreground.xml`
+**Location:** `mycel-android/src/main/res/drawable/ic_launcher_foreground.xml`
 **Current Design:** Vector graphic with green (#87c214, #95d220) interconnected bar pattern
 **Usage:** Used in adaptive icon generation for Android 8.0+
 
 ### App Icon Background
-**Location:** `briar-android/src/main/res/values/ic_launcher_background.xml`
+**Location:** `mycel-android/src/main/res/values/ic_launcher_background.xml`
 **Current Value:** `<color>#FFFFFF</color>` (White background)
 **Usage:** Background for adaptive icons
 
 ## 2. SPLASH SCREEN & STARTUP VISUALS
 
 ### Main Splash Screen Logo
-**Location:** `briar-android/src/main/res/drawable/splash_screen.xml`
+**Location:** `mycel-android/src/main/res/drawable/splash_screen.xml`
 **Current Design:** Large green interconnected bars with "BRIAR" text at bottom
 **Colors Used:** `#87c214`, `#95d220` (green tones), `#000000` (black text)
 **Dimensions:** 235dp × 310dp
@@ -61,7 +61,7 @@ This document catalogs all visual elements that need to be replaced during the B
 ## 4. ILLUSTRATION GRAPHICS & ONBOARDING
 
 ### Key User Interface Illustrations
-**Location:** `briar-android/src/main/res/drawable/`
+**Location:** `mycel-android/src/main/res/drawable/`
 
 #### Contact & Connection Illustrations
 - `il_add_contact_remote.xml` - Add remote contact screen
@@ -95,7 +95,7 @@ This document catalogs all visual elements that need to be replaced during the B
 ## 5. NAVIGATION & UI GRAPHICS
 
 ### Navigation Elements
-**Location:** `briar-android/src/main/res/drawable/`
+**Location:** `mycel-android/src/main/res/drawable/`
 
 - `navigation_drawer_header.xml` - Main nav drawer background
 - `navigation_item_background.xml` - Nav item selection states
@@ -114,7 +114,7 @@ This document catalogs all visual elements that need to be replaced during the B
 ## 6. BRAND COLOR SCHEME
 
 ### Primary Brand Colors
-**Location:** `briar-android/src/main/res/values/color.xml`
+**Location:** `mycel-android/src/main/res/values/color.xml`
 
 #### Briar Green Palette (TO REPLACE)
 ```xml
@@ -166,14 +166,14 @@ This document catalogs all visual elements that need to be replaced during the B
 ## 8. NIGHT MODE VARIANTS
 
 ### Dark Theme Graphics
-**Location:** `briar-android/src/main/res/drawable-night/`
+**Location:** `mycel-android/src/main/res/drawable-night/`
 **Files:** Night mode versions of key illustrations and UI elements
 - All major illustrations have dark variants
 - Navigation elements adapted for dark theme
 - Different color schemes for dark mode
 
 ### Night Mode Colors  
-**Location:** `briar-android/src/main/res/values-night/color.xml`
+**Location:** `mycel-android/src/main/res/values-night/color.xml`
 - Dark theme color overrides
 - Adjusted accent colors for dark backgrounds
 
