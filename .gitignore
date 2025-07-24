@@ -93,12 +93,11 @@ node_modules/
 *.sw?
 # OS specific
 
-# Task Master (keep configuration and docs, ignore some generated files)
-!.taskmaster/
-!.taskmaster/docs/
-!.taskmaster/tasks/
-!.taskmaster/config.json
-.taskmaster/reports/
+# Task Master (ignore for now - project management files)
+.taskmaster/
+
+# Project management files (ignore for now)
+CLAUDE.md
 
 # Utility scripts
 check-rebranding.sh 
