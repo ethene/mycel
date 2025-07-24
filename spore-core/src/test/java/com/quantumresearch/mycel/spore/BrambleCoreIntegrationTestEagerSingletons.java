@@ -3,7 +3,7 @@ package com.quantumresearch.mycel.spore;
 import com.quantumresearch.mycel.spore.system.TimeTravelModule;
 
 public interface BrambleCoreIntegrationTestEagerSingletons
-		extends BrambleCoreEagerSingletons {
+		extends SporeCoreEagerSingletons {
 
 	void inject(TimeTravelModule.EagerSingletons init);
 
@@ -11,7 +11,7 @@ public interface BrambleCoreIntegrationTestEagerSingletons
 
 		public static void injectEagerSingletons(
 				BrambleCoreIntegrationTestEagerSingletons c) {
-			BrambleCoreEagerSingletons.Helper.injectEagerSingletons(c);
+			SporeCoreEagerSingletons.Helper.injectEagerSingletons(c);
 			c.inject(new TimeTravelModule.EagerSingletons());
 		}
 	}

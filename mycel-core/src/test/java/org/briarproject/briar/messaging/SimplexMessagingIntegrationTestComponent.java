@@ -1,7 +1,7 @@
 package com.quantumresearch.mycel.app.messaging;
 
 import com.quantumresearch.mycel.spore.BrambleCoreIntegrationTestEagerSingletons;
-import com.quantumresearch.mycel.spore.BrambleCoreModule;
+import com.quantumresearch.mycel.spore.SporeCoreModule;
 import com.quantumresearch.mycel.spore.api.connection.ConnectionManager;
 import com.quantumresearch.mycel.spore.api.contact.ContactManager;
 import com.quantumresearch.mycel.spore.api.event.EventBus;
@@ -15,7 +15,7 @@ import com.quantumresearch.mycel.spore.test.TestSocksModule;
 import com.quantumresearch.mycel.app.api.messaging.MessagingManager;
 import com.quantumresearch.mycel.app.api.messaging.PrivateMessageFactory;
 import com.quantumresearch.mycel.app.autodelete.AutoDeleteModule;
-import com.quantumresearch.mycel.app.client.BriarClientModule;
+import com.quantumresearch.mycel.app.client.MycelClientModule;
 import com.quantumresearch.mycel.app.conversation.ConversationModule;
 
 import javax.inject.Singleton;
@@ -26,8 +26,8 @@ import dagger.Component;
 @Component(modules = {
 		AutoDeleteModule.class,
 		BrambleCoreIntegrationTestModule.class,
-		BrambleCoreModule.class,
-		BriarClientModule.class,
+		SporeCoreModule.class,
+		MycelClientModule.class,
 		ConversationModule.class,
 		MessagingModule.class,
 		ModularMailboxModule.class,

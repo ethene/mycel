@@ -14,7 +14,7 @@ import com.quantumresearch.mycel.app.api.privategroup.invitation.GroupInvitation
 import com.quantumresearch.mycel.app.api.privategroup.invitation.GroupInvitationRequest;
 import com.quantumresearch.mycel.app.api.privategroup.invitation.GroupInvitationResponse;
 import com.quantumresearch.mycel.app.autodelete.AbstractAutoDeleteTest;
-import com.quantumresearch.mycel.app.test.BriarIntegrationTestComponent;
+import com.quantumresearch.mycel.app.test.MycelIntegrationTestComponent;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -51,7 +51,7 @@ public class AutoDeleteIntegrationTest extends AbstractAutoDeleteTest {
 
 	@Override
 	protected ConversationClient getConversationClient(
-			BriarIntegrationTestComponent component) {
+			MycelIntegrationTestComponent component) {
 		return component.getGroupInvitationManager();
 	}
 

@@ -59,5 +59,5 @@ import dagger.Module;
 		ValidationModule.class,
 		VersioningModule.class
 })
-public class BrambleCoreModule {
+public class SporeCoreModule {
 }

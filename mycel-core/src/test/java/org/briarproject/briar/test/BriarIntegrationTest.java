@@ -42,7 +42,7 @@ import static org.junit.Assert.assertEquals;
 
 @MethodsNotNullByDefault
 @ParametersNotNullByDefault
-public abstract class BriarIntegrationTest<C extends BriarIntegrationTestComponent>
+public abstract class BriarIntegrationTest<C extends MycelIntegrationTestComponent>
 		extends BrambleIntegrationTest<C> {
 
 	@Nullable
@@ -321,7 +321,7 @@ public abstract class BriarIntegrationTest<C extends BriarIntegrationTestCompone
 			contactManager2.removeContact(contactId1From2);
 	}
 
-	protected void setAutoDeleteTimer(BriarIntegrationTestComponent component,
+	protected void setAutoDeleteTimer(MycelIntegrationTestComponent component,
 			ContactId contactId, long timer) throws DbException {
 		DatabaseComponent db = component.getDatabaseComponent();
 		AutoDeleteManager autoDeleteManager = component.getAutoDeleteManager();
@@ -330,7 +330,7 @@ public abstract class BriarIntegrationTest<C extends BriarIntegrationTestCompone
 				autoDeleteManager.setAutoDeleteTimer(txn, contactId, timer));
 	}
 
-	protected long getAutoDeleteTimer(BriarIntegrationTestComponent component,
+	protected long getAutoDeleteTimer(MycelIntegrationTestComponent component,
 			ContactId contactId, long timestamp) throws DbException {
 		DatabaseComponent db = component.getDatabaseComponent();
 		AutoDeleteManager autoDeleteManager = component.getAutoDeleteManager();
@@ -340,14 +340,14 @@ public abstract class BriarIntegrationTest<C extends BriarIntegrationTestCompone
 						timestamp));
 	}
 
-	protected void setMessageNotShared(BriarIntegrationTestComponent component,
+	protected void setMessageNotShared(MycelIntegrationTestComponent component,
 			MessageId messageId) throws Exception {
 		DatabaseComponent db = component.getDatabaseComponent();
 
 		db.transaction(false, txn -> db.setMessageNotShared(txn, messageId));
 	}
 
-	protected void setMessageShared(BriarIntegrationTestComponent component,
+	protected void setMessageShared(MycelIntegrationTestComponent component,
 			MessageId messageId) throws Exception {
 		DatabaseComponent db = component.getDatabaseComponent();
 

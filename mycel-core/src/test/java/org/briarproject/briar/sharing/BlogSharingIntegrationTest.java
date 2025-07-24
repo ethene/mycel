@@ -20,8 +20,8 @@ import com.quantumresearch.mycel.app.api.blog.event.BlogInvitationResponseReceiv
 import com.quantumresearch.mycel.app.api.conversation.ConversationMessageHeader;
 import com.quantumresearch.mycel.app.api.conversation.ConversationResponse;
 import com.quantumresearch.mycel.app.test.BriarIntegrationTest;
-import com.quantumresearch.mycel.app.test.BriarIntegrationTestComponent;
-import com.quantumresearch.mycel.app.test.DaggerBriarIntegrationTestComponent;
+import com.quantumresearch.mycel.app.test.MycelIntegrationTestComponent;
+import com.quantumresearch.mycel.app.test.DaggerMycelIntegrationTestComponent;
 import org.briarproject.nullsafety.NotNullByDefault;
 import org.junit.Before;
 import org.junit.Rule;
@@ -44,7 +44,7 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 public class BlogSharingIntegrationTest
-		extends BriarIntegrationTest<BriarIntegrationTestComponent> {
+		extends BriarIntegrationTest<MycelIntegrationTestComponent> {
 
 	private BlogManager blogManager0, blogManager1;
 	private Blog blog0, blog1, blog2, rssBlog;
@@ -83,25 +83,25 @@ public class BlogSharingIntegrationTest
 
 	@Override
 	protected void createComponents() {
-		BriarIntegrationTestComponent component =
-				DaggerBriarIntegrationTestComponent.builder().build();
-		BriarIntegrationTestComponent.Helper.injectEagerSingletons(component);
+		MycelIntegrationTestComponent component =
+				DaggerMycelIntegrationTestComponent.builder().build();
+		MycelIntegrationTestComponent.Helper.injectEagerSingletons(component);
 		component.inject(this);
 
-		c0 = DaggerBriarIntegrationTestComponent.builder()
+		c0 = DaggerMycelIntegrationTestComponent.builder()
 				.testDatabaseConfigModule(new TestDatabaseConfigModule(t0Dir))
 				.build();
-		BriarIntegrationTestComponent.Helper.injectEagerSingletons(c0);
+		MycelIntegrationTestComponent.Helper.injectEagerSingletons(c0);
 
-		c1 = DaggerBriarIntegrationTestComponent.builder()
+		c1 = DaggerMycelIntegrationTestComponent.builder()
 				.testDatabaseConfigModule(new TestDatabaseConfigModule(t1Dir))
 				.build();
-		BriarIntegrationTestComponent.Helper.injectEagerSingletons(c1);
+		MycelIntegrationTestComponent.Helper.injectEagerSingletons(c1);
 
-		c2 = DaggerBriarIntegrationTestComponent.builder()
+		c2 = DaggerMycelIntegrationTestComponent.builder()
 				.testDatabaseConfigModule(new TestDatabaseConfigModule(t2Dir))
 				.build();
-		BriarIntegrationTestComponent.Helper.injectEagerSingletons(c2);
+		MycelIntegrationTestComponent.Helper.injectEagerSingletons(c2);
 	}
 
 	@Test

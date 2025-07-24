@@ -14,8 +14,8 @@ import com.quantumresearch.mycel.app.api.conversation.ConversationManager;
 import com.quantumresearch.mycel.app.api.conversation.ConversationManager.ConversationClient;
 import com.quantumresearch.mycel.app.api.conversation.ConversationMessageHeader;
 import com.quantumresearch.mycel.app.test.BriarIntegrationTest;
-import com.quantumresearch.mycel.app.test.BriarIntegrationTestComponent;
-import com.quantumresearch.mycel.app.test.DaggerBriarIntegrationTestComponent;
+import com.quantumresearch.mycel.app.test.MycelIntegrationTestComponent;
+import com.quantumresearch.mycel.app.test.DaggerMycelIntegrationTestComponent;
 import org.junit.Before;
 
 import java.util.ArrayList;
@@ -28,37 +28,37 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
 public abstract class AbstractAutoDeleteTest extends
-		BriarIntegrationTest<BriarIntegrationTestComponent> {
+		BriarIntegrationTest<MycelIntegrationTestComponent> {
 
 	protected final long startTime = System.currentTimeMillis();
 
 	protected abstract ConversationClient getConversationClient(
-			BriarIntegrationTestComponent component);
+			MycelIntegrationTestComponent component);
 
 	@Override
 	protected void createComponents() {
-		BriarIntegrationTestComponent component =
-				DaggerBriarIntegrationTestComponent.builder().build();
-		BriarIntegrationTestComponent.Helper.injectEagerSingletons(component);
+		MycelIntegrationTestComponent component =
+				DaggerMycelIntegrationTestComponent.builder().build();
+		MycelIntegrationTestComponent.Helper.injectEagerSingletons(component);
 		component.inject(this);
 
-		c0 = DaggerBriarIntegrationTestComponent.builder()
+		c0 = DaggerMycelIntegrationTestComponent.builder()
 				.testDatabaseConfigModule(new TestDatabaseConfigModule(t0Dir))
 				.timeTravelModule(new TimeTravelModule(true))
 				.build();
-		BriarIntegrationTestComponent.Helper.injectEagerSingletons(c0);
+		MycelIntegrationTestComponent.Helper.injectEagerSingletons(c0);
 
-		c1 = DaggerBriarIntegrationTestComponent.builder()
+		c1 = DaggerMycelIntegrationTestComponent.builder()
 				.testDatabaseConfigModule(new TestDatabaseConfigModule(t1Dir))
 				.timeTravelModule(new TimeTravelModule(true))
 				.build();
-		BriarIntegrationTestComponent.Helper.injectEagerSingletons(c1);
+		MycelIntegrationTestComponent.Helper.injectEagerSingletons(c1);
 
-		c2 = DaggerBriarIntegrationTestComponent.builder()
+		c2 = DaggerMycelIntegrationTestComponent.builder()
 				.testDatabaseConfigModule(new TestDatabaseConfigModule(t2Dir))
 				.timeTravelModule(new TimeTravelModule(true))
 				.build();
-		BriarIntegrationTestComponent.Helper.injectEagerSingletons(c2);
+		MycelIntegrationTestComponent.Helper.injectEagerSingletons(c2);
 
 		// Use different times to avoid creating identical messages that are
 		// treated as redundant copies of the same message (#1907)
@@ -82,7 +82,7 @@ public abstract class AbstractAutoDeleteTest extends
 	}
 
 	protected List<ConversationMessageHeader> getMessageHeaders(
-			BriarIntegrationTestComponent component, ContactId contactId)
+			MycelIntegrationTestComponent component, ContactId contactId)
 			throws Exception {
 		DatabaseComponent db = component.getDatabaseComponent();
 		ConversationClient conversationClient =
@@ -105,7 +105,7 @@ public abstract class AbstractAutoDeleteTest extends
 		void accept(ConversationMessageHeader header) throws DbException;
 	}
 
-	protected void forEachHeader(BriarIntegrationTestComponent component,
+	protected void forEachHeader(MycelIntegrationTestComponent component,
 			ContactId contactId, int size, HeaderConsumer consumer)
 			throws Exception {
 		List<ConversationMessageHeader> headers =
@@ -114,7 +114,7 @@ public abstract class AbstractAutoDeleteTest extends
 		for (ConversationMessageHeader h : headers) consumer.accept(h);
 	}
 
-	protected long getAutoDeleteTimer(BriarIntegrationTestComponent component,
+	protected long getAutoDeleteTimer(MycelIntegrationTestComponent component,
 			ContactId contactId) throws DbException {
 		DatabaseComponent db = component.getDatabaseComponent();
 		AutoDeleteManager autoDeleteManager = component.getAutoDeleteManager();
@@ -122,7 +122,7 @@ public abstract class AbstractAutoDeleteTest extends
 				txn -> autoDeleteManager.getAutoDeleteTimer(txn, contactId));
 	}
 
-	protected void markMessageRead(BriarIntegrationTestComponent component,
+	protected void markMessageRead(MycelIntegrationTestComponent component,
 			Contact contact, MessageId messageId) throws Exception {
 		ConversationManager conversationManager =
 				component.getConversationManager();
@@ -133,7 +133,7 @@ public abstract class AbstractAutoDeleteTest extends
 		waitForEvents(component);
 	}
 
-	protected void assertGroupCount(BriarIntegrationTestComponent component,
+	protected void assertGroupCount(MycelIntegrationTestComponent component,
 			ContactId contactId, int messageCount, int unreadCount)
 			throws DbException {
 		DatabaseComponent db = component.getDatabaseComponent();

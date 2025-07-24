@@ -1,6 +1,6 @@
 package com.quantumresearch.mycel.spore.transport.agreement;
 
-import com.quantumresearch.mycel.spore.BrambleCoreModule;
+import com.quantumresearch.mycel.spore.SporeCoreModule;
 import com.quantumresearch.mycel.spore.api.client.ContactGroupFactory;
 import com.quantumresearch.mycel.spore.api.contact.ContactManager;
 import com.quantumresearch.mycel.spore.api.db.DatabaseComponent;
@@ -21,7 +21,7 @@ import dagger.Component;
 @Singleton
 @Component(modules = {
 		BrambleCoreIntegrationTestModule.class,
-		BrambleCoreModule.class,
+		SporeCoreModule.class,
 		ModularMailboxModule.class,
 		TestDnsModule.class,
 		TestSocksModule.class,

@@ -9,7 +9,7 @@ import com.quantumresearch.mycel.app.api.forum.event.ForumInvitationResponseRece
 import com.quantumresearch.mycel.app.api.sharing.InvitationResponse;
 import com.quantumresearch.mycel.app.api.sharing.Shareable;
 import com.quantumresearch.mycel.app.api.sharing.SharingManager;
-import com.quantumresearch.mycel.app.test.BriarIntegrationTestComponent;
+import com.quantumresearch.mycel.app.test.MycelIntegrationTestComponent;
 import org.junit.Before;
 
 import java.util.Collection;
@@ -39,7 +39,7 @@ public class AutoDeleteForumIntegrationTest
 
 	@Override
 	protected ConversationClient getConversationClient(
-			BriarIntegrationTestComponent component) {
+			MycelIntegrationTestComponent component) {
 		return component.getForumSharingManager();
 	}
 

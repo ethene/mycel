@@ -15,7 +15,7 @@ import com.quantumresearch.mycel.app.api.messaging.MessagingManager;
 import com.quantumresearch.mycel.app.api.messaging.PrivateMessage;
 import com.quantumresearch.mycel.app.api.messaging.PrivateMessageFactory;
 import com.quantumresearch.mycel.app.autodelete.AbstractAutoDeleteTest;
-import com.quantumresearch.mycel.app.test.BriarIntegrationTestComponent;
+import com.quantumresearch.mycel.app.test.MycelIntegrationTestComponent;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
@@ -37,7 +37,7 @@ public class AutoDeleteIntegrationTest extends AbstractAutoDeleteTest {
 
 	@Override
 	protected ConversationClient getConversationClient(
-			BriarIntegrationTestComponent component) {
+			MycelIntegrationTestComponent component) {
 		return component.getMessagingManager();
 	}
 
@@ -670,7 +670,7 @@ public class AutoDeleteIntegrationTest extends AbstractAutoDeleteTest {
 	}
 
 	private MessageId createMessageWithoutTimer(
-			BriarIntegrationTestComponent component, ContactId contactId)
+			MycelIntegrationTestComponent component, ContactId contactId)
 			throws Exception {
 		DatabaseComponent db = component.getDatabaseComponent();
 		ConversationManager conversationManager =
@@ -690,13 +690,13 @@ public class AutoDeleteIntegrationTest extends AbstractAutoDeleteTest {
 	}
 
 	private MessageId createMessageWithTimer(
-			BriarIntegrationTestComponent component, ContactId contactId)
+			MycelIntegrationTestComponent component, ContactId contactId)
 			throws Exception {
 		return createMessageWithTimer(component, contactId, emptyList());
 	}
 
 	private MessageId createMessageWithTimer(
-			BriarIntegrationTestComponent component, ContactId contactId,
+			MycelIntegrationTestComponent component, ContactId contactId,
 			List<AttachmentHeader> attachmentHeaders) throws Exception {
 		DatabaseComponent db = component.getDatabaseComponent();
 		ConversationManager conversationManager =
@@ -719,7 +719,7 @@ public class AutoDeleteIntegrationTest extends AbstractAutoDeleteTest {
 	}
 
 	private AttachmentHeader createAttachment(
-			BriarIntegrationTestComponent component, ContactId contactId)
+			MycelIntegrationTestComponent component, ContactId contactId)
 			throws Exception {
 		MessagingManager messagingManager = component.getMessagingManager();
 
@@ -729,7 +729,7 @@ public class AutoDeleteIntegrationTest extends AbstractAutoDeleteTest {
 				component.getClock().currentTimeMillis(), "image/jpeg", in);
 	}
 
-	private boolean messageIsDeleted(BriarIntegrationTestComponent component,
+	private boolean messageIsDeleted(MycelIntegrationTestComponent component,
 			MessageId messageId) throws DbException {
 		DatabaseComponent db = component.getDatabaseComponent();
 

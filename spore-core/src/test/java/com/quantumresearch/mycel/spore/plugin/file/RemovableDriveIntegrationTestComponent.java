@@ -1,7 +1,7 @@
 package com.quantumresearch.mycel.spore.plugin.file;
 
-import com.quantumresearch.mycel.spore.BrambleCoreEagerSingletons;
-import com.quantumresearch.mycel.spore.BrambleCoreModule;
+import com.quantumresearch.mycel.spore.SporeCoreEagerSingletons;
+import com.quantumresearch.mycel.spore.SporeCoreModule;
 import com.quantumresearch.mycel.spore.api.contact.ContactManager;
 import com.quantumresearch.mycel.spore.api.event.EventBus;
 import com.quantumresearch.mycel.spore.api.identity.IdentityManager;
@@ -26,7 +26,7 @@ import dagger.Component;
 
 @Singleton
 @Component(modules = {
-		BrambleCoreModule.class,
+		SporeCoreModule.class,
 		DefaultBatteryManagerModule.class,
 		DefaultEventExecutorModule.class,
 		DefaultWakefulIoExecutorModule.class,
@@ -43,7 +43,7 @@ import dagger.Component;
 		TestSocksModule.class,
 })
 interface RemovableDriveIntegrationTestComponent
-		extends BrambleCoreEagerSingletons {
+		extends SporeCoreEagerSingletons {
 
 	ContactManager getContactManager();
 
@@ -59,7 +59,7 @@ interface RemovableDriveIntegrationTestComponent
 
 		public static void injectEagerSingletons(
 				RemovableDriveIntegrationTestComponent c) {
-			BrambleCoreEagerSingletons.Helper.injectEagerSingletons(c);
+			SporeCoreEagerSingletons.Helper.injectEagerSingletons(c);
 		}
 	}
 }

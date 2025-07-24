@@ -1,7 +1,7 @@
 package com.quantumresearch.mycel.app.feed;
 
 import com.quantumresearch.mycel.spore.BrambleCoreIntegrationTestEagerSingletons;
-import com.quantumresearch.mycel.spore.BrambleCoreModule;
+import com.quantumresearch.mycel.spore.SporeCoreModule;
 import com.quantumresearch.mycel.spore.api.identity.IdentityManager;
 import com.quantumresearch.mycel.spore.api.lifecycle.LifecycleManager;
 import com.quantumresearch.mycel.spore.mailbox.ModularMailboxModule;
@@ -13,7 +13,7 @@ import com.quantumresearch.mycel.app.api.blog.BlogManager;
 import com.quantumresearch.mycel.app.api.feed.FeedManager;
 import com.quantumresearch.mycel.app.avatar.AvatarModule;
 import com.quantumresearch.mycel.app.blog.BlogModule;
-import com.quantumresearch.mycel.app.client.BriarClientModule;
+import com.quantumresearch.mycel.app.client.MycelClientModule;
 import com.quantumresearch.mycel.app.identity.IdentityModule;
 
 import javax.inject.Singleton;
@@ -23,10 +23,10 @@ import dagger.Component;
 @Singleton
 @Component(modules = {
 		BrambleCoreIntegrationTestModule.class,
-		BrambleCoreModule.class,
+		SporeCoreModule.class,
 		AvatarModule.class,
 		BlogModule.class,
-		BriarClientModule.class,
+		MycelClientModule.class,
 		FeedModule.class,
 		IdentityModule.class,
 		ModularMailboxModule.class,

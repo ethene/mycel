@@ -19,7 +19,7 @@ public class TestEventListener<T extends Event> implements EventListener {
 	}
 
 	public static <T extends Event> T assertEvent(
-			BriarIntegrationTestComponent c, Class<T> clazz, EventRunnable r)
+			MycelIntegrationTestComponent c, Class<T> clazz, EventRunnable r)
 			throws Exception {
 		TestEventListener<T> listener = new TestEventListener<>(clazz);
 		c.getEventBus().addListener(listener);

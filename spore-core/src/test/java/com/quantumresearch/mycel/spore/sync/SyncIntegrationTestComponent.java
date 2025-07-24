@@ -1,7 +1,7 @@
 package com.quantumresearch.mycel.spore.sync;
 
 import com.quantumresearch.mycel.spore.BrambleCoreIntegrationTestEagerSingletons;
-import com.quantumresearch.mycel.spore.BrambleCoreModule;
+import com.quantumresearch.mycel.spore.SporeCoreModule;
 import com.quantumresearch.mycel.spore.mailbox.ModularMailboxModule;
 import com.quantumresearch.mycel.spore.test.BrambleCoreIntegrationTestModule;
 import com.quantumresearch.mycel.spore.test.TestDnsModule;
@@ -15,7 +15,7 @@ import dagger.Component;
 @Singleton
 @Component(modules = {
 		BrambleCoreIntegrationTestModule.class,
-		BrambleCoreModule.class,
+		SporeCoreModule.class,
 		ModularMailboxModule.class,
 		TestDnsModule.class,
 		TestSocksModule.class,

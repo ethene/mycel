@@ -13,8 +13,8 @@ import com.quantumresearch.mycel.app.api.messaging.PrivateMessage;
 import com.quantumresearch.mycel.app.api.messaging.PrivateMessageFactory;
 import com.quantumresearch.mycel.app.api.messaging.PrivateMessageHeader;
 import com.quantumresearch.mycel.app.test.BriarIntegrationTest;
-import com.quantumresearch.mycel.app.test.BriarIntegrationTestComponent;
-import com.quantumresearch.mycel.app.test.DaggerBriarIntegrationTestComponent;
+import com.quantumresearch.mycel.app.test.MycelIntegrationTestComponent;
+import com.quantumresearch.mycel.app.test.DaggerMycelIntegrationTestComponent;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -41,7 +41,7 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 public class MessagingManagerIntegrationTest
-		extends BriarIntegrationTest<BriarIntegrationTestComponent> {
+		extends BriarIntegrationTest<MycelIntegrationTestComponent> {
 
 	private DatabaseComponent db0, db1;
 	private MessagingManager messagingManager0, messagingManager1;
@@ -64,25 +64,25 @@ public class MessagingManagerIntegrationTest
 
 	@Override
 	protected void createComponents() {
-		BriarIntegrationTestComponent component =
-				DaggerBriarIntegrationTestComponent.builder().build();
-		BriarIntegrationTestComponent.Helper.injectEagerSingletons(component);
+		MycelIntegrationTestComponent component =
+				DaggerMycelIntegrationTestComponent.builder().build();
+		MycelIntegrationTestComponent.Helper.injectEagerSingletons(component);
 		component.inject(this);
 
-		c0 = DaggerBriarIntegrationTestComponent.builder()
+		c0 = DaggerMycelIntegrationTestComponent.builder()
 				.testDatabaseConfigModule(new TestDatabaseConfigModule(t0Dir))
 				.build();
-		BriarIntegrationTestComponent.Helper.injectEagerSingletons(c0);
+		MycelIntegrationTestComponent.Helper.injectEagerSingletons(c0);
 
-		c1 = DaggerBriarIntegrationTestComponent.builder()
+		c1 = DaggerMycelIntegrationTestComponent.builder()
 				.testDatabaseConfigModule(new TestDatabaseConfigModule(t1Dir))
 				.build();
-		BriarIntegrationTestComponent.Helper.injectEagerSingletons(c1);
+		MycelIntegrationTestComponent.Helper.injectEagerSingletons(c1);
 
-		c2 = DaggerBriarIntegrationTestComponent.builder()
+		c2 = DaggerMycelIntegrationTestComponent.builder()
 				.testDatabaseConfigModule(new TestDatabaseConfigModule(t2Dir))
 				.build();
-		BriarIntegrationTestComponent.Helper.injectEagerSingletons(c2);
+		MycelIntegrationTestComponent.Helper.injectEagerSingletons(c2);
 	}
 
 	@Test
@@ -313,19 +313,19 @@ public class MessagingManagerIntegrationTest
 				.allDeleted());
 	}
 
-	private PrivateMessage sendMessage(BriarIntegrationTestComponent from,
-			BriarIntegrationTestComponent to, String text) throws Exception {
+	private PrivateMessage sendMessage(MycelIntegrationTestComponent from,
+			MycelIntegrationTestComponent to, String text) throws Exception {
 		return sendMessage(from, to, text, emptyList());
 	}
 
-	private PrivateMessage sendMessage(BriarIntegrationTestComponent from,
-			BriarIntegrationTestComponent to, @Nullable String text,
+	private PrivateMessage sendMessage(MycelIntegrationTestComponent from,
+			MycelIntegrationTestComponent to, @Nullable String text,
 			List<AttachmentHeader> attachments) throws Exception {
 		return sendMessage(from, to, text, attachments, NO_AUTO_DELETE_TIMER);
 	}
 
-	private PrivateMessage sendMessage(BriarIntegrationTestComponent from,
-			BriarIntegrationTestComponent to, @Nullable String text,
+	private PrivateMessage sendMessage(MycelIntegrationTestComponent from,
+			MycelIntegrationTestComponent to, @Nullable String text,
 			List<AttachmentHeader> attachments, long autoDeleteTimer)
 			throws Exception {
 		GroupId g = from.getMessagingManager().getConversationId(contactId);
@@ -337,7 +337,7 @@ public class MessagingManagerIntegrationTest
 		return m;
 	}
 
-	private AttachmentHeader addAttachment(BriarIntegrationTestComponent c)
+	private AttachmentHeader addAttachment(MycelIntegrationTestComponent c)
 			throws Exception {
 		GroupId g = c.getMessagingManager().getConversationId(contactId);
 		InputStream stream = new ByteArrayInputStream(getRandomBytes(42));
@@ -346,7 +346,7 @@ public class MessagingManagerIntegrationTest
 	}
 
 	private Collection<ConversationMessageHeader> getMessages(
-			BriarIntegrationTestComponent c)
+			MycelIntegrationTestComponent c)
 			throws Exception {
 		Collection<ConversationMessageHeader> messages =
 				c.getDatabaseComponent().transactionWithResult(true,
@@ -364,7 +364,7 @@ public class MessagingManagerIntegrationTest
 		return messages;
 	}
 
-	private void assertGroupCounts(BriarIntegrationTestComponent c,
+	private void assertGroupCounts(MycelIntegrationTestComponent c,
 			long msgCount, long unreadCount) throws Exception {
 		GroupId g = c.getMessagingManager().getConversationId(contactId);
 		assertGroupCount(c.getMessageTracker(), g, msgCount, unreadCount);

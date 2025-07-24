@@ -1,7 +1,7 @@
 package com.quantumresearch.mycel.app.test;
 
 import com.quantumresearch.mycel.spore.BrambleCoreIntegrationTestEagerSingletons;
-import com.quantumresearch.mycel.spore.BrambleCoreModule;
+import com.quantumresearch.mycel.spore.SporeCoreModule;
 import com.quantumresearch.mycel.spore.api.contact.ContactManager;
 import com.quantumresearch.mycel.spore.api.db.DatabaseComponent;
 import com.quantumresearch.mycel.spore.api.identity.AuthorFactory;
@@ -35,7 +35,7 @@ import com.quantumresearch.mycel.app.attachment.AttachmentModule;
 import com.quantumresearch.mycel.app.autodelete.AutoDeleteModule;
 import com.quantumresearch.mycel.app.avatar.AvatarModule;
 import com.quantumresearch.mycel.app.blog.BlogModule;
-import com.quantumresearch.mycel.app.client.BriarClientModule;
+import com.quantumresearch.mycel.app.client.MycelClientModule;
 import com.quantumresearch.mycel.app.conversation.ConversationModule;
 import com.quantumresearch.mycel.app.forum.ForumModule;
 import com.quantumresearch.mycel.app.identity.IdentityModule;
@@ -52,12 +52,12 @@ import dagger.Component;
 @Singleton
 @Component(modules = {
 		BrambleCoreIntegrationTestModule.class,
-		BrambleCoreModule.class,
+		SporeCoreModule.class,
 		AttachmentModule.class,
 		AutoDeleteModule.class,
 		AvatarModule.class,
 		BlogModule.class,
-		BriarClientModule.class,
+		MycelClientModule.class,
 		ConversationModule.class,
 		ForumModule.class,
 		GroupInvitationModule.class,
@@ -71,10 +71,10 @@ import dagger.Component;
 		TestSocksModule.class,
 		TestPluginConfigModule.class,
 })
-public interface BriarIntegrationTestComponent
+public interface MycelIntegrationTestComponent
 		extends BrambleIntegrationTestComponent {
 
-	void inject(BriarIntegrationTest<BriarIntegrationTestComponent> init);
+	void inject(BriarIntegrationTest<MycelIntegrationTestComponent> init);
 
 	void inject(AutoDeleteModule.EagerSingletons init);
 
@@ -147,7 +147,7 @@ public interface BriarIntegrationTestComponent
 	class Helper {
 
 		public static void injectEagerSingletons(
-				BriarIntegrationTestComponent c) {
+				MycelIntegrationTestComponent c) {
 			BrambleCoreIntegrationTestEagerSingletons.Helper
 					.injectEagerSingletons(c);
 			c.inject(new AutoDeleteModule.EagerSingletons());

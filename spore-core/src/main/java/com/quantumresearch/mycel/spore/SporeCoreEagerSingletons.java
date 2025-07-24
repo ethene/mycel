@@ -15,7 +15,7 @@ import com.quantumresearch.mycel.spore.transport.TransportModule;
 import com.quantumresearch.mycel.spore.transport.agreement.TransportKeyAgreementModule;
 import com.quantumresearch.mycel.spore.versioning.VersioningModule;
 
-public interface BrambleCoreEagerSingletons {
+public interface SporeCoreEagerSingletons {
 
 	void inject(CleanupModule.EagerSingletons init);
 
@@ -47,7 +47,7 @@ public interface BrambleCoreEagerSingletons {
 
 	class Helper {
 
-		public static void injectEagerSingletons(BrambleCoreEagerSingletons c) {
+		public static void injectEagerSingletons(SporeCoreEagerSingletons c) {
 			c.inject(new CleanupModule.EagerSingletons());
 			c.inject(new ContactModule.EagerSingletons());
 			c.inject(new CryptoExecutorModule.EagerSingletons());
