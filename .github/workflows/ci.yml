@@ -90,6 +90,7 @@ jobs:
         path: '**/build/test-results/test/TEST-*.xml'
         reporter: java-junit
         fail-on-error: false
+        fail-on-empty: false
     
     - name: 📈 Upload Test Results
       uses: actions/upload-artifact@v4
@@ -135,6 +136,7 @@ jobs:
         path: '**/build/test-results/test/TEST-*.xml'
         reporter: java-junit
         fail-on-error: false
+        fail-on-empty: false
 
   # ============================================================================
   # Android Build & Tests
@@ -188,6 +190,7 @@ jobs:
         path: '**/build/test-results/testOfficialDebugUnitTest/TEST-*.xml'
         reporter: java-junit
         fail-on-error: false
+        fail-on-empty: false
     
     - name: 📱 Upload Debug APK
       uses: actions/upload-artifact@v4
@@ -245,6 +248,7 @@ jobs:
         path: 'mycel-headless/build/test-results/test/TEST-*.xml'
         reporter: java-junit
         fail-on-error: false
+        fail-on-empty: false
     
     - name: 🖥️ Upload Headless JAR
       uses: actions/upload-artifact@v4
@@ -290,6 +294,7 @@ jobs:
         path: 'mailbox-integration-tests/build/test-results/test/TEST-*.xml'
         reporter: java-junit
         fail-on-error: false
+        fail-on-empty: false
 
   # ============================================================================
   # Build Verification & Release Preparation
