@@ -5,6 +5,13 @@ on:
     tags:
       - 'v*'  # Triggers on version tags like v1.0.0
 
+# Grant GITHUB_TOKEN the permissions required for releases and pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  actions: read
+
 env:
   JAVA_VERSION: '17'
   ANDROID_API_LEVEL: '34'
@@ -89,15 +96,21 @@ jobs:
     
     - name: 🚀 Create GitHub Release
       id: create_release
-      uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ github.ref }}
-        release_name: Mycel v${{ steps.get_version.outputs.VERSION }}
-        body_path: release_notes.md
-        draft: false
-        prerelease: false
+      run: |
+        VERSION=${{ steps.get_version.outputs.VERSION }}
+        
+        # Create the release using gh CLI
+        gh release create "v${VERSION}" \
+          --title "Mycel v${VERSION}" \
+          --notes-file release_notes.md \
+          --repo ${{ github.repository }}
+        
+        # Get the release upload URL for artifacts
+        UPLOAD_URL=$(gh api repos/${{ github.repository }}/releases/tags/v${VERSION} --jq '.upload_url')
+        echo "upload_url=${UPLOAD_URL}" >> $GITHUB_OUTPUT
+        echo "id=$(gh api repos/${{ github.repository }}/releases/tags/v${VERSION} --jq '.id')" >> $GITHUB_OUTPUT
 
   # ============================================================================
   # Build Release Artifacts
@@ -175,45 +188,32 @@ jobs:
         echo "Generated checksums:"
         find checksums -name "*.sha256" -exec cat {} \;
     
-    - name: 📱 Upload Android APK
-      uses: actions/upload-release-asset@v1
+    - name: 📱 Upload Release Assets
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ needs.create-release.outputs.upload_url }}
-        asset_path: mycel-android/build/outputs/apk/official/release/mycel-android-official-release-unsigned.apk
-        asset_name: mycel-android-v${{ needs.create-release.outputs.version }}.apk
-        asset_content_type: application/vnd.android.package-archive
-    
-    - name: 🖥️ Upload Headless JAR
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ needs.create-release.outputs.upload_url }}
-        asset_path: mycel-headless/build/libs/mycel-headless-fat.jar
-        asset_name: mycel-headless-v${{ needs.create-release.outputs.version }}.jar
-        asset_content_type: application/java-archive
-    
-    - name: 📄 Upload Android Checksum
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ needs.create-release.outputs.upload_url }}
-        asset_path: checksums/mycel-android-v${{ needs.create-release.outputs.version }}.apk.sha256
-        asset_name: mycel-android-v${{ needs.create-release.outputs.version }}.apk.sha256
-        asset_content_type: text/plain
-    
-    - name: 📄 Upload Headless Checksum
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ needs.create-release.outputs.upload_url }}
-        asset_path: checksums/mycel-headless-v${{ needs.create-release.outputs.version }}.jar.sha256
-        asset_name: mycel-headless-v${{ needs.create-release.outputs.version }}.jar.sha256
-        asset_content_type: text/plain
+      run: |
+        VERSION=${{ needs.create-release.outputs.version }}
+        
+        # Upload Android APK
+        if [ -f "mycel-android/build/outputs/apk/official/release/mycel-android-official-release-unsigned.apk" ]; then
+          cp mycel-android/build/outputs/apk/official/release/mycel-android-official-release-unsigned.apk mycel-android-v${VERSION}.apk
+          gh release upload v${VERSION} mycel-android-v${VERSION}.apk --repo ${{ github.repository }}
+        fi
+        
+        # Upload Headless JAR
+        if [ -f "mycel-headless/build/libs/mycel-headless-fat.jar" ]; then
+          cp mycel-headless/build/libs/mycel-headless-fat.jar mycel-headless-v${VERSION}.jar
+          gh release upload v${VERSION} mycel-headless-v${VERSION}.jar --repo ${{ github.repository }}
+        fi
+        
+        # Upload checksums
+        if [ -f "checksums/mycel-android-v${VERSION}.apk.sha256" ]; then
+          gh release upload v${VERSION} checksums/mycel-android-v${VERSION}.apk.sha256 --repo ${{ github.repository }}
+        fi
+        
+        if [ -f "checksums/mycel-headless-v${VERSION}.jar.sha256" ]; then
+          gh release upload v${VERSION} checksums/mycel-headless-v${VERSION}.jar.sha256 --repo ${{ github.repository }}
+        fi
 
   # ============================================================================
   # Deploy to GitHub Pages
