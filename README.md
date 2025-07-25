@@ -17,11 +17,10 @@
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/ethene/mycel.svg)](https://github.com/ethene/mycel/pulls)
 [![GitHub last commit](https://img.shields.io/github/last-commit/ethene/mycel.svg)](https://github.com/ethene/mycel/commits/main)
 [![GitHub repo size](https://img.shields.io/github/repo-size/ethene/mycel.svg)](https://github.com/ethene/mycel)
-[![Lines of code](https://img.shields.io/tokei/lines/github/ethene/mycel)](https://github.com/ethene/mycel)
-[![CodeQL](https://github.com/ethene/mycel/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/ethene/mycel/actions/workflows/codeql-analysis.yml)
 [![Maintainability](https://img.shields.io/badge/Maintainability-A-brightgreen.svg)](#architecture)
 [![Documentation](https://img.shields.io/badge/Documentation-Extensive-blue.svg)](docs/)
 [![API](https://img.shields.io/badge/API-RESTful-orange.svg)](#api-documentation)
+[![Mycel Mesh](https://gitlab-badges.greenpeace.org/badge/mycel-mesh-red)](https://gitlab-badges.greenpeace.org/badge/mycel-mesh-red)
 
 **Mycel** is a secure, decentralized messaging application maintained by **Quantum Research Pty Ltd** that enables peer-to-peer communication without relying on central servers. Built for privacy, resilience, and true digital sovereignty.
 
