@@ -95,6 +95,7 @@ android {
 		warning 'MissingDefaultResource'
 		warning 'ImpliedQuantity'
 		warning 'ExtraTranslation'
+		warning 'MissingClass'  // Class references in manifest before compilation
 		// FIXME
 		warning 'InvalidPackage'
 	}
