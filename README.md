@@ -7,7 +7,7 @@
 [![Security](https://img.shields.io/badge/Security-End--to--End%20Encrypted-red.svg)](#security)
 [![Decentralized](https://img.shields.io/badge/Network-Decentralized-purple.svg)](#features)
 
-**Mycel** is a secure, decentralized messaging application developed by **Quantum Research Pty Ltd** that enables peer-to-peer communication without relying on central servers. Built for privacy, resilience, and true digital sovereignty.
+**Mycel** is a secure, decentralized messaging application maintained by **Quantum Research Pty Ltd** that enables peer-to-peer communication without relying on central servers. Built for privacy, resilience, and true digital sovereignty.
 
 > 🔒 **Privacy First**: No central servers, no tracking, no data collection  
 > 🌐 **Always Connected**: Works via Tor, Bluetooth, Wi-Fi, even when the internet is down  
@@ -29,6 +29,7 @@
 - [Troubleshooting](#troubleshooting)
 - [Community](#community)
 - [License](#license)
+- [Acknowledgments](#acknowledgments)
 
 ---
 
@@ -74,7 +75,6 @@
 | **Android** | ✅ Stable | [Download APK](#installation) | Android 5.0+ (API 21+) |
 | **Desktop** | ✅ Stable | [Download JAR](#installation) | Java 17+, Linux/macOS/Windows |
 | **Headless** | ✅ Stable | [Build from Source](#building-from-source) | Java 17+, Any OS |
-| **iOS** | 🔄 Planned | - | Future release |
 
 ---
 
@@ -445,7 +445,6 @@ export ANDROID_HOME=/path/to/android-sdk
 
 ### 🔮 **Future Plans**
 
-- 🔄 **iOS Support**: Native iOS application
 - 🔄 **Voice Messages**: Encrypted voice note support
 - 🔄 **Video Calls**: Peer-to-peer encrypted video calling
 - 🔄 **Desktop GUI**: Native desktop applications with GUI
@@ -473,9 +472,22 @@ See [LICENSE.txt](LICENSE.txt) for full license text.
 
 ---
 
+## Acknowledgments
+
+**Mycel** is based on [**Briar**](https://briarproject.org/), an open-source secure messaging application developed by the Briar Project team. We extend our gratitude to the original developers and contributors who created the foundational architecture and protocols that make Mycel possible.
+
+### Original Briar Project
+- **Website**: [https://briarproject.org/](https://briarproject.org/)
+- **Source Code**: [https://code.briarproject.org/briar/briar](https://code.briarproject.org/briar/briar)
+- **License**: GNU General Public License v3.0
+
+Mycel represents an evolution of the Briar codebase, with enhancements and modifications tailored for enhanced usability and extended functionality while maintaining the core principles of privacy, security, and decentralization.
+
+---
+
 ## About Quantum Research
 
-**Mycel** is developed by **[Quantum Research Pty Ltd](https://qntrs.com)**, a technology company focused on privacy, security, and decentralized communication systems.
+**Mycel** is maintained by **[Quantum Research Pty Ltd](https://qntrs.com)**, a technology company focused on privacy, security, and decentralized communication systems. Mycel builds upon the foundation of the Briar Project to provide enhanced decentralized messaging capabilities.
 
 Our mission is to build tools that protect digital privacy and enable secure communication for everyone, everywhere.
 
