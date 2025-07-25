@@ -220,15 +220,10 @@ jobs:
     needs: [create-release, build-release]
     if: always() && needs.build-release.result == 'success'  # Continue even if other jobs fail
     
-    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    # Grant GITHUB_TOKEN the permissions required for git operations
     permissions:
+      contents: write
       pages: write
-      id-token: write
-      contents: read
-    
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     
     steps:
     - name: 📥 Checkout Code
@@ -428,17 +423,39 @@ jobs:
         
         echo "Generated GitHub Pages site for Mycel v${VERSION}"
     
-    - name: ⚙️ Setup Pages
-      uses: actions/configure-pages@v4
-    
-    - name: 📤 Upload Pages Artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: pages/
-    
-    - name: 🚀 Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+    - name: 🚀 Deploy to GitHub Pages (Alternative Method)
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        VERSION=${{ needs.create-release.outputs.version }}
+        
+        # Create a temporary gh-pages branch for deployment
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions"
+        
+        # Clone the repository and create gh-pages branch
+        git clone --quiet https://github.com/${{ github.repository }}.git gh-pages-deploy
+        cd gh-pages-deploy
+        
+        # Create or switch to gh-pages branch
+        git checkout gh-pages 2>/dev/null || git checkout --orphan gh-pages
+        
+        # Clear existing content and copy new content
+        rm -rf * 2>/dev/null || true
+        cp -r ../pages/* . 2>/dev/null || true
+        
+        # Commit and push if there are changes
+        if ! git diff --quiet --cached && ! git diff --quiet; then
+          git add .
+          git commit -m "Deploy GitHub Pages for Mycel v${VERSION}"
+          git push --force origin gh-pages
+          echo "✅ GitHub Pages deployed successfully"
+        else
+          echo "ℹ️ No changes to deploy"
+        fi
+        
+        cd ..
+        rm -rf gh-pages-deploy
 
   # ============================================================================
   # Post-Release Notifications
