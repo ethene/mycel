@@ -218,6 +218,7 @@ jobs:
     name: 📄 Deploy to GitHub Pages
     runs-on: ubuntu-latest
     needs: [create-release, build-release]
+    if: always() && needs.build-release.result == 'success'  # Continue even if other jobs fail
     
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
@@ -446,22 +447,22 @@ jobs:
   notify-release:
     name: 📢 Release Notification
     runs-on: ubuntu-latest
-    needs: [create-release, build-release, deploy-pages]
+    needs: [create-release, build-release]
     if: always()
     
     steps:
     - name: 🎉 Success Notification
-      if: needs.build-release.result == 'success' && needs.deploy-pages.result == 'success'
+      if: needs.build-release.result == 'success'
       run: |
         VERSION=${{ needs.create-release.outputs.version }}
         echo "🎉 Mycel v${VERSION} released successfully!"
         echo "📱 Android APK: Available for download"
         echo "🖥️ Headless JAR: Available for download" 
-        echo "📄 GitHub Pages: Updated with latest version"
-        echo "🚀 Release URL: https://github.com/quantumresearch/mycel/releases/tag/v${VERSION}"
+        echo "📄 GitHub Pages: Deployment attempted (may require manual configuration)"
+        echo "🚀 Release URL: https://github.com/ethene/mycel/releases/tag/v${VERSION}"
     
     - name: ❌ Failure Notification
-      if: needs.build-release.result == 'failure' || needs.deploy-pages.result == 'failure'
+      if: needs.build-release.result == 'failure'
       run: |
         VERSION=${{ needs.create-release.outputs.version }}
         echo "❌ Mycel v${VERSION} release failed"
