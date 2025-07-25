@@ -204,6 +204,84 @@ headless-build: check-java ## Build headless JAR only
 	@echo "$(YELLOW)JAR location:$(NC) mycel-headless/build/libs/"
 
 # =============================================================================
+# Version Management
+# =============================================================================
+
+# Extract current version from build.gradle
+CURRENT_VERSION := $(shell grep -E 'versionName "[0-9]+\.[0-9]+\.[0-9]+"' mycel-android/build.gradle | sed -E 's/.*versionName "([0-9]+\.[0-9]+\.[0-9]+)".*/\1/')
+MAJOR := $(shell echo $(CURRENT_VERSION) | cut -d. -f1)
+MINOR := $(shell echo $(CURRENT_VERSION) | cut -d. -f2)
+PATCH := $(shell echo $(CURRENT_VERSION) | cut -d. -f3)
+
+.PHONY: version
+version: ## Show current version
+	@echo "$(BLUE)Current Version:$(NC) $(CURRENT_VERSION)"
+	@echo "$(YELLOW)Version Code:$(NC) $(shell echo $$(($(MAJOR) * 10000 + $(MINOR) * 100 + $(PATCH))))"
+
+.PHONY: version-patch
+version-patch: check-java ## Bump patch version (bug fixes)
+	@echo "$(BLUE)Bumping patch version...$(NC)"
+	@NEW_PATCH=$$(($(PATCH) + 1)) && \
+	NEW_VERSION="$(MAJOR).$(MINOR).$$NEW_PATCH" && \
+	NEW_CODE=$$(($(MAJOR) * 10000 + $(MINOR) * 100 + $$NEW_PATCH)) && \
+	echo "$(YELLOW)Version:$(NC) $(CURRENT_VERSION) → $$NEW_VERSION" && \
+	echo "$(YELLOW)Code:$(NC) $$NEW_CODE" && \
+	sed -i'' -e "s/versionCode [0-9]*/versionCode $$NEW_CODE/" mycel-android/build.gradle && \
+	sed -i'' -e "s/versionName \"[0-9.]*\"/versionName \"$$NEW_VERSION\"/" mycel-android/build.gradle && \
+	sed -i'' -e "s/versionCode [0-9]*/versionCode $$NEW_CODE/" spore-android/build.gradle && \
+	sed -i'' -e "s/versionName \"[0-9.]*\"/versionName \"$$NEW_VERSION\"/" spore-android/build.gradle && \
+	git add mycel-android/build.gradle spore-android/build.gradle && \
+	git commit -m "[VERSION] Bump to $$NEW_VERSION" && \
+	echo "$(GREEN)✓ Version bumped to $$NEW_VERSION$(NC)"
+
+.PHONY: version-minor
+version-minor: check-java ## Bump minor version (new features)
+	@echo "$(BLUE)Bumping minor version...$(NC)"
+	@NEW_MINOR=$$(($(MINOR) + 1)) && \
+	NEW_VERSION="$(MAJOR).$$NEW_MINOR.0" && \
+	NEW_CODE=$$(($(MAJOR) * 10000 + $$NEW_MINOR * 100)) && \
+	echo "$(YELLOW)Version:$(NC) $(CURRENT_VERSION) → $$NEW_VERSION" && \
+	echo "$(YELLOW)Code:$(NC) $$NEW_CODE" && \
+	sed -i'' -e "s/versionCode [0-9]*/versionCode $$NEW_CODE/" mycel-android/build.gradle && \
+	sed -i'' -e "s/versionName \"[0-9.]*\"/versionName \"$$NEW_VERSION\"/" mycel-android/build.gradle && \
+	sed -i'' -e "s/versionCode [0-9]*/versionCode $$NEW_CODE/" spore-android/build.gradle && \
+	sed -i'' -e "s/versionName \"[0-9.]*\"/versionName \"$$NEW_VERSION\"/" spore-android/build.gradle && \
+	git add mycel-android/build.gradle spore-android/build.gradle && \
+	git commit -m "[VERSION] Bump to $$NEW_VERSION" && \
+	echo "$(GREEN)✓ Version bumped to $$NEW_VERSION$(NC)"
+
+.PHONY: version-major
+version-major: check-java ## Bump major version (breaking changes)
+	@echo "$(BLUE)Bumping major version...$(NC)"
+	@NEW_MAJOR=$$(($(MAJOR) + 1)) && \
+	NEW_VERSION="$$NEW_MAJOR.0.0" && \
+	NEW_CODE=$$(($$NEW_MAJOR * 10000)) && \
+	echo "$(YELLOW)Version:$(NC) $(CURRENT_VERSION) → $$NEW_VERSION" && \
+	echo "$(YELLOW)Code:$(NC) $$NEW_CODE" && \
+	sed -i'' -e "s/versionCode [0-9]*/versionCode $$NEW_CODE/" mycel-android/build.gradle && \
+	sed -i'' -e "s/versionName \"[0-9.]*\"/versionName \"$$NEW_VERSION\"/" mycel-android/build.gradle && \
+	sed -i'' -e "s/versionCode [0-9]*/versionCode $$NEW_CODE/" spore-android/build.gradle && \
+	sed -i'' -e "s/versionName \"[0-9.]*\"/versionName \"$$NEW_VERSION\"/" spore-android/build.gradle && \
+	git add mycel-android/build.gradle spore-android/build.gradle && \
+	git commit -m "[VERSION] Bump to $$NEW_VERSION" && \
+	echo "$(GREEN)✓ Version bumped to $$NEW_VERSION$(NC)"
+
+.PHONY: release
+release: check-java ## Create a new release (requires version bump first)
+	@echo "$(BLUE)Creating release...$(NC)"
+	@if [ "$$(git status --porcelain)" != "" ]; then \
+		echo "$(RED)Error: Working directory has uncommitted changes$(NC)"; \
+		exit 1; \
+	fi
+	@CURRENT_VER=$$(grep -E 'versionName "[0-9]+\.[0-9]+\.[0-9]+"' mycel-android/build.gradle | sed -E 's/.*versionName "([0-9]+\.[0-9]+\.[0-9]+)".*/\1/') && \
+	TAG="v$$CURRENT_VER" && \
+	echo "$(YELLOW)Creating release for version:$(NC) $$CURRENT_VER" && \
+	git tag -a $$TAG -m "Release $$TAG" && \
+	git push origin $$TAG && \
+	echo "$(GREEN)✓ Release $$TAG created$(NC)" && \
+	echo "$(BLUE)GitHub Release will be created automatically by CI/CD$(NC)"
+
+# =============================================================================
 # Maintenance Targets
 # =============================================================================
 

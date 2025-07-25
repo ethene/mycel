@@ -5,8 +5,6 @@ on:
     branches: [ main, develop ]
   pull_request:
     branches: [ main ]
-  release:
-    types: [ published ]
 
 env:
   JAVA_VERSION: '17'
@@ -261,64 +259,8 @@ jobs:
         echo ""
         echo "🎉 Mycel build verification complete!"
 
-  # ============================================================================
-  # Release Build (Only on tagged releases)
-  # ============================================================================
-  
-  release-build:
-    name: 🚀 Release Build
-    runs-on: ubuntu-latest
-    if: github.event_name == 'release'
-    needs: [build-verification]
-    
-    steps:
-    - name: 📥 Checkout Code
-      uses: actions/checkout@v4
-    
-    - name: ☕ Setup Java 17
-      uses: actions/setup-java@v4
-      with:
-        java-version: ${{ env.JAVA_VERSION }}
-        distribution: 'temurin'
-        cache: gradle
-    
-    - name: 🤖 Setup Android SDK
-      uses: android-actions/setup-android@v3
-      with:
-        api-level: ${{ env.ANDROID_API_LEVEL }}
-        build-tools: ${{ env.ANDROID_BUILD_TOOLS }}
-    
-    - name: 🏗️ Build Release Artifacts
-      run: |
-        # Build Android release APK (unsigned)
-        ./gradlew :mycel-android:assembleRelease \
-          --build-cache \
-          --parallel
-        
-        # Build Headless JAR
-        ./gradlew :mycel-headless:fatJar \
-          --build-cache \
-          --parallel
-    
-    - name: 📱 Upload Release APK to GitHub Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ github.event.release.upload_url }}
-        asset_path: mycel-android/build/outputs/apk/official/release/mycel-android-official-release-unsigned.apk
-        asset_name: mycel-android.apk
-        asset_content_type: application/vnd.android.package-archive
-    
-    - name: 🖥️ Upload Headless JAR to GitHub Release
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ github.event.release.upload_url }}
-        asset_path: mycel-headless/build/libs/mycel-headless-fat.jar
-        asset_name: mycel-headless.jar
-        asset_content_type: application/java-archive
+  # Note: Release builds are handled by the dedicated release.yml workflow
+  # which is triggered by version tags (e.g., v1.0.0)
 
   # ============================================================================
   # Notification & Status Updates

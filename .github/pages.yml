@@ -1,0 +1,71 @@
+# GitHub Pages Configuration for Mycel
+# This file configures GitHub Pages deployment settings
+
+# Pages source configuration
+source:
+  branch: gh-pages
+  path: /
+
+# Custom domain (optional - uncomment and configure if needed)
+# domain: mycel.quantumresearch.com
+
+# Security settings
+https: true
+enforce_https: true
+
+# Build settings
+plugins:
+  - jekyll-default-layout
+  - jekyll-optional-front-matter
+  - jekyll-titles-from-headings
+
+# Theme
+theme: minima
+
+# Site metadata
+title: "Mycel - Secure Peer-to-Peer Messaging"
+description: "Download Mycel, the secure peer-to-peer messaging application with end-to-end encryption and no central servers."
+author: "Quantum Research Pty Ltd"
+
+# Navigation
+header_pages:
+  - index.html
+
+# Social links (optional)
+github_username: quantumresearch
+
+# SEO and metadata
+lang: en-US
+timezone: UTC
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - LICENSE.txt
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle
+  - .sass-cache
+  - .jekyll-cache
+  - .jekyll-metadata
+
+# Include files that would normally be excluded
+include:
+  - .htaccess
+  - _pages
+
+# Markdown processing
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Compression
+sass:
+  style: compressed
+
+# Analytics (optional - uncomment and configure if needed)
+# google_analytics: UA-XXXXXXXXX-X

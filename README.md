@@ -1,11 +1,27 @@
 # Mycel
 
 [![CI/CD Pipeline](https://github.com/ethene/mycel/actions/workflows/ci.yml/badge.svg)](https://github.com/ethene/mycel/actions/workflows/ci.yml)
+[![Release Pipeline](https://github.com/ethene/mycel/actions/workflows/release.yml/badge.svg)](https://github.com/ethene/mycel/actions/workflows/release.yml)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![GitHub release](https://img.shields.io/github/release/ethene/mycel.svg)](https://github.com/ethene/mycel/releases/latest)
+[![GitHub downloads](https://img.shields.io/github/downloads/ethene/mycel/total.svg)](https://github.com/ethene/mycel/releases)
 [![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Desktop%20%7C%20Headless-green.svg)](#platform-support)
 [![Java](https://img.shields.io/badge/Java-17+-orange.svg)](https://openjdk.org/)
+[![Android API](https://img.shields.io/badge/Android-API%2021+-brightgreen.svg)](https://developer.android.com/guide/topics/manifest/uses-sdk-element#ApiLevels)
 [![Security](https://img.shields.io/badge/Security-End--to--End%20Encrypted-red.svg)](#security)
 [![Decentralized](https://img.shields.io/badge/Network-Decentralized-purple.svg)](#features)
+[![Privacy](https://img.shields.io/badge/Privacy-No%20Servers-ff69b4.svg)](#features)
+[![Tor](https://img.shields.io/badge/Tor-Integrated-9932cc.svg)](#features)
+[![Open Source](https://img.shields.io/badge/Open%20Source-❤️-brightgreen.svg)](https://github.com/ethene/mycel)
+[![GitHub issues](https://img.shields.io/github/issues/ethene/mycel.svg)](https://github.com/ethene/mycel/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/ethene/mycel.svg)](https://github.com/ethene/mycel/pulls)
+[![GitHub last commit](https://img.shields.io/github/last-commit/ethene/mycel.svg)](https://github.com/ethene/mycel/commits/main)
+[![GitHub repo size](https://img.shields.io/github/repo-size/ethene/mycel.svg)](https://github.com/ethene/mycel)
+[![Lines of code](https://img.shields.io/tokei/lines/github/ethene/mycel)](https://github.com/ethene/mycel)
+[![CodeQL](https://github.com/ethene/mycel/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/ethene/mycel/actions/workflows/codeql-analysis.yml)
+[![Maintainability](https://img.shields.io/badge/Maintainability-A-brightgreen.svg)](#architecture)
+[![Documentation](https://img.shields.io/badge/Documentation-Extensive-blue.svg)](docs/)
+[![API](https://img.shields.io/badge/API-RESTful-orange.svg)](#api-documentation)
 
 **Mycel** is a secure, decentralized messaging application maintained by **Quantum Research Pty Ltd** that enables peer-to-peer communication without relying on central servers. Built for privacy, resilience, and true digital sovereignty.
 
@@ -72,41 +88,74 @@
 
 | Platform | Status | Download | Requirements |
 |----------|--------|----------|--------------|
-| **Android** | ✅ Stable | [Download APK](#installation) | Android 5.0+ (API 21+) |
-| **Desktop** | ✅ Stable | [Download JAR](#installation) | Java 17+, Linux/macOS/Windows |
-| **Headless** | ✅ Stable | [Build from Source](#building-from-source) | Java 17+, Any OS |
+| **Android** | ✅ Stable | [📱 Download Page](https://ethene.github.io/mycel/) \| [Direct APK](https://github.com/ethene/mycel/releases/latest) | Android 5.0+ (API 21+) |
+| **Desktop** | ✅ Stable | [🖥️ Download Page](https://ethene.github.io/mycel/) \| [Direct JAR](https://github.com/ethene/mycel/releases/latest) | Java 17+, Linux/macOS/Windows |
+| **Headless** | ✅ Stable | [🖥️ Download Page](https://ethene.github.io/mycel/) \| [Build from Source](#building-from-source) | Java 17+, Any OS |
 
 ---
 
 ## Installation
 
+### 🌐 **Easy Installation (Recommended)**
+
+Visit our **[📥 Download Page](https://ethene.github.io/mycel/)** for the latest releases with installation instructions, checksums, and system requirements.
+
 ### 📱 **Android**
 
-#### Option 1: Direct APK Download (Recommended)
+#### Option 1: Download Page (Recommended)
+1. Visit **[📱 Mycel Download Page](https://ethene.github.io/mycel/)**
+2. Click **"Download Android APK"** for the latest version
+3. Enable "Install from unknown sources" in Android settings
+4. Install the downloaded APK file
+
+#### Option 2: Direct Download via Command Line
 ```bash
-# Download latest release APK
-curl -L -o mycel.apk https://github.com/ethene/mycel/releases/latest/download/mycel-android.apk
+# Download latest release APK (replace VERSION with actual version)
+curl -L -o mycel-android.apk "https://github.com/ethene/mycel/releases/latest/download/mycel-android-v$(curl -s https://api.github.com/repos/ethene/mycel/releases/latest | grep -Po '"tag_name": "\K.*?(?=")' | sed 's/v//').apk"
 
 # Install APK (requires adb or manual installation)
-adb install mycel.apk
+adb install mycel-android.apk
 ```
 
-#### Option 2: Build from Source
+#### Option 3: Build from Source
 See [Building from Source](#building-from-source) section below.
 
-### 🖥️ **Desktop**
+### 🖥️ **Desktop / Headless**
 
-#### Option 1: Download JAR
+#### Option 1: Download Page (Recommended)
+1. Visit **[🖥️ Mycel Download Page](https://ethene.github.io/mycel/)**
+2. Click **"Download Server JAR"** for the latest version
+3. Run with: `java -jar mycel-headless-vX.Y.Z.jar`
+
+#### Option 2: Direct Download via Command Line
 ```bash
-# Download headless JAR
-curl -L -o mycel.jar https://github.com/ethene/mycel/releases/latest/download/mycel-headless.jar
+# Download latest headless JAR (replace VERSION with actual version)
+curl -L -o mycel-headless.jar "https://github.com/ethene/mycel/releases/latest/download/mycel-headless-v$(curl -s https://api.github.com/repos/ethene/mycel/releases/latest | grep -Po '"tag_name": "\K.*?(?=")' | sed 's/v//').jar"
 
 # Run Mycel
-java -jar mycel.jar
+java -jar mycel-headless.jar
 ```
 
-#### Option 2: Build from Source
+#### Option 3: Build from Source
 See [Building from Source](#building-from-source) section below.
+
+### 🔒 **Verify Downloads (Recommended)**
+
+Always verify the integrity of downloaded files using the provided checksums:
+
+```bash
+# Download checksum file for verification
+curl -L -o mycel-android.apk.sha256 "https://github.com/ethene/mycel/releases/latest/download/mycel-android-v$(curl -s https://api.github.com/repos/ethene/mycel/releases/latest | grep -Po '"tag_name": "\K.*?(?=")' | sed 's/v//').apk.sha256"
+
+# Verify APK integrity
+sha256sum -c mycel-android.apk.sha256
+
+# For JAR files
+curl -L -o mycel-headless.jar.sha256 "https://github.com/ethene/mycel/releases/latest/download/mycel-headless-v$(curl -s https://api.github.com/repos/ethene/mycel/releases/latest | grep -Po '"tag_name": "\K.*?(?=")' | sed 's/v//').jar.sha256"
+sha256sum -c mycel-headless.jar.sha256
+```
+
+> **Security Best Practice**: Always verify checksums before installing any downloaded software to ensure it hasn't been tampered with.
 
 ---
 
@@ -131,6 +180,8 @@ See [Building from Source](#building-from-source) section below.
 1. Go to **Contacts** → **Add Contact** → **At Distance**  
 2. Share the generated `mycel://` link via any secure channel
 3. Recipient opens the link in Mycel to add you as a contact
+
+> **Security Note**: Only share invitation links through trusted, secure channels as they contain cryptographic material for contact addition.
 
 ### 💬 **Messaging**
 
@@ -284,8 +335,20 @@ export JAVA_HOME=$(/usr/libexec/java_home -v17)
 
 ### 📁 **Build Outputs**
 
-- **Android APK**: `mycel-android/build/outputs/apk/debug/mycel-android-debug.apk`
+- **Android Debug APK**: `mycel-android/build/outputs/apk/official/debug/mycel-android-official-debug.apk`
+- **Android Release APK**: `mycel-android/build/outputs/apk/official/release/mycel-android-official-release-unsigned.apk`
 - **Headless JAR**: `mycel-headless/build/libs/mycel-headless-fat.jar`
+
+### 🔍 **Verify Build Integrity**
+
+After building, verify checksums match official releases:
+```bash
+# Generate checksums for your builds
+sha256sum mycel-android/build/outputs/apk/official/release/mycel-android-official-release-unsigned.apk
+sha256sum mycel-headless/build/libs/mycel-headless-fat.jar
+
+# Compare with official checksums from GitHub releases
+```
 
 ---
 
@@ -435,20 +498,30 @@ export ANDROID_HOME=/path/to/android-sdk
 
 ## Roadmap
 
-### 🚀 **Current Status**: Stable Release
+### 📋 **Status**: Under Review
 
-- ✅ **Phase 1**: Core messaging functionality
-- ✅ **Phase 2**: Multi-transport sync (Tor, Bluetooth, Wi-Fi)  
-- ✅ **Phase 3**: Groups and forums
-- ✅ **Phase 4**: File sharing and media support
-- ✅ **Phase 5**: Headless API and automation
+> **Note**: The project roadmap is currently being updated to reflect our latest priorities and technical direction. A comprehensive roadmap will be published soon with detailed timelines and feature plans.
 
-### 🔮 **Future Plans**
+### ✅ **Current Stable Features**
 
-- 🔄 **Voice Messages**: Encrypted voice note support
-- 🔄 **Video Calls**: Peer-to-peer encrypted video calling
-- 🔄 **Desktop GUI**: Native desktop applications with GUI
-- 🔄 **Plugin System**: Third-party transport and feature plugins
+- **Core messaging functionality** - Private messages, groups, forums
+- **Multi-transport sync** - Tor, Bluetooth, Wi-Fi connectivity
+- **File sharing** - Secure attachment support
+- **Headless API** - REST API for automation and integration
+- **Cross-platform support** - Android, Desktop, Headless modes
+- **End-to-end encryption** - All communications secured
+
+### 🔮 **Areas Under Consideration**
+
+The following features are being evaluated for inclusion in future releases:
+
+- **Enhanced privacy features** - Additional anonymity protections
+- **Performance optimizations** - Faster sync and reduced resource usage  
+- **User experience improvements** - Streamlined interface and workflows
+- **Developer tools** - Enhanced API capabilities and documentation
+- **Platform expansion** - Additional platform support options
+
+> **Stay Updated**: Watch this repository and check our [releases page](https://github.com/ethene/mycel/releases) for the latest developments.
 
 ---
 
