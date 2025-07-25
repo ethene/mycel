@@ -17,7 +17,7 @@
 		app:layout_constraintVertical_bias="0.5"
 		app:layout_constraintVertical_chainStyle="packed"
 		app:srcCompat="@drawable/startup_lock"
-		app:tint="@color/briar_accent"
+		app:tint="@color/mycel_accent"
 		tools:ignore="ContentDescription" />
 
 	<com.google.android.material.progressindicator.CircularProgressIndicator
@@ -25,7 +25,7 @@
 		style="@style/CircularProgress.Large"
 		android:layout_width="0dp"
 		android:layout_height="0dp"
-		app:indicatorColor="@color/briar_accent"
+		app:indicatorColor="@color/mycel_accent"
 		app:layout_constraintBottom_toBottomOf="@+id/imageView"
 		app:layout_constraintEnd_toEndOf="@+id/imageView"
 		app:layout_constraintStart_toStartOf="@+id/imageView"

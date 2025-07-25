@@ -667,13 +667,13 @@
   <string name="mailbox_error_wizard_info3">Bitte trenne die Verknüpfung deiner Mailbox über die Schaltfläche unten.\n\nNach der Trennung deiner alten Mailbox kannst du jederzeit eine neue Mailbox einrichten.</string>
   <!--About-->
   <string name="about_title">Über</string>
-  <string name="briar_version">Mycel Version: %s</string>
+  <string name="mycel_version">Mycel Version: %s</string>
   <string name="tor_version">Tor Version: %s</string>
   <string name="links">Links</string>
-  <string name="briar_website">\u2022 <a href="">Webseite</a></string>
-  <string name="briar_source_code">\u2022 <a href="">Quellcode</a></string>
-  <string name="briar_changelog">\u2022 <a href="">Changelog</a></string>
-  <string name="briar_privacy_policy">\u2022 <a href="">Datenschutzerklärung</a></string>
+  <string name="mycel_website">\u2022 <a href="">Webseite</a></string>
+  <string name="mycel_source_code">\u2022 <a href="">Quellcode</a></string>
+  <string name="mycel_changelog">\u2022 <a href="">Changelog</a></string>
+  <string name="mycel_privacy_policy">\u2022 <a href="">Datenschutzerklärung</a></string>
   <!--Here translators can add their names or Transifex usernames(eg "Thanks to all the contributors at the Localization Lab, especially Tom, Matthew and Jerry")-->
   <string name="translator_thanks">Dank an alle Mitwirkenden des Localization Lab</string>
   <!--Conversation Settings-->
@@ -701,7 +701,7 @@
   <string name="link_warning_open_link">Link öffnen</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Mycel-Absturzbericht</string>
-  <string name="briar_crashed">Es tut uns leid, Mycel ist abgestürzt</string>
+  <string name="mycel_crashed">Es tut uns leid, Mycel ist abgestürzt</string>
   <string name="not_your_fault">Das ist nicht deine Schuld.</string>
   <string name="please_send_report">Bitte hilf uns, Mycel zu verbessern, indem du einen Absturzbericht sendest.</string>
   <string name="report_is_encrypted">Wir versprechen, dass der Bericht verschlüsselt ist und über eine sichere Verbindung geschickt wird.</string>

@@ -773,13 +773,13 @@ Reinicia tus dispositivos del buzón de correo y Mycel e inténtalo de nuevo.</s
 Después de desvincular tu antiguo buzón de correo, puedes configurar un nuevo buzón de correo en cualquier momento.</string>
   <!--About-->
   <string name="about_title">Acerca de nosotros</string>
-  <string name="briar_version">Versión Mycel: %s</string>
+  <string name="mycel_version">Versión Mycel: %s</string>
   <string name="tor_version">Versión Tor:%s</string>
   <string name="links">Enlaces</string>
-  <string name="briar_website">•  <a href="">Sitio Web</a></string>
-  <string name="briar_source_code">•  <a href="">Código fuente</a></string>
-  <string name="briar_changelog">•  <a href="">Registro de cambios</a></string>
-  <string name="briar_privacy_policy">•  <a href="">Política de Privacidad</a></string>
+  <string name="mycel_website">•  <a href="">Sitio Web</a></string>
+  <string name="mycel_source_code">•  <a href="">Código fuente</a></string>
+  <string name="mycel_changelog">•  <a href="">Registro de cambios</a></string>
+  <string name="mycel_privacy_policy">•  <a href="">Política de Privacidad</a></string>
   <!--Here translators can add their names or Transifex usernames(eg "Thanks to all the contributors at the Localization Lab, especially Tom, Matthew and Jerry")-->
   <string name="translator_thanks">Gracias a todos los colaboradores de Localization Lab.</string>
   <!--Conversation Settings-->
@@ -815,7 +815,7 @@ Si cambias este ajuste, se aplicará a tus nuevos mensajes inmediatamente, y a l
   <string name="link_warning_open_link">Abrir el enlace</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Informe de accidente de Mycel</string>
-  <string name="briar_crashed">Lo sentimos, Mycel se ha bloqueado</string>
+  <string name="mycel_crashed">Lo sentimos, Mycel se ha bloqueado</string>
   <string name="not_your_fault">Esto no es tu culpa.</string>
   <string name="please_send_report">Ayúdenos a construir un Mycel mejor enviándonos un informe de fallos.</string>
   <string name="report_is_encrypted">Prometemos que el informe se cifrará y se enviará de forma segura.</string>

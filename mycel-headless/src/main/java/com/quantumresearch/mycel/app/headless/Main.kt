@@ -7,11 +7,11 @@ import com.github.ajalt.clikt.parameters.options.flag
 import com.github.ajalt.clikt.parameters.options.option
 import com.github.ajalt.clikt.parameters.types.int
 import org.bouncycastle.util.encoders.Base64.toBase64String
-import com.quantumresearch.mycel.spore.BrambleCoreEagerSingletons
-import com.quantumresearch.mycel.spore.BrambleJavaEagerSingletons
+import com.quantumresearch.mycel.spore.SporeCoreEagerSingletons
+import com.quantumresearch.mycel.spore.SporeJavaEagerSingletons
 import com.quantumresearch.mycel.spore.util.OsUtils.isLinux
 import com.quantumresearch.mycel.spore.util.OsUtils.isMac
-import com.quantumresearch.mycel.app.BriarCoreEagerSingletons
+import com.quantumresearch.mycel.app.MycelCoreEagerSingletons
 import org.slf4j.impl.SimpleLogger.DEFAULT_LOG_LEVEL_KEY
 import java.io.File
 import java.io.File.separator
@@ -75,12 +75,12 @@ private class Main : CliktCommand(
 
         val dataDir = getDataDir()
         val app =
-            DaggerBriarHeadlessApp.builder().headlessModule(HeadlessModule(dataDir)).build()
+            DaggerMycelHeadlessApp.builder().headlessModule(HeadlessModule(dataDir)).build()
         // We need to load the eager singletons directly after making the
         // dependency graphs
-        BrambleCoreEagerSingletons.Helper.injectEagerSingletons(app)
-        BrambleJavaEagerSingletons.Helper.injectEagerSingletons(app)
-        BriarCoreEagerSingletons.Helper.injectEagerSingletons(app)
+        SporeCoreEagerSingletons.Helper.injectEagerSingletons(app)
+        SporeJavaEagerSingletons.Helper.injectEagerSingletons(app)
+        MycelCoreEagerSingletons.Helper.injectEagerSingletons(app)
         HeadlessEagerSingletons.Helper.injectEagerSingletons(app)
 
         val authToken = getOrCreateAuthToken(dataDir, app.getSecureRandom())

@@ -22,7 +22,7 @@
 		android:layout_width="0dp"
 		android:layout_height="wrap_content"
 		android:indeterminate="true"
-		app:indicatorColor="@color/briar_accent"
+		app:indicatorColor="@color/mycel_accent"
 		app:layout_constraintBottom_toTopOf="@+id/textView"
 		app:layout_constraintEnd_toEndOf="@+id/introImageView"
 		app:layout_constraintStart_toStartOf="@+id/introImageView"

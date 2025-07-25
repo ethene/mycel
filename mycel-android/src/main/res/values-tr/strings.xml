@@ -667,13 +667,13 @@
   <string name="mailbox_error_wizard_info3">Lütfen aşağıdaki düğmeyi kullanarak Mailbox bağlantısını kaldırın.\n\nMailbox bağlantısını kaldırdıktan sonra istediğiniz zaman yeni bir Mailbox ayarlayabilirsiniz.</string>
   <!--About-->
   <string name="about_title">Hakkında</string>
-  <string name="briar_version">Mycel sürümü: %s</string>
+  <string name="mycel_version">Mycel sürümü: %s</string>
   <string name="tor_version">Tor sürümü: %s</string>
   <string name="links">Bağlantılar</string>
-  <string name="briar_website">\u2022 <a href="">Site</a></string>
-  <string name="briar_source_code">\u2022 <a href="">Kaynak kodu</a></string>
-  <string name="briar_changelog">\u2022 <a href="">Değişiklik günlüğü</a></string>
-  <string name="briar_privacy_policy">\u2022 <a href="">Gizlilik ilkesi</a></string>
+  <string name="mycel_website">\u2022 <a href="">Site</a></string>
+  <string name="mycel_source_code">\u2022 <a href="">Kaynak kodu</a></string>
+  <string name="mycel_changelog">\u2022 <a href="">Değişiklik günlüğü</a></string>
+  <string name="mycel_privacy_policy">\u2022 <a href="">Gizlilik ilkesi</a></string>
   <!--Here translators can add their names or Transifex usernames(eg "Thanks to all the contributors at the Localization Lab, especially Tom, Matthew and Jerry")-->
   <string name="translator_thanks">Tüm Localization Lab katkıları için teşekkürler</string>
   <!--Conversation Settings-->
@@ -701,7 +701,7 @@
   <string name="link_warning_open_link">Bağlantıyı aç</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Mycel çökme bildirimi</string>
-  <string name="briar_crashed">Ne yazık ki Mycel çöktü</string>
+  <string name="mycel_crashed">Ne yazık ki Mycel çöktü</string>
   <string name="not_your_fault">Bu sizin hatanız değil.</string>
   <string name="please_send_report">Bize bir çökme bildirimi göndererek Mycel uygulamasını iyileştirmemize yardımcı olun.</string>
   <string name="report_is_encrypted">Bildirim şifreleneceğine ve güvenli bir şekilde gönderileceğine söz veriyoruz.</string>

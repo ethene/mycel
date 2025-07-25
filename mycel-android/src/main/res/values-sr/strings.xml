@@ -438,7 +438,7 @@ Dotaknite + ikonu da uvezete kanal</string>
   <string name="link_warning_open_link">Otvori link</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Mycel izvještaj po krahu</string>
-  <string name="briar_crashed">Izvinite, Mycel je krahirao.</string>
+  <string name="mycel_crashed">Izvinite, Mycel je krahirao.</string>
   <string name="not_your_fault">Nijeste vi krivi.</string>
   <string name="please_send_report">Molimo pomozite nam da napravimo bolji Mycel tako što ćete nam poslati izvještaj o krahu.</string>
   <string name="report_is_encrypted">Obećavamo da je izvještaj kriptovan i sigurno poslat.</string>

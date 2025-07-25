@@ -653,13 +653,13 @@
   <string name="mailbox_error_wizard_info3">အောက်ပါခလုတ်ကို အသုံးပြု၍ သင့်Mailbox ကို လင့်ခ်ဖြုတ်ပါ။\n\nသင့်Mailboxဟောင်းကို လင့်ခ်ဖြုတ်ပြီးနောက်၊ သင်သည် Mailbox အသစ်ကို အချိန်မရွေး သတ်မှတ်နိုင်သည်။</string>
   <!--About-->
   <string name="about_title">အကြောင်း</string>
-  <string name="briar_version">Mycel ဗားရှင်း - %s</string>
+  <string name="mycel_version">Mycel ဗားရှင်း - %s</string>
   <string name="tor_version">Tor ဗားရှင်း - %s</string>
   <string name="links">လင့်ခ်များ</string>
-  <string name="briar_website">\u2022 <a href="">၀က်ဘ်ဆိုဒ်</a></string>
-  <string name="briar_source_code">\u2022 <a href="">ဆိုစ့်ကုဒ်</a></string>
-  <string name="briar_changelog">\u2022 <a href="">ပြောင်းလဲမှုမှတ်တမ်း</a></string>
-  <string name="briar_privacy_policy">\u2022 <a href="">ကိုယ်ရေးကိုယ်တာမူဝါဒ</a></string>
+  <string name="mycel_website">\u2022 <a href="">၀က်ဘ်ဆိုဒ်</a></string>
+  <string name="mycel_source_code">\u2022 <a href="">ဆိုစ့်ကုဒ်</a></string>
+  <string name="mycel_changelog">\u2022 <a href="">ပြောင်းလဲမှုမှတ်တမ်း</a></string>
+  <string name="mycel_privacy_policy">\u2022 <a href="">ကိုယ်ရေးကိုယ်တာမူဝါဒ</a></string>
   <!--Here translators can add their names or Transifex usernames(eg "Thanks to all the contributors at the Localization Lab, especially Tom, Matthew and Jerry")-->
   <string name="translator_thanks">Localization Lab မှ ပံ့ပိုးကူညီသူများအားလုံးကို ကျေးဇူးတင်ပါသည်။</string>
   <!--Conversation Settings-->
@@ -687,7 +687,7 @@
   <string name="link_warning_open_link">လင့်ခ်ဖွင့်မည်</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Mycel ပျက်ယွင်းမှုတိုင်ကြားခြင်း</string>
-  <string name="briar_crashed">ဝမ်းနည်းပါတယ်၊ Mycel ပျက်သွားပါပြီ</string>
+  <string name="mycel_crashed">ဝမ်းနည်းပါတယ်၊ Mycel ပျက်သွားပါပြီ</string>
   <string name="not_your_fault">သင့်အမှားမဟုတ်ပါ။</string>
   <string name="please_send_report">ပျက်ကွက်မှု တိုင်ကြားစာ ပေးပို့၍ ကျွန်ုပ်တို့်အား Mycel အပ္ပလီကေးရှင်း တိုးတက်ရန် ကူညီပေးပါ။</string>
   <string name="report_is_encrypted">သင်၏တိုင်ကြားမှုကို လျှို့ဝှက်ကုဒ်ပြောင်း၍ လုံခြုံစွာပို့ကြောင်း ကတိပြုပါသည်။</string>

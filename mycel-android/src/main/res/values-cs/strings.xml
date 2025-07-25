@@ -693,13 +693,13 @@
   <string name="mailbox_error_wizard_info3">Prosím odpojte váš Mailbox pomocí tlačítka níže.\n\nPo odpojení vašeho starého Mailboxu můžete kdykoliv nastavit nový Mailbox.</string>
   <!--About-->
   <string name="about_title">O</string>
-  <string name="briar_version">Mycel verze: %s</string>
+  <string name="mycel_version">Mycel verze: %s</string>
   <string name="tor_version">Tor verze: %s</string>
   <string name="links">Odkazy</string>
-  <string name="briar_website">\u2022 <a href="">Webová stránka</a></string>
-  <string name="briar_source_code">\u2022 <a href="">Zdrojový kód</a></string>
-  <string name="briar_changelog">\u2022 <a href="">Změny v aplikaci</a></string>
-  <string name="briar_privacy_policy">\u2022 <a href="">Zásady ochrany osobních údajů</a></string>
+  <string name="mycel_website">\u2022 <a href="">Webová stránka</a></string>
+  <string name="mycel_source_code">\u2022 <a href="">Zdrojový kód</a></string>
+  <string name="mycel_changelog">\u2022 <a href="">Změny v aplikaci</a></string>
+  <string name="mycel_privacy_policy">\u2022 <a href="">Zásady ochrany osobních údajů</a></string>
   <!--Here translators can add their names or Transifex usernames(eg "Thanks to all the contributors at the Localization Lab, especially Tom, Matthew and Jerry")-->
   <string name="translator_thanks">Díky všem, kdo přispěli k překladu aplikace na https://www.transifex.com/otf/briar</string>
   <!--Conversation Settings-->
@@ -727,7 +727,7 @@
   <string name="link_warning_open_link">Otevřít odkaz</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Hlášení o pádu Mycel</string>
-  <string name="briar_crashed">Omlouváme se, Mycel se zhroutil</string>
+  <string name="mycel_crashed">Omlouváme se, Mycel se zhroutil</string>
   <string name="not_your_fault">Toto není vaše chyba.</string>
   <string name="please_send_report">Vaše pomoc je důležitá. Díky ní můžeme postavit lepší Mycel tím, že nám pošlete zprávu o pádu aplikace.</string>
   <string name="report_is_encrypted">Slibujeme, že hlášení je zašifrováno a bezpečně odesláno.</string>

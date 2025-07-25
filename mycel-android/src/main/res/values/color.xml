@@ -10,6 +10,7 @@
 	<color name="mycel_bg_light">#F5F4F1</color>          <!-- Warm off-white background -->
 	<color name="mycel_bg_dark">#1D1D1B</color>           <!-- Soft black background -->
 	<color name="mycel_text_main">#000000</color>         <!-- Pure black text -->
+	<color name="mycel_text_main_inverse">#FFFFFF</color> <!-- Pure white text (inverse) -->
 	<color name="mycel_text_invert">#FFFFFF</color>       <!-- Pure white text -->
 	<color name="mycel_ui_border">#D7D6D3</color>         <!-- Light borders -->
 	<color name="mycel_ui_muted">#848482</color>          <!-- Secondary text -->
@@ -37,6 +38,7 @@
 	<color name="mycel_primary">@color/mycel_blue</color>         <!-- Primary CTA/status -->
 	<color name="mycel_secondary">@color/mycel_green</color>      <!-- Secondary info/status -->
 	<color name="mycel_accent">@color/mycel_green</color>         <!-- Accent - green for contrast -->
+	<color name="mycel_accent_inverse">@color/mycel_text_main_inverse</color>  <!-- Inverse accent color -->
 	<color name="mycel_success">@color/mycel_green</color>        <!-- Success color -->
 	<color name="mycel_error">@color/mycel_coral</color>          <!-- Error color -->
 	<color name="mycel_warning">@color/mycel_coral</color>        <!-- Warning color -->
@@ -104,26 +106,26 @@
 	<color name="briar_primary_dark">@color/mycel_bg_dark</color>     <!-- Dark background -->
 	<color name="briar_accent">@color/mycel_accent</color>           <!-- Accent color -->
 
-	<color name="window_background">@color/briar_gray_100</color>
+	<color name="window_background">@color/mycel_bg_light</color>
 	<color name="card_background">@color/cardview_light_background</color>
-	<color name="item_background_highlight">@color/briar_gray_200</color>
-	<color name="briar_warning_background">@color/briar_red_500</color>
+	<color name="item_background_highlight">@color/mycel_ui_border</color>
+	<color name="briar_warning_background">@color/mycel_error</color>
 	<color name="action_bar_text">@android:color/white</color>
-	<color name="private_message_date_inverse">@color/briar_gray_200</color>
+	<color name="private_message_date_inverse">@color/mycel_ui_border</color>
 	<color name="forum_avatar_shadow">#99000000</color>
 
 	<color name="color_primary">#dd000000</color>
 
 	<color name="msg_in">@android:color/white</color>
-	<color name="msg_out">@color/briar_blue_400</color>
-	<color name="notice_in">@color/briar_night_50</color>
-	<color name="notice_out">@color/briar_blue_600</color>
-	<color name="msg_stroke_light">@color/briar_gray_300</color>
-	<color name="msg_stroke_dark">@color/briar_gray_900</color>
+	<color name="msg_out">@color/mycel_accent</color>
+	<color name="notice_in">@color/mycel_bg_light</color>
+	<color name="notice_out">@color/mycel_primary</color>
+	<color name="msg_stroke_light">@color/mycel_ui_border</color>
+	<color name="msg_stroke_dark">@color/mycel_text_main</color>
 	<color name="msg_stroke">@color/msg_stroke_light</color>
 	<color name="msg_status_bubble_background">#66000000</color>
 	<color name="msg_status_bubble_foreground">@android:color/white</color>
-	<color name="msg_selected_background">@color/briar_accent</color>
+	<color name="msg_selected_background">@color/mycel_accent</color>
 
 	<color name="il_border">@color/mycel_ui_border</color>
 	<color name="il_background">@color/mycel_ui_border</color>
@@ -146,11 +148,11 @@
 	<color name="mycel_button_text_negative">@color/mycel_error</color>
 	<color name="mycel_button_text_disabled">#28000000</color>
 
-	<color name="thread_indicator">@color/briar_gray_500</color>
+	<color name="thread_indicator">@color/mycel_ui_muted</color>
 	<color name="thread_item_background">@color/window_background</color>
 	<color name="thread_item_highlight">@android:color/white</color>
 
-	<color name="divider">@color/briar_gray_200</color>
+	<color name="divider">@color/mycel_ui_border</color>
 
 
 

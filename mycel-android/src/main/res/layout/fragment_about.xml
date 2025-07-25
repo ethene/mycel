@@ -9,7 +9,7 @@
 		android:id="@+id/BriarVersion"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:text="@string/briar_version"
+		android:text="@string/mycel_version"
 		android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="parent" />
@@ -37,7 +37,7 @@
 		android:id="@+id/BriarWebsite"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:text="@string/briar_website"
+		android:text="@string/mycel_website"
 		android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/LinksTitle" />
@@ -46,7 +46,7 @@
 		android:id="@+id/BriarSourceCode"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:text="@string/briar_source_code"
+		android:text="@string/mycel_source_code"
 		android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/BriarWebsite" />
@@ -55,7 +55,7 @@
 		android:id="@+id/BriarChangelog"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:text="@string/briar_changelog"
+		android:text="@string/mycel_changelog"
 		android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/BriarSourceCode" />
@@ -64,7 +64,7 @@
 		android:id="@+id/BriarPrivacyPolicy"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:text="@string/briar_privacy_policy"
+		android:text="@string/mycel_privacy_policy"
 		android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/BriarChangelog" />

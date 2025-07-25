@@ -12,31 +12,31 @@
 	<color name="briar_primary">@color/mycel_primary_dark</color>    <!-- Green primary for dark -->
 	<color name="briar_accent">@color/mycel_accent_dark</color>      <!-- Coral accent for dark -->
 
-	<color name="preference_category_background">@color/briar_night_950</color>
+	<color name="preference_category_background">@color/mycel_bg_dark</color>
 
 	<color name="color_primary">@android:color/white</color>
 
-	<color name="msg_in">@color/briar_night_700</color>
-	<color name="msg_out">@color/briar_blue_600</color>
-	<color name="notice_in">@color/briar_night_800</color>
-	<color name="notice_out">@color/briar_blue_800</color>
+	<color name="msg_in">@color/mycel_ui_muted</color>
+	<color name="msg_out">@color/mycel_primary</color>
+	<color name="notice_in">@color/mycel_bg_dark</color>
+	<color name="notice_out">@color/mycel_blue_dark</color>
 	<color name="msg_stroke">@color/msg_stroke_dark</color>
 
 	<color name="window_background">@color/mycel_bg_dark</color>
-	<color name="card_background">@color/briar_night_800</color>
-	<color name="item_background_highlight">@color/briar_night_700</color>
+	<color name="card_background">@color/mycel_bg_dark</color>
+	<color name="item_background_highlight">@color/mycel_ui_muted</color>
 
 	<color name="mycel_button_text_neutral">@color/mycel_accent</color>
 	<color name="mycel_button_text_disabled">#23cccccc</color>
 
-	<color name="thread_indicator">@color/briar_night_700</color>
+	<color name="thread_indicator">@color/mycel_ui_muted</color>
 	<color name="thread_item_highlight">@android:color/black</color>
 
 	<color name="divider">@android:color/black</color>
 
 	<!-- MYCEL DARK THEME ILLUSTRATIONS -->
 	<color name="il_border">@color/mycel_ui_muted</color>
-	<color name="il_background">@color/briar_night_800</color>
+	<color name="il_background">@color/mycel_bg_dark</color>
 	<color name="il_lime">@color/mycel_secondary</color>
 	<color name="il_orange">@color/mycel_coral</color>
 	<color name="il_red">@color/mycel_error</color>

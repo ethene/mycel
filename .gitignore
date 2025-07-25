@@ -104,3 +104,10 @@ check-rebranding.sh
 
 # Archive documentation (outdated Briar/Bramble references)
 docs/archive/
+
+# Rebranding scripts and analysis data (development tools)
+scripts/rebranding/
+search-results/
+*-REBRANDING-*.md
+COMPLETE-REBRANDING-EXECUTION-PLAN.md
+FINAL-XML-AND-JAVA-ANALYSIS.md

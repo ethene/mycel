@@ -2,15 +2,15 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
 
 	<style name="BriarToolbar" parent="Widget.Material3.Toolbar">
-		<item name="android:background">@color/briar_primary</item>
-		<item name="titleTextColor">@color/briar_text_primary_inverse</item>
-		<item name="subtitleTextColor">@color/briar_text_secondary_inverse</item>
+		<item name="android:background">@color/mycel_primary</item>
+		<item name="titleTextColor">@color/mycel_text_main_inverse</item>
+		<item name="subtitleTextColor">@color/mycel_text_invert</item>
 		<item name="android:theme">@style/BriarToolbarTheme</item>
 		<item name="popupTheme">@style/PopupMenu</item>
 	</style>
 
 	<style name="BriarToolbarTheme">
-		<item name="colorControlNormal">@color/briar_text_primary_inverse</item>
+		<item name="colorControlNormal">@color/mycel_text_main_inverse</item>
 	</style>
 
 	<style name="PopupMenu" parent="Theme.Material3.DayNight">
@@ -95,12 +95,12 @@
 
 	<style name="CircularProgress" parent="Widget.Material3.CircularProgressIndicator">
 		<item name="android:indeterminate">true</item>
-		<item name="indicatorColor">@color/briar_accent</item>
+		<item name="indicatorColor">@color/mycel_accent</item>
 	</style>
 
 	<style name="CircularProgress.Large" parent="Widget.Material3.CircularProgressIndicator">
 		<item name="android:indeterminate">true</item>
-		<item name="indicatorColor">@color/briar_accent</item>
+		<item name="indicatorColor">@color/mycel_accent</item>
 		<item name="indicatorSize">76dp</item>
 	</style>
 

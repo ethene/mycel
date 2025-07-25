@@ -693,13 +693,13 @@
   <string name="mailbox_error_wizard_info3">Atsiekite pašto dėžutę naudodami žemiau esantį mygtuką.\n\nAtsieję seną pašto dėžutę galite bet kuriuo metu nusistatyti naują pašto dėžutę.</string>
   <!--About-->
   <string name="about_title">Apie</string>
-  <string name="briar_version">Mycel versija: %s</string>
+  <string name="mycel_version">Mycel versija: %s</string>
   <string name="tor_version">Tor versija: %s</string>
   <string name="links">Nuorodos</string>
-  <string name="briar_website">\u2022 <a href="">Internetinė svetainė</a></string>
-  <string name="briar_source_code">\u2022 <a href="">Pradinis kodas</a></string>
-  <string name="briar_changelog">\u2022 <a href="">Keitinių žurnalas</a></string>
-  <string name="briar_privacy_policy">\u2022 <a href="">Privatumo politika</a></string>
+  <string name="mycel_website">\u2022 <a href="">Internetinė svetainė</a></string>
+  <string name="mycel_source_code">\u2022 <a href="">Pradinis kodas</a></string>
+  <string name="mycel_changelog">\u2022 <a href="">Keitinių žurnalas</a></string>
+  <string name="mycel_privacy_policy">\u2022 <a href="">Privatumo politika</a></string>
   <!--Here translators can add their names or Transifex usernames(eg "Thanks to all the contributors at the Localization Lab, especially Tom, Matthew and Jerry")-->
   <string name="translator_thanks">Dėkojame talkininkams iš Localization Lab, ypač Moo už vertimą į lietuvių kalbą</string>
   <!--Conversation Settings-->
@@ -727,7 +727,7 @@
   <string name="link_warning_open_link">Atverti nuorodą</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Mycel strigties ataskaita</string>
-  <string name="briar_crashed">Apgailestaujame, Mycel užstrigo</string>
+  <string name="mycel_crashed">Apgailestaujame, Mycel užstrigo</string>
   <string name="not_your_fault">Tai nėra jūsų kaltė.</string>
   <string name="please_send_report">Padėkite mums sukurti geresnę Mycel, išsiųsdami mums strigties ataskaitą.</string>
   <string name="report_is_encrypted">Mes pažadame, kad ataskaita yra šifruota ir išsiunčiama saugiai.</string>

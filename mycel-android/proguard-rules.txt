@@ -3,7 +3,7 @@
 -dontobfuscate
 -keepattributes SourceFile, LineNumberTable, *Annotation*, Signature, InnerClasses, EnclosingMethod
 
--keep,includedescriptorclasses class org.briarproject.briar.android.**,org.briarproject.briar.api.android.** { *; }
+-keep,includedescriptorclasses class com.quantumresearch.mycel.app.android.**,com.quantumresearch.mycel.app.api.android.** { *; }
 
 # QR codes
 -keep class com.google.zxing.Result

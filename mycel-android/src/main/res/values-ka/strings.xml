@@ -642,13 +642,13 @@
   <string name="mailbox_error_wizard_info3">გთხოვთ, ჩახსენით თქვენი საფოსტო ყუთი ღილაკით ქვემოთ.\n\nთქვენი ძველი საფოსტო ყუთის ჩახსნის შემდეგ, ნებისმიერ დროს შეგიძლიათ დააყენოთ ახალი საფოსტო ყუთი.</string>
   <!--About-->
   <string name="about_title">შესახებ</string>
-  <string name="briar_version">Mycel-ის ვერსია: %s</string>
+  <string name="mycel_version">Mycel-ის ვერსია: %s</string>
   <string name="tor_version">Tor-ის ვერსია: %s</string>
   <string name="links">ბმულები</string>
-  <string name="briar_website">\u2022 <a href="">ვებსაიტი</a></string>
-  <string name="briar_source_code">\u2022 <a href="">წყაროს კოდი</a></string>
-  <string name="briar_changelog">\u2022 <a href="">ცვლილებების ჟურნალი</a></string>
-  <string name="briar_privacy_policy">\u2022 <a href="">კონფიდენციალურობის დებულება</a></string>
+  <string name="mycel_website">\u2022 <a href="">ვებსაიტი</a></string>
+  <string name="mycel_source_code">\u2022 <a href="">წყაროს კოდი</a></string>
+  <string name="mycel_changelog">\u2022 <a href="">ცვლილებების ჟურნალი</a></string>
+  <string name="mycel_privacy_policy">\u2022 <a href="">კონფიდენციალურობის დებულება</a></string>
   <!--Here translators can add their names or Transifex usernames(eg "Thanks to all the contributors at the Localization Lab, especially Tom, Matthew and Jerry")-->
   <string name="translator_thanks">დიდი მადლობა ყველას, ვინც წვლილი შეიტანა Localization-Lab-ში</string>
   <!--Conversation Settings-->
@@ -674,7 +674,7 @@
   <string name="link_warning_open_link">ბმულის გახსნა</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Mycel-ის შეფერხების ანგარიში</string>
-  <string name="briar_crashed">სამწუხაროდ, Mycel გაფუჭდა</string>
+  <string name="mycel_crashed">სამწუხაროდ, Mycel გაფუჭდა</string>
   <string name="not_your_fault">ეს თქვენი ბრალი არ არის.</string>
   <string name="please_send_report">გთხოვთ, დაგვეხმაროთ, გავაუმჯობესოთ Mycel და გამოგვიგზავნეთ ანგარიში გათიშვის შესახებ.</string>
   <string name="report_is_encrypted">გპირდებით, რომ ეს ანგარიში დაიშიფრება და გაიგზავნება უსაფრთხოდ.</string>

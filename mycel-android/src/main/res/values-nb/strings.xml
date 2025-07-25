@@ -644,13 +644,13 @@
   <string name="mailbox_error_wizard_info3">Vennligst lenke fra din mailboks ved å bruke knappen under.\n\nEtter du har lenket fra din gamle Mailboks, så kan du sette opp en ny Mailboks når det skulle være.</string>
   <!--About-->
   <string name="about_title">Om</string>
-  <string name="briar_version">Mycel versjon: %s</string>
+  <string name="mycel_version">Mycel versjon: %s</string>
   <string name="tor_version">Tor versjon: %s</string>
   <string name="links">Lenker</string>
-  <string name="briar_website">\u2022 <a href="">Nettside</a></string>
-  <string name="briar_source_code">\u2022 <a href="">Kildekode</a></string>
-  <string name="briar_changelog">\u2022 <a href="">Endringslogg</a></string>
-  <string name="briar_privacy_policy">\u2022 <a href="">Personvernerklæring</a></string>
+  <string name="mycel_website">\u2022 <a href="">Nettside</a></string>
+  <string name="mycel_source_code">\u2022 <a href="">Kildekode</a></string>
+  <string name="mycel_changelog">\u2022 <a href="">Endringslogg</a></string>
+  <string name="mycel_privacy_policy">\u2022 <a href="">Personvernerklæring</a></string>
   <!--Here translators can add their names or Transifex usernames(eg "Thanks to all the contributors at the Localization Lab, especially Tom, Matthew and Jerry")-->
   <string name="translator_thanks">En takk til alle bidragsytere og til Lokaliseringslabben</string>
   <!--Conversation Settings-->
@@ -676,7 +676,7 @@
   <string name="link_warning_open_link">Åpne lenke</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Kræsjrapport for Mycel</string>
-  <string name="briar_crashed">Vi er lei for det, Mycel har krasjet</string>
+  <string name="mycel_crashed">Vi er lei for det, Mycel har krasjet</string>
   <string name="not_your_fault">Dette er ikke din feil.</string>
   <string name="please_send_report">Hjelp til med å forbedre Mycel ved å sende en kræsjrapport.</string>
   <string name="report_is_encrypted">Kræsjrapporten vil sendes kryptert og sikkert.</string>

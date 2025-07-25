@@ -414,7 +414,7 @@
   <string name="link_warning_open_link">Avaa linkki</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Mycel kaatumisilmoitus</string>
-  <string name="briar_crashed">Pahoittelemme, Mycel on kaatunut.</string>
+  <string name="mycel_crashed">Pahoittelemme, Mycel on kaatunut.</string>
   <string name="not_your_fault">Tämä ei ole sinun syysi.</string>
   <string name="please_send_report">Auta meitä rakentamaan parempi Mycel lähettämällä meille kaatumisilmoitus.</string>
   <string name="report_is_encrypted">Lupaamme, että ilmoitus on salattu ja lähetetty turvallisesti.</string>

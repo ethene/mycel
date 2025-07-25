@@ -492,7 +492,7 @@ contactes qu’avètz partejat aqueste flux quitaràn benlèu de recebre las mes
   <string name="link_warning_open_link">Dobrir lo ligam</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Senhalar lo fracàs de Mycel</string>
-  <string name="briar_crashed">Malastre, Mycel a arrestat de foncionar.</string>
+  <string name="mycel_crashed">Malastre, Mycel a arrestat de foncionar.</string>
   <string name="not_your_fault">Es pas vòstra fauta.</string>
   <string name="please_send_report">Ajudatz-nos a melhorar Mycel en nos enviant un rapòrt de fracàs.</string>
   <string name="report_is_encrypted">Asseguram que lo rapòrt es chifrat e enviat en tota seguretat.</string>

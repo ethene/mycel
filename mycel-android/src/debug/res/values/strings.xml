@@ -2,4 +2,44 @@
 <resources>
 	<string name="app_name" translatable="false">Mycel Debug</string>
 	<string name="app_package" translatable="false">com.quantumresearch.mycel.debug</string>
+	
+	<!-- About screen strings -->
+	<string name="mycel_changelog">Changelog</string>
+	<string name="mycel_crashed">Mycel crashed</string>
+	<string name="mycel_privacy_policy">Privacy Policy</string>
+	<string name="mycel_source_code">Source Code</string>
+	<string name="mycel_version">Mycel Version</string>
+	<string name="mycel_website">Website</string>
+	
+	<!-- UI strings -->
+	<string name="add_contact_remote_connecting">Connecting</string>
+	<string name="bluetooth_setting_disabled">Bluetooth disabled</string>
+	<string name="bluetooth_setting_enabled">Bluetooth enabled</string>
+	<string name="calculating_confirmation_code">Calculating</string>
+	<string name="choose_forum_name">Choose forum name</string>
+	<string name="codes_do_not_match">Codes do not match</string>
+	<string name="connected_to_contact">Connected</string>
+	<string name="connection_error_explanation">Connection error</string>
+	<string name="connection_failed">Connection failed</string>
+	<string name="could_not_find_contact">Could not find contact</string>
+	<string name="could_not_load_report_data">Could not load data</string>
+	<string name="dnkm_warning_dozed">Battery optimization warning</string>
+	<string name="enter_confirmation_code">Enter confirmation code</string>
+	<string name="enter_invitation_code">Enter invitation code</string>
+	<string name="feedback_settings_title">Feedback</string>
+	<string name="groups_message_sent">Message sent</string>
+	<string name="interfering">Interfering</string>
+	<string name="introduction_response_error">Introduction error</string>
+	<string name="notify_private_messages_setting">Notify private messages</string>
+	<string name="options">Options</string>
+	<string name="pref_theme_auto">Auto theme</string>
+	<string name="qr_code_too_new">QR code too new</string>
+	<string name="qr_code_too_old">QR code too old</string>
+	<string name="startup_failed_notification_text">Startup failed</string>
+	<string name="startup_failed_notification_title">Mycel Error</string>
+	<string name="uninstall_setting_summary">Delete account</string>
+	<string name="uninstall_setting_title">Delete Account</string>
+	<string name="waiting_for_contact">Waiting</string>
+	<string name="your_confirmation_code">Your confirmation code</string>
+	<string name="your_invitation_code">Your invitation code</string>
 </resources>

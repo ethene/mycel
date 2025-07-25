@@ -20,7 +20,7 @@
 			app:layout_constraintStart_toStartOf="parent"
 			app:layout_constraintTop_toTopOf="parent"
 			app:srcCompat="@drawable/alerts_and_states_error"
-			app:tint="@color/briar_red_500"
+			app:tint="@color/mycel_error"
 			tools:ignore="ContentDescription" />
 
 		<TextView
@@ -42,10 +42,10 @@
 			android:layout_width="0dp"
 			android:layout_height="wrap_content"
 			android:layout_marginVertical="16dp"
-			android:background="@color/briar_orange_200"
+			android:background="@color/mycel_coral_soft"
 			android:gravity="center"
 			android:padding="8dp"
-			android:textColor="@color/briar_text_primary"
+			android:textColor="@color/mycel_text_main"
 			android:textSize="@dimen/text_size_medium"
 			android:typeface="monospace"
 			app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +65,7 @@
 
 		<androidx.fragment.app.FragmentContainerView
 			android:id="@+id/fallbackFragment"
-			android:name="org.briarproject.briar.android.hotspot.FallbackFragment"
+			android:name="com.quantumresearch.mycel.app.android.hotspot.FallbackFragment"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			app:layout_constraintEnd_toEndOf="parent"

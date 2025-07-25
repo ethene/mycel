@@ -690,13 +690,13 @@ Brak dostępu do aparatu. Spróbuj ponownie, może po ponownym uruchomieniu urz�
   <string name="mailbox_error_wizard_info3">Proszę odłączyć swój Mailbox za pomocą poniższego przycisku. Po odłączeniu starego Mailbox możesz w każdej chwili uruchomić nowy Mailbox</string>
   <!--About-->
   <string name="about_title">O programie...</string>
-  <string name="briar_version">Wersja Mycel: %s</string>
+  <string name="mycel_version">Wersja Mycel: %s</string>
   <string name="tor_version">Wersja Tor: %s</string>
   <string name="links">Odnośniki</string>
-  <string name="briar_website">\u2022 <a href="">Strona internetowa</a></string>
-  <string name="briar_source_code">\u2022 <a href="">Kod źródłowy</a></string>
-  <string name="briar_changelog">\u2022 <a href="">Dziennik zmian</a></string>
-  <string name="briar_privacy_policy">\u2022 <a href="">Polityka prywatności</a></string>
+  <string name="mycel_website">\u2022 <a href="">Strona internetowa</a></string>
+  <string name="mycel_source_code">\u2022 <a href="">Kod źródłowy</a></string>
+  <string name="mycel_changelog">\u2022 <a href="">Dziennik zmian</a></string>
+  <string name="mycel_privacy_policy">\u2022 <a href="">Polityka prywatności</a></string>
   <!--Here translators can add their names or Transifex usernames(eg "Thanks to all the contributors at the Localization Lab, especially Tom, Matthew and Jerry")-->
   <string name="translator_thanks">Dziękujemy wszystkim wspierającym z Localization Lab</string>
   <!--Conversation Settings-->
@@ -722,7 +722,7 @@ Brak dostępu do aparatu. Spróbuj ponownie, może po ponownym uruchomieniu urz�
   <string name="link_warning_open_link">Otwórz Link</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Zgłoś awarię w Mycel</string>
-  <string name="briar_crashed">Przepraszam, Mycel uległ awarii</string>
+  <string name="mycel_crashed">Przepraszam, Mycel uległ awarii</string>
   <string name="not_your_fault">To nie Twoja wina.</string>
   <string name="please_send_report">Proszę pomóż nam ulepszać Mycel wysyłając raport z awarii.</string>
   <string name="report_is_encrypted">Obiecujemy, że raport z awarii jest zaszyfrowany i wysyłany bezpiecznie.</string>

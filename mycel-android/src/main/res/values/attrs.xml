@@ -5,7 +5,7 @@
 
 	<integer name="splashScreenDuration">500</integer>
 
-	<declare-styleable name="BriarRecyclerView">
+	<declare-styleable name="MycelRecyclerView">
 		<attr name="scrollToEnd" format="boolean" />
 		<attr name="emptyImage" format="integer" />
 		<attr name="emptyText" format="string" />

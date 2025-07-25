@@ -44,7 +44,7 @@
 
 	</com.google.android.material.appbar.AppBarLayout>
 
-	<com.quantumresearch.mycel.app.android.view.BriarRecyclerView
+	<com.quantumresearch.mycel.app.android.view.MycelRecyclerView
 		android:id="@+id/conversationView"
 		android:layout_width="match_parent"
 		android:layout_height="0dp"

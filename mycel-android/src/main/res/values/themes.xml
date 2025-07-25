@@ -21,7 +21,7 @@
 		<item name="android:statusBarColor">#000000</item>
 
 		<item name="android:windowBackground">@color/window_background</item>
-		<item name="android:textColorLink">@color/briar_text_link</item>
+		<item name="android:textColorLink">@color/mycel_accent</item>
 		<item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
 		<item name="windowActionModeOverlay">true</item>
 		<item name="toolbarStyle">@style/BriarToolbar</item>
@@ -49,11 +49,11 @@
 	</style>
 
 	<style name="BriarDialogTheme" parent="Theme.Material3.DayNight.Dialog">
-		<item name="colorPrimary">@color/briar_primary</item>
+		<item name="colorPrimary">@color/mycel_primary</item>
 		<item name="buttonBarPositiveButtonStyle">@style/MycelButtonFlat.Positive</item>
 		<item name="buttonBarNeutralButtonStyle">@style/MycelButtonFlat.Neutral</item>
 		<item name="buttonBarNegativeButtonStyle">@style/MycelButtonFlat.Negative</item>
-		<item name="android:textColorLink">@color/briar_text_link</item>
+		<item name="android:textColorLink">@color/mycel_accent</item>
 		<item name="android:windowBackground">@color/window_background</item>
 		<item name="android:windowAnimationStyle">@style/DialogAnimation</item>
 		<item name="android:filterTouchesWhenObscured">true</item>

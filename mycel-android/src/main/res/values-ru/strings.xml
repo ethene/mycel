@@ -693,13 +693,13 @@
   <string name="mailbox_error_wizard_info3">Пожалуйста, отвяжите свой Mailbox с помощью кнопки ниже.\n\nПосле отсоединения старого Mailbox вы в любое время сможете настроить новый.</string>
   <!--About-->
   <string name="about_title">О проекте</string>
-  <string name="briar_version">Версия Mycel: %s</string>
+  <string name="mycel_version">Версия Mycel: %s</string>
   <string name="tor_version">Версия Tor: %s</string>
   <string name="links">Ссылки</string>
-  <string name="briar_website">\u2022 <a href="">Сайт</a></string>
-  <string name="briar_source_code">\u2022 <a href="">Исходный код</a></string>
-  <string name="briar_changelog">\u2022 <a href="">Список изменений</a></string>
-  <string name="briar_privacy_policy">\u2022 <a href="">Политика конфиденциальности</a></string>
+  <string name="mycel_website">\u2022 <a href="">Сайт</a></string>
+  <string name="mycel_source_code">\u2022 <a href="">Исходный код</a></string>
+  <string name="mycel_changelog">\u2022 <a href="">Список изменений</a></string>
+  <string name="mycel_privacy_policy">\u2022 <a href="">Политика конфиденциальности</a></string>
   <!--Here translators can add their names or Transifex usernames(eg "Thanks to all the contributors at the Localization Lab, especially Tom, Matthew and Jerry")-->
   <string name="translator_thanks">Благодарим всех участников проекта Localization Lab</string>
   <!--Conversation Settings-->
@@ -727,7 +727,7 @@
   <string name="link_warning_open_link">Открыть ссылку</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Отчет о сбое Mycel</string>
-  <string name="briar_crashed">К сожалению, Mycel неожиданно завершил работу.</string>
+  <string name="mycel_crashed">К сожалению, Mycel неожиданно завершил работу.</string>
   <string name="not_your_fault">Это не ваша вина.</string>
   <string name="please_send_report">Пожалуйста, помогите сделать Mycel лучше, отправив нам отчет о сбое.</string>
   <string name="report_is_encrypted">Мы гарантируем, что отчет зашифрован и будет отправлен безопасно.</string>

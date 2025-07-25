@@ -1,7 +1,7 @@
-app_package_name "org.briarproject.briar.android.screenshot.debug"
+app_package_name "com.quantumresearch.mycel.screenshot.debug"
 locales ['en-US']
-app_apk_path "build/outputs/apk/screenshot/debug/briar-android-screenshot-debug.apk"
-tests_apk_path "build/outputs/apk/androidTest/screenshot/debug/briar-android-screenshot-debug-androidTest.apk"
-test_instrumentation_runner "org.briarproject.briar.android.BriarTestRunner"
+app_apk_path "build/outputs/apk/screenshot/debug/mycel-android-screenshot-debug.apk"
+tests_apk_path "build/outputs/apk/androidTest/screenshot/debug/mycel-android-screenshot-debug-androidTest.apk"
+test_instrumentation_runner "com.quantumresearch.mycel.app.android.MycelTestRunner"
 reinstall_app = true
 exit_on_test_failure = true

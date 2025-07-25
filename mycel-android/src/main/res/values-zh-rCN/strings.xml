@@ -654,13 +654,13 @@
   <string name="mailbox_error_wizard_info3">请使用下面的按钮取消你的 Mailbox 链接。\n\n在取消对旧 Mailbox 的链接后，你可以随时设置一个新的 Mailbox。</string>
   <!--About-->
   <string name="about_title">关于</string>
-  <string name="briar_version">Mycel 版本：%s</string>
+  <string name="mycel_version">Mycel 版本：%s</string>
   <string name="tor_version">Tor 版本：%s</string>
   <string name="links">链接</string>
-  <string name="briar_website">\u2022 <a href="">网站</a></string>
-  <string name="briar_source_code">\u2022 <a href="">源代码</a></string>
-  <string name="briar_changelog">\u2022 <a href="">变更记录</a></string>
-  <string name="briar_privacy_policy">\u2022 <a href="">隐私政策</a></string>
+  <string name="mycel_website">\u2022 <a href="">网站</a></string>
+  <string name="mycel_source_code">\u2022 <a href="">源代码</a></string>
+  <string name="mycel_changelog">\u2022 <a href="">变更记录</a></string>
+  <string name="mycel_privacy_policy">\u2022 <a href="">隐私政策</a></string>
   <!--Here translators can add their names or Transifex usernames(eg "Thanks to all the contributors at the Localization Lab, especially Tom, Matthew and Jerry")-->
   <string name="translator_thanks">感谢所有 Localization Lab 的贡献者们</string>
   <!--Conversation Settings-->
@@ -688,7 +688,7 @@
   <string name="link_warning_open_link">打开链接</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Mycel 崩溃报告</string>
-  <string name="briar_crashed">抱歉，Mycel 已崩溃</string>
+  <string name="mycel_crashed">抱歉，Mycel 已崩溃</string>
   <string name="not_your_fault">这并非您的错误所致。</string>
   <string name="please_send_report">请发送崩溃报告，以帮助我们优化 Mycel 。</string>
   <string name="report_is_encrypted">我们保证报告将会加密并被安全地发送。</string>

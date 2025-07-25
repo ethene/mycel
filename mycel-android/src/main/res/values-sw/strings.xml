@@ -509,7 +509,7 @@ Umepoteza nenosiri.</string>
   <string name="link_warning_open_link">kiunga wazi</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Ripoti  fupi ya ajali ya Brair</string>
-  <string name="briar_crashed">Samahani, Mycel imeharibika.</string>
+  <string name="mycel_crashed">Samahani, Mycel imeharibika.</string>
   <string name="not_your_fault"> Hili sio kosa lako</string>
   <string name="please_send_report">Tafadhali tusaidie kujenga Mycel bora kwa kututumia ripoti ya taharifa.</string>
   <string name="report_is_encrypted">Tunaahidi kuwa ripoti hiyo imesimbwa kwa njia fiche na kutumwa salama.</string>

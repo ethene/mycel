@@ -668,13 +668,13 @@
   <string name="mailbox_error_wizard_info3">অনুগ্রহ করে নিচের বোতামটি ব্যবহার করে আপনার মেইলবক্স আনলিঙ্ক করুন।\n\nআপনার পুরানো মেইলবক্স আনলিঙ্ক করার পর, আপনি যেকোনো সময় একটি নতুন মেইলবক্স সেটআপ করতে পারবেন।</string>
   <!--About-->
   <string name="about_title">আমাদের কথা</string>
-  <string name="briar_version">Mycel ভার্সন: %s</string>
+  <string name="mycel_version">Mycel ভার্সন: %s</string>
   <string name="tor_version">Tor ভার্সন: %s</string>
   <string name="links">লিঙ্কসমুহ</string>
-  <string name="briar_website">\u2022 <a href="">ওয়েবসাইট</a></string>
-  <string name="briar_source_code">\u2022 <a href="">সোর্স কোড</a></string>
-  <string name="briar_changelog">\u2022 <a href="">পরিবর্তন সমূহ</a></string>
-  <string name="briar_privacy_policy">\u2022 <a href="">গোপনিয়তার নীতি</a></string>
+  <string name="mycel_website">\u2022 <a href="">ওয়েবসাইট</a></string>
+  <string name="mycel_source_code">\u2022 <a href="">সোর্স কোড</a></string>
+  <string name="mycel_changelog">\u2022 <a href="">পরিবর্তন সমূহ</a></string>
+  <string name="mycel_privacy_policy">\u2022 <a href="">গোপনিয়তার নীতি</a></string>
   <!--Here translators can add their names or Transifex usernames(eg "Thanks to all the contributors at the Localization Lab, especially Tom, Matthew and Jerry")-->
   <string name="translator_thanks">Localization Lab-এর সকল অবদানকারীদের ধন্যবাদ। বিশেষ করে আশরাফুল হক কে।</string>
   <!--Conversation Settings-->
@@ -702,7 +702,7 @@
   <string name="link_warning_open_link">যোগসূত্র খুলুন</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Mycel ক্র্যাশ রিপোর্ট</string>
-  <string name="briar_crashed">দুঃখিত Mycel ভেঙ্গে পড়েছে</string>
+  <string name="mycel_crashed">দুঃখিত Mycel ভেঙ্গে পড়েছে</string>
   <string name="not_your_fault">এটা আপনার ভুল নয়</string>
   <string name="please_send_report">আমাদের একটি ক্র্যাশ রিপোর্ট পাঠিয়ে একটি ভাল Mycel গড়ে তুলতে সাহায্য করুন ।</string>
   <string name="report_is_encrypted">আমরা প্রতিজ্ঞা করছি যে প্রতিবেদনটি এনক্রিপ্ট এবং নিরাপদভাবে পাঠানো হয়েছে ।</string>

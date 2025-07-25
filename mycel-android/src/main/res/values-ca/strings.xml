@@ -664,13 +664,13 @@ Així que l\'actualitzi li veureu una icona diferent .</string>
   <string name="mailbox_error_wizard_info3">Desenllaceu la vostra bústia amb el botó següent.\n\nDesprés de desenllaçar la vostra bústia antiga, podeu configurar una bústia nova en qualsevol moment.</string>
   <!--About-->
   <string name="about_title">Quant a</string>
-  <string name="briar_version">Versió del Mycel: %s</string>
+  <string name="mycel_version">Versió del Mycel: %s</string>
   <string name="tor_version">Versió del Tor: %s</string>
   <string name="links">Enllaços</string>
-  <string name="briar_website">\u2022 <a href="">Lloc web</a></string>
-  <string name="briar_source_code">\u2022 <a href="">Codi font</a></string>
-  <string name="briar_changelog">\u2022 <a href="">Registre de canvis</a></string>
-  <string name="briar_privacy_policy">\u2022 <a href="">Política de privadesa</a></string>
+  <string name="mycel_website">\u2022 <a href="">Lloc web</a></string>
+  <string name="mycel_source_code">\u2022 <a href="">Codi font</a></string>
+  <string name="mycel_changelog">\u2022 <a href="">Registre de canvis</a></string>
+  <string name="mycel_privacy_policy">\u2022 <a href="">Política de privadesa</a></string>
   <!--Here translators can add their names or Transifex usernames(eg "Thanks to all the contributors at the Localization Lab, especially Tom, Matthew and Jerry")-->
   <string name="translator_thanks">Gràcies a tots els col·laboradors del Localization Lab, especialment a Jaime Muñoz</string>
   <!--Conversation Settings-->
@@ -696,7 +696,7 @@ Així que l\'actualitzi li veureu una icona diferent .</string>
   <string name="link_warning_open_link">Obre l\'enllaç</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Informe de fallida de Mycel</string>
-  <string name="briar_crashed">El Mycel ha fallat</string>
+  <string name="mycel_crashed">El Mycel ha fallat</string>
   <string name="not_your_fault">Això no és culpa vostra.</string>
   <string name="please_send_report">Ajudi\'ns a construir un Mycel millor enviant-nos un informe de fallida.</string>
   <string name="report_is_encrypted">Us garantim que l\'informe es xifra i s\'envia de manera segura.</string>

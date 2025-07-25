@@ -694,13 +694,13 @@
   <string name="mailbox_error_wizard_info3">Zrušte prosím prepojenie svojej aplikácie Mailbox pomocou tlačidla nižšie.\n\nPo zrušení prepojenia vašej starej aplikácie Mailbox môžete kedykoľvek nastaviť novú aplikáciu Mailbox.</string>
   <!--About-->
   <string name="about_title">O programe</string>
-  <string name="briar_version">Mycel verzia: %s</string>
+  <string name="mycel_version">Mycel verzia: %s</string>
   <string name="tor_version">Tor verzia: %s</string>
   <string name="links">Odkazy</string>
-  <string name="briar_website">\u2022 <a href="">Webová stránka</a></string>
-  <string name="briar_source_code">\u2022 <a href="">Zdrojový kód</a></string>
-  <string name="briar_changelog">\u2022 <a href="">Zoznam zmien</a></string>
-  <string name="briar_privacy_policy">\u2022 <a href="">Zásady ochrany súkromia</a></string>
+  <string name="mycel_website">\u2022 <a href="">Webová stránka</a></string>
+  <string name="mycel_source_code">\u2022 <a href="">Zdrojový kód</a></string>
+  <string name="mycel_changelog">\u2022 <a href="">Zoznam zmien</a></string>
+  <string name="mycel_privacy_policy">\u2022 <a href="">Zásady ochrany súkromia</a></string>
   <!--Here translators can add their names or Transifex usernames(eg "Thanks to all the contributors at the Localization Lab, especially Tom, Matthew and Jerry")-->
   <string name="translator_thanks">Ďakujeme všetkým prispievateľom z Localization Lab, hlavne prekladateľom: Jozef Gaál</string>
   <!--Conversation Settings-->
@@ -728,7 +728,7 @@
   <string name="link_warning_open_link">Otvoriť odkaz</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Mycel Hlásenie o chybe</string>
-  <string name="briar_crashed">Prepáčte, aplikácia Mycel spadla</string>
+  <string name="mycel_crashed">Prepáčte, aplikácia Mycel spadla</string>
   <string name="not_your_fault">Toto nie je vaša chyba.</string>
   <string name="please_send_report">Pomôžte nám prosím vytvoriť lepší Mycel tým, že nám pošlete hlásenie o chybe.</string>
   <string name="report_is_encrypted">Sľubujeme, že hlásenie bude zašifrované a odoslané bezpečne.</string>

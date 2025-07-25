@@ -1,7 +1,0 @@
-// Test settings - exclude Android modules temporarily
-include ':spore-api'
-include ':spore-core'
-include ':spore-java'
-include ':mycel-api'
-include ':mycel-core'
-include ':mycel-headless'

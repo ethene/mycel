@@ -494,7 +494,7 @@
   <string name="link_warning_open_link">Ireki esteka</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Mycel kraskatze txostena</string>
-  <string name="briar_crashed">Mycel kraskatu egin da.</string>
+  <string name="mycel_crashed">Mycel kraskatu egin da.</string>
   <string name="not_your_fault">Hau ez da zure errua.</string>
   <string name="please_send_report">Lagundu iezaguzu Mycel hobe bat eraikitzen, guri kraskatze txostenak bidaliz.</string>
   <string name="report_is_encrypted">Txostena zifratuta dagoela eta modu seguruan bidaliko dela hitzematen dizugu.</string>

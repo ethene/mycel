@@ -663,13 +663,13 @@
   <string name="mailbox_error_wizard_info3">Прекъснете връзката с пощенската кутия, чрез бутона отдолу.\n\nСлед като прекъснете връзката със старата пощенска кутия можете да настроите нова по всяко време.</string>
   <!--About-->
   <string name="about_title">Относно</string>
-  <string name="briar_version">Издание на Mycel: %s</string>
+  <string name="mycel_version">Издание на Mycel: %s</string>
   <string name="tor_version">Издание на Tor: %s</string>
   <string name="links">Препратки</string>
-  <string name="briar_website">\u2022 <a href="">Страница</a></string>
-  <string name="briar_source_code">\u2022 <a href="">Изходен код</a></string>
-  <string name="briar_changelog">\u2022 <a href="">Дневник на промените</a></string>
-  <string name="briar_privacy_policy">\u2022 <a href="">Политика за личните данни</a></string>
+  <string name="mycel_website">\u2022 <a href="">Страница</a></string>
+  <string name="mycel_source_code">\u2022 <a href="">Изходен код</a></string>
+  <string name="mycel_changelog">\u2022 <a href="">Дневник на промените</a></string>
+  <string name="mycel_privacy_policy">\u2022 <a href="">Политика за личните данни</a></string>
   <!--Here translators can add their names or Transifex usernames(eg "Thanks to all the contributors at the Localization Lab, especially Tom, Matthew and Jerry")-->
   <string name="translator_thanks">Благодарим на всички сътрудници на Localization Lab</string>
   <!--Conversation Settings-->
@@ -693,7 +693,7 @@
   <string name="link_warning_open_link">Отваряне</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Доклад на срив</string>
-  <string name="briar_crashed">Съжаляваме, Mycel се срина</string>
+  <string name="mycel_crashed">Съжаляваме, Mycel се срина</string>
   <string name="not_your_fault">Не е по ваша вина.</string>
   <string name="please_send_report">Помогнете да направим Mycel по-добър като ни изпратите доклад.</string>
   <string name="report_is_encrypted">Обещаваме, че докладът е ще бъде изпратен шифрован и добре защитен.</string>

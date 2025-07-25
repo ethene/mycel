@@ -680,13 +680,13 @@ Em seguida, vincula a tua Mailbox ao Mycel digitalizando o código QR mostrado p
   <string name="mailbox_error_wizard_info3">Desvincula a tua Mailbox utilizando o botão abaixo.\n\nDepois de desvinculares a Mailbox antiga, podes configurar uma nova Mailbox em qualquer altura.</string>
   <!--About-->
   <string name="about_title">Sobre</string>
-  <string name="briar_version">Versão do Mycel: %s</string>
+  <string name="mycel_version">Versão do Mycel: %s</string>
   <string name="tor_version">Versão do Tor: %s</string>
   <string name="links">Hiperligações</string>
-  <string name="briar_website">\u2022 <a href="">Website</a></string>
-  <string name="briar_source_code">\u2022 <a href="">Código-fonte</a></string>
-  <string name="briar_changelog">\u2022 <a href="">Registo de alterações</a></string>
-  <string name="briar_privacy_policy">\u2022 <a href="">Política de privacidade</a></string>
+  <string name="mycel_website">\u2022 <a href="">Website</a></string>
+  <string name="mycel_source_code">\u2022 <a href="">Código-fonte</a></string>
+  <string name="mycel_changelog">\u2022 <a href="">Registo de alterações</a></string>
+  <string name="mycel_privacy_policy">\u2022 <a href="">Política de privacidade</a></string>
   <!--Here translators can add their names or Transifex usernames(eg "Thanks to all the contributors at the Localization Lab, especially Tom, Matthew and Jerry")-->
   <string name="translator_thanks">Agradecemos todos os contribuidores do Localization Lab</string>
   <!--Conversation Settings-->
@@ -714,7 +714,7 @@ O teu contacto também pode alterar esta configuração para ambos.</string>
   <string name="link_warning_open_link">Abrir hiperligação</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Relatório de falhas do Mycel</string>
-  <string name="briar_crashed">Desculpa, o Mycel encerrou de maneira inesperada</string>
+  <string name="mycel_crashed">Desculpa, o Mycel encerrou de maneira inesperada</string>
   <string name="not_your_fault">A culpa não é tua.</string>
   <string name="please_send_report">Ajuda-nos a construir um Mycel melhor, enviando-nos um relatório de falhas.</string>
   <string name="report_is_encrypted">Prometemos que o relatório é encriptado e enviado de forma segura.</string>

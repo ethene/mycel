@@ -690,13 +690,13 @@
   <string name="mailbox_error_wizard_info3">Будь ласка, від\'єднайте свою поштову скриньку за допомогою кнопки нижче.\n\nПісля від\'єднання старої поштової скриньки ви можете створити нову поштову скриньку в будь-який час.</string>
   <!--About-->
   <string name="about_title">Про</string>
-  <string name="briar_version">Версія Mycel %s</string>
+  <string name="mycel_version">Версія Mycel %s</string>
   <string name="tor_version">Версія Tor %s</string>
   <string name="links">Посилання</string>
-  <string name="briar_website">\u2022 <a href="">Вебсайт</a></string>
-  <string name="briar_source_code">\u2022 <a href="">Вихідний код</a></string>
-  <string name="briar_changelog">\u2022 <a href="">Список змін та доповнень</a></string>
-  <string name="briar_privacy_policy">\u2022 <a href="">Політика конфіденційности</a></string>
+  <string name="mycel_website">\u2022 <a href="">Вебсайт</a></string>
+  <string name="mycel_source_code">\u2022 <a href="">Вихідний код</a></string>
+  <string name="mycel_changelog">\u2022 <a href="">Список змін та доповнень</a></string>
+  <string name="mycel_privacy_policy">\u2022 <a href="">Політика конфіденційности</a></string>
   <!--Here translators can add their names or Transifex usernames(eg "Thanks to all the contributors at the Localization Lab, especially Tom, Matthew and Jerry")-->
   <string name="translator_thanks">Дякуємо всім хто вніс свій внесок у Localization Lab</string>
   <!--Conversation Settings-->
@@ -724,7 +724,7 @@
   <string name="link_warning_open_link">Відкрити посилання</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Аварійний звіт Mycel</string>
-  <string name="briar_crashed">Перепрошуємо, Mycel зазнав збою</string>
+  <string name="mycel_crashed">Перепрошуємо, Mycel зазнав збою</string>
   <string name="not_your_fault">Це не ваша провина.</string>
   <string name="please_send_report">Будь ласка, допоможіть нам покращити Mycel надіславши нам аварійний звіт.</string>
   <string name="report_is_encrypted">Ми обіцяємо, що цей звіт буде зашифровано та безпечно надіслано.</string>

@@ -36,7 +36,7 @@ private const val WS = "/$VERSION/ws"
 internal class Router
 @Inject
 constructor(
-    private val briarService: BriarService,
+    private val mycelService: MycelService,
     private val webSocketController: WebSocketController,
     private val contactController: ContactController,
     private val messagingController: MessagingController,
@@ -48,7 +48,7 @@ constructor(
     private val stopped = AtomicBoolean(false)
 
     internal fun start(authToken: String, port: Int, debug: Boolean): Javalin {
-        briarService.start()
+        mycelService.start()
         getRuntime().addShutdownHook(Thread(this::stop))
 
         val accessManager = AccessManager { handler, ctx, _ ->
@@ -142,7 +142,7 @@ constructor(
 
     internal fun stop() {
         if (!stopped.getAndSet(true)) {
-            briarService.stop()
+            mycelService.stop()
         }
     }
 

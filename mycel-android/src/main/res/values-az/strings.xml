@@ -440,7 +440,7 @@
   <string name="link_warning_open_link">Link-i aç</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Mycel qəza göndərişi</string>
-  <string name="briar_crashed">Bağışlayın, Mycel qəzaya uğrayıb.</string>
+  <string name="mycel_crashed">Bağışlayın, Mycel qəzaya uğrayıb.</string>
   <string name="not_your_fault">Bu sizin günahınız deyil.</string>
   <string name="please_send_report">Xahiş edirik bizə bir qəza hesabatı göndərərək daha yaxşı bir Mycel qurmamıza kömək edin.</string>
   <string name="report_is_encrypted">Hesabatın şifrələndiyini və təhlükəsiz olaraq göndərildiyinə əmin edirik.</string>

@@ -622,7 +622,7 @@
   <string name="link_warning_open_link">Opna tengil</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Hrunskýrsla fyrir Mycel</string>
-  <string name="briar_crashed">Því miður, Mycel hefur hrunið</string>
+  <string name="mycel_crashed">Því miður, Mycel hefur hrunið</string>
   <string name="not_your_fault">Það er ekki þér að kenna.</string>
   <string name="please_send_report">Hjálpaðu okkur við að bæta Mycel með því að senda okkur hrunskýrslu.</string>
   <string name="report_is_encrypted">Við lofum að skýrslan sé dulrituð og send á öruggan máta.</string>

@@ -518,7 +518,7 @@
   <string name="link_warning_open_link">링크 열기</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Mycel 사고 리포트</string>
-  <string name="briar_crashed">죄송해요, Mycel가 꺼졌어요.</string>
+  <string name="mycel_crashed">죄송해요, Mycel가 꺼졌어요.</string>
   <string name="not_your_fault">당신 탓이 아니에요.</string>
   <string name="please_send_report">부디 사고 리포트를 저희에게 보내서 더 나은 Mycel를 만드는 것을 도와주세요.</string>
   <string name="report_is_encrypted">리포트가 암호화되고 안전하게 보내진다고 약속하겠습니다.</string>

@@ -527,7 +527,7 @@
   <string name="link_warning_open_link">Отвори линк</string>
   <!--Crash Reporter-->
   <string name="crash_report_title">Mycel извештај за срушување</string>
-  <string name="briar_crashed">Жал ни е, Mycel се сруши.</string>
+  <string name="mycel_crashed">Жал ни е, Mycel се сруши.</string>
   <string name="not_your_fault">Ова не е ваша гршка.</string>
   <string name="please_send_report">Ве молиме помогнете ни да изградиме подобар Mycel со испраќање на извештај за срушување. </string>
   <string name="report_is_encrypted">Ви ветуваме дека извештајот е енкриптиран и безбедно испратен.</string>

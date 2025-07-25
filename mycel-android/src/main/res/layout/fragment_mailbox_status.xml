@@ -26,7 +26,7 @@
 			app:layout_constraintVertical_chainStyle="packed"
 			tools:ignore="ContentDescription"
 			tools:srcCompat="@drawable/ic_help_outline_white"
-			tools:tint="@color/briar_orange_500" />
+			tools:tint="@color/mycel_warning" />
 
 		<TextView
 			android:id="@+id/statusTitleView"
@@ -73,7 +73,7 @@
 			app:layout_constraintTop_toBottomOf="@+id/statusMessageView"
 			tools:text="@string/mailbox_status_connected_info" />
 
-		<org.briarproject.briar.android.view.MycelButton
+		<com.quantumresearch.mycel.app.android.view.MycelButton
 			android:id="@+id/checkButton"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"

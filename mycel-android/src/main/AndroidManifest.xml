@@ -69,11 +69,11 @@
 		</receiver>
 
 		<service
-			android:name="com.quantumresearch.mycel.app.android.BriarService"
+			android:name="com.quantumresearch.mycel.app.android.MycelService"
 			android:exported="false"
 			android:foregroundServiceType="connectedDevice|dataSync">
 			<intent-filter>
-				<action android:name="com.quantumresearch.mycel.app.android.BriarService" />
+				<action android:name="com.quantumresearch.mycel.app.android.MycelService" />
 			</intent-filter>
 		</service>
 
