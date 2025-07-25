@@ -134,9 +134,6 @@ jobs:
     
     - name: 🤖 Setup Android SDK
       uses: android-actions/setup-android@v3
-      with:
-        api-level: ${{ env.ANDROID_API_LEVEL }}
-        build-tools: ${{ env.ANDROID_BUILD_TOOLS }}
     
     - name: 🔧 Accept Android SDK Licenses
       run: yes | sdkmanager --licenses >/dev/null || true
@@ -170,18 +167,16 @@ jobs:
         # Create checksums directory
         mkdir -p checksums
         
-        # Generate checksums for APK
+        # Generate checksums for APK (using absolute paths)
         if [ -f "mycel-android/build/outputs/apk/official/release/mycel-android-official-release-unsigned.apk" ]; then
-          cd mycel-android/build/outputs/apk/official/release/
-          sha256sum mycel-android-official-release-unsigned.apk > ../../../../../checksums/mycel-android-v${VERSION}.apk.sha256
-          cd ../../../../../
+          sha256sum mycel-android/build/outputs/apk/official/release/mycel-android-official-release-unsigned.apk > checksums/mycel-android-v${VERSION}.apk.sha256
+          echo "Generated APK checksum"
         fi
         
-        # Generate checksums for JAR
+        # Generate checksums for JAR (using absolute paths)
         if [ -f "mycel-headless/build/libs/mycel-headless-fat.jar" ]; then
-          cd mycel-headless/build/libs/
-          sha256sum mycel-headless-fat.jar > ../../checksums/mycel-headless-v${VERSION}.jar.sha256
-          cd ../../
+          sha256sum mycel-headless/build/libs/mycel-headless-fat.jar > checksums/mycel-headless-v${VERSION}.jar.sha256
+          echo "Generated JAR checksum"
         fi
         
         # Display checksums
