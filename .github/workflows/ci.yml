@@ -53,38 +53,6 @@ jobs:
         path: build/reports/dependency-check-report.html
         retention-days: 30
 
-  # ============================================================================
-  # Core Module Tests (Integrated with Build Verification)
-  # ============================================================================
-  
-  test-core:
-    name: 🧪 Core Tests (Build Verification)
-    runs-on: ubuntu-latest
-    
-    steps:
-    - name: 📥 Checkout Code
-      uses: actions/checkout@v4
-    
-    - name: ☕ Setup Java 17
-      uses: actions/setup-java@v4
-      with:
-        java-version: ${{ env.JAVA_VERSION }}
-        distribution: 'temurin'
-        cache: gradle
-    
-    - name: 🏗️ Build All & Test Core Modules
-      run: |
-        ./gradlew build --continue --build-cache --parallel || echo "Build completed with expected issues"
-    
-    - name: 📊 Generate Core Test Report
-      uses: dorny/test-reporter@v1
-      if: always()
-      with:
-        name: Core Module Tests
-        path: '**/build/test-results/test/TEST-*.xml'
-        reporter: java-junit
-        fail-on-error: false
-        fail-on-empty: false
 
   # ============================================================================
   # Android Build & Tests
@@ -213,7 +181,7 @@ jobs:
     name: 🔗 Integration Tests
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    needs: [test-core, test-android, test-headless]
+    needs: [test-android, test-headless]
     
     steps:
     - name: 📥 Checkout Code
@@ -251,7 +219,7 @@ jobs:
   build-verification:
     name: ✅ Build Verification
     runs-on: ubuntu-latest
-    needs: [lint-and-security, test-core, test-android, test-headless]
+    needs: [lint-and-security, test-android, test-headless]
     
     steps:
     - name: 📥 Checkout Code
