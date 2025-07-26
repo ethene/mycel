@@ -83,7 +83,7 @@ jobs:
     
     - name: 📱 Build Android Debug APK
       run: |
-        ./gradlew :mycel-android:assembleDebug \
+        ./gradlew :mycel-android:assembleOfficialDebug \
           --build-cache \
           --parallel \
           -Pandroid.useAndroidX=true \
@@ -109,7 +109,7 @@ jobs:
     - name: 📱 Upload Debug APK
       uses: actions/upload-artifact@v4
       with:
-        name: mycel-android-debug
+        name: mycel-android-official-debug
         path: mycel-android/build/outputs/apk/official/debug/mycel-android-official-debug.apk
         retention-days: 30
     
