@@ -42,3 +42,6 @@
 
 # Dependency injection annotations, needed for UI tests on older API levels
 -keep class javax.inject.**
+
+# Keep Application classes to prevent ClassNotFoundException crashes
+-keep class * extends android.app.Application { *; }
