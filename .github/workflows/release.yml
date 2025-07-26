@@ -57,7 +57,7 @@ jobs:
         
         ## Downloads
         
-        - **Android APK**: \`mycel-android-v${VERSION}.apk\` - Install on Android devices (API 21+)
+        - **Android APK**: \`mycel-android-v${VERSION}.apk\` - Debug-signed APK for Android devices (API 21+)
         - **Headless Server**: \`mycel-headless-v${VERSION}.jar\` - Run REST API server
         
         ## Installation
@@ -138,10 +138,10 @@ jobs:
     - name: 🔧 Accept Android SDK Licenses
       run: yes | sdkmanager --licenses >/dev/null || true
     
-    - name: 🏗️ Build Android Release APK
+    - name: 🏗️ Build Android Debug APK (Signed)
       run: |
-        echo "Building Android Release APK..."
-        ./gradlew :mycel-android:assembleRelease \
+        echo "Building Android Debug APK (signed with debug keystore)..."
+        ./gradlew :mycel-android:assembleOfficialDebug \
           --build-cache \
           --parallel \
           -Pandroid.useAndroidX=true \
@@ -168,8 +168,8 @@ jobs:
         mkdir -p checksums
         
         # Generate checksums for APK (using absolute paths)
-        if [ -f "mycel-android/build/outputs/apk/official/release/mycel-android-official-release-unsigned.apk" ]; then
-          sha256sum mycel-android/build/outputs/apk/official/release/mycel-android-official-release-unsigned.apk > checksums/mycel-android-v${VERSION}.apk.sha256
+        if [ -f "mycel-android/build/outputs/apk/official/debug/mycel-android-official-debug.apk" ]; then
+          sha256sum mycel-android/build/outputs/apk/official/debug/mycel-android-official-debug.apk > checksums/mycel-android-v${VERSION}.apk.sha256
           echo "Generated APK checksum"
         fi
         
@@ -190,8 +190,8 @@ jobs:
         VERSION=${{ needs.create-release.outputs.version }}
         
         # Upload Android APK
-        if [ -f "mycel-android/build/outputs/apk/official/release/mycel-android-official-release-unsigned.apk" ]; then
-          cp mycel-android/build/outputs/apk/official/release/mycel-android-official-release-unsigned.apk mycel-android-v${VERSION}.apk
+        if [ -f "mycel-android/build/outputs/apk/official/debug/mycel-android-official-debug.apk" ]; then
+          cp mycel-android/build/outputs/apk/official/debug/mycel-android-official-debug.apk mycel-android-v${VERSION}.apk
           gh release upload v${VERSION} mycel-android-v${VERSION}.apk --repo ${{ github.repository }}
         fi
         
