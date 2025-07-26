@@ -141,7 +141,7 @@ jobs:
     - name: 🏗️ Build Android Debug APK (Signed)
       run: |
         echo "Building Android Debug APK (signed with debug keystore)..."
-        ./gradlew :mycel-android:assembleOfficialDebug \
+        ./gradlew :mycel-android:assembleDebug \
           --build-cache \
           --parallel \
           -Pandroid.useAndroidX=true \
@@ -168,8 +168,8 @@ jobs:
         mkdir -p checksums
         
         # Generate checksums for APK (using absolute paths)
-        if [ -f "mycel-android/build/outputs/apk/official/debug/mycel-android-official-debug.apk" ]; then
-          sha256sum mycel-android/build/outputs/apk/official/debug/mycel-android-official-debug.apk > checksums/mycel-android-v${VERSION}.apk.sha256
+        if [ -f "mycel-android/build/outputs/apk/debug/mycel-android-debug.apk" ]; then
+          sha256sum mycel-android/build/outputs/apk/debug/mycel-android-debug.apk > checksums/mycel-android-v${VERSION}.apk.sha256
           echo "Generated APK checksum"
         fi
         
@@ -190,8 +190,8 @@ jobs:
         VERSION=${{ needs.create-release.outputs.version }}
         
         # Upload Android APK
-        if [ -f "mycel-android/build/outputs/apk/official/debug/mycel-android-official-debug.apk" ]; then
-          cp mycel-android/build/outputs/apk/official/debug/mycel-android-official-debug.apk mycel-android-v${VERSION}.apk
+        if [ -f "mycel-android/build/outputs/apk/debug/mycel-android-debug.apk" ]; then
+          cp mycel-android/build/outputs/apk/debug/mycel-android-debug.apk mycel-android-v${VERSION}.apk
           gh release upload v${VERSION} mycel-android-v${VERSION}.apk --repo ${{ github.repository }}
         fi
         

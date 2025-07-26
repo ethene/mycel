@@ -25,3 +25,6 @@
 
 # Keep Application classes to prevent ClassNotFoundException crashes
 -keep class * extends android.app.Application { *; }
+
+# Keep specific MycelApplicationImpl class (explicit keep rule)
+-keep class com.quantumresearch.mycel.app.android.MycelApplicationImpl { *; }
