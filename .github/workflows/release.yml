@@ -355,19 +355,19 @@ jobs:
                 <h2>📱 Download Latest Version (v${VERSION})</h2>
                 <p>Choose your platform:</p>
                 
-                <a href="https://github.com/quantumresearch/mycel/releases/download/v${VERSION}/mycel-android-v${VERSION}.apk" 
+                <a href="https://github.com/ethene/mycel/releases/download/v${VERSION}/mycel-android-v${VERSION}.apk" 
                    class="download-button android">
                     📱 Download Android APK
                 </a>
                 
-                <a href="https://github.com/quantumresearch/mycel/releases/download/v${VERSION}/mycel-headless-v${VERSION}.jar" 
+                <a href="https://github.com/ethene/mycel/releases/download/v${VERSION}/mycel-headless-v${VERSION}.jar" 
                    class="download-button">
                     🖥️ Download Server JAR
                 </a>
                 
                 <p><small>
-                    <a href="https://github.com/quantumresearch/mycel/releases/download/v${VERSION}/mycel-android-v${VERSION}.apk.sha256">Android SHA256</a> |
-                    <a href="https://github.com/quantumresearch/mycel/releases/download/v${VERSION}/mycel-headless-v${VERSION}.jar.sha256">Server SHA256</a>
+                    <a href="https://github.com/ethene/mycel/releases/download/v${VERSION}/mycel-android-v${VERSION}.apk.sha256">Android SHA256</a> |
+                    <a href="https://github.com/ethene/mycel/releases/download/v${VERSION}/mycel-headless-v${VERSION}.jar.sha256">Server SHA256</a>
                 </small></p>
             </div>
             
@@ -419,7 +419,7 @@ jobs:
             </div>
             
             <div class="version-info">
-                <p>Version ${VERSION} | Built from source | <a href="https://github.com/quantumresearch/mycel">GitHub Repository</a></p>
+                <p>Version ${VERSION} | Built from source | <a href="https://github.com/ethene/mycel">GitHub Repository</a></p>
                 <p>© 2024 Quantum Research Pty Ltd | Based on Briar Project</p>
             </div>
         </body>

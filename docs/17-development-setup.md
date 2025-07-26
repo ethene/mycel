@@ -517,7 +517,7 @@ if (BuildConfig.DEBUG) {
 java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -jar mycel-headless.jar
 
 # Memory debugging
-java -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp/briar-heap.hprof -jar mycel-headless.jar
+java -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp/mycel-heap.hprof -jar mycel-headless.jar
 ```
 
 ## Troubleshooting Common Setup Issues

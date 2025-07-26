@@ -40,6 +40,7 @@
 - [Architecture](#architecture)
 - [Building from Source](#building-from-source)
 - [API Documentation](#api-documentation)
+- [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [Troubleshooting](#troubleshooting)
 - [Community](#community)
@@ -497,30 +498,61 @@ export ANDROID_HOME=/path/to/android-sdk
 
 ## Roadmap
 
-### 📋 **Status**: Under Review
+### 📋 **Comprehensive Development Roadmap Available**
 
-> **Note**: The project roadmap is currently being updated to reflect our latest priorities and technical direction. A comprehensive roadmap will be published soon with detailed timelines and feature plans.
+Mycel follows a structured development roadmap aligned with the mesh networking PRD and strategic priorities. Our roadmap is organized into four priority levels from MVP core features through long-term ecosystem growth.
 
-### ✅ **Current Stable Features**
+### 📚 **Roadmap Documentation**
 
-- **Core messaging functionality** - Private messages, groups, forums
-- **Multi-transport sync** - Tor, Bluetooth, Wi-Fi connectivity
-- **File sharing** - Secure attachment support
-- **Headless API** - REST API for automation and integration
-- **Cross-platform support** - Android, Desktop, Headless modes
-- **End-to-end encryption** - All communications secured
+- **[🗺️ Development Roadmap](docs/roadmap/development-roadmap.md)** - Master timeline and development phases (2025-2028+)
+- **[📊 Feature Priorities](docs/roadmap/feature-priorities.md)** - Complete feature matrix with PRD alignment and resource estimates
+- **[🔬 Technology Research](docs/roadmap/technology-research.md)** - Research initiatives and technical exploration areas
+- **[📑 Roadmap Overview](docs/roadmap/README.md)** - Summary and methodology
 
-### 🔮 **Areas Under Consideration**
+### ✅ **Current Stable Features (Completed 2024-2025)**
 
-The following features are being evaluated for inclusion in future releases:
+- **Mycel Architecture**: Two-layer Spore/Mycel architecture established
+- **Multi-Transport System**: Tor, Bluetooth, Wi-Fi, Serial/Modem support
+- **End-to-End Encryption**: Full Double Ratchet cryptographic implementation
+- **Cross-Platform Support**: Android, Desktop, Headless modes
+- **CI/CD Pipeline**: Automated build and release system
+- **Comprehensive Documentation**: Technical docs and user guides
 
-- **Enhanced privacy features** - Additional anonymity protections
-- **Performance optimizations** - Faster sync and reduced resource usage  
-- **User experience improvements** - Streamlined interface and workflows
-- **Developer tools** - Enhanced API capabilities and documentation
-- **Platform expansion** - Additional platform support options
+### 🍀 **MVP Core Features (P0 - Q3-Q4 2025)**
 
-> **Stay Updated**: Watch this repository and check our [releases page](https://github.com/ethene/mycel/releases) for the latest developments.
+**High-Impact Core** features essential for minimum viable product:
+- **Offline Mesh Chat Enhancement** - Store-and-forward DTN messaging optimization
+- **Icon-First Multilingual UI** - Simplified interface with Shona, Ndebele, English support
+- **Adaptive Power Management** - Smart battery optimization for mesh devices
+- **Performance Optimization** - 30% memory reduction and 50% sync speed improvement
+
+### 🚀 **Medium-Impact Extensions (P1 - Q4 2025-Q2 2026)**
+
+**Network reach and UX enhancement** features:
+- **USB-OTG & BLE LoRa Transport** - 5-10km long-range mesh communication
+- **Solar Relay Dashboard** - ESP32/E22 gateway monitoring for mesh infrastructure
+- **Basic Token Wallet** - Economic incentives for mesh participation
+- **iOS Application Development** - Native iOS app with feature parity
+
+### ⚙️ **Strategic Differentiators (P2 - Q2-Q4 2026)**
+
+**Adoption and resilience** driving features:
+- **Proof-of-Relay Ledger** - Ed25519 signature chain for sustainable mesh economics
+- **Multi-Hop Routing (PRoPHET/CGR)** - Contact-graph routing for inter-village delivery
+- **Global Gateway Routing** - Bridge isolated meshes via internet/satellite
+- **Multi-Asset Wallet & Redemption** - Real economic value through AML/KYC integration
+- **Bot & Mini-App Platform** - Telegram-like ecosystem with JavaScript/Python APIs
+- **Peer-to-Peer App Distribution** - Install and update apps through mesh network
+
+### 🌐 **Optional & Ecosystem (P3 - 2027-2028+)**
+
+**Long-term value and ecosystem growth**:
+- **Emergency-Alert Broadcast** - Signed priority messages for crisis communications
+- **Progressive Media Sync** - Large file handling with resume capabilities
+- **Mesh-Wide OTA Updates** - Infrastructure firmware updates via DTN
+- **Offline Micro-Payments (P2P)** - Device-to-device economic transactions
+
+> **📈 Detailed Information**: Visit our [comprehensive roadmap documentation](docs/roadmap/) for technical specifications, resource requirements, timelines, and implementation strategies.
 
 ---
 

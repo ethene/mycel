@@ -1,0 +1,12 @@
+../../../spore-android/witness.gradle
+../../../spore-android/build.gradle
+../../../spore-java/witness.gradle
+../../../spore-java/build.gradle
+../../../spore-core/witness.gradle
+../../../spore-core/build.gradle
+../../../spore-api/witness.gradle
+../../../spore-api/build.gradle
+../../../mycel-headless/witness.gradle
+../../../mycel-headless/build.gradle
+../../../settings-original.gradle
+../../../gradle.properties

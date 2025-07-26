@@ -69,8 +69,8 @@ Mycel is a decentralized messaging application designed for secure, peer-to-peer
 ```
 
 ### Module Organization
-- **Bramble**: Low-level infrastructure (networking, crypto, database)
-- **Briar**: High-level application features (messaging, forums, blogs)
+- **Spore**: Low-level infrastructure (networking, crypto, database)
+- **Mycel**: High-level application features (messaging, forums, blogs)
 - **Platform**: Platform-specific implementations (Android, Java/Desktop)
 
 ## Use Cases
@@ -118,7 +118,7 @@ This architecture makes rebranding to Mycel feasible by:
 
 ### Next Steps for Mycel Implementation
 
-1. **Update Package Names**: `org.briarproject.*` → `com.quantumresearch.mycel.*`
+1. **Update Package Names**: Complete transition to `com.quantumresearch.mycel.*`
 2. **Rebrand Visual Identity**: Create Mycel logos, icons, and color schemes
 3. **Update App Store Presence**: New Quantum Research developer accounts
 4. **Maintain Protocol Compatibility**: Ensure messaging still works during transition

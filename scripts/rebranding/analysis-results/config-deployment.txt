@@ -1,0 +1,10 @@
+../../../mycel-android/fastlane/Appfile
+../../../mycel-android/fastlane/update-metadata.sh
+../../../mycel-android/fastlane/Screengrabfile
+../../../mycel-android/fastlane/metadata/android/tr-TR/full_description.txt
+../../../mycel-android/fastlane/metadata/android/sk/full_description.txt
+../../../mycel-android/fastlane/metadata/android/de-DE/full_description.txt
+../../../mycel-android/fastlane/metadata/android/sq/full_description.txt
+../../../mycel-android/fastlane/metadata/android/ro/full_description.txt
+../../../mycel-android/fastlane/metadata/android/bg/full_description.txt
+../../../mycel-android/fastlane/metadata/android/en-US/full_description.txt

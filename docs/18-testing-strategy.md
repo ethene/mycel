@@ -57,7 +57,7 @@ This document outlines the comprehensive testing strategy for the Briar/Mycel ap
 
 ### Bramble Layer Testing
 
-#### Location: `bramble-*/src/test/`
+#### Location: `spore-*/src/test/`
 
 **Core Components Tested**:
 
@@ -203,7 +203,7 @@ public class SyncSessionImplTest {
 
 ### Briar Layer Testing
 
-#### Location: `briar-*/src/test/`
+#### Location: `mycel-*/src/test/`
 
 #### 1. Messaging Tests
 

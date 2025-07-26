@@ -1,0 +1,234 @@
+Fri Jul 25 11:36:48 MSK 2025: Starting localized briar string replacement
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ast/strings.xml.backup-20250725-113648
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ro/strings.xml.backup-20250725-113648
+Fri Jul 25 11:36:48 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ro/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:36:48 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ro/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:36:48 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ro/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:36:48 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ro/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:36:48 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ro/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:36:49 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ro/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ru/strings.xml.backup-20250725-113649
+Fri Jul 25 11:36:49 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ru/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:36:49 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ru/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:36:49 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ru/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:36:49 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ru/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:36:49 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ru/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:36:49 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ru/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-zh-rTW/strings.xml.backup-20250725-113649
+Fri Jul 25 11:36:49 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-zh-rTW/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:36:49 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-zh-rTW/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:36:49 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-zh-rTW/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:36:49 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-zh-rTW/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:36:49 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-zh-rTW/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:36:50 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-zh-rTW/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-oc/strings.xml.backup-20250725-113650
+Fri Jul 25 11:36:50 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-oc/strings.xml - Replacement failed for briar_crashed
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-it/strings.xml.backup-20250725-113650
+Fri Jul 25 11:36:50 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-it/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:36:50 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-it/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:36:50 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-it/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:36:50 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-it/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:36:50 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-it/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:36:50 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-it/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ca/strings.xml.backup-20250725-113650
+Fri Jul 25 11:36:50 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ca/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:36:50 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ca/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:36:50 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ca/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:36:51 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ca/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:36:51 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ca/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:36:51 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ca/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-is/strings.xml.backup-20250725-113651
+Fri Jul 25 11:36:51 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-is/strings.xml - Replacement failed for briar_crashed
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-cs/strings.xml.backup-20250725-113651
+Fri Jul 25 11:36:51 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-cs/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:36:51 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-cs/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:36:51 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-cs/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:36:51 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-cs/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:36:51 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-cs/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:36:51 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-cs/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-zh-rCN/strings.xml.backup-20250725-113651
+Fri Jul 25 11:36:52 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-zh-rCN/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:36:52 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-zh-rCN/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:36:52 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-zh-rCN/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:36:52 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-zh-rCN/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:36:52 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-zh-rCN/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:36:52 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-zh-rCN/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ja/strings.xml.backup-20250725-113652
+Fri Jul 25 11:36:52 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ja/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:36:52 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ja/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:36:52 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ja/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:36:52 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ja/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:36:52 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ja/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:36:52 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ja/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-he/strings.xml.backup-20250725-113652
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ms/strings.xml.backup-20250725-113653
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-pt-rBR/strings.xml.backup-20250725-113653
+Fri Jul 25 11:36:53 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-pt-rBR/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:36:53 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-pt-rBR/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:36:53 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-pt-rBR/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:36:53 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-pt-rBR/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:36:53 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-pt-rBR/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:36:53 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-pt-rBR/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-pl/strings.xml.backup-20250725-113653
+Fri Jul 25 11:36:54 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-pl/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:36:54 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-pl/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:36:54 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-pl/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:36:54 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-pl/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:36:54 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-pl/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:36:54 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-pl/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sq/strings.xml.backup-20250725-113654
+Fri Jul 25 11:36:54 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sq/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:36:54 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sq/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:36:54 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sq/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:36:54 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sq/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:36:54 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sq/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:36:54 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sq/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sv/strings.xml.backup-20250725-113654
+Fri Jul 25 11:36:54 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sv/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:36:55 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sv/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:36:55 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sv/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:36:55 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sv/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:36:55 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sv/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:36:55 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sv/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sk/strings.xml.backup-20250725-113655
+Fri Jul 25 11:36:55 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sk/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:36:55 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sk/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:36:55 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sk/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:36:55 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sk/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:36:55 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sk/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:36:55 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sk/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sw/strings.xml.backup-20250725-113655
+Fri Jul 25 11:36:56 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sw/strings.xml - Replacement failed for briar_crashed
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-pt-rPT/strings.xml.backup-20250725-113656
+Fri Jul 25 11:36:56 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-pt-rPT/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:36:56 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-pt-rPT/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:36:56 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-pt-rPT/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:36:56 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-pt-rPT/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:36:56 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-pt-rPT/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:36:56 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-pt-rPT/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-tr/strings.xml.backup-20250725-113656
+Fri Jul 25 11:36:56 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-tr/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:36:56 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-tr/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:36:56 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-tr/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:36:57 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-tr/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:36:57 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-tr/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:36:57 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-tr/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-es-rCU/strings.xml.backup-20250725-113657
+Fri Jul 25 11:36:57 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-es-rCU/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:36:57 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-es-rCU/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:36:57 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-es-rCU/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:36:57 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-es-rCU/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:36:57 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-es-rCU/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:36:57 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-es-rCU/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-fa/strings.xml.backup-20250725-113657
+Fri Jul 25 11:36:57 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-fa/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:36:57 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-fa/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:36:58 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-fa/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:36:58 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-fa/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:36:58 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-fa/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:36:58 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-fa/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-lt/strings.xml.backup-20250725-113658
+Fri Jul 25 11:36:58 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-lt/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:36:58 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-lt/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:36:58 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-lt/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:36:58 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-lt/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:36:58 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-lt/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:36:58 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-lt/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-eu/strings.xml.backup-20250725-113658
+Fri Jul 25 11:36:58 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-eu/strings.xml - Replacement failed for briar_crashed
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-iw/strings.xml.backup-20250725-113658
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-fi/strings.xml.backup-20250725-113659
+Fri Jul 25 11:36:59 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-fi/strings.xml - Replacement failed for briar_crashed
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-fr/strings.xml.backup-20250725-113659
+Fri Jul 25 11:36:59 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-fr/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:36:59 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-fr/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:36:59 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-fr/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:36:59 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-fr/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:36:59 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-fr/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:36:59 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-fr/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-es/strings.xml.backup-20250725-113659
+Fri Jul 25 11:36:59 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-es/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:36:59 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-es/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:36:59 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-es/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:37:00 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-es/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:37:00 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-es/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:37:00 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-es/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-hu/strings.xml.backup-20250725-113700
+Fri Jul 25 11:37:00 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-hu/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:37:00 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-hu/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:37:00 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-hu/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:37:00 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-hu/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:37:00 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-hu/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:37:00 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-hu/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-nl/strings.xml.backup-20250725-113700
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-bg/strings.xml.backup-20250725-113701
+Fri Jul 25 11:37:01 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-bg/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:37:01 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-bg/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:37:01 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-bg/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:37:01 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-bg/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:37:01 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-bg/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:37:01 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-bg/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-bn/strings.xml.backup-20250725-113701
+Fri Jul 25 11:37:01 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-bn/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:37:01 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-bn/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:37:01 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-bn/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:37:01 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-bn/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:37:02 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-bn/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:37:02 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-bn/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-nb/strings.xml.backup-20250725-113702
+Fri Jul 25 11:37:02 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-nb/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:37:02 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-nb/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:37:02 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-nb/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:37:02 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-nb/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:37:02 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-nb/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:37:02 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-nb/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-hi/strings.xml.backup-20250725-113702
+Fri Jul 25 11:37:02 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-hi/strings.xml - Replacement failed for briar_crashed
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ka/strings.xml.backup-20250725-113702
+Fri Jul 25 11:37:02 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ka/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:37:02 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ka/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:37:02 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ka/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:37:03 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ka/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:37:03 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ka/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:37:03 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ka/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-de/strings.xml.backup-20250725-113703
+Fri Jul 25 11:37:03 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-de/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:37:03 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-de/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:37:03 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-de/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:37:03 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-de/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:37:03 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-de/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:37:03 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-de/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-az/strings.xml.backup-20250725-113703
+Fri Jul 25 11:37:03 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-az/strings.xml - Replacement failed for briar_crashed
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-br/strings.xml.backup-20250725-113703
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ko/strings.xml.backup-20250725-113704
+Fri Jul 25 11:37:04 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ko/strings.xml - Replacement failed for briar_crashed
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-mk/strings.xml.backup-20250725-113704
+Fri Jul 25 11:37:04 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-mk/strings.xml - Replacement failed for briar_crashed
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-bs/strings.xml.backup-20250725-113704
+Fri Jul 25 11:37:04 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-bs/strings.xml - Replacement failed for briar_crashed
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-my/strings.xml.backup-20250725-113704
+Fri Jul 25 11:37:04 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-my/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:37:04 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-my/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:37:04 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-my/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:37:04 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-my/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:37:04 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-my/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:37:04 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-my/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ar/strings.xml.backup-20250725-113705
+Fri Jul 25 11:37:05 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ar/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:37:05 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ar/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:37:05 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ar/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:37:05 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ar/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:37:05 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ar/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:37:05 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-ar/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-gl/strings.xml.backup-20250725-113705
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-uk/strings.xml.backup-20250725-113705
+Fri Jul 25 11:37:05 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-uk/strings.xml - Replacement failed for briar_changelog
+Fri Jul 25 11:37:05 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-uk/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:37:05 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-uk/strings.xml - Replacement failed for briar_privacy_policy
+Fri Jul 25 11:37:05 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-uk/strings.xml - Replacement failed for briar_source_code
+Fri Jul 25 11:37:05 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-uk/strings.xml - Replacement failed for briar_version
+Fri Jul 25 11:37:06 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-uk/strings.xml - Replacement failed for briar_website
+Backed up: /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sr/strings.xml.backup-20250725-113706
+Fri Jul 25 11:37:06 MSK 2025: ERROR in /Users/dmitrystakhin/mycel/mycel-android/src/main/res/values-sr/strings.xml - Replacement failed for briar_crashed
+Fri Jul 25 11:37:06 MSK 2025: Completed - 47 files processed, 0 total replacements

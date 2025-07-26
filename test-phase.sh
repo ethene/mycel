@@ -27,23 +27,23 @@ fi
 
 # Android APK
 echo "4. Building Android APK..."
-if ./gradlew :briar-android:assembleDebug; then
+if ./gradlew :mycel-android:assembleDebug; then
     echo "✅ APK build successful"
 else
     echo "❌ APK build failed"
     exit 1
 fi
 
-# Verify package name (Phase 2+)
+# Verify package name
 echo "5. Verifying package name..."
-APK_FILE=$(find briar-android/build/outputs/apk/debug -name "*.apk" | head -1)
+APK_FILE=$(find mycel-android/build/outputs/apk/debug -name "*.apk" | head -1)
 if [ -f "$APK_FILE" ]; then
     PACKAGE=$(aapt dump badging "$APK_FILE" | grep "package:" | head -1)
     echo "Package info: $PACKAGE"
     if [[ "$PACKAGE" == *"com.quantumresearch.mycel"* ]]; then
         echo "✅ Package name correct"
     else
-        echo "⚠️  Package name verification (expected for Phase 1)"
+        echo "⚠️  Package name may need verification"
     fi
 fi
 

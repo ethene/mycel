@@ -1,0 +1,11 @@
+../../../mycel-headless/bin/main/com/quantumresearch/mycel/app/headless/BriarService.kt
+../../../mycel-headless/bin/main/com/quantumresearch/mycel/app/headless/HeadlessModule.kt
+../../../mycel-headless/bin/main/com/quantumresearch/mycel/app/headless/Router.kt
+../../../mycel-android/src/main/java/com/quantumresearch/mycel/app/android/AndroidComponent.java
+../../../mycel-android/src/main/java/com/quantumresearch/mycel/app/android/activity/ActivityModule.java
+../../../mycel-android/src/main/java/com/quantumresearch/mycel/app/android/AndroidNotificationManagerImpl.java
+../../../mycel-android/src/main/java/com/quantumresearch/mycel/app/android/controller/BriarControllerImpl.java
+../../../mycel-android/src/main/java/com/quantumresearch/mycel/app/android/navdrawer/NavDrawerActivity.java
+../../../mycel-android/src/main/java/com/quantumresearch/mycel/app/android/account/LockManagerImpl.java
+../../../mycel-android/src/main/java/com/quantumresearch/mycel/app/android/StartupFailureActivity.java
+../../../mycel-android/src/main/java/com/quantumresearch/mycel/app/android/login/StartupActivity.java

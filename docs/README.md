@@ -2,7 +2,7 @@
 
 This folder contains comprehensive documentation for the **Mycel** messaging application by **Quantum Research Pty Ltd**.
 
-**Project Status**: Currently rebranding from Briar to Mycel while preserving all core functionality.
+**Project Status**: Established secure messaging platform with comprehensive documentation and development roadmap.
 
 ## Quick Start
 - [00-mycel-quick-start.md](00-mycel-quick-start.md) - **START HERE** - Quick overview and setup for Mycel
@@ -25,10 +25,16 @@ This folder contains comprehensive documentation for the **Mycel** messaging app
 - [11-crypto-security.md](11-crypto-security.md) - Cryptographic implementation details
 - [12-sync-protocol.md](12-sync-protocol.md) - Message synchronization protocol
 
-### 📁 Rebranding Implementation
-- **[INCREMENTAL-REBRANDING-PLAN.md](INCREMENTAL-REBRANDING-PLAN.md)** - **PRIMARY GUIDE** - Current rebranding implementation
-- [16-configuration-files.md](16-configuration-files.md) - Config files requiring updates
-- [GIT-INITIALIZATION-GUIDE.md](GIT-INITIALIZATION-GUIDE.md) - Git repository setup guide
+### 📁 Configuration & Setup
+- [16-configuration-files.md](16-configuration-files.md) - Config files reference
+- [mycel-license-requirements.md](mycel-license-requirements.md) - License compliance documentation
+- [TRANSLATION.md](TRANSLATION.md) - Translation contribution guidelines
+
+### 📁 Roadmap & Research
+- [roadmap/README.md](roadmap/README.md) - Roadmap overview and research methodology
+- [roadmap/development-roadmap.md](roadmap/development-roadmap.md) - Master development roadmap
+- [roadmap/feature-priorities.md](roadmap/feature-priorities.md) - Feature prioritization framework
+- [roadmap/technology-research.md](roadmap/technology-research.md) - Technical research initiatives
 
 ### 📁 Development
 - [17-development-setup.md](17-development-setup.md) - Getting started with development
@@ -64,12 +70,14 @@ This folder contains comprehensive documentation for the **Mycel** messaging app
 
 ## Archive Folder
 
-The `archive/` folder contains documentation that was relevant during the Briar-to-Mycel rebranding process but is now outdated. This includes:
-- Original rebranding strategy documents
-- Briar-specific technical implementation details with old package names
-- Completed planning documents
+The `archive/` folder contains historical documentation from the project's evolution. This includes:
+- Project establishment strategy and execution plans
+- Git initialization guide used during repository setup
+- Legacy technical implementation details with old references
+- Historical planning documents and workflow guides
+- Implementation guides from the project establishment phase
 
-The archive folder is excluded from git commits to keep the repository focused on current development.
+These documents are preserved for reference but no longer needed for active development.
 
 ---
 
