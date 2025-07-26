@@ -97,7 +97,7 @@ jobs:
           || echo "Android tests completed with issues (expected due to circular deps)"
     
     - name: 📊 Generate Android Test Report
-      uses: dorny/test-reporter@v1
+      uses: dorny/test-reporter@v2
       if: always()
       with:
         name: Android Unit Tests
@@ -155,7 +155,7 @@ jobs:
           --build-cache
     
     - name: 📊 Generate Headless Test Report
-      uses: dorny/test-reporter@v1
+      uses: dorny/test-reporter@v2
       if: always()
       with:
         name: Headless Tests
@@ -201,7 +201,7 @@ jobs:
           || echo "Integration tests completed (may have expected failures)"
     
     - name: 📊 Generate Integration Test Report
-      uses: dorny/test-reporter@v1
+      uses: dorny/test-reporter@v2
       if: always()
       with:
         name: Integration Tests
