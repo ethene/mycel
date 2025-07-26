@@ -50,8 +50,9 @@ android {
 			shrinkResources false
 			minifyEnabled false  // Disable minification for debug builds to prevent crashes
 			crunchPngs false
-			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
-			testProguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt', 'proguard-test.txt'
+			// Remove ProGuard files for debug builds to prevent ClassNotFoundException
+			// proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+			// testProguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt', 'proguard-test.txt'
 		}
 		release {
 			shrinkResources false
